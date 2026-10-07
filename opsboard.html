@@ -12,6 +12,10 @@
       padding: 0;
     }
 
+    html {
+      scroll-behavior: smooth;
+    }
+
     body {
       font-family: Arial, Helvetica, sans-serif;
       background: #f7f7f5;
@@ -27,16 +31,18 @@
     header {
       padding: 22px 0;
       border-bottom: 1px solid #e5e7eb;
-      background: rgba(247,247,245,.96);
+      background: rgba(247, 247, 245, 0.96);
       position: sticky;
       top: 0;
-      z-index: 10;
+      z-index: 100;
+      backdrop-filter: blur(8px);
     }
 
     nav {
       display: flex;
       justify-content: space-between;
       align-items: center;
+      gap: 20px;
     }
 
     nav a {
@@ -45,44 +51,57 @@
       font-size: 14px;
     }
 
+    nav a:hover {
+      color: #111827;
+    }
+
     .back {
       font-weight: 600;
     }
 
     .hero {
-      padding: 86px 0 56px;
+      padding: 88px 0 62px;
     }
 
     .eyebrow {
       text-transform: uppercase;
-      letter-spacing: .12em;
+      letter-spacing: 0.12em;
       font-size: 12px;
-      color: #6b8f71;
+      color: #5f8267;
       font-weight: 700;
       margin-bottom: 14px;
     }
 
     h1 {
-      font-size: clamp(44px, 6vw, 72px);
-      line-height: 1.03;
-      letter-spacing: -0.04em;
-      margin-bottom: 18px;
+      font-size: clamp(46px, 7vw, 76px);
+      line-height: 1.02;
+      letter-spacing: -0.045em;
+      margin-bottom: 20px;
     }
 
     .lead {
-      max-width: 760px;
+      max-width: 790px;
       font-size: 21px;
       color: #5f6873;
     }
 
     section {
-      padding: 58px 0;
+      padding: 62px 0;
+    }
+
+    .section-border {
+      border-top: 1px solid #e7e8e5;
     }
 
     h2 {
-      font-size: 30px;
-      letter-spacing: -0.02em;
+      font-size: clamp(27px, 4vw, 34px);
+      line-height: 1.2;
+      letter-spacing: -0.025em;
       margin-bottom: 16px;
+    }
+
+    h3 {
+      line-height: 1.3;
     }
 
     p {
@@ -90,23 +109,32 @@
       max-width: 790px;
     }
 
-    .rules {
+    .intro-copy {
+      font-size: 17px;
+    }
+
+    .rules,
+    .impact-grid {
       display: grid;
       grid-template-columns: repeat(3, 1fr);
       gap: 20px;
-      margin-top: 28px;
+      margin-top: 30px;
     }
 
     .card {
-      background: white;
-      border: 1px solid #e5e7eb;
+      background: #ffffff;
+      border: 1px solid #e2e5e3;
       border-radius: 18px;
       padding: 24px;
     }
 
     .card h3 {
-      font-size: 19px;
-      margin-bottom: 8px;
+      font-size: 18px;
+      margin-bottom: 9px;
+    }
+
+    .card p {
+      font-size: 15px;
     }
 
     .flow {
@@ -114,79 +142,197 @@
       flex-wrap: wrap;
       align-items: center;
       gap: 10px;
-      margin-top: 26px;
+      margin-top: 28px;
     }
 
     .flow-step {
-      padding: 11px 15px;
+      padding: 11px 16px;
       border-radius: 999px;
-      border: 1px solid #dfe5e1;
-      background: white;
+      border: 1px solid #d9dfdb;
+      background: #ffffff;
       font-weight: 600;
       font-size: 14px;
     }
 
+    .flow-step.active {
+      background: #eef3ef;
+      border-color: #cbd9ce;
+      color: #2f4735;
+    }
+
     .arrow {
-      color: #8a949e;
+      color: #9aa2aa;
+      font-size: 18px;
     }
 
     .visual {
-      margin-top: 28px;
-      background: white;
-      border: 1px solid #e5e7eb;
+      margin-top: 30px;
+      background: #ffffff;
+      border: 1px solid #e2e5e3;
       border-radius: 20px;
-      padding: 14px;
+      padding: 12px;
+      overflow: hidden;
     }
 
     .visual img {
       width: 100%;
-      border-radius: 14px;
+      height: auto;
+      border-radius: 13px;
       display: block;
+    }
+
+    .caption {
+      font-size: 13px;
+      color: #7c858f;
+      margin-top: 11px;
+      padding: 0 4px 4px;
     }
 
     .split {
       display: grid;
       grid-template-columns: 1fr 1fr;
-      gap: 24px;
-      margin-top: 28px;
+      gap: 26px;
+      margin-top: 30px;
+      align-items: start;
     }
 
-    .impact-grid {
+    .mini-label {
+      text-transform: uppercase;
+      letter-spacing: 0.1em;
+      font-size: 11px;
+      color: #718078;
+      font-weight: 700;
+      margin-bottom: 8px;
+    }
+
+    .resolution-box {
+      background: #ffffff;
+      border: 1px solid #e2e5e3;
+      border-radius: 20px;
+      padding: 26px;
+      margin-top: 30px;
+    }
+
+    .resolution-header {
+      display: flex;
+      justify-content: space-between;
+      gap: 16px;
+      align-items: center;
+      margin-bottom: 22px;
+    }
+
+    .resolution-id {
+      font-size: 13px;
+      font-weight: 700;
+      color: #69747e;
+      background: #f3f4f2;
+      padding: 7px 10px;
+      border-radius: 999px;
+    }
+
+    .questions {
       display: grid;
-      grid-template-columns: repeat(3, 1fr);
-      gap: 20px;
-      margin-top: 26px;
+      gap: 10px;
     }
 
-    .impact-card {
+    .question {
+      display: flex;
+      gap: 14px;
+      align-items: center;
+      border-top: 1px solid #edf0ee;
+      padding: 13px 0 3px;
+    }
+
+    .question:first-child {
+      border-top: 0;
+      padding-top: 0;
+    }
+
+    .question-number {
+      width: 32px;
+      height: 32px;
+      border-radius: 50%;
+      background: #eef3ef;
+      color: #36513c;
+      display: grid;
+      place-items: center;
+      font-size: 12px;
+      font-weight: 700;
+      flex: 0 0 auto;
+    }
+
+    .question-text {
+      font-size: 15px;
+      font-weight: 600;
+      color: #34404a;
+    }
+
+    .resolution-note {
+      margin-top: 20px;
+      padding: 14px 16px;
+      background: #f2f6f3;
+      border-radius: 12px;
+      color: #486050;
+      font-size: 14px;
+    }
+
+    .quote {
+      margin-top: 30px;
+      padding: 30px;
       background: #eef3ef;
       border-radius: 18px;
-      padding: 24px;
-    }
-
-    .impact-card h3 {
-      font-size: 22px;
-      margin-bottom: 8px;
+      font-size: clamp(20px, 3vw, 26px);
+      line-height: 1.4;
+      font-weight: 600;
       color: #2f4735;
+      max-width: 920px;
     }
 
     .tech-box {
-      margin-top: 24px;
-      padding: 26px;
+      margin-top: 28px;
+      padding: 30px;
       background: #111827;
-      color: white;
-      border-radius: 18px;
+      color: #ffffff;
+      border-radius: 20px;
+    }
+
+    .tech-box h3 {
+      font-size: 21px;
+      margin-bottom: 10px;
     }
 
     .tech-box p {
-      color: #d1d5db;
+      color: #cbd5e1;
+      max-width: 850px;
+    }
+
+    .tech-line {
+      display: grid;
+      grid-template-columns: 160px 1fr;
+      gap: 18px;
+      padding: 18px 0;
+      border-bottom: 1px solid #2d3748;
+    }
+
+    .tech-line:last-of-type {
+      border-bottom: 0;
+    }
+
+    .tech-name {
+      color: #ffffff;
+      font-weight: 700;
+    }
+
+    .tech-desc {
+      color: #cbd5e1;
+      font-size: 15px;
     }
 
     .tags {
       display: flex;
       flex-wrap: wrap;
-      gap: 10px;
-      margin-top: 18px;
+      gap: 9px;
+      margin-top: 24px;
     }
 
     .tag {
@@ -195,25 +341,35 @@
       border: 1px solid #374151;
       border-radius: 999px;
       font-size: 13px;
-      color: white;
+      color: #ffffff;
     }
 
-    .quote {
-      margin-top: 28px;
-      padding: 28px;
+    .impact-card {
       background: #eef3ef;
       border-radius: 18px;
-      font-size: 24px;
-      font-weight: 600;
+      padding: 25px;
+    }
+
+    .impact-card h3 {
+      font-size: 23px;
+      margin-bottom: 8px;
       color: #2f4735;
-      max-width: 900px;
+    }
+
+    .impact-card p {
+      font-size: 15px;
+      color: #5b6a60;
     }
 
     footer {
       border-top: 1px solid #e5e7eb;
-      padding: 30px 0 44px;
+      padding: 32px 0 46px;
       color: #6b7280;
       font-size: 14px;
+    }
+
+    footer a {
+      color: inherit;
     }
 
     @media (max-width: 800px) {
@@ -222,234 +378,428 @@
       .impact-grid {
         grid-template-columns: 1fr;
       }
+
+      .hero {
+        padding-top: 62px;
+      }
+
+      .tech-line {
+        grid-template-columns: 1fr;
+        gap: 5px;
+      }
+
+      .resolution-header {
+        align-items: flex-start;
+        flex-direction: column;
+      }
     }
   </style>
 </head>
 
 <body>
-  <header>
+
+<header>
+  <div class="container">
+    <nav>
+      <a class="back" href="index.html">← Retour au portfolio</a>
+      <a href="mailto:younesrizk2000@gmail.com">Contact</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+
+  <!-- HERO -->
+  <section class="hero">
     <div class="container">
-      <nav>
-        <a class="back" href="index.html">← Retour au portfolio</a>
-        <a href="mailto:younesrizk2000@gmail.com">Contact</a>
-      </nav>
+      <div class="eyebrow">Projet 01 · Système opérationnel</div>
+
+      <h1>OpsBoard</h1>
+
+      <p class="lead">
+        Un système de pilotage conçu à partir de l’observation terrain pour
+        rendre les priorités visibles, structurer les blocages et transformer
+        chaque résolution en connaissance réutilisable.
+      </p>
     </div>
-  </header>
+  </section>
 
-  <main>
 
-    <section class="hero">
-      <div class="container">
-        <div class="eyebrow">Projet 01</div>
-        <h1>OpsBoard</h1>
-        <p class="lead">
-          Un système de pilotage opérationnel pensé à partir du terrain,
-          pour rendre visibles les priorités, traiter les blocages et transformer
-          les résolutions en mémoire technique réutilisable.
-        </p>
-      </div>
-    </section>
+  <!-- 1 RULES -->
+  <section class="section-border">
+    <div class="container">
 
-    <section>
-      <div class="container">
-        <h2>1. Partir du terrain, puis poser les règles</h2>
-        <p>
-          Avant de construire l’outil, j’ai défini un cadre simple :
-          une seule source d’information, des responsabilités visibles et
-          une règle claire pour chaque blocage rencontré.
-        </p>
+      <div class="mini-label">01 · Observer</div>
 
-        <div class="rules">
-          <div class="card">
-            <h3>Une seule source d’information</h3>
-            <p>L’équipe renseigne uniquement les zones prévues pour le suivi.</p>
-          </div>
+      <h2>Poser les règles avant de construire l’outil</h2>
 
-          <div class="card">
-            <h3>Un blocage doit déclencher une action</h3>
-            <p>Le système demande ce qui bloque et qui doit intervenir.</p>
-          </div>
+      <p class="intro-copy">
+        Le point de départ n’était pas Excel, mais le fonctionnement de l’équipe.
+        J’ai d’abord défini quelques règles simples pour structurer la circulation
+        de l’information et éviter que les blocages ou solutions restent dans des échanges isolés.
+      </p>
 
-          <div class="card">
-            <h3>Une résolution devient du RETEX</h3>
-            <p>Chaque problème résolu alimente une mémoire technique réutilisable.</p>
-          </div>
-        </div>
-      </div>
-    </section>
+      <div class="rules">
 
-    <section>
-      <div class="container">
-        <h2>2. Structurer le suivi des tâches</h2>
-        <p>
-          Chaque tâche suit un workflow défini. Lors de sa création,
-          un identifiant est généré automatiquement afin de faciliter le suivi
-          entre Production, R&D, Dashboard, Slack et Journal Technique.
-        </p>
-
-        <div class="flow">
-          <div class="flow-step">À faire</div>
-          <div class="arrow">→</div>
-          <div class="flow-step">En cours</div>
-          <div class="arrow">→</div>
-          <div class="flow-step">Bloqué</div>
-          <div class="arrow">→</div>
-          <div class="flow-step">Terminé</div>
-        </div>
-
-        <div class="visual">
-          <img src="ChatGPT Image Oct 7, 2026, 09_47_42 PM.png" alt="OpsBoard tâche et identifiant automatique">
-        </div>
-      </div>
-    </section>
-
-    <section>
-      <div class="container">
-        <h2>3. Quand une tâche se bloque, le workflow démarre</h2>
-        <p>
-          Le passage du statut <strong>En cours</strong> à <strong>Bloqué</strong>
-          déclenche automatiquement une étape de diagnostic puis une alerte à l’équipe.
-        </p>
-
-        <div class="split">
-          <div>
-            <div class="visual">
-              <img src="ChatGPT Image Oct 7, 2026, 09_48_09 PM.png" alt="Pop-up de diagnostic OpsBoard">
-            </div>
-            <div class="card" style="margin-top:16px;">
-              <h3>Diagnostic</h3>
-              <p>
-                La pop-up demande la nature du blocage et la personne ou équipe
-                qui doit intervenir.
-              </p>
-            </div>
-          </div>
-
-          <div>
-            <div class="visual">
-              <img src="OpsBoard Alert in Slack#ingenierie.png" alt="Alerte automatique Slack OpsBoard">
-            </div>
-            <div class="card" style="margin-top:16px;">
-              <h3>Alerte automatique</h3>
-              <p>
-                Le webhook Slack transmet l’ID de la tâche, le blocage et
-                la personne concernée directement dans le canal de l’équipe.
-              </p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section>
-      <div class="container">
-        <h2>4. Résoudre, puis capitaliser</h2>
-        <p>
-          Quand une tâche passe de <strong>Bloqué</strong> à <strong>Terminé</strong>,
-          le système demande les informations de résolution :
-          symptômes, cause, solution, enseignement et temps passé.
-        </p>
-
-        <div class="flow">
-          <div class="flow-step">Blocage</div>
-          <div class="arrow">→</div>
-          <div class="flow-step">Diagnostic</div>
-          <div class="arrow">→</div>
-          <div class="flow-step">Résolution</div>
-          <div class="arrow">→</div>
-          <div class="flow-step">RETEX</div>
-        </div>
-
-        <div class="visual">
-          <img src="ChatGPT Image Oct 7, 2026, 09_48_00 PM.png" alt="Journal Technique RETEX OpsBoard">
-        </div>
-
-        <div class="quote">
-          Un blocage ne doit pas seulement être signalé :
-          il doit être diagnostiqué, résolu et transformé en connaissance réutilisable.
-        </div>
-      </div>
-    </section>
-
-    <section>
-      <div class="container">
-        <h2>5. Une vue synthétique pour le pilotage</h2>
-        <p>
-          Le Dashboard consolide automatiquement l’état des tâches,
-          les priorités et les blocages pour donner une lecture rapide
-          de l’activité.
-        </p>
-
-        <div class="visual">
-          <img src="ChatGPT Image Oct 7, 2026, 09_47_50 PM.png" alt="Dashboard OpsBoard">
-        </div>
-      </div>
-    </section>
-
-    <section>
-      <div class="container">
-        <h2>Sous le capot</h2>
-
-        <div class="tech-box">
+        <div class="card">
+          <h3>Une source commune</h3>
           <p>
-            J’ai intégré un <strong>Google Apps Script</strong> directement dans Google Sheets
-            pour gérer la génération automatique des ID, les changements de statut,
-            les pop-ups de diagnostic, l’alimentation du Journal Technique
-            et la protection des feuilles sensibles.
+            L’équipe renseigne les informations utiles au même endroit.
           </p>
-
-          <p style="margin-top:14px;">
-            Un <strong>webhook Slack</strong> relie le système au canal d’équipe
-            afin de transmettre automatiquement les blocages et résolutions.
-          </p>
-
-          <p style="margin-top:14px;">
-            Le Dashboard et le Journal Technique sont protégés en lecture seule,
-            tandis que les équipes interviennent uniquement dans les zones prévues.
-          </p>
-
-          <div class="tags">
-            <span class="tag">Google Sheets</span>
-            <span class="tag">Apps Script</span>
-            <span class="tag">Slack</span>
-            <span class="tag">Webhooks</span>
-            <span class="tag">Automatisation</span>
-            <span class="tag">IA</span>
-          </div>
         </div>
-      </div>
-    </section>
 
-    <section>
-      <div class="container">
-        <h2>Le résultat</h2>
-
-        <div class="impact-grid">
-          <div class="impact-card">
-            <h3>Voir</h3>
-            <p>Comprendre rapidement l’état de l’équipe, les priorités et les blocages.</p>
-          </div>
-
-          <div class="impact-card">
-            <h3>Agir</h3>
-            <p>Faire arriver la bonne information à la personne qui doit intervenir.</p>
-          </div>
-
-          <div class="impact-card">
-            <h3>Capitaliser</h3>
-            <p>Transformer chaque résolution en connaissance réutilisable.</p>
-          </div>
+        <div class="card">
+          <h3>Un blocage = une action</h3>
+          <p>
+            Identifier immédiatement le problème et qui doit intervenir.
+          </p>
         </div>
+
+        <div class="card">
+          <h3>Une résolution = du RETEX</h3>
+          <p>
+            Ce qui a été appris doit pouvoir servir lors d’un problème similaire.
+          </p>
+        </div>
+
       </div>
-    </section>
-
-  </main>
-
-  <footer>
-    <div class="container">
-      Younes Rizk · France ·
-      <a href="mailto:younesrizk2000@gmail.com">younesrizk2000@gmail.com</a>
     </div>
-  </footer>
+  </section>
+
+
+  <!-- 2 TASK -->
+  <section class="section-border">
+    <div class="container">
+
+      <div class="mini-label">02 · Suivre</div>
+
+      <h2>Un workflow commun pour chaque tâche</h2>
+
+      <p>
+        Lorsqu’une tâche est créée, Apps Script génère automatiquement un identifiant.
+        Cet ID permet de relier la même tâche entre les vues opérationnelles,
+        le Dashboard, les alertes Slack et le Journal Technique.
+      </p>
+
+      <div class="flow">
+        <div class="flow-step">À faire</div>
+        <div class="arrow">→</div>
+        <div class="flow-step">En cours</div>
+        <div class="arrow">→</div>
+        <div class="flow-step active">Bloqué</div>
+        <div class="arrow">→</div>
+        <div class="flow-step">Terminé</div>
+      </div>
+
+      <div class="visual">
+        <img
+          src="ChatGPT Image Oct 7, 2026, 09_47_50 PM.png"
+          alt="OpsBoard suivi des tâches avec identifiant automatique"
+        />
+        <div class="caption">
+          Exemple anonymisé — données illustratives, fonctionnement fidèle à l’outil.
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+
+  <!-- 3 BLOCKAGE -->
+  <section class="section-border">
+    <div class="container">
+
+      <div class="mini-label">03 · Diagnostiquer</div>
+
+      <h2>Le statut « Bloqué » déclenche le workflow</h2>
+
+      <p>
+        Le passage d’une tâche de <strong>En cours</strong> à <strong>Bloqué</strong>
+        déclenche automatiquement le diagnostic et la remontée de l’information.
+      </p>
+
+      <div class="split">
+
+        <div>
+          <div class="visual">
+            <img
+              src="ChatGPT Image Oct 7, 2026, 09_47_42 PM.png"
+              alt="Pop-up de diagnostic d’un blocage OpsBoard"
+            />
+          </div>
+
+          <div class="card" style="margin-top:16px;">
+            <h3>1 — Diagnostiquer</h3>
+            <p>
+              Le système demande la <strong>nature du blocage</strong>
+              et <strong>qui doit débloquer</strong>.
+            </p>
+          </div>
+        </div>
+
+
+        <div>
+          <div class="visual">
+            <img
+              src="opsboard-slack.png"
+              alt="Message Slack automatique lors d’un blocage OpsBoard"
+            />
+          </div>
+
+          <div class="card" style="margin-top:16px;">
+            <h3>2 — Alerter</h3>
+            <p>
+              Le webhook transmet automatiquement l’ID de la tâche,
+              le blocage et la personne ou équipe devant intervenir.
+            </p>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+
+  <!-- 4 RESOLUTION -->
+  <section class="section-border">
+    <div class="container">
+
+      <div class="mini-label">04 · Apprendre</div>
+
+      <h2>Résoudre le problème… puis conserver comment</h2>
+
+      <p>
+        Lorsque la tâche passe de <strong>Bloqué</strong> à <strong>Terminé</strong>,
+        Apps Script déclenche une seconde phase de diagnostic dédiée à la résolution.
+      </p>
+
+
+      <div class="resolution-box">
+
+        <div class="resolution-header">
+          <div>
+            <div class="mini-label">Pop-up de résolution</div>
+            <h3>Résolution du blocage</h3>
+          </div>
+
+          <div class="resolution-id">Exemple : P-001</div>
+        </div>
+
+
+        <div class="questions">
+
+          <div class="question">
+            <div class="question-number">1/5</div>
+            <div class="question-text">Symptômes observés</div>
+          </div>
+
+          <div class="question">
+            <div class="question-number">2/5</div>
+            <div class="question-text">Cause identifiée</div>
+          </div>
+
+          <div class="question">
+            <div class="question-number">3/5</div>
+            <div class="question-text">Solution appliquée</div>
+          </div>
+
+          <div class="question">
+            <div class="question-number">4/5</div>
+            <div class="question-text">Enseignement clé pour les futurs membres</div>
+          </div>
+
+          <div class="question">
+            <div class="question-number">5/5</div>
+            <div class="question-text">Temps passé pour résoudre</div>
+          </div>
+
+        </div>
+
+
+        <div class="resolution-note">
+          Ces réponses complètent automatiquement l’entrée correspondante
+          dans le Journal Technique.
+        </div>
+
+      </div>
+
+
+      <div class="flow">
+        <div class="flow-step">Blocage</div>
+        <div class="arrow">→</div>
+        <div class="flow-step">Diagnostic</div>
+        <div class="arrow">→</div>
+        <div class="flow-step">Résolution</div>
+        <div class="arrow">→</div>
+        <div class="flow-step active">RETEX</div>
+      </div>
+
+
+      <div class="visual">
+        <img
+          src="ChatGPT Image Oct 7, 2026, 09_48_09 PM.png"
+          alt="Journal Technique et RETEX OpsBoard"
+        />
+        <div class="caption">
+          Le Journal Technique devient la mémoire des problèmes rencontrés et résolus.
+        </div>
+      </div>
+
+
+      <div class="quote">
+        Le système ne conserve pas seulement qu’un problème a été résolu :
+        il conserve comment il a été compris et comment il a été résolu.
+      </div>
+
+    </div>
+  </section>
+
+
+  <!-- 5 DASHBOARD -->
+  <section class="section-border">
+    <div class="container">
+
+      <div class="mini-label">05 · Piloter</div>
+
+      <h2>Une lecture synthétique de l’activité</h2>
+
+      <p>
+        Le Dashboard consolide automatiquement les informations issues
+        des To Do Production et R&D afin de rendre visibles l’avancement,
+        les tâches actives, les priorités et les blocages.
+      </p>
+
+      <div class="visual">
+        <img
+          src="ChatGPT Image Oct 7, 2026, 09_48_00 PM.png"
+          alt="Dashboard opérationnel OpsBoard"
+        />
+        <div class="caption">
+          Vue synthétique anonymisée du pilotage opérationnel.
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+
+  <!-- TECH -->
+  <section class="section-border">
+    <div class="container">
+
+      <div class="mini-label">Architecture technique</div>
+
+      <h2>Sous le capot</h2>
+
+      <div class="tech-box">
+
+        <div class="tech-line">
+          <div class="tech-name">Apps Script</div>
+          <div class="tech-desc">
+            Génération automatique des ID, gestion des changements de statut,
+            déclenchement des pop-ups, alimentation du RETEX et logique de protection.
+          </div>
+        </div>
+
+        <div class="tech-line">
+          <div class="tech-name">Webhook Slack</div>
+          <div class="tech-desc">
+            Transmission automatique des blocages et résolutions
+            vers le canal d’équipe concerné.
+          </div>
+        </div>
+
+        <div class="tech-line">
+          <div class="tech-name">Google Sheets</div>
+          <div class="tech-desc">
+            Interface opérationnelle simple pour l’équipe, Dashboard consolidé
+            et Journal Technique centralisé.
+          </div>
+        </div>
+
+        <div class="tech-line">
+          <div class="tech-name">Sécurisation</div>
+          <div class="tech-desc">
+            Dashboard et Journal Technique protégés en lecture seule ;
+            les équipes modifient uniquement les zones opérationnelles prévues.
+          </div>
+        </div>
+
+        <div class="tech-line">
+          <div class="tech-name">IA</div>
+          <div class="tech-desc">
+            Utilisée pour réfléchir à l’architecture du workflow,
+            structurer la documentation et accélérer la génération
+            et l’adaptation de scripts au besoin terrain.
+          </div>
+        </div>
+
+        <div class="tags">
+          <span class="tag">Google Sheets</span>
+          <span class="tag">Google Apps Script</span>
+          <span class="tag">Slack</span>
+          <span class="tag">Webhooks</span>
+          <span class="tag">Automatisation</span>
+          <span class="tag">IA</span>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+
+  <!-- RESULT -->
+  <section class="section-border">
+    <div class="container">
+
+      <div class="mini-label">Résultat</div>
+
+      <h2>Voir. Agir. Capitaliser.</h2>
+
+      <div class="impact-grid">
+
+        <div class="impact-card">
+          <h3>Voir</h3>
+          <p>
+            Comprendre rapidement l’état de l’équipe,
+            les priorités et les blocages.
+          </p>
+        </div>
+
+        <div class="impact-card">
+          <h3>Agir</h3>
+          <p>
+            Faire arriver l’information utile à la personne
+            qui doit intervenir.
+          </p>
+        </div>
+
+        <div class="impact-card">
+          <h3>Capitaliser</h3>
+          <p>
+            Transformer les problèmes résolus
+            en connaissances réutilisables.
+          </p>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+</main>
+
+
+<footer>
+  <div class="container">
+    Younes Rizk · France ·
+    <a href="mailto:younesrizk2000@gmail.com">
+      younesrizk2000@gmail.com
+    </a>
+  </div>
+</footer>
+
 </body>
 </html>
