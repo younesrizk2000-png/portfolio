@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Younes Rizk — Portfolio</title>
+
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+      background: #f7f7f5;
+      color: #1f2933;
+      line-height: 1.6;
+    }
+
+    .container {
+      width: min(1100px, 92%);
+      margin: 0 auto;
+    }
+
+    header {
+      padding: 24px 0;
+      border-bottom: 1px solid #e5e7eb;
+      background: rgba(247,247,245,0.95);
+      position: sticky;
+      top: 0;
+      z-index: 10;
+    }
+
+    nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .brand {
+      font-weight: 700;
+      font-size: 18px;
+    }
+
+    .nav-links {
+      display: flex;
+      gap: 24px;
+      font-size: 14px;
+    }
+
+    .nav-links a {
+      text-decoration: none;
+      color: #475569;
+    }
+
+    .nav-links a:hover {
+      color: #111827;
+    }
+
+    .hero {
+      padding: 96px 0 72px;
+    }
+
+    .eyebrow {
+      text-transform: uppercase;
+      letter-spacing: 0.12em;
+      font-size: 12px;
+      color: #6b8f71;
+      margin-bottom: 18px;
+      font-weight: 700;
+    }
+
+    h1 {
+      font-size: clamp(42px, 6vw, 72px);
+      line-height: 1.05;
+      max-width: 900px;
+      margin-bottom: 24px;
+      letter-spacing: -0.03em;
+    }
+
+    .hero p {
+      max-width: 760px;
+      font-size: 20px;
+      color: #59636e;
+      margin-bottom: 18px;
+    }
+
+    .signature {
+      font-weight: 600;
+      color: #4f7a58;
+    }
+
+    .tags {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      margin-top: 28px;
+    }
+
+    .tag {
+      border: 1px solid #dce3df;
+      padding: 8px 12px;
+      border-radius: 999px;
+      font-size: 13px;
+      color: #4d5a52;
+      background: white;
+    }
+
+    section {
+      padding: 70px 0;
+    }
+
+    .section-title {
+      font-size: 32px;
+      margin-bottom: 10px;
+      letter-spacing: -0.02em;
+    }
+
+    .section-subtitle {
+      color: #6b7280;
+      margin-bottom: 30px;
+    }
+
+    .projects {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 24px;
+    }
+
+    .project-card {
+      background: #ffffff;
+      border: 1px solid #e5e7eb;
+      border-radius: 18px;
+      padding: 28px;
+      min-height: 270px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      transition: transform 0.2s ease, box-shadow 0.2s ease;
+    }
+
+    .project-card:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+    }
+
+    .project-number {
+      font-size: 12px;
+      color: #6b8f71;
+      margin-bottom: 14px;
+      font-weight: 700;
+    }
+
+    .project-card h3 {
+      font-size: 24px;
+      margin-bottom: 10px;
+    }
+
+    .project-card p {
+      color: #667085;
+      margin-bottom: 20px;
+    }
+
+    .project-card a {
+      text-decoration: none;
+      color: #24352a;
+      font-weight: 600;
+    }
+
+    .about {
+      max-width: 800px;
+    }
+
+    footer {
+      border-top: 1px solid #e5e7eb;
+      padding: 32px 0 50px;
+      color: #6b7280;
+      font-size: 14px;
+    }
+
+    @media (max-width: 760px) {
+      .projects {
+        grid-template-columns: 1fr;
+      }
+
+      .nav-links {
+        display: none;
+      }
+
+      .hero {
+        padding-top: 64px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <div class="container">
+      <nav>
+        <div class="brand">Younes Rizk</div>
+
+        <div class="nav-links">
+          <a href="#projets">Projets</a>
+          <a href="#apropos">À propos</a>
+          <a href="#contact">Contact</a>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="container">
+        <div class="eyebrow">Analyse · Opérations · Technologie</div>
+
+        <h1>
+          À l’intersection de l’analyse,
+          des opérations et de la technologie.
+        </h1>
+
+        <p>
+          J’analyse les problèmes, structure les processus et conçois des outils concrets
+          pour améliorer la prise de décision et l’exécution opérationnelle.
+        </p>
+
+        <div class="signature">
+          Comprendre. Structurer. Exécuter.
+        </div>
+
+        <div class="tags">
+          <span class="tag">Analyse</span>
+          <span class="tag">Opérations</span>
+          <span class="tag">Automatisation</span>
+          <span class="tag">IA</span>
+          <span class="tag">Process</span>
+          <span class="tag">Data</span>
+        </div>
+      </div>
+    </section>
+
+    <section id="projets">
+      <div class="container">
+        <h2 class="section-title">Projets sélectionnés</h2>
+        <p class="section-subtitle">
+          Des outils et systèmes conçus pour rendre l’exécution plus claire, plus fiable et plus reproductible.
+        </p>
+
+        <div class="projects">
+          <article class="project-card">
+            <div>
+              <div class="project-number">01</div>
+              <h3>OpsBoard</h3>
+              <p>
+                Centraliser tâches, blocages et RETEX pour améliorer le pilotage
+                quotidien d’une équipe technique.
+              </p>
+            </div>
+            <a href="#">Voir le projet →</a>
+          </article>
+
+          <article class="project-card">
+            <div>
+              <div class="project-number">02</div>
+              <h3>Process Franchise / Événementiel</h3>
+              <p>
+                Transformer des pratiques opérationnelles en parcours structurés,
+                reproductibles et faciles à utiliser.
+              </p>
+            </div>
+            <a href="#">Voir le projet →</a>
+          </article>
+
+          <article class="project-card">
+            <div>
+              <div class="project-number">03</div>
+              <h3>Pricing & génération de devis</h3>
+              <p>
+                Passer d’un Excel figé à un outil dynamique de tarification
+                capable de générer un devis prêt à envoyer.
+              </p>
+            </div>
+            <a href="#">Voir le projet →</a>
+          </article>
+
+          <article class="project-card">
+            <div>
+              <div class="project-number">04</div>
+              <h3>Honda — Documentation logistique</h3>
+              <p>
+                Structurer l’information logistique et capitaliser le RETEX
+                pour rendre un événement plus reproductible.
+              </p>
+            </div>
+            <a href="#">Voir le projet →</a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="apropos">
+      <div class="container about">
+        <h2 class="section-title">À propos</h2>
+
+        <p>
+          Je travaille à l’intersection de l’analyse, des opérations et de la technologie.
+          Mon approche commence toujours par la compréhension : comprendre un environnement,
+          un problème, ses contraintes et les personnes impliquées.
+        </p>
+
+        <br />
+
+        <p>
+          J’analyse ensuite les données et les flux, je coordonne l’exécution et, une fois
+          le terrain maîtrisé, je cherche à simplifier, structurer ou améliorer ce qui peut l’être.
+        </p>
+      </div>
+    </section>
+
+    <section id="contact">
+      <div class="container">
+        <h2 class="section-title">Contact</h2>
+
+        <p>
+          France ·
+          <a href="mailto:younesrizk2000@gmail.com">younesrizk2000@gmail.com</a>
+          ·
+          <a href="https://www.linkedin.com/in/younes-rizk-83779822b" target="_blank">
+            LinkedIn
+          </a>
+        </p>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container">
+      Younes Rizk · Portfolio professionnel
+    </div>
+  </footer>
+</body>
+</html>
