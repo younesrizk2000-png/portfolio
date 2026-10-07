@@ -20,7 +20,7 @@
       font-family: Arial, Helvetica, sans-serif;
       background: #f7f7f5;
       color: #1f2933;
-      line-height: 1.6;
+      line-height: 1.65;
     }
 
     .container {
@@ -29,7 +29,7 @@
     }
 
     header {
-      padding: 22px 0;
+      padding: 20px 0;
       border-bottom: 1px solid #e5e7eb;
       background: rgba(247, 247, 245, 0.96);
       position: sticky;
@@ -55,7 +55,7 @@
     .nav-links {
       display: flex;
       align-items: center;
-      gap: 20px;
+      gap: 22px;
       flex-wrap: wrap;
     }
 
@@ -70,43 +70,47 @@
     }
 
     .hero {
-      padding: 78px 0 70px;
+      padding: 62px 0 66px;
     }
 
     .hero-grid {
       display: grid;
-      grid-template-columns: 1.35fr 0.85fr;
-      gap: 56px;
+      grid-template-columns: 1.45fr 0.75fr;
+      gap: 64px;
       align-items: center;
     }
 
     .eyebrow {
       text-transform: uppercase;
-      letter-spacing: 0.12em;
+      letter-spacing: 0.13em;
       font-size: 12px;
       color: #5f8267;
       font-weight: 700;
-      margin-bottom: 18px;
+      margin-bottom: 22px;
     }
 
     h1 {
-      font-size: clamp(42px, 6vw, 72px);
-      line-height: 1.02;
-      letter-spacing: -0.045em;
-      margin-bottom: 20px;
+      font-size: clamp(44px, 5.2vw, 58px);
+      line-height: 1.08;
+      letter-spacing: -0.035em;
+      max-width: 760px;
+      margin-bottom: 24px;
+      font-weight: 700;
     }
 
     .lead {
-      font-size: 20px;
-      color: #5f6873;
+      font-size: 19px;
+      line-height: 1.55;
+      color: #53606c;
       max-width: 720px;
-      margin-bottom: 24px;
+      margin-bottom: 22px;
     }
 
     .hero-copy {
       font-size: 16px;
-      color: #5f6873;
-      max-width: 720px;
+      line-height: 1.65;
+      color: #66717b;
+      max-width: 700px;
       margin-bottom: 28px;
     }
 
@@ -114,11 +118,11 @@
       display: flex;
       flex-wrap: wrap;
       gap: 10px;
-      margin-bottom: 30px;
+      margin-bottom: 28px;
     }
 
     .tag {
-      padding: 8px 12px;
+      padding: 7px 12px;
       border-radius: 999px;
       background: #eef3ef;
       color: #35503b;
@@ -130,14 +134,14 @@
     .hero-actions {
       display: flex;
       flex-wrap: wrap;
-      gap: 14px;
+      gap: 12px;
     }
 
     .button-primary,
     .button-secondary {
       display: inline-block;
       text-decoration: none;
-      padding: 13px 18px;
+      padding: 12px 17px;
       border-radius: 999px;
       font-size: 14px;
       font-weight: 700;
@@ -172,28 +176,28 @@
     .portrait-card {
       background: #ffffff;
       border: 1px solid #e2e5e3;
-      border-radius: 26px;
-      padding: 16px;
-      width: min(380px, 100%);
+      border-radius: 24px;
+      padding: 14px;
+      width: min(340px, 100%);
       box-shadow: 0 10px 25px rgba(15, 23, 42, 0.04);
     }
 
     .portrait-card img {
       width: 100%;
       display: block;
-      border-radius: 18px;
+      border-radius: 17px;
       height: auto;
     }
 
     .portrait-caption {
       font-size: 13px;
       color: #6b7280;
-      margin-top: 12px;
+      margin-top: 10px;
       text-align: center;
     }
 
     section {
-      padding: 66px 0;
+      padding: 64px 0;
     }
 
     .section-border {
@@ -202,15 +206,15 @@
 
     .section-label {
       text-transform: uppercase;
-      letter-spacing: 0.1em;
-      font-size: 11px;
+      letter-spacing: 0.11em;
+      font-size: 12px;
       color: #718078;
       font-weight: 700;
-      margin-bottom: 8px;
+      margin-bottom: 10px;
     }
 
     h2 {
-      font-size: clamp(28px, 4vw, 36px);
+      font-size: clamp(30px, 3.6vw, 38px);
       line-height: 1.2;
       letter-spacing: -0.025em;
       margin-bottom: 14px;
@@ -221,6 +225,7 @@
       max-width: 760px;
       margin-bottom: 32px;
       font-size: 16px;
+      line-height: 1.65;
     }
 
     .projects-grid {
@@ -236,7 +241,7 @@
       padding: 28px;
       display: flex;
       flex-direction: column;
-      gap: 16px;
+      gap: 15px;
     }
 
     .project-number {
@@ -248,14 +253,15 @@
     }
 
     .project-card h3 {
-      font-size: 25px;
-      line-height: 1.2;
+      font-size: 24px;
+      line-height: 1.25;
       letter-spacing: -0.02em;
     }
 
     .project-card p {
       color: #5f6873;
       font-size: 15px;
+      line-height: 1.65;
     }
 
     .project-meta {
@@ -273,6 +279,7 @@
       font-weight: 700;
       border-bottom: 1px solid #111827;
       padding-bottom: 2px;
+      font-size: 14px;
     }
 
     .project-link:hover {
@@ -289,7 +296,7 @@
     .about-grid {
       display: grid;
       grid-template-columns: 1fr 1fr;
-      gap: 24px;
+      gap: 22px;
     }
 
     .info-card {
@@ -307,6 +314,7 @@
     .info-card p {
       color: #5f6873;
       font-size: 15px;
+      line-height: 1.65;
     }
 
     .contact-box {
@@ -317,25 +325,27 @@
 
     .contact-box h3 {
       font-size: 24px;
-      margin-bottom: 12px;
+      margin-bottom: 10px;
       color: #2f4735;
     }
 
     .contact-box p {
       color: #56645a;
       margin-bottom: 14px;
+      font-size: 15px;
     }
 
     .contact-links {
       display: flex;
       flex-direction: column;
-      gap: 10px;
+      gap: 9px;
     }
 
     .contact-links a {
       color: #2f4735;
       text-decoration: none;
       font-weight: 600;
+      font-size: 15px;
       word-break: break-word;
     }
 
@@ -358,15 +368,20 @@
       }
 
       .hero {
-        padding-top: 58px;
+        padding-top: 48px;
       }
 
       .portrait-card {
-        max-width: 320px;
+        max-width: 300px;
+      }
+
+      h1 {
+        max-width: 100%;
       }
     }
   </style>
 </head>
+
 <body>
 
   <header>
@@ -393,14 +408,13 @@
             <div class="eyebrow">Analyse · Opérations · Technologie</div>
 
             <h1>
-              À l’intersection de l’analyse,
-              des opérations et de la technologie.
+              À l’intersection de l’analyse, des opérations et de la technologie.
             </h1>
 
             <p class="lead">
               Je comprends les enjeux terrain, structure les processus
-              et conçois des outils concrets pour rendre l’exécution plus claire,
-              plus fluide et plus reproductible.
+              et conçois des outils concrets pour rendre l’exécution
+              plus claire, plus fluide et plus reproductible.
             </p>
 
             <p class="hero-copy">
@@ -440,68 +454,96 @@
 
     <section id="projets" class="section-border">
       <div class="container">
+
         <div class="section-label">Projets</div>
+
         <h2>Études de cas sélectionnées</h2>
+
         <p class="section-intro">
-          Une sélection de projets conçus pour clarifier l’exécution, fluidifier la coordination
-          et transformer des besoins opérationnels en outils concrets.
+          Une sélection de projets conçus pour clarifier l’exécution,
+          fluidifier la coordination et transformer des besoins opérationnels
+          en outils concrets.
         </p>
 
         <div class="projects-grid">
 
           <article class="project-card">
             <div class="project-number">Projet 01</div>
+
             <h3>OpsBoard</h3>
+
             <p>
               Un système de pilotage conçu à partir de l’observation terrain pour
               suivre les tâches, structurer les blocages, déclencher des alertes
               et alimenter un RETEX réutilisable.
             </p>
+
             <div class="project-meta">
               Google Sheets · Apps Script · Slack · Webhooks · Automatisation
             </div>
-            <a class="project-link" href="opsboard.html">Voir le projet</a>
+
+            <a class="project-link" href="opsboard.html">
+              Voir le projet
+            </a>
           </article>
 
           <article class="project-card">
             <div class="project-number">Projet 02</div>
+
             <h3>Process Franchise / Événementiel</h3>
+
             <p>
               Structuration de parcours opérationnels complets pour ne rien oublier,
               clarifier les responsabilités et rendre l’exécution reproductible
               sur de nouveaux projets.
             </p>
+
             <div class="project-meta">
               Process design · Documentation · Coordination · Standardisation
             </div>
-            <span class="project-link disabled">Page à venir</span>
+
+            <span class="project-link disabled">
+              Page à venir
+            </span>
           </article>
 
           <article class="project-card">
             <div class="project-number">Projet 03</div>
+
             <h3>Pricing & génération de devis</h3>
+
             <p>
               Passage d’un fichier figé à un outil dynamique permettant de centraliser
               les coûts, calculer les marges et générer rapidement un devis prêt à envoyer.
             </p>
+
             <div class="project-meta">
               Pricing · Simulation de marge · Devis · Google Sheets
             </div>
-            <span class="project-link disabled">Page à venir</span>
+
+            <span class="project-link disabled">
+              Page à venir
+            </span>
           </article>
 
           <article class="project-card">
             <div class="project-number">Projet 04</div>
+
             <h3>Honda — Documentation logistique</h3>
+
             <p>
               Formalisation d’une documentation opérationnelle pour rendre un événement
               plus lisible, capitaliser les apprentissages et mieux relier préparation
               théorique et réalité terrain.
             </p>
+
             <div class="project-meta">
               Logistique · Documentation · Coordination · RETEX
             </div>
-            <span class="project-link disabled">Page à venir</span>
+
+            <span class="project-link disabled">
+              Page à venir
+            </span>
           </article>
 
         </div>
@@ -510,8 +552,11 @@
 
     <section id="apropos" class="section-border">
       <div class="container">
+
         <div class="section-label">À propos</div>
+
         <h2>Ma manière de travailler</h2>
+
         <p class="section-intro">
           Je commence par comprendre. Ensuite, j’analyse, structure et traduis les besoins
           entre les dimensions métier, opérationnelles et techniques.
@@ -563,34 +608,42 @@
 
     <section id="contact" class="section-border">
       <div class="container">
+
         <div class="section-label">Contact</div>
+
         <h2>Échangeons</h2>
+
         <p class="section-intro">
           Si vous souhaitez en savoir plus sur mon profil ou sur mes projets,
           vous pouvez me contacter directement.
         </p>
 
         <div class="contact-box">
+
           <h3>Younes Rizk</h3>
+
           <p>France</p>
 
           <div class="contact-links">
-  <a href="mailto:younesrizk2000@gmail.com">
-    younesrizk2000@gmail.com
-  </a>
 
-  <a href="tel:+33763463244">
-    +33 7 63 46 32 44
-  </a>
+            <a href="mailto:younesrizk2000@gmail.com">
+              younesrizk2000@gmail.com
+            </a>
 
-  <a
-    href="https://www.linkedin.com/in/younes-rizk-83779822b"
-    target="_blank"
-    rel="noopener noreferrer"
-  >
-    Consulter mon profil LinkedIn
-  </a>
-</div>
+            <a href="tel:+33763463244">
+              +33 7 63 46 32 44
+            </a>
+
+            <a
+              href="https://www.linkedin.com/in/younes-rizk-83779822b"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Consulter mon profil LinkedIn
+            </a>
+
+          </div>
+
         </div>
       </div>
     </section>
