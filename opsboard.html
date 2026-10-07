@@ -113,6 +113,15 @@
       font-size: 17px;
     }
 
+    .mini-label {
+      text-transform: uppercase;
+      letter-spacing: 0.1em;
+      font-size: 11px;
+      color: #718078;
+      font-weight: 700;
+      margin-bottom: 8px;
+    }
+
     .rules,
     .impact-grid {
       display: grid;
@@ -202,40 +211,31 @@
       padding: 0 4px 4px;
     }
 
-    .split {
+    .stack {
       display: grid;
       grid-template-columns: 1fr;
       gap: 42px;
       margin-top: 30px;
     }
 
-    .mini-label {
-      text-transform: uppercase;
-      letter-spacing: 0.1em;
-      font-size: 11px;
-      color: #718078;
-      font-weight: 700;
-      margin-bottom: 8px;
-    }
-
     .reasoning-grid {
       display: grid;
       grid-template-columns: repeat(3, 1fr);
       gap: 16px;
-      margin-top: 24px;
+      margin-top: 26px;
     }
 
     .reasoning-card {
       background: #eef3ef;
       border-radius: 16px;
-      padding: 20px;
+      padding: 21px;
     }
 
     .reasoning-card strong {
       display: block;
-      font-size: 20px;
+      font-size: 21px;
       color: #2f4735;
-      margin-bottom: 6px;
+      margin-bottom: 5px;
     }
 
     .reasoning-card p {
@@ -314,29 +314,12 @@
       font-size: 14px;
     }
 
-    .quote {
-      margin-top: 30px;
-      padding: 30px;
-      background: #eef3ef;
-      border-radius: 18px;
-      font-size: clamp(20px, 3vw, 26px);
-      line-height: 1.4;
-      font-weight: 600;
-      color: #2f4735;
-      max-width: 920px;
-    }
-
     .tech-box {
       margin-top: 28px;
       padding: 30px;
       background: #111827;
       color: #ffffff;
       border-radius: 20px;
-    }
-
-    .tech-box p {
-      color: #cbd5e1;
-      max-width: 850px;
     }
 
     .tech-line {
@@ -442,60 +425,84 @@
 
 <main>
 
+  <!-- HERO -->
   <section class="hero">
     <div class="container">
-      <div class="eyebrow">Projet 01 · Système opérationnel</div>
+
+      <div class="eyebrow">
+        Projet 01 · Système opérationnel
+      </div>
 
       <h1>OpsBoard</h1>
 
       <p class="lead">
         Un système de pilotage conçu à partir de l’observation terrain pour
         rendre les priorités visibles, structurer les blocages et transformer
-        chaque résolution en connaissance réutilisable.
+        les résolutions en connaissances réutilisables.
       </p>
+
     </div>
   </section>
 
+
+  <!-- 01 -->
   <section class="section-border">
     <div class="container">
 
-      <div class="mini-label">01 · Observer</div>
+      <div class="mini-label">
+        01 · Observer
+      </div>
 
-      <h2>Poser les règles avant de construire l’outil</h2>
+      <h2>
+        Poser les règles avant de construire l’outil
+      </h2>
 
       <p class="intro-copy">
         Le point de départ n’était pas Excel, mais le fonctionnement de l’équipe.
         J’ai d’abord défini quelques règles simples pour structurer la circulation
-        de l’information et éviter que les blocages ou solutions restent dans des échanges isolés.
+        de l’information et éviter que les blocages ou solutions restent dans
+        des échanges isolés.
       </p>
 
       <div class="rules">
 
         <div class="card">
           <h3>Une source commune</h3>
-          <p>L’équipe renseigne les informations utiles au même endroit.</p>
+          <p>
+            L’équipe renseigne les informations utiles au même endroit.
+          </p>
         </div>
 
         <div class="card">
           <h3>Un blocage = une action</h3>
-          <p>Identifier immédiatement le problème et qui doit intervenir.</p>
+          <p>
+            Le problème doit être identifié et orienté vers la bonne personne.
+          </p>
         </div>
 
         <div class="card">
           <h3>Une résolution = du RETEX</h3>
-          <p>Ce qui a été appris doit pouvoir servir lors d’un problème similaire.</p>
+          <p>
+            Une solution utile doit pouvoir être retrouvée et réutilisée.
+          </p>
         </div>
 
       </div>
     </div>
   </section>
 
+
+  <!-- 02 -->
   <section class="section-border">
     <div class="container">
 
-      <div class="mini-label">02 · Suivre</div>
+      <div class="mini-label">
+        02 · Suivre
+      </div>
 
-      <h2>Un workflow commun pour chaque tâche</h2>
+      <h2>
+        Un workflow commun pour chaque tâche
+      </h2>
 
       <p>
         Lorsqu’une tâche est créée, Apps Script génère automatiquement un identifiant.
@@ -504,46 +511,66 @@
       </p>
 
       <div class="flow">
-        <div class="flow-step">À faire</div>
+
+        <div class="flow-step">
+          À faire
+        </div>
+
         <div class="arrow">→</div>
-        <div class="flow-step">En cours</div>
+
+        <div class="flow-step">
+          En cours
+        </div>
+
         <div class="arrow">→</div>
-        <div class="flow-step active">Bloqué</div>
+
+        <div class="flow-step active">
+          Bloqué
+        </div>
+
         <div class="arrow">→</div>
-        <div class="flow-step">Terminé</div>
+
+        <div class="flow-step">
+          Terminé
+        </div>
+
       </div>
 
       <a
         class="visual zoom-image"
         href="ChatGPT Image Oct 7, 2026, 09_47_50 PM.png"
         target="_blank"
-        title="Ouvrir l'image en grand"
       >
         <img
           src="ChatGPT Image Oct 7, 2026, 09_47_50 PM.png"
-          alt="OpsBoard suivi des tâches avec identifiant automatique"
+          alt="Suivi des tâches dans OpsBoard"
         />
       </a>
 
       <div class="caption">
-        Cliquer sur l’image pour l’ouvrir en taille réelle.
+        Exemple anonymisé — cliquer sur l’image pour l’ouvrir en taille réelle.
       </div>
 
     </div>
   </section>
 
+
+  <!-- 03 -->
   <section class="section-border">
     <div class="container">
 
-      <div class="mini-label">03 · Diagnostiquer</div>
+      <div class="mini-label">
+        03 · Diagnostiquer
+      </div>
 
-      <h2>Le statut « Bloqué » déclenche le raisonnement : quoi, qui, comment</h2>
+      <h2>
+        Quand une tâche se bloque
+      </h2>
 
       <p>
-        Lorsqu’une tâche passe de <strong>En cours</strong> à <strong>Bloqué</strong>,
-        le système structure l’analyse autour de trois questions simples :
-        identifier <strong>ce qui bloque</strong>, <strong>qui doit intervenir</strong>
-        et <strong>comment le problème a finalement été résolu</strong>.
+        Le passage de <strong>En cours</strong> à <strong>Bloqué</strong>
+        déclenche un raisonnement simple permettant de qualifier le problème
+        et de conserver sa résolution.
       </p>
 
       <div class="reasoning-grid">
@@ -551,34 +578,37 @@
         <div class="reasoning-card">
           <strong>Quoi ?</strong>
           <p>
-            Identifier la nature du blocage et comprendre le problème rencontré.
+            Quelle est la nature du blocage ?
           </p>
         </div>
 
         <div class="reasoning-card">
           <strong>Qui ?</strong>
           <p>
-            Identifier la personne, l’équipe ou le service capable de débloquer la situation.
+            Qui doit intervenir pour débloquer la situation ?
           </p>
         </div>
 
         <div class="reasoning-card">
           <strong>Comment ?</strong>
           <p>
-            Documenter la manière dont le problème a été résolu afin de pouvoir réutiliser cette connaissance.
+            Comment le problème a-t-il été résolu ?
           </p>
         </div>
 
       </div>
 
-      <div class="split">
+
+      <div class="stack">
 
         <div>
+
           <div class="card">
-            <h3>1 — Diagnostiquer et documenter</h3>
+            <h3>Diagnostic du blocage</h3>
+
             <p>
-              Le pop-up structure le traitement du problème autour du
-              <strong>quoi</strong>, du <strong>qui</strong> et du <strong>comment</strong>.
+              Le formulaire centralise les informations nécessaires
+              au traitement et au suivi du problème.
             </p>
           </div>
 
@@ -586,27 +616,28 @@
             class="visual zoom-image"
             href="opsboard-popup.png"
             target="_blank"
-            title="Ouvrir l'image en grand"
           >
             <img
               src="opsboard-popup.png"
-              alt="Pop-up OpsBoard avec logique quoi qui comment"
+              alt="Pop-up de diagnostic OpsBoard"
             />
           </a>
 
           <div class="caption">
             Exemple anonymisé — cliquer sur l’image pour l’ouvrir en taille réelle.
           </div>
+
         </div>
 
+
         <div>
+
           <div class="card">
-            <h3>2 — Alerter automatiquement l’équipe</h3>
+            <h3>Alerte automatique</h3>
+
             <p>
-              Le webhook Slack transmet directement
-              <strong>l’ID de la tâche</strong>,
-              <strong>la nature du blocage</strong> et
-              <strong>la personne ou équipe devant intervenir</strong>.
+              Le webhook Slack transmet l’ID de la tâche,
+              la nature du blocage et la personne ou équipe devant intervenir.
             </p>
           </div>
 
@@ -614,17 +645,17 @@
             class="visual zoom-image"
             href="opsboard-slack.png"
             target="_blank"
-            title="Ouvrir l'image en grand"
           >
             <img
               src="opsboard-slack.png"
-              alt="Alerte automatique de blocage envoyée dans Slack"
+              alt="Alerte Slack automatique OpsBoard"
             />
           </a>
 
           <div class="caption">
             Cliquer sur l’image pour l’ouvrir en taille réelle.
           </div>
+
         </div>
 
       </div>
@@ -632,108 +663,146 @@
     </div>
   </section>
 
+
+  <!-- 04 -->
   <section class="section-border">
     <div class="container">
 
-      <div class="mini-label">04 · Apprendre</div>
+      <div class="mini-label">
+        04 · Capitaliser
+      </div>
 
-      <h2>Résoudre le problème… puis conserver l’apprentissage</h2>
+      <h2>
+        Transformer la résolution en RETEX
+      </h2>
 
       <p>
-        Une fois la situation résolue, le système complète le Journal Technique
-        afin de conserver la logique de résolution et de transformer l’expérience terrain
-        en connaissance réutilisable.
+        Une fois le problème résolu, les informations utiles sont intégrées
+        au Journal Technique afin de conserver une trace exploitable
+        pour les situations futures.
       </p>
+
 
       <div class="resolution-box">
 
         <div class="resolution-header">
+
           <div>
-            <div class="mini-label">Capitalisation</div>
-            <h3>Résolution du blocage</h3>
+            <div class="mini-label">
+              Informations de résolution
+            </div>
+
+            <h3>
+              Enrichir le Journal Technique
+            </h3>
           </div>
 
-          <div class="resolution-id">Exemple : P-001</div>
+          <div class="resolution-id">
+            Exemple : P-001
+          </div>
+
         </div>
+
 
         <div class="questions">
 
           <div class="question">
-            <div class="question-number">1/5</div>
-            <div class="question-text">Symptômes observés</div>
+            <div class="question-number">1</div>
+            <div class="question-text">
+              Symptômes observés
+            </div>
           </div>
 
           <div class="question">
-            <div class="question-number">2/5</div>
-            <div class="question-text">Cause identifiée</div>
+            <div class="question-number">2</div>
+            <div class="question-text">
+              Cause identifiée
+            </div>
           </div>
 
           <div class="question">
-            <div class="question-number">3/5</div>
-            <div class="question-text">Solution appliquée</div>
+            <div class="question-number">3</div>
+            <div class="question-text">
+              Solution appliquée
+            </div>
           </div>
 
           <div class="question">
-            <div class="question-number">4/5</div>
-            <div class="question-text">Enseignement clé pour les futurs membres</div>
+            <div class="question-number">4</div>
+            <div class="question-text">
+              Enseignement clé pour les futurs membres
+            </div>
           </div>
 
           <div class="question">
-            <div class="question-number">5/5</div>
-            <div class="question-text">Temps passé pour résoudre</div>
+            <div class="question-number">5</div>
+            <div class="question-text">
+              Temps passé pour résoudre
+            </div>
           </div>
 
         </div>
+
 
         <div class="resolution-note">
-          Ces éléments alimentent le Journal Technique et permettent de retrouver
-          une solution déjà testée lorsqu’un problème similaire réapparaît.
+          Le Journal Technique devient ainsi une mémoire consultable
+          des problèmes rencontrés et des solutions appliquées.
         </div>
 
       </div>
 
+
       <div class="flow">
-        <div class="flow-step">Blocage</div>
+
+        <div class="flow-step">
+          Blocage
+        </div>
+
         <div class="arrow">→</div>
-        <div class="flow-step">Quoi ?</div>
+
+        <div class="flow-step">
+          Résolution
+        </div>
+
         <div class="arrow">→</div>
-        <div class="flow-step">Qui ?</div>
-        <div class="arrow">→</div>
-        <div class="flow-step">Comment ?</div>
-        <div class="arrow">→</div>
-        <div class="flow-step active">RETEX</div>
+
+        <div class="flow-step active">
+          RETEX
+        </div>
+
       </div>
+
 
       <a
         class="visual zoom-image"
         href="ChatGPT Image Oct 7, 2026, 09_48_09 PM.png"
         target="_blank"
-        title="Ouvrir l'image en grand"
       >
         <img
           src="ChatGPT Image Oct 7, 2026, 09_48_09 PM.png"
-          alt="Journal Technique et RETEX OpsBoard"
+          alt="Journal Technique RETEX OpsBoard"
         />
       </a>
 
       <div class="caption">
-        Cliquer sur l’image pour l’ouvrir en taille réelle.
-      </div>
-
-      <div class="quote">
-        Un blocage ne doit pas seulement être signalé :
-        il faut comprendre quoi bloque, qui doit agir et comment la solution peut être réutilisée.
+        Journal Technique anonymisé — cliquer sur l’image pour l’ouvrir en taille réelle.
       </div>
 
     </div>
   </section>
 
+
+  <!-- 05 -->
   <section class="section-border">
     <div class="container">
 
-      <div class="mini-label">05 · Piloter</div>
+      <div class="mini-label">
+        05 · Piloter
+      </div>
 
-      <h2>Une lecture synthétique de l’activité</h2>
+      <h2>
+        Une lecture synthétique de l’activité
+      </h2>
 
       <p>
         Le Dashboard consolide automatiquement les informations issues
@@ -745,78 +814,133 @@
         class="visual zoom-image"
         href="ChatGPT Image Oct 7, 2026, 09_48_00 PM.png"
         target="_blank"
-        title="Ouvrir l'image en grand"
       >
         <img
           src="ChatGPT Image Oct 7, 2026, 09_48_00 PM.png"
-          alt="Dashboard opérationnel OpsBoard"
+          alt="Dashboard OpsBoard"
         />
       </a>
 
       <div class="caption">
-        Cliquer sur l’image pour l’ouvrir en taille réelle.
+        Vue synthétique anonymisée — cliquer sur l’image pour l’ouvrir en taille réelle.
       </div>
 
     </div>
   </section>
 
+
+  <!-- TECH -->
   <section class="section-border">
     <div class="container">
 
-      <div class="mini-label">Architecture technique</div>
+      <div class="mini-label">
+        Architecture technique
+      </div>
 
-      <h2>Sous le capot</h2>
+      <h2>
+        Sous le capot
+      </h2>
+
 
       <div class="tech-box">
 
         <div class="tech-line">
-          <div class="tech-name">Apps Script</div>
-          <div class="tech-desc">
-            Génération automatique des ID, gestion des changements de statut,
-            déclenchement des pop-ups, alimentation du RETEX et logique de protection.
+
+          <div class="tech-name">
+            Apps Script
           </div>
+
+          <div class="tech-desc">
+            Génération automatique des ID, logique des statuts,
+            déclenchement des formulaires, alimentation du RETEX
+            et protection des feuilles sensibles.
+          </div>
+
         </div>
 
-        <div class="tech-line">
-          <div class="tech-name">Webhook Slack</div>
-          <div class="tech-desc">
-            Transmission automatique des blocages et résolutions
-            vers le canal d’équipe concerné.
-          </div>
-        </div>
 
         <div class="tech-line">
-          <div class="tech-name">Google Sheets</div>
+
+          <div class="tech-name">
+            Webhook Slack
+          </div>
+
           <div class="tech-desc">
-            Interface opérationnelle simple pour l’équipe, Dashboard consolidé
+            Transmission automatique des blocages vers le canal d’équipe.
+          </div>
+
+        </div>
+
+
+        <div class="tech-line">
+
+          <div class="tech-name">
+            Google Sheets
+          </div>
+
+          <div class="tech-desc">
+            Interface opérationnelle, Dashboard consolidé
             et Journal Technique centralisé.
           </div>
+
         </div>
 
+
         <div class="tech-line">
-          <div class="tech-name">Sécurisation</div>
-          <div class="tech-desc">
-            Dashboard et Journal Technique protégés en lecture seule ;
-            les équipes modifient uniquement les zones opérationnelles prévues.
+
+          <div class="tech-name">
+            Sécurisation
           </div>
+
+          <div class="tech-desc">
+            Dashboard et Journal Technique protégés ;
+            les équipes interviennent uniquement dans les zones prévues.
+          </div>
+
         </div>
 
+
         <div class="tech-line">
-          <div class="tech-name">IA</div>
+
+          <div class="tech-name">
+            IA
+          </div>
+
           <div class="tech-desc">
             Utilisée pour réfléchir à l’architecture du workflow,
-            structurer la documentation et accélérer la génération
-            et l’adaptation de scripts au besoin terrain.
+            structurer la documentation et accélérer
+            la génération et l’adaptation des scripts.
           </div>
+
         </div>
 
+
         <div class="tags">
-          <span class="tag">Google Sheets</span>
-          <span class="tag">Google Apps Script</span>
-          <span class="tag">Slack</span>
-          <span class="tag">Webhooks</span>
-          <span class="tag">Automatisation</span>
-          <span class="tag">IA</span>
+
+          <span class="tag">
+            Google Sheets
+          </span>
+
+          <span class="tag">
+            Apps Script
+          </span>
+
+          <span class="tag">
+            Slack
+          </span>
+
+          <span class="tag">
+            Webhooks
+          </span>
+
+          <span class="tag">
+            Automatisation
+          </span>
+
+          <span class="tag">
+            IA
+          </span>
+
         </div>
 
       </div>
@@ -824,37 +948,61 @@
     </div>
   </section>
 
+
+  <!-- RESULT -->
   <section class="section-border">
     <div class="container">
 
-      <div class="mini-label">Résultat</div>
+      <div class="mini-label">
+        Résultat
+      </div>
 
-      <h2>Voir. Agir. Capitaliser.</h2>
+      <h2>
+        Voir. Agir. Capitaliser.
+      </h2>
+
 
       <div class="impact-grid">
 
         <div class="impact-card">
-          <h3>Voir</h3>
+
+          <h3>
+            Voir
+          </h3>
+
           <p>
-            Comprendre rapidement l’état de l’équipe,
-            les priorités et les blocages.
+            Une vue claire des tâches,
+            des priorités et des blocages.
           </p>
+
         </div>
 
-        <div class="impact-card">
-          <h3>Agir</h3>
-          <p>
-            Faire arriver l’information utile à la personne
-            qui doit intervenir.
-          </p>
-        </div>
 
         <div class="impact-card">
-          <h3>Capitaliser</h3>
+
+          <h3>
+            Agir
+          </h3>
+
           <p>
-            Transformer les problèmes résolus
-            en connaissances réutilisables.
+            L’information utile arrive
+            à la personne qui doit intervenir.
           </p>
+
+        </div>
+
+
+        <div class="impact-card">
+
+          <h3>
+            Capitaliser
+          </h3>
+
+          <p>
+            Les résolutions deviennent
+            des connaissances réutilisables.
+          </p>
+
         </div>
 
       </div>
@@ -864,13 +1012,19 @@
 
 </main>
 
+
 <footer>
+
   <div class="container">
+
     Younes Rizk · France ·
+
     <a href="mailto:younesrizk2000@gmail.com">
       younesrizk2000@gmail.com
     </a>
+
   </div>
+
 </footer>
 
 </body>
