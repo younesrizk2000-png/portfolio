@@ -166,19 +166,33 @@
     }
 
     .visual {
-      margin-top: 30px;
+      margin-top: 28px;
       background: #ffffff;
       border: 1px solid #e2e5e3;
       border-radius: 20px;
-      padding: 12px;
+      padding: 14px;
       overflow: hidden;
     }
 
     .visual img {
       width: 100%;
       height: auto;
-      border-radius: 13px;
       display: block;
+      border-radius: 13px;
+    }
+
+    .zoom-image {
+      display: block;
+      cursor: zoom-in;
+      text-decoration: none;
+    }
+
+    .zoom-image img {
+      transition: transform 0.2s ease;
+    }
+
+    .zoom-image:hover img {
+      transform: scale(1.01);
     }
 
     .caption {
@@ -190,10 +204,9 @@
 
     .split {
       display: grid;
-      grid-template-columns: 1fr 1fr;
-      gap: 26px;
+      grid-template-columns: 1fr;
+      gap: 42px;
       margin-top: 30px;
-      align-items: start;
     }
 
     .mini-label {
@@ -296,11 +309,6 @@
       border-radius: 20px;
     }
 
-    .tech-box h3 {
-      font-size: 21px;
-      margin-bottom: 10px;
-    }
-
     .tech-box p {
       color: #cbd5e1;
       max-width: 850px;
@@ -374,7 +382,6 @@
 
     @media (max-width: 800px) {
       .rules,
-      .split,
       .impact-grid {
         grid-template-columns: 1fr;
       }
@@ -409,7 +416,6 @@
 
 <main>
 
-  <!-- HERO -->
   <section class="hero">
     <div class="container">
       <div class="eyebrow">Projet 01 · Système opérationnel</div>
@@ -425,7 +431,6 @@
   </section>
 
 
-  <!-- 1 RULES -->
   <section class="section-border">
     <div class="container">
 
@@ -443,23 +448,17 @@
 
         <div class="card">
           <h3>Une source commune</h3>
-          <p>
-            L’équipe renseigne les informations utiles au même endroit.
-          </p>
+          <p>L’équipe renseigne les informations utiles au même endroit.</p>
         </div>
 
         <div class="card">
           <h3>Un blocage = une action</h3>
-          <p>
-            Identifier immédiatement le problème et qui doit intervenir.
-          </p>
+          <p>Identifier immédiatement le problème et qui doit intervenir.</p>
         </div>
 
         <div class="card">
           <h3>Une résolution = du RETEX</h3>
-          <p>
-            Ce qui a été appris doit pouvoir servir lors d’un problème similaire.
-          </p>
+          <p>Ce qui a été appris doit pouvoir servir lors d’un problème similaire.</p>
         </div>
 
       </div>
@@ -467,7 +466,6 @@
   </section>
 
 
-  <!-- 2 TASK -->
   <section class="section-border">
     <div class="container">
 
@@ -491,21 +489,26 @@
         <div class="flow-step">Terminé</div>
       </div>
 
-      <div class="visual">
+      <a
+        class="visual zoom-image"
+        href="ChatGPT Image Oct 7, 2026, 09_47_50 PM.png"
+        target="_blank"
+        title="Ouvrir l'image en grand"
+      >
         <img
           src="ChatGPT Image Oct 7, 2026, 09_47_50 PM.png"
           alt="OpsBoard suivi des tâches avec identifiant automatique"
         />
-        <div class="caption">
-          Exemple anonymisé — données illustratives, fonctionnement fidèle à l’outil.
-        </div>
+      </a>
+
+      <div class="caption">
+        Cliquer sur l’image pour l’ouvrir en taille réelle.
       </div>
 
     </div>
   </section>
 
 
-  <!-- 3 BLOCKAGE -->
   <section class="section-border">
     <div class="container">
 
@@ -514,44 +517,66 @@
       <h2>Le statut « Bloqué » déclenche le workflow</h2>
 
       <p>
-        Le passage d’une tâche de <strong>En cours</strong> à <strong>Bloqué</strong>
-        déclenche automatiquement le diagnostic et la remontée de l’information.
+        Lorsqu’une tâche passe de <strong>En cours</strong> à
+        <strong>Bloqué</strong>, le système déclenche automatiquement
+        le diagnostic puis la remontée de l’information.
       </p>
 
       <div class="split">
 
         <div>
-          <div class="visual">
-            <img
-              src="ChatGPT Image Oct 7, 2026, 09_47_42 PM.png"
-              alt="Pop-up de diagnostic d’un blocage OpsBoard"
-            />
+          <div class="card">
+            <h3>1 — Diagnostiquer le blocage</h3>
+            <p>
+              Une pop-up demande deux informations :
+              <strong>la nature du blocage</strong> et
+              <strong>qui doit débloquer</strong>.
+            </p>
           </div>
 
-          <div class="card" style="margin-top:16px;">
-            <h3>1 — Diagnostiquer</h3>
-            <p>
-              Le système demande la <strong>nature du blocage</strong>
-              et <strong>qui doit débloquer</strong>.
-            </p>
+          <a
+            class="visual zoom-image"
+            href="ChatGPT Image Oct 7, 2026, 09_47_42 PM.png"
+            target="_blank"
+            title="Ouvrir l'image en grand"
+          >
+            <img
+              src="ChatGPT Image Oct 7, 2026, 09_47_42 PM.png"
+              alt="Diagnostic automatique d'un blocage dans OpsBoard"
+            />
+          </a>
+
+          <div class="caption">
+            Cliquer sur l’image pour l’ouvrir en taille réelle.
           </div>
         </div>
 
 
         <div>
-          <div class="visual">
-            <img
-              src="opsboard-slack.png"
-              alt="Message Slack automatique lors d’un blocage OpsBoard"
-            />
+          <div class="card">
+            <h3>2 — Alerter automatiquement l’équipe</h3>
+            <p>
+              Le webhook Slack transmet directement
+              <strong>l’ID de la tâche</strong>,
+              <strong>la nature du blocage</strong> et
+              <strong>la personne ou équipe devant intervenir</strong>.
+            </p>
           </div>
 
-          <div class="card" style="margin-top:16px;">
-            <h3>2 — Alerter</h3>
-            <p>
-              Le webhook transmet automatiquement l’ID de la tâche,
-              le blocage et la personne ou équipe devant intervenir.
-            </p>
+          <a
+            class="visual zoom-image"
+            href="opsboard-slack.png"
+            target="_blank"
+            title="Ouvrir l'image en grand"
+          >
+            <img
+              src="opsboard-slack.png"
+              alt="Alerte automatique de blocage envoyée dans Slack"
+            />
+          </a>
+
+          <div class="caption">
+            Cliquer sur l’image pour l’ouvrir en taille réelle.
           </div>
         </div>
 
@@ -561,7 +586,6 @@
   </section>
 
 
-  <!-- 4 RESOLUTION -->
   <section class="section-border">
     <div class="container">
 
@@ -574,7 +598,6 @@
         Apps Script déclenche une seconde phase de diagnostic dédiée à la résolution.
       </p>
 
-
       <div class="resolution-box">
 
         <div class="resolution-header">
@@ -585,7 +608,6 @@
 
           <div class="resolution-id">Exemple : P-001</div>
         </div>
-
 
         <div class="questions">
 
@@ -616,14 +638,12 @@
 
         </div>
 
-
         <div class="resolution-note">
           Ces réponses complètent automatiquement l’entrée correspondante
           dans le Journal Technique.
         </div>
 
       </div>
-
 
       <div class="flow">
         <div class="flow-step">Blocage</div>
@@ -635,17 +655,21 @@
         <div class="flow-step active">RETEX</div>
       </div>
 
-
-      <div class="visual">
+      <a
+        class="visual zoom-image"
+        href="ChatGPT Image Oct 7, 2026, 09_48_09 PM.png"
+        target="_blank"
+        title="Ouvrir l'image en grand"
+      >
         <img
           src="ChatGPT Image Oct 7, 2026, 09_48_09 PM.png"
           alt="Journal Technique et RETEX OpsBoard"
         />
-        <div class="caption">
-          Le Journal Technique devient la mémoire des problèmes rencontrés et résolus.
-        </div>
-      </div>
+      </a>
 
+      <div class="caption">
+        Cliquer sur l’image pour l’ouvrir en taille réelle.
+      </div>
 
       <div class="quote">
         Le système ne conserve pas seulement qu’un problème a été résolu :
@@ -656,7 +680,6 @@
   </section>
 
 
-  <!-- 5 DASHBOARD -->
   <section class="section-border">
     <div class="container">
 
@@ -670,21 +693,26 @@
         les tâches actives, les priorités et les blocages.
       </p>
 
-      <div class="visual">
+      <a
+        class="visual zoom-image"
+        href="ChatGPT Image Oct 7, 2026, 09_48_00 PM.png"
+        target="_blank"
+        title="Ouvrir l'image en grand"
+      >
         <img
           src="ChatGPT Image Oct 7, 2026, 09_48_00 PM.png"
           alt="Dashboard opérationnel OpsBoard"
         />
-        <div class="caption">
-          Vue synthétique anonymisée du pilotage opérationnel.
-        </div>
+      </a>
+
+      <div class="caption">
+        Cliquer sur l’image pour l’ouvrir en taille réelle.
       </div>
 
     </div>
   </section>
 
 
-  <!-- TECH -->
   <section class="section-border">
     <div class="container">
 
@@ -750,7 +778,6 @@
   </section>
 
 
-  <!-- RESULT -->
   <section class="section-border">
     <div class="container">
 
@@ -790,7 +817,6 @@
   </section>
 
 </main>
-
 
 <footer>
   <div class="container">
