@@ -12,6 +12,10 @@
       padding: 0;
     }
 
+    html {
+      scroll-behavior: smooth;
+    }
+
     body {
       font-family: Arial, Helvetica, sans-serif;
       background: #f7f7f5;
@@ -20,39 +24,45 @@
     }
 
     .container {
-      width: min(1100px, 92%);
+      width: min(1120px, 92%);
       margin: 0 auto;
     }
 
     header {
-      padding: 24px 0;
+      padding: 22px 0;
       border-bottom: 1px solid #e5e7eb;
-      background: rgba(247,247,245,0.95);
+      background: rgba(247, 247, 245, 0.96);
       position: sticky;
       top: 0;
-      z-index: 10;
+      z-index: 100;
+      backdrop-filter: blur(8px);
     }
 
     nav {
       display: flex;
       justify-content: space-between;
       align-items: center;
+      gap: 20px;
     }
 
     .brand {
       font-weight: 700;
       font-size: 18px;
+      color: #111827;
+      text-decoration: none;
     }
 
     .nav-links {
       display: flex;
-      gap: 24px;
-      font-size: 14px;
+      align-items: center;
+      gap: 20px;
+      flex-wrap: wrap;
     }
 
     .nav-links a {
       text-decoration: none;
-      color: #475569;
+      color: #5f6873;
+      font-size: 14px;
     }
 
     .nav-links a:hover {
@@ -60,147 +70,309 @@
     }
 
     .hero {
-      padding: 96px 0 72px;
+      padding: 78px 0 70px;
+    }
+
+    .hero-grid {
+      display: grid;
+      grid-template-columns: 1.35fr 0.85fr;
+      gap: 56px;
+      align-items: center;
     }
 
     .eyebrow {
       text-transform: uppercase;
       letter-spacing: 0.12em;
       font-size: 12px;
-      color: #6b8f71;
-      margin-bottom: 18px;
+      color: #5f8267;
       font-weight: 700;
+      margin-bottom: 18px;
     }
 
     h1 {
       font-size: clamp(42px, 6vw, 72px);
-      line-height: 1.05;
-      max-width: 900px;
-      margin-bottom: 24px;
-      letter-spacing: -0.03em;
+      line-height: 1.02;
+      letter-spacing: -0.045em;
+      margin-bottom: 20px;
     }
 
-    .hero p {
-      max-width: 760px;
+    .lead {
       font-size: 20px;
-      color: #59636e;
-      margin-bottom: 18px;
+      color: #5f6873;
+      max-width: 720px;
+      margin-bottom: 24px;
     }
 
-    .signature {
-      font-weight: 600;
-      color: #4f7a58;
+    .hero-copy {
+      font-size: 16px;
+      color: #5f6873;
+      max-width: 720px;
+      margin-bottom: 28px;
     }
 
-    .tags {
+    .hero-tags {
       display: flex;
       flex-wrap: wrap;
       gap: 10px;
-      margin-top: 28px;
-    }
-
-    .tag {
-      border: 1px solid #dce3df;
-      padding: 8px 12px;
-      border-radius: 999px;
-      font-size: 13px;
-      color: #4d5a52;
-      background: white;
-    }
-
-    section {
-      padding: 70px 0;
-    }
-
-    .section-title {
-      font-size: 32px;
-      margin-bottom: 10px;
-      letter-spacing: -0.02em;
-    }
-
-    .section-subtitle {
-      color: #6b7280;
       margin-bottom: 30px;
     }
 
-    .projects {
+    .tag {
+      padding: 8px 12px;
+      border-radius: 999px;
+      background: #eef3ef;
+      color: #35503b;
+      font-size: 13px;
+      font-weight: 600;
+      border: 1px solid #d7e1d9;
+    }
+
+    .hero-actions {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 14px;
+    }
+
+    .button-primary,
+    .button-secondary {
+      display: inline-block;
+      text-decoration: none;
+      padding: 13px 18px;
+      border-radius: 999px;
+      font-size: 14px;
+      font-weight: 700;
+      transition: 0.2s ease;
+    }
+
+    .button-primary {
+      background: #111827;
+      color: #ffffff;
+      border: 1px solid #111827;
+    }
+
+    .button-primary:hover {
+      background: #1f2937;
+    }
+
+    .button-secondary {
+      background: #ffffff;
+      color: #111827;
+      border: 1px solid #d9dfdb;
+    }
+
+    .button-secondary:hover {
+      background: #f3f4f6;
+    }
+
+    .portrait-wrap {
+      display: flex;
+      justify-content: center;
+    }
+
+    .portrait-card {
+      background: #ffffff;
+      border: 1px solid #e2e5e3;
+      border-radius: 26px;
+      padding: 16px;
+      width: min(380px, 100%);
+      box-shadow: 0 10px 25px rgba(15, 23, 42, 0.04);
+    }
+
+    .portrait-card img {
+      width: 100%;
+      display: block;
+      border-radius: 18px;
+      height: auto;
+    }
+
+    .portrait-caption {
+      font-size: 13px;
+      color: #6b7280;
+      margin-top: 12px;
+      text-align: center;
+    }
+
+    section {
+      padding: 66px 0;
+    }
+
+    .section-border {
+      border-top: 1px solid #e7e8e5;
+    }
+
+    .section-label {
+      text-transform: uppercase;
+      letter-spacing: 0.1em;
+      font-size: 11px;
+      color: #718078;
+      font-weight: 700;
+      margin-bottom: 8px;
+    }
+
+    h2 {
+      font-size: clamp(28px, 4vw, 36px);
+      line-height: 1.2;
+      letter-spacing: -0.025em;
+      margin-bottom: 14px;
+    }
+
+    .section-intro {
+      color: #5f6873;
+      max-width: 760px;
+      margin-bottom: 32px;
+      font-size: 16px;
+    }
+
+    .projects-grid {
       display: grid;
-      grid-template-columns: repeat(2, minmax(0, 1fr));
-      gap: 24px;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 22px;
     }
 
     .project-card {
       background: #ffffff;
-      border: 1px solid #e5e7eb;
-      border-radius: 18px;
+      border: 1px solid #e2e5e3;
+      border-radius: 22px;
       padding: 28px;
-      min-height: 270px;
       display: flex;
       flex-direction: column;
-      justify-content: space-between;
-      transition: transform 0.2s ease, box-shadow 0.2s ease;
-    }
-
-    .project-card:hover {
-      transform: translateY(-4px);
-      box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+      gap: 16px;
     }
 
     .project-number {
       font-size: 12px;
-      color: #6b8f71;
-      margin-bottom: 14px;
       font-weight: 700;
+      color: #7a858f;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
     }
 
     .project-card h3 {
-      font-size: 24px;
-      margin-bottom: 10px;
+      font-size: 25px;
+      line-height: 1.2;
+      letter-spacing: -0.02em;
     }
 
     .project-card p {
-      color: #667085;
-      margin-bottom: 20px;
+      color: #5f6873;
+      font-size: 15px;
     }
 
-    .project-card a {
-      text-decoration: none;
-      color: #24352a;
+    .project-meta {
+      font-size: 13px;
+      color: #5f8267;
       font-weight: 600;
     }
 
-    .about {
-      max-width: 800px;
+    .project-link {
+      margin-top: auto;
+      display: inline-block;
+      width: fit-content;
+      text-decoration: none;
+      color: #111827;
+      font-weight: 700;
+      border-bottom: 1px solid #111827;
+      padding-bottom: 2px;
+    }
+
+    .project-link:hover {
+      opacity: 0.75;
+    }
+
+    .project-link.disabled {
+      color: #9ca3af;
+      border-bottom: 1px solid #d1d5db;
+      pointer-events: none;
+      cursor: default;
+    }
+
+    .about-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 24px;
+    }
+
+    .info-card {
+      background: #ffffff;
+      border: 1px solid #e2e5e3;
+      border-radius: 22px;
+      padding: 28px;
+    }
+
+    .info-card h3 {
+      font-size: 20px;
+      margin-bottom: 10px;
+    }
+
+    .info-card p {
+      color: #5f6873;
+      font-size: 15px;
+    }
+
+    .contact-box {
+      background: #eef3ef;
+      border-radius: 24px;
+      padding: 30px;
+    }
+
+    .contact-box h3 {
+      font-size: 24px;
+      margin-bottom: 12px;
+      color: #2f4735;
+    }
+
+    .contact-box p {
+      color: #56645a;
+      margin-bottom: 14px;
+    }
+
+    .contact-links {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+    }
+
+    .contact-links a {
+      color: #2f4735;
+      text-decoration: none;
+      font-weight: 600;
+      word-break: break-word;
+    }
+
+    .contact-links a:hover {
+      text-decoration: underline;
     }
 
     footer {
       border-top: 1px solid #e5e7eb;
-      padding: 32px 0 50px;
+      padding: 30px 0 44px;
       color: #6b7280;
       font-size: 14px;
     }
 
-    @media (max-width: 760px) {
-      .projects {
+    @media (max-width: 900px) {
+      .hero-grid,
+      .projects-grid,
+      .about-grid {
         grid-template-columns: 1fr;
       }
 
-      .nav-links {
-        display: none;
+      .hero {
+        padding-top: 58px;
       }
 
-      .hero {
-        padding-top: 64px;
+      .portrait-card {
+        max-width: 320px;
       }
     }
   </style>
 </head>
-
 <body>
+
   <header>
     <div class="container">
       <nav>
-        <div class="brand">Younes Rizk</div>
+        <a class="brand" href="index.html">Younes Rizk</a>
 
         <div class="nav-links">
           <a href="#projets">Projets</a>
@@ -212,133 +384,213 @@
   </header>
 
   <main>
+
     <section class="hero">
       <div class="container">
-        <div class="eyebrow">Analyse · Opérations · Technologie</div>
+        <div class="hero-grid">
 
-        <h1>
-          À l’intersection de l’analyse,
-          des opérations et de la technologie.
-        </h1>
+          <div>
+            <div class="eyebrow">Analyse · Opérations · Technologie</div>
 
-        <p>
-          J’analyse les problèmes, structure les processus et conçois des outils concrets
-          pour améliorer la prise de décision et l’exécution opérationnelle.
-        </p>
+            <h1>
+              À l’intersection de l’analyse,
+              des opérations et de la technologie.
+            </h1>
 
-        <div class="signature">
-          Comprendre. Structurer. Exécuter.
-        </div>
+            <p class="lead">
+              Je comprends les enjeux terrain, structure les processus
+              et conçois des outils concrets pour rendre l’exécution plus claire,
+              plus fluide et plus reproductible.
+            </p>
 
-        <div class="tags">
-          <span class="tag">Analyse</span>
-          <span class="tag">Opérations</span>
-          <span class="tag">Automatisation</span>
-          <span class="tag">IA</span>
-          <span class="tag">Process</span>
-          <span class="tag">Data</span>
+            <p class="hero-copy">
+              Mon approche consiste à partir d’un problème réel, comprendre son contexte,
+              organiser l’information utile, puis transformer cette compréhension
+              en système, en workflow ou en outil actionnable.
+            </p>
+
+            <div class="hero-tags">
+              <span class="tag">Pilotage opérationnel</span>
+              <span class="tag">Structuration de process</span>
+              <span class="tag">Automatisation</span>
+              <span class="tag">Google Sheets</span>
+              <span class="tag">Apps Script</span>
+              <span class="tag">Webhooks</span>
+              <span class="tag">IA</span>
+            </div>
+
+            <div class="hero-actions">
+              <a class="button-primary" href="#projets">Voir mes projets</a>
+              <a class="button-secondary" href="mailto:younesrizk2000@gmail.com">Me contacter</a>
+            </div>
+          </div>
+
+          <div class="portrait-wrap">
+            <div class="portrait-card">
+              <img src="image younes.jpg" alt="Portrait de Younes Rizk" />
+              <div class="portrait-caption">
+                Younes Rizk · France
+              </div>
+            </div>
+          </div>
+
         </div>
       </div>
     </section>
 
-    <section id="projets">
+    <section id="projets" class="section-border">
       <div class="container">
-        <h2 class="section-title">Projets sélectionnés</h2>
-        <p class="section-subtitle">
-          Des outils et systèmes conçus pour rendre l’exécution plus claire, plus fiable et plus reproductible.
+        <div class="section-label">Projets</div>
+        <h2>Études de cas sélectionnées</h2>
+        <p class="section-intro">
+          Une sélection de projets conçus pour clarifier l’exécution, fluidifier la coordination
+          et transformer des besoins opérationnels en outils concrets.
         </p>
 
-        <div class="projects">
+        <div class="projects-grid">
+
           <article class="project-card">
-            <div>
-              <div class="project-number">01</div>
-              <h3>OpsBoard</h3>
-              <p>
-                Centraliser tâches, blocages et RETEX pour améliorer le pilotage
-                quotidien d’une équipe technique.
-              </p>
+            <div class="project-number">Projet 01</div>
+            <h3>OpsBoard</h3>
+            <p>
+              Un système de pilotage conçu à partir de l’observation terrain pour
+              suivre les tâches, structurer les blocages, déclencher des alertes
+              et alimenter un RETEX réutilisable.
+            </p>
+            <div class="project-meta">
+              Google Sheets · Apps Script · Slack · Webhooks · Automatisation
             </div>
-            <a href="opsboard.html">Voir le projet →</a>
+            <a class="project-link" href="opsboard.html">Voir le projet</a>
           </article>
 
           <article class="project-card">
-            <div>
-              <div class="project-number">02</div>
-              <h3>Process Franchise / Événementiel</h3>
-              <p>
-                Transformer des pratiques opérationnelles en parcours structurés,
-                reproductibles et faciles à utiliser.
-              </p>
+            <div class="project-number">Projet 02</div>
+            <h3>Process Franchise / Événementiel</h3>
+            <p>
+              Structuration de parcours opérationnels complets pour ne rien oublier,
+              clarifier les responsabilités et rendre l’exécution reproductible
+              sur de nouveaux projets.
+            </p>
+            <div class="project-meta">
+              Process design · Documentation · Coordination · Standardisation
             </div>
-            <a href="#">Voir le projet →</a>
+            <span class="project-link disabled">Page à venir</span>
           </article>
 
           <article class="project-card">
-            <div>
-              <div class="project-number">03</div>
-              <h3>Pricing & génération de devis</h3>
-              <p>
-                Passer d’un Excel figé à un outil dynamique de tarification
-                capable de générer un devis prêt à envoyer.
-              </p>
+            <div class="project-number">Projet 03</div>
+            <h3>Pricing & génération de devis</h3>
+            <p>
+              Passage d’un fichier figé à un outil dynamique permettant de centraliser
+              les coûts, calculer les marges et générer rapidement un devis prêt à envoyer.
+            </p>
+            <div class="project-meta">
+              Pricing · Simulation de marge · Devis · Google Sheets
             </div>
-            <a href="#">Voir le projet →</a>
+            <span class="project-link disabled">Page à venir</span>
           </article>
 
           <article class="project-card">
-            <div>
-              <div class="project-number">04</div>
-              <h3>Honda — Documentation logistique</h3>
-              <p>
-                Structurer l’information logistique et capitaliser le RETEX
-                pour rendre un événement plus reproductible.
-              </p>
+            <div class="project-number">Projet 04</div>
+            <h3>Honda — Documentation logistique</h3>
+            <p>
+              Formalisation d’une documentation opérationnelle pour rendre un événement
+              plus lisible, capitaliser les apprentissages et mieux relier préparation
+              théorique et réalité terrain.
+            </p>
+            <div class="project-meta">
+              Logistique · Documentation · Coordination · RETEX
             </div>
-            <a href="#">Voir le projet →</a>
+            <span class="project-link disabled">Page à venir</span>
           </article>
+
         </div>
       </div>
     </section>
 
-    <section id="apropos">
-      <div class="container about">
-        <h2 class="section-title">À propos</h2>
-
-        <p>
-          Je travaille à l’intersection de l’analyse, des opérations et de la technologie.
-          Mon approche commence toujours par la compréhension : comprendre un environnement,
-          un problème, ses contraintes et les personnes impliquées.
-        </p>
-
-        <br />
-
-        <p>
-          J’analyse ensuite les données et les flux, je coordonne l’exécution et, une fois
-          le terrain maîtrisé, je cherche à simplifier, structurer ou améliorer ce qui peut l’être.
-        </p>
-      </div>
-    </section>
-
-    <section id="contact">
+    <section id="apropos" class="section-border">
       <div class="container">
-        <h2 class="section-title">Contact</h2>
-
-        <p>
-          France ·
-          <a href="mailto:younesrizk2000@gmail.com">younesrizk2000@gmail.com</a>
-          ·
-          <a href="https://www.linkedin.com/in/younes-rizk-83779822b" target="_blank">
-            LinkedIn
-          </a>
+        <div class="section-label">À propos</div>
+        <h2>Ma manière de travailler</h2>
+        <p class="section-intro">
+          Je commence par comprendre. Ensuite, j’analyse, structure et traduis les besoins
+          entre les dimensions métier, opérationnelles et techniques.
         </p>
+
+        <div class="about-grid">
+
+          <div class="info-card">
+            <h3>Mon positionnement</h3>
+            <p>
+              Je suis à l’aise dans les rôles à la croisée de l’analyse,
+              de la coordination et de l’exécution : chef de projet,
+              chargé de mission, chargé d’études, consultant, business analyst
+              ou encore responsable études et développement.
+            </p>
+          </div>
+
+          <div class="info-card">
+            <h3>Ce que j’apporte</h3>
+            <p>
+              Une capacité à comprendre rapidement un sujet nouveau,
+              à décoder un environnement technique ou produit,
+              puis à le rendre exploitable à travers une logique claire,
+              un workflow ou un outil adapté au terrain.
+            </p>
+          </div>
+
+          <div class="info-card">
+            <h3>Mon usage de l’IA</h3>
+            <p>
+              J’utilise l’IA comme levier de réflexion et d’exécution :
+              architecture de workflow, structuration de données,
+              documentation, génération de scripts et automatisations.
+            </p>
+          </div>
+
+          <div class="info-card">
+            <h3>Ce qui m’intéresse</h3>
+            <p>
+              Les contextes où il faut clarifier, organiser, piloter,
+              résoudre des frictions opérationnelles et construire des systèmes
+              simples qui améliorent concrètement le travail quotidien.
+            </p>
+          </div>
+
+        </div>
       </div>
     </section>
+
+    <section id="contact" class="section-border">
+      <div class="container">
+        <div class="section-label">Contact</div>
+        <h2>Échangeons</h2>
+        <p class="section-intro">
+          Si vous souhaitez en savoir plus sur mon profil ou sur mes projets,
+          vous pouvez me contacter directement.
+        </p>
+
+        <div class="contact-box">
+          <h3>Younes Rizk</h3>
+          <p>France</p>
+
+          <div class="contact-links">
+            <a href="mailto:younesrizk2000@gmail.com">younesrizk2000@gmail.com</a>
+            <a href="https://www.linkedin.com/in/younes-rizk-83779822b" target="_blank">
+              www.linkedin.com/in/younes-rizk-83779822b
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
   </main>
 
   <footer>
     <div class="container">
-      Younes Rizk · Portfolio professionnel
+      Younes Rizk · France · Portfolio professionnel
     </div>
   </footer>
+
 </body>
 </html>
