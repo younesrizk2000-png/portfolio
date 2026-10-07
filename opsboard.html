@@ -218,6 +218,31 @@
       margin-bottom: 8px;
     }
 
+    .reasoning-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 16px;
+      margin-top: 24px;
+    }
+
+    .reasoning-card {
+      background: #eef3ef;
+      border-radius: 16px;
+      padding: 20px;
+    }
+
+    .reasoning-card strong {
+      display: block;
+      font-size: 20px;
+      color: #2f4735;
+      margin-bottom: 6px;
+    }
+
+    .reasoning-card p {
+      font-size: 14px;
+      color: #5b6a60;
+    }
+
     .resolution-box {
       background: #ffffff;
       border: 1px solid #e2e5e3;
@@ -382,7 +407,8 @@
 
     @media (max-width: 800px) {
       .rules,
-      .impact-grid {
+      .impact-grid,
+      .reasoning-grid {
         grid-template-columns: 1fr;
       }
 
@@ -430,7 +456,6 @@
     </div>
   </section>
 
-
   <section class="section-border">
     <div class="container">
 
@@ -464,7 +489,6 @@
       </div>
     </div>
   </section>
-
 
   <section class="section-border">
     <div class="container">
@@ -508,49 +532,72 @@
     </div>
   </section>
 
-
   <section class="section-border">
     <div class="container">
 
       <div class="mini-label">03 · Diagnostiquer</div>
 
-      <h2>Le statut « Bloqué » déclenche le workflow</h2>
+      <h2>Le statut « Bloqué » déclenche le raisonnement : quoi, qui, comment</h2>
 
       <p>
-        Lorsqu’une tâche passe de <strong>En cours</strong> à
-        <strong>Bloqué</strong>, le système déclenche automatiquement
-        le diagnostic puis la remontée de l’information.
+        Lorsqu’une tâche passe de <strong>En cours</strong> à <strong>Bloqué</strong>,
+        le système structure l’analyse autour de trois questions simples :
+        identifier <strong>ce qui bloque</strong>, <strong>qui doit intervenir</strong>
+        et <strong>comment le problème a finalement été résolu</strong>.
       </p>
+
+      <div class="reasoning-grid">
+
+        <div class="reasoning-card">
+          <strong>Quoi ?</strong>
+          <p>
+            Identifier la nature du blocage et comprendre le problème rencontré.
+          </p>
+        </div>
+
+        <div class="reasoning-card">
+          <strong>Qui ?</strong>
+          <p>
+            Identifier la personne, l’équipe ou le service capable de débloquer la situation.
+          </p>
+        </div>
+
+        <div class="reasoning-card">
+          <strong>Comment ?</strong>
+          <p>
+            Documenter la manière dont le problème a été résolu afin de pouvoir réutiliser cette connaissance.
+          </p>
+        </div>
+
+      </div>
 
       <div class="split">
 
         <div>
           <div class="card">
-            <h3>1 — Diagnostiquer le blocage</h3>
+            <h3>1 — Diagnostiquer et documenter</h3>
             <p>
-              Une pop-up demande deux informations :
-              <strong>la nature du blocage</strong> et
-              <strong>qui doit débloquer</strong>.
+              Le pop-up structure le traitement du problème autour du
+              <strong>quoi</strong>, du <strong>qui</strong> et du <strong>comment</strong>.
             </p>
           </div>
 
           <a
             class="visual zoom-image"
-            href="ChatGPT Image Oct 7, 2026, 09_47_42 PM.png"
+            href="opsboard-popup.png"
             target="_blank"
             title="Ouvrir l'image en grand"
           >
             <img
-              src="ChatGPT Image Oct 7, 2026, 09_47_42 PM.png"
-              alt="Diagnostic automatique d'un blocage dans OpsBoard"
+              src="opsboard-popup.png"
+              alt="Pop-up OpsBoard avec logique quoi qui comment"
             />
           </a>
 
           <div class="caption">
-            Cliquer sur l’image pour l’ouvrir en taille réelle.
+            Exemple anonymisé — cliquer sur l’image pour l’ouvrir en taille réelle.
           </div>
         </div>
-
 
         <div>
           <div class="card">
@@ -585,24 +632,24 @@
     </div>
   </section>
 
-
   <section class="section-border">
     <div class="container">
 
       <div class="mini-label">04 · Apprendre</div>
 
-      <h2>Résoudre le problème… puis conserver comment</h2>
+      <h2>Résoudre le problème… puis conserver l’apprentissage</h2>
 
       <p>
-        Lorsque la tâche passe de <strong>Bloqué</strong> à <strong>Terminé</strong>,
-        Apps Script déclenche une seconde phase de diagnostic dédiée à la résolution.
+        Une fois la situation résolue, le système complète le Journal Technique
+        afin de conserver la logique de résolution et de transformer l’expérience terrain
+        en connaissance réutilisable.
       </p>
 
       <div class="resolution-box">
 
         <div class="resolution-header">
           <div>
-            <div class="mini-label">Pop-up de résolution</div>
+            <div class="mini-label">Capitalisation</div>
             <h3>Résolution du blocage</h3>
           </div>
 
@@ -639,8 +686,8 @@
         </div>
 
         <div class="resolution-note">
-          Ces réponses complètent automatiquement l’entrée correspondante
-          dans le Journal Technique.
+          Ces éléments alimentent le Journal Technique et permettent de retrouver
+          une solution déjà testée lorsqu’un problème similaire réapparaît.
         </div>
 
       </div>
@@ -648,9 +695,11 @@
       <div class="flow">
         <div class="flow-step">Blocage</div>
         <div class="arrow">→</div>
-        <div class="flow-step">Diagnostic</div>
+        <div class="flow-step">Quoi ?</div>
         <div class="arrow">→</div>
-        <div class="flow-step">Résolution</div>
+        <div class="flow-step">Qui ?</div>
+        <div class="arrow">→</div>
+        <div class="flow-step">Comment ?</div>
         <div class="arrow">→</div>
         <div class="flow-step active">RETEX</div>
       </div>
@@ -672,13 +721,12 @@
       </div>
 
       <div class="quote">
-        Le système ne conserve pas seulement qu’un problème a été résolu :
-        il conserve comment il a été compris et comment il a été résolu.
+        Un blocage ne doit pas seulement être signalé :
+        il faut comprendre quoi bloque, qui doit agir et comment la solution peut être réutilisée.
       </div>
 
     </div>
   </section>
-
 
   <section class="section-border">
     <div class="container">
@@ -711,7 +759,6 @@
 
     </div>
   </section>
-
 
   <section class="section-border">
     <div class="container">
@@ -776,7 +823,6 @@
 
     </div>
   </section>
-
 
   <section class="section-border">
     <div class="container">
