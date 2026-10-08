@@ -29,8 +29,6 @@
       margin: 0 auto;
     }
 
-    /* HEADER */
-
     header {
       padding: 18px 0;
       border-bottom: 1px solid #e5e7eb;
@@ -65,8 +63,6 @@
       color: #111827;
     }
 
-    /* HERO */
-
     .hero {
       padding: 58px 0 52px;
     }
@@ -99,8 +95,6 @@
       max-width: 800px;
     }
 
-    /* SECTIONS */
-
     section {
       padding: 54px 0;
     }
@@ -132,8 +126,6 @@
       margin-top: 9px;
     }
 
-    /* PROBLÈME */
-
     .problem-grid {
       margin-top: 28px;
       display: grid;
@@ -161,8 +153,6 @@
       line-height: 1.55;
     }
 
-    /* VISUELS */
-
     .visual {
       margin-top: 28px;
       width: 100%;
@@ -177,8 +167,6 @@
       width: 100%;
       height: auto;
     }
-
-    /* SOLUTION */
 
     .solution-grid {
       margin-top: 28px;
@@ -207,8 +195,6 @@
       line-height: 1.55;
     }
 
-    /* IMPACT */
-
     .results-grid {
       margin-top: 28px;
       display: grid;
@@ -236,8 +222,6 @@
       line-height: 1.55;
     }
 
-    /* TECH */
-
     .tech-box {
       margin-top: 26px;
       max-width: 850px;
@@ -263,8 +247,6 @@
       margin-top: 10px;
     }
 
-    /* SÉCURITÉ */
-
     .security-box {
       margin-top: 26px;
       max-width: 850px;
@@ -288,8 +270,6 @@
       line-height: 1.7;
     }
 
-    /* CONFIDENTIALITÉ */
-
     .privacy-note {
       margin-top: 22px;
       max-width: 820px;
@@ -298,16 +278,12 @@
       line-height: 1.65;
     }
 
-    /* FOOTER */
-
     footer {
       border-top: 1px solid #e5e7eb;
       padding: 30px 0 42px;
       color: #6b7280;
       font-size: 14px;
     }
-
-    /* RESPONSIVE */
 
     @media (max-width: 900px) {
       .problem-grid,
@@ -400,15 +376,17 @@
           </h2>
 
           <p class="section-copy">
-            Une base tarifaire existait,
-            mais produire un devis nécessitait encore
-            plusieurs calculs et manipulations manuelles.
+            Nous avons d’abord construit une base tarifaire statique,
+            à laquelle j’ai participé.
+            Elle permettait de centraliser les références
+            et les règles nécessaires au chiffrage.
           </p>
 
           <p class="section-copy">
-            Plus la configuration variait,
-            plus le chiffrage devenait long
-            et exposé aux erreurs.
+            Mais cette première version restait figée.
+            Pour chaque nouvelle configuration client,
+            il fallait encore reprendre plusieurs calculs
+            et manipulations manuellement.
           </p>
 
         </div>
@@ -423,7 +401,7 @@
             </strong>
 
             <p>
-              Chaque configuration nécessitait
+              Chaque nouvelle configuration demandait
               de reprendre plusieurs calculs.
             </p>
 
@@ -447,12 +425,13 @@
           <div class="problem-card">
 
             <strong>
-              Répétition
+              Limite du modèle
             </strong>
 
             <p>
-              Une partie du travail devait être
-              reproduite pour chaque nouveau devis.
+              La base centralisait l’information,
+              mais ne permettait pas encore
+              de générer automatiquement un devis.
             </p>
 
           </div>
@@ -477,13 +456,15 @@
           </h2>
 
           <p class="section-copy">
-            J’ai transformé la base existante
-            en un workflow de chiffrage structuré
-            autour de plusieurs feuilles interconnectées.
+            À partir de cette première base tarifaire,
+            j’ai conçu un workflow de chiffrage complet
+            capable de transformer une configuration client
+            en devis automatiquement calculé,
+            contrôlé et exportable en PDF.
           </p>
 
           <p class="section-copy">
-            L’utilisateur saisit uniquement la configuration nécessaire.
+            L’utilisateur renseigne uniquement les informations nécessaires.
             Les données internes alimentent ensuite automatiquement
             les calculs et la génération du devis.
           </p>
@@ -512,7 +493,7 @@
             <p>
               L’utilisateur renseigne
               le client, la configuration
-              et les quantités.
+              et les quantités nécessaires.
             </p>
 
           </div>
@@ -554,8 +535,8 @@
             </strong>
 
             <p>
-              Le résultat alimente directement
-              la mise en forme client.
+              Les résultats du calcul alimentent
+              automatiquement la version client.
             </p>
 
           </div>
@@ -580,8 +561,10 @@
           </h2>
 
           <p class="section-copy">
-            Le processus passe désormais d’une série de calculs manuels
-            à une saisie unique suivie d’un traitement automatisé.
+            Le chiffrage passe d’une succession de calculs
+            et de manipulations manuelles
+            à un processus automatisé,
+            directement exploitable.
           </p>
 
         </div>
@@ -620,12 +603,13 @@
           <div class="result-card">
 
             <strong>
-              Plus simple
+              Plus sécurisé
             </strong>
 
             <p>
-              L’utilisateur n’interagit
-              qu’avec les zones nécessaires.
+              Les données internes
+              et les zones sensibles
+              sont protégées.
             </p>
 
           </div>
@@ -665,7 +649,7 @@
 
           <p class="section-copy">
             J’ai conçu l’architecture fonctionnelle du classeur,
-            les interactions entre les feuilles
+            les interactions entre les différentes feuilles
             et le parcours utilisateur.
           </p>
 
@@ -673,7 +657,7 @@
             Google Sheets gère les données,
             les formules et les contrôles de saisie.
             Google Apps Script apporte la couche d’automatisation
-            nécessaire au fonctionnement de l’outil.
+            nécessaire au fonctionnement du workflow de chiffrage.
           </p>
 
         </div>
@@ -694,7 +678,9 @@
           </p>
 
           <p>
-            J’ai utilisé l’IA comme copilote de développement
+            J’ai défini le besoin fonctionnel,
+            l’architecture et la logique attendue,
+            puis utilisé l’IA comme copilote de développement
             pour accélérer l’écriture,
             le test et l’itération du code Google Apps Script.
           </p>
@@ -709,10 +695,11 @@
           </strong>
 
           <p>
-            Les zones de saisie sont volontairement séparées
-            des données internes, des formules et des traitements.
-            Les feuilles et cellules sensibles sont protégées
-            afin d’éviter les modifications accidentelles
+            L’utilisateur travaille uniquement
+            dans les zones prévues pour la saisie.
+            Les données tarifaires internes,
+            les formules et les traitements sont protégés
+            afin d’éviter toute modification accidentelle
             et de préserver l’intégrité du modèle.
             Leur édition reste limitée aux personnes autorisées.
           </p>
@@ -738,7 +725,8 @@
 
           <p class="section-copy">
             Un menu personnalisé intégré à Google Sheets
-            permet de créer un nouveau devis
+            permet de créer un nouveau devis,
+            de gérer sa numérotation
             puis de l’exporter directement en PDF.
           </p>
 
@@ -749,15 +737,16 @@
 
           <img
             src="Google Sheets Quote Export Mockup.png"
-            alt="Menu Devis UDC permettant d'exporter le devis en PDF"
+            alt="Menu Devis UDC permettant de créer et d'exporter un devis en PDF"
           />
 
         </div>
 
 
         <p class="privacy-note">
-          Les prix, marges, fournisseurs, composants
-          et règles commerciales utilisés dans l’outil réel
+          Les prix, marges, fournisseurs,
+          composants et règles commerciales
+          utilisés dans l’outil réel
           restent strictement confidentiels
           et ne sont pas reproduits dans ce portfolio.
         </p>
