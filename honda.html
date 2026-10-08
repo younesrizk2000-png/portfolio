@@ -64,11 +64,11 @@
     }
 
     .hero {
-      padding: 58px 0 52px;
+      padding: 62px 0 58px;
     }
 
     .hero-inner {
-      max-width: 880px;
+      max-width: 850px;
     }
 
     h1 {
@@ -81,10 +81,10 @@
 
     .hero-statement {
       font-size: 20px;
-      line-height: 1.55;
+      line-height: 1.5;
       color: #2f4735;
       font-weight: 600;
-      max-width: 850px;
+      max-width: 800px;
       margin-bottom: 14px;
     }
 
@@ -92,11 +92,11 @@
       font-size: 17px;
       color: #5f6873;
       line-height: 1.7;
-      max-width: 820px;
+      max-width: 780px;
     }
 
     section {
-      padding: 54px 0;
+      padding: 56px 0;
     }
 
     .section-border {
@@ -104,7 +104,7 @@
     }
 
     .content-block {
-      max-width: 820px;
+      max-width: 760px;
     }
 
     h2 {
@@ -118,149 +118,112 @@
     .section-copy {
       color: #5f6873;
       font-size: 16px;
-      line-height: 1.72;
-      max-width: 800px;
+      line-height: 1.7;
+      max-width: 740px;
     }
 
     .section-copy + .section-copy {
-      margin-top: 10px;
+      margin-top: 8px;
     }
 
+    /* VISUELS */
+
     .visual {
-      margin-top: 28px;
-      width: 100%;
-      overflow: hidden;
-      border-radius: 18px;
-      background: #ffffff;
-      border: 1px solid #e5e7eb;
+      margin: 30px auto 0;
+      width: min(720px, 100%);
     }
 
     .visual img {
       display: block;
       width: 100%;
       height: auto;
+      border-radius: 18px;
+      border: 1px solid #e5e7eb;
+      background: #ffffff;
     }
 
-    /* PROBLÈME */
+    .visual-small {
+      width: min(650px, 100%);
+    }
 
-    .scope-grid {
-      margin-top: 28px;
+    .visual-pair {
+      margin: 30px auto 0;
+      max-width: 900px;
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 18px;
+      align-items: start;
+    }
+
+    .visual-pair img {
+      width: 100%;
+      height: auto;
+      display: block;
+      border-radius: 16px;
+      border: 1px solid #e5e7eb;
+      background: #ffffff;
+    }
+
+    /* FLOW */
+
+    .process {
+      margin-top: 26px;
+      max-width: 760px;
       display: grid;
       grid-template-columns: repeat(4, 1fr);
+      gap: 12px;
+    }
+
+    .process-step {
+      background: #ffffff;
+      border: 1px solid #e2e5e3;
+      border-radius: 15px;
+      padding: 17px 12px;
+      text-align: center;
+      position: relative;
+      color: #2f4735;
+      font-size: 14px;
+      font-weight: 700;
+    }
+
+    .process-step:not(:last-child)::after {
+      content: "→";
+      position: absolute;
+      right: -14px;
+      top: 50%;
+      transform: translateY(-50%);
+      color: #7a9a80;
+      font-size: 18px;
+      z-index: 2;
+    }
+
+    /* PILOTAGE */
+
+    .pilot-grid {
+      margin-top: 28px;
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
       gap: 14px;
     }
 
-    .scope-card {
+    .pilot-card {
       background: #ffffff;
       border: 1px solid #e2e5e3;
-      border-radius: 16px;
-      padding: 20px;
+      border-radius: 17px;
+      padding: 21px;
     }
 
-    .scope-card strong {
+    .pilot-card strong {
       display: block;
       color: #2f4735;
       font-size: 16px;
       margin-bottom: 7px;
     }
 
-    .scope-card p {
+    .pilot-card p {
       color: #66706a;
       font-size: 14px;
       line-height: 1.55;
-    }
-
-    /* PROCESS */
-
-    .process {
-      margin-top: 28px;
-      display: grid;
-      grid-template-columns: repeat(6, 1fr);
-      gap: 10px;
-      align-items: stretch;
-    }
-
-    .process-step {
-      background: #ffffff;
-      border: 1px solid #dfe5e1;
-      border-radius: 15px;
-      padding: 18px 14px;
-      text-align: center;
-      position: relative;
-    }
-
-    .process-step:not(:last-child)::after {
-      content: "→";
-      position: absolute;
-      right: -13px;
-      top: 50%;
-      transform: translateY(-50%);
-      color: #6f8f77;
-      font-size: 18px;
-      z-index: 2;
-    }
-
-    .process-step strong {
-      display: block;
-      color: #2f4735;
-      font-size: 14px;
-      margin-bottom: 5px;
-    }
-
-    .process-step span {
-      color: #6b7280;
-      font-size: 12px;
-      line-height: 1.45;
-    }
-
-    /* BUDGET */
-
-    .finance-flow {
-      margin-top: 28px;
-      display: grid;
-      grid-template-columns: repeat(5, 1fr);
-      gap: 10px;
-    }
-
-    .finance-step {
-      background: #ffffff;
-      border: 1px solid #e2e5e3;
-      border-radius: 15px;
-      padding: 18px;
-    }
-
-    .finance-step strong {
-      display: block;
-      color: #2f4735;
-      font-size: 15px;
-      margin-bottom: 6px;
-    }
-
-    .finance-step p {
-      color: #66706a;
-      font-size: 13px;
-      line-height: 1.5;
-    }
-
-    .finance-note {
-      margin-top: 24px;
-      background: #eef3ef;
-      border-radius: 18px;
-      padding: 22px;
-      max-width: 850px;
-    }
-
-    .finance-note strong {
-      display: block;
-      color: #2f4735;
-      font-size: 16px;
-      margin-bottom: 8px;
-    }
-
-    .finance-note p {
-      color: #56645a;
-      font-size: 15px;
-      line-height: 1.7;
     }
 
     /* IMPACT */
@@ -268,7 +231,7 @@
     .results-grid {
       margin-top: 28px;
       display: grid;
-      grid-template-columns: repeat(3, 1fr);
+      grid-template-columns: repeat(4, 1fr);
       gap: 14px;
     }
 
@@ -282,43 +245,36 @@
     .result-card strong {
       display: block;
       color: #2f4735;
-      font-size: 17px;
+      font-size: 16px;
       margin-bottom: 7px;
     }
 
     .result-card p {
       color: #66706a;
       font-size: 14px;
-      line-height: 1.55;
+      line-height: 1.5;
     }
 
-    .method-box {
+    .closing-note {
       margin-top: 28px;
-      max-width: 880px;
+      max-width: 760px;
       background: #eef3ef;
       border-radius: 18px;
-      padding: 24px;
+      padding: 22px;
     }
 
-    .method-box strong {
-      display: block;
-      color: #2f4735;
-      font-size: 17px;
-      margin-bottom: 8px;
-    }
-
-    .method-box p {
+    .closing-note p {
       color: #56645a;
       font-size: 15px;
       line-height: 1.7;
     }
 
     .privacy-note {
-      margin-top: 22px;
+      margin-top: 18px;
       color: #7b848c;
       font-size: 13px;
       line-height: 1.65;
-      max-width: 820px;
+      max-width: 760px;
     }
 
     footer {
@@ -328,46 +284,39 @@
       font-size: 14px;
     }
 
-    @media (max-width: 900px) {
-      .scope-grid {
+    @media (max-width: 800px) {
+      .process,
+      .results-grid {
         grid-template-columns: repeat(2, 1fr);
       }
 
-      .process {
-        grid-template-columns: repeat(3, 1fr);
-      }
-
-      .process-step:nth-child(3)::after {
+      .process-step::after {
         display: none;
       }
 
-      .finance-flow {
-        grid-template-columns: repeat(2, 1fr);
+      .pilot-grid {
+        grid-template-columns: 1fr;
       }
+    }
 
-      .results-grid {
-        grid-template-columns: repeat(2, 1fr);
+    @media (max-width: 700px) {
+      .visual-pair {
+        grid-template-columns: 1fr;
       }
     }
 
     @media (max-width: 620px) {
       .hero {
-        padding: 42px 0 44px;
+        padding: 44px 0 46px;
       }
 
       section {
         padding: 46px 0;
       }
 
-      .scope-grid,
       .process,
-      .finance-flow,
       .results-grid {
         grid-template-columns: 1fr;
-      }
-
-      .process-step::after {
-        display: none !important;
       }
     }
   </style>
@@ -405,7 +354,7 @@
         <div class="hero-inner">
 
           <h1>
-            Projet 04 — Pilotage opérationnel d’une activation événementielle
+            Projet 04 — Pilotage opérationnel événementiel
           </h1>
 
           <p class="hero-statement">
@@ -414,9 +363,9 @@
 
           <p class="hero-lead">
             Pour le Mondial de l’Auto 2026 avec Honda,
-            j’ai structuré et piloté la préparation opérationnelle
-            de l’événement : logistique, déplacements, coordination d’équipe,
-            suivi budgétaire et échéances administratives.
+            j’ai structuré la logistique,
+            la coordination de l’équipe
+            et le suivi budgétaire de l’activation.
           </p>
 
         </div>
@@ -439,54 +388,15 @@
           </h2>
 
           <p class="section-copy">
-            Le point de départ était simple :
-            transporter du matériel jusqu’à Paris
-            et organiser le déplacement de l’équipe.
+            Le brief initial était simple :
+            déplacer le matériel et organiser l’équipe.
           </p>
 
           <p class="section-copy">
-            Mais derrière ce brief se trouvaient de nombreuses dépendances
-            à coordonner simultanément :
-            matériel, transport, hébergement, planning,
-            accès au salon, budget, facturation et organisation terrain.
+            Derrière ce besoin se croisaient transport,
+            hébergement, accès, planning,
+            budget et facturation.
           </p>
-
-        </div>
-
-
-        <div class="scope-grid">
-
-          <div class="scope-card">
-            <strong>Logistique</strong>
-            <p>
-              Matériel, transport, chargement,
-              installation et retour.
-            </p>
-          </div>
-
-          <div class="scope-card">
-            <strong>Équipe</strong>
-            <p>
-              Déplacements, hébergement,
-              planning et présence terrain.
-            </p>
-          </div>
-
-          <div class="scope-card">
-            <strong>Accès</strong>
-            <p>
-              Badges, créneaux,
-              horaires et coordination sur site.
-            </p>
-          </div>
-
-          <div class="scope-card">
-            <strong>Finance</strong>
-            <p>
-              Budget, dépenses,
-              facturation et suivi administratif.
-            </p>
-          </div>
 
         </div>
 
@@ -495,7 +405,7 @@
     </section>
 
 
-    <!-- STRUCTURATION -->
+    <!-- SOLUTION -->
 
     <section class="section-border">
 
@@ -504,44 +414,34 @@
         <div class="content-block">
 
           <h2>
-            Construire l’organisation avant l’exécution.
+            Structurer avant d’exécuter.
           </h2>
 
           <p class="section-copy">
-            J’ai décomposé l’événement en blocs de travail
-            puis construit un espace de pilotage centralisé sur Google Drive.
-          </p>
-
-          <p class="section-copy">
-            L’objectif n’était pas seulement de ranger les documents :
-            chaque espace correspond à une étape de préparation
-            et constitue une trame réutilisable pour les événements suivants.
+            J’ai créé un espace de pilotage unique,
+            organisé par étapes
+            et pensé pour être réutilisé
+            sur les événements suivants.
           </p>
 
         </div>
 
 
-        <div class="visual">
+        <div class="visual visual-small">
 
           <img
             src="ChatGPT Image Oct 9, 2026, 12_03_52 AM.png"
-            alt="Représentation d'une structure Google Drive reproductible pour la gestion événementielle"
+            alt="Structure réutilisable pour la préparation d'un événement"
           />
 
         </div>
 
 
-        <div class="method-box">
-
-          <strong>
-            Une première exécution transformée en méthode.
-          </strong>
+        <div class="closing-note">
 
           <p>
-            Les informations utiles,
-            les points de contrôle et les documents de chaque étape
-            sont centralisés dans une structure pouvant être dupliquée
-            pour préparer plus rapidement une future activation.
+            Une première exécution transformée
+            en méthode reproductible.
           </p>
 
         </div>
@@ -564,16 +464,11 @@
           </h2>
 
           <p class="section-copy">
-            Pour le transport du matériel,
-            je ne voulais pas choisir un véhicule sur une simple estimation.
-            J’ai d’abord mesuré physiquement les équipements
-            puis modélisé leur chargement en 3D.
-          </p>
-
-          <p class="section-copy">
-            Cette simulation m’a permis d’estimer le volume réellement nécessaire,
-            puis de comparer les solutions disponibles
-            selon leur capacité, leur coût et leur praticité.
+            J’ai mesuré le matériel,
+            simulé son chargement en 3D
+            puis comparé les véhicules
+            selon le volume nécessaire,
+            le coût et la praticité.
           </p>
 
         </div>
@@ -582,33 +477,19 @@
         <div class="process">
 
           <div class="process-step">
-            <strong>Mesurer</strong>
-            <span>Dimensions réelles du matériel</span>
+            Mesurer
           </div>
 
           <div class="process-step">
-            <strong>Simuler</strong>
-            <span>Plan de chargement 3D</span>
+            Simuler
           </div>
 
           <div class="process-step">
-            <strong>Dimensionner</strong>
-            <span>Volume nécessaire</span>
+            Comparer
           </div>
 
           <div class="process-step">
-            <strong>Comparer</strong>
-            <span>Capacité, coût, praticité</span>
-          </div>
-
-          <div class="process-step">
-            <strong>Décider</strong>
-            <span>Véhicule adapté</span>
-          </div>
-
-          <div class="process-step">
-            <strong>Sécuriser</strong>
-            <span>Checklist départ et retour</span>
+            Décider
           </div>
 
         </div>
@@ -618,7 +499,7 @@
 
           <img
             src="ChatGPT Image Oct 9, 2026, 12_04_03 AM.png"
-            alt="Simulation visuelle du chargement du matériel dans un véhicule"
+            alt="Simulation 3D d'un plan de chargement"
           />
 
         </div>
@@ -628,7 +509,7 @@
     </section>
 
 
-    <!-- BUDGET -->
+    <!-- PILOTAGE -->
 
     <section class="section-border">
 
@@ -637,162 +518,87 @@
         <div class="content-block">
 
           <h2>
-            Garder une vision claire du budget.
+            Piloter l’ensemble.
           </h2>
 
           <p class="section-copy">
-            En parallèle de la préparation opérationnelle,
-            j’ai structuré un suivi budgétaire permettant
-            de centraliser les dépenses de l’événement
-            et de les rapprocher du prévisionnel.
-          </p>
-
-          <p class="section-copy">
-            L’objectif était de disposer à tout moment
-            d’une vision claire des dépenses engagées,
-            des écarts par poste et du budget restant.
+            Le projet ne se limitait pas à la logistique.
+            J’ai également structuré le suivi financier,
+            administratif et la coordination de l’équipe.
           </p>
 
         </div>
 
 
-        <div class="finance-flow">
+        <div class="pilot-grid">
 
-          <div class="finance-step">
-            <strong>Budget prévu</strong>
+          <div class="pilot-card">
+
+            <strong>
+              Budget
+            </strong>
+
             <p>
-              Définition des enveloppes
-              et postes à suivre.
+              Suivre les dépenses,
+              les écarts
+              et le budget restant.
             </p>
+
           </div>
 
-          <div class="finance-step">
-            <strong>Dépenses</strong>
+
+          <div class="pilot-card">
+
+            <strong>
+              Équipe
+            </strong>
+
             <p>
-              Centralisation progressive
-              des dépenses réelles.
+              Centraliser planning,
+              déplacements,
+              accès et feuille de route.
             </p>
+
           </div>
 
-          <div class="finance-step">
-            <strong>Rapprochement</strong>
-            <p>
-              Comparaison entre
-              prévisionnel et réalisé.
-            </p>
-          </div>
 
-          <div class="finance-step">
-            <strong>Écarts</strong>
-            <p>
-              Identification du restant
-              et des écarts par poste.
-            </p>
-          </div>
+          <div class="pilot-card">
 
-          <div class="finance-step">
-            <strong>Synthèse</strong>
+            <strong>
+              Administratif
+            </strong>
+
             <p>
-              Vision exploitable
-              pour la direction.
+              Suivre les échéances,
+              les acomptes
+              et la facturation.
             </p>
+
           </div>
 
         </div>
 
 
-        <div class="visual">
+        <div class="visual-pair">
 
           <img
             src="ChatGPT Image Oct 9, 2026, 12_04_09 AM.png"
-            alt="Représentation d'un système de pilotage budgétaire événementiel"
+            alt="Représentation du suivi budgétaire"
           />
-
-        </div>
-
-
-        <div class="finance-note">
-
-          <strong>
-            Suivi administratif et cycle de facturation.
-          </strong>
-
-          <p>
-            J’ai également assuré le suivi des échéances administratives
-            et de facturation du projet,
-            notamment les acomptes,
-            les justificatifs associés
-            et le suivi jusqu’à la clôture.
-          </p>
-
-        </div>
-
-        <p class="privacy-note">
-          Les montants, budgets, prix, conditions commerciales
-          et documents financiers réels
-          ne sont pas reproduits dans ce portfolio.
-        </p>
-
-      </div>
-
-    </section>
-
-
-    <!-- COORDINATION -->
-
-    <section class="section-border">
-
-      <div class="container">
-
-        <div class="content-block">
-
-          <h2>
-            Transformer les informations en feuille de route.
-          </h2>
-
-          <p class="section-copy">
-            L’événement impliquait plusieurs personnes,
-            plusieurs moyens de transport,
-            plusieurs lieux
-            et des contraintes d’accès différentes selon les journées.
-          </p>
-
-          <p class="section-copy">
-            J’ai consolidé l’ensemble des informations opérationnelles
-            dans une feuille de route unique :
-            arrivées, départs, planning terrain,
-            hébergement, transports, accès,
-            justificatifs et communication.
-          </p>
-
-        </div>
-
-
-        <div class="visual">
 
           <img
             src="ChatGPT Image Oct 9, 2026, 12_04_19 AM.png"
-            alt="Représentation d'une feuille de route centralisée pour une équipe événementielle"
+            alt="Représentation d'une feuille de route équipe"
           />
 
         </div>
 
 
-        <div class="method-box">
-
-          <strong>
-            Donner à chacun la même information au bon moment.
-          </strong>
-
-          <p>
-            Avant l’événement,
-            j’ai diffusé une feuille de route consolidée
-            afin que chaque membre de l’équipe sache
-            où être, quand, avec quel moyen de transport
-            et quels éléments vérifier avant son arrivée sur site.
-          </p>
-
-        </div>
+        <p class="privacy-note">
+          Les montants, budgets,
+          prix et documents financiers réels
+          ne sont pas reproduits dans ce portfolio.
+        </p>
 
       </div>
 
@@ -811,132 +617,75 @@
             L’impact.
           </h2>
 
-          <p class="section-copy">
-            Cette organisation a permis de piloter
-            dans un même cadre les dimensions logistiques,
-            humaines, financières et administratives de l’événement.
-          </p>
-
         </div>
 
 
         <div class="results-grid">
 
           <div class="result-card">
-            <strong>Centraliser</strong>
+
+            <strong>
+              Centraliser
+            </strong>
+
             <p>
-              Une seule structure pour retrouver
-              les informations et documents utiles.
+              Une vision unique du projet.
             </p>
+
           </div>
 
-          <div class="result-card">
-            <strong>Anticiper</strong>
-            <p>
-              Les dépendances sont identifiées
-              avant leur impact sur le terrain.
-            </p>
-          </div>
 
           <div class="result-card">
-            <strong>Arbitrer</strong>
+
+            <strong>
+              Anticiper
+            </strong>
+
             <p>
-              Les décisions reposent
-              sur le besoin réel, les contraintes et le coût.
+              Identifier les dépendances
+              avant l’exécution.
             </p>
+
           </div>
 
-          <div class="result-card">
-            <strong>Piloter</strong>
-            <p>
-              Opérations, budget et échéances
-              sont suivis simultanément.
-            </p>
-          </div>
 
           <div class="result-card">
-            <strong>Aligner</strong>
+
+            <strong>
+              Arbitrer
+            </strong>
+
             <p>
-              L’équipe travaille à partir
-              d’une feuille de route commune.
+              Décider selon le besoin,
+              les contraintes et le coût.
             </p>
+
           </div>
 
+
           <div class="result-card">
-            <strong>Capitaliser</strong>
+
+            <strong>
+              Capitaliser
+            </strong>
+
             <p>
-              La méthode construite devient
-              une base réutilisable pour les événements suivants.
+              Réutiliser la méthode
+              sur les événements suivants.
             </p>
+
           </div>
 
         </div>
 
-      </div>
 
-    </section>
+        <div class="closing-note">
 
-
-    <!-- RETEX -->
-
-    <section class="section-border">
-
-      <div class="container">
-
-        <div class="content-block">
-
-          <h2>
-            Faire de l’événement suivant une meilleure exécution.
-          </h2>
-
-          <p class="section-copy">
-            À l’issue de l’événement,
-            les retours terrain sont intégrés à la structure :
-            écarts observés, décisions prises,
-            points de vigilance et améliorations à conserver.
+          <p>
+            Les retours terrain enrichissent ensuite
+            la structure pour améliorer
+            l’activation suivante.
           </p>
-
-          <p class="section-copy">
-            L’objectif est de ne pas repartir de zéro
-            à chaque nouvelle activation,
-            mais de transformer l’expérience acquise
-            en méthode opérationnelle réutilisable.
-          </p>
-
-        </div>
-
-
-        <div class="process">
-
-          <div class="process-step">
-            <strong>Préparer</strong>
-            <span>Structurer les besoins</span>
-          </div>
-
-          <div class="process-step">
-            <strong>Planifier</strong>
-            <span>Organiser les dépendances</span>
-          </div>
-
-          <div class="process-step">
-            <strong>Exécuter</strong>
-            <span>Coordonner sur le terrain</span>
-          </div>
-
-          <div class="process-step">
-            <strong>Observer</strong>
-            <span>Identifier les écarts</span>
-          </div>
-
-          <div class="process-step">
-            <strong>Améliorer</strong>
-            <span>Intégrer le RETEX</span>
-          </div>
-
-          <div class="process-step">
-            <strong>Réutiliser</strong>
-            <span>Préparer l’événement suivant</span>
-          </div>
 
         </div>
 
