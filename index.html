@@ -209,16 +209,8 @@
       padding: 24px;
       display: flex;
       flex-direction: column;
-      gap: 12px;
-      min-height: 245px;
-    }
-
-    .project-number {
-      font-size: 11px;
-      font-weight: 700;
-      color: #5f8267;
-      letter-spacing: 0.09em;
-      text-transform: uppercase;
+      gap: 14px;
+      min-height: 235px;
     }
 
     .project-card h3 {
@@ -236,8 +228,23 @@
       max-width: 470px;
     }
 
-    .project-link {
+    .project-footer {
       margin-top: auto;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 7px;
+    }
+
+    .project-category {
+      font-size: 11px;
+      color: #5f8267;
+      font-weight: 700;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+    }
+
+    .project-link {
       display: inline-block;
       width: fit-content;
       text-decoration: none;
@@ -317,12 +324,14 @@
       max-width: 690px;
     }
 
-    .degree-line {
-      display: block;
+    .degree-list {
+      display: flex;
+      flex-direction: column;
+      gap: 4px;
     }
 
-    .degree-line + .degree-line {
-      margin-top: 4px;
+    .degree-list span {
+      display: block;
     }
 
     .company-link {
@@ -525,10 +534,6 @@
 
           <article class="project-card">
 
-            <div class="project-number">
-              01 · Pilotage opérationnel
-            </div>
-
             <h3>
               Comment anticiper les blocages et fiabiliser le suivi des projets ?
             </h3>
@@ -538,12 +543,20 @@
               rendre les blocages visibles et capitaliser les solutions.
             </p>
 
-            <a
-              class="project-link"
-              href="opsboard.html"
-            >
-              Découvrir OpsBoard →
-            </a>
+            <div class="project-footer">
+
+              <div class="project-category">
+                Pilotage opérationnel
+              </div>
+
+              <a
+                class="project-link"
+                href="opsboard.html"
+              >
+                Découvrir OpsBoard →
+              </a>
+
+            </div>
 
           </article>
 
@@ -551,36 +564,36 @@
 
           <article class="project-card">
 
-            <div class="project-number">
-              02 · Structuration opérationnelle
-            </div>
-
             <h3>
               Comment structurer une activité sans ralentir son exécution ?
             </h3>
 
             <p class="project-answer">
               J’ai centralisé l’information, formalisé les processus
-              et standardisé l’exécution pour rendre les projets plus lisibles
-              et reproductibles.
+              et standardisé l’exécution pour rendre les projets
+              plus lisibles et reproductibles.
             </p>
 
-            <a
-              class="project-link"
-              href="franchise-evenementiel.html"
-            >
-              Voir le projet →
-            </a>
+            <div class="project-footer">
+
+              <div class="project-category">
+                Structuration opérationnelle
+              </div>
+
+              <a
+                class="project-link"
+                href="franchise-evenementiel.html"
+              >
+                Voir le projet →
+              </a>
+
+            </div>
 
           </article>
 
           <!-- PROJET 03 -->
 
           <article class="project-card">
-
-            <div class="project-number">
-              03 · Pricing & analyse économique
-            </div>
 
             <h3>
               Comment produire rapidement des devis fiables et maîtriser les marges ?
@@ -591,19 +604,23 @@
               calcule les marges et accélère la génération des devis.
             </p>
 
-            <span class="project-link disabled">
-              Projet à venir
-            </span>
+            <div class="project-footer">
+
+              <div class="project-category">
+                Pricing & analyse économique
+              </div>
+
+              <span class="project-link disabled">
+                Projet à venir
+              </span>
+
+            </div>
 
           </article>
 
           <!-- PROJET 04 -->
 
           <article class="project-card">
-
-            <div class="project-number">
-              04 · Coordination événementielle
-            </div>
 
             <h3>
               Comment coordonner la logistique d’une activation événementielle complexe ?
@@ -614,9 +631,17 @@
               et coordonné les informations, contraintes et étapes clés du projet.
             </p>
 
-            <span class="project-link disabled">
-              Projet à venir
-            </span>
+            <div class="project-footer">
+
+              <div class="project-category">
+                Coordination événementielle
+              </div>
+
+              <span class="project-link disabled">
+                Projet à venir
+              </span>
+
+            </div>
 
           </article>
 
@@ -670,14 +695,16 @@
                 Aix-Marseille Université
               </h3>
 
-              <p>
-                <span class="degree-line">
+              <p class="degree-list">
+
+                <span>
                   <strong>Master 1</strong> — Économie des Marchés et des Entreprises
                 </span>
 
-                <span class="degree-line">
+                <span>
                   <strong>Master 2</strong> — Spécialisation en Création d’Entreprise
                 </span>
+
               </p>
 
             </div>
