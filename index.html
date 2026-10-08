@@ -180,28 +180,20 @@
       border-top: 1px solid #e7e8e5;
     }
 
-    .section-label {
-      text-transform: uppercase;
-      letter-spacing: 0.11em;
-      font-size: 12px;
-      color: #718078;
+    .section-title {
+      font-size: clamp(24px, 3vw, 30px);
+      line-height: 1.25;
+      letter-spacing: -0.02em;
+      margin-bottom: 16px;
       font-weight: 700;
-      margin-bottom: 10px;
-    }
-
-    h2 {
-      font-size: clamp(30px, 3.6vw, 40px);
-      line-height: 1.2;
-      letter-spacing: -0.025em;
-      margin-bottom: 14px;
     }
 
     .section-intro {
       color: #5f6873;
       max-width: 760px;
-      margin-bottom: 22px;
+      margin-bottom: 34px;
       font-size: 16px;
-      line-height: 1.65;
+      line-height: 1.7;
     }
 
     .projects-grid {
@@ -277,6 +269,12 @@
       max-width: 780px;
     }
 
+    .about-copy p {
+      color: #5f6873;
+      font-size: 16px;
+      line-height: 1.7;
+    }
+
     .about-copy p + p {
       margin-top: 18px;
     }
@@ -285,10 +283,11 @@
       background: #eef3ef;
       border-radius: 24px;
       padding: 30px;
+      max-width: 720px;
     }
 
     .contact-box h3 {
-      font-size: 24px;
+      font-size: 22px;
       margin-bottom: 10px;
       color: #2f4735;
     }
@@ -439,18 +438,13 @@
 
       <div class="container">
 
-        <div class="section-label">
+        <h2 class="section-title">
           Projets sélectionnés
-        </div>
-
-        <h2>
-          Des problèmes concrets. Des solutions construites.
         </h2>
 
         <p class="section-intro">
-          Chaque projet part d’un besoin opérationnel réel :
-          comprendre le problème, concevoir une réponse puis mobiliser
-          les bons outils pour la mettre en œuvre.
+          Des problèmes opérationnels concrets, des réponses construites
+          et les choix qui ont permis de les mettre en œuvre.
         </p>
 
 
@@ -592,23 +586,19 @@
 
       <div class="container">
 
-        <div class="section-label">
+        <h2 class="section-title">
           À propos
-        </div>
-
-        <h2>
-          Comprendre avant de construire.
         </h2>
 
         <div class="about-copy">
 
-          <p class="section-intro">
+          <p>
             Je travaille à l’interface entre analyse, opérations et environnements techniques.
             J’aime comprendre rapidement un sujet, clarifier ce qui bloque et transformer
             cette compréhension en une réponse concrète.
           </p>
 
-          <p class="section-intro">
+          <p>
             Je me forme vite sur les outils et technologies nécessaires au problème à résoudre.
             L’IA, le scripting ou l’automatisation sont pour moi des leviers d’exécution,
             pas une finalité.
@@ -627,12 +617,8 @@
 
       <div class="container">
 
-        <div class="section-label">
+        <h2 class="section-title">
           Contact
-        </div>
-
-        <h2>
-          Échangeons.
         </h2>
 
         <p class="section-intro">
