@@ -182,62 +182,26 @@
       padding: 0 4px;
     }
 
-    /* WORKFLOW */
+    /* VISUELS */
 
-    .workflow {
+    .visual {
       margin-top: 28px;
+      width: 100%;
+      overflow: hidden;
+      border-radius: 18px;
       background: #ffffff;
-      border: 1px solid #e2e5e3;
-      border-radius: 20px;
-      padding: 26px;
+      border: 1px solid #e5e7eb;
     }
 
-    .workflow-line {
-      display: grid;
-      grid-template-columns: repeat(6, 1fr);
-      gap: 10px;
-      align-items: center;
-    }
-
-    .workflow-step {
-      position: relative;
-      min-height: 72px;
-      background: #f3f7f3;
-      border: 1px solid #dce6dd;
-      border-radius: 13px;
-      padding: 14px 9px;
-
-      display: flex;
-      align-items: center;
-      justify-content: center;
-
-      text-align: center;
-      font-size: 14px;
-      font-weight: 700;
-      color: #2f4735;
-    }
-
-    .workflow-step:not(:last-child)::after {
-      content: "→";
-      position: absolute;
-      right: -18px;
-      top: 50%;
-      transform: translateY(-50%);
-      color: #7a9a80;
-      font-size: 18px;
-      z-index: 2;
-    }
-
-    .workflow-note {
-      margin-top: 18px;
-      text-align: center;
-      font-size: 14px;
-      color: #6b7280;
+    .visual img {
+      display: block;
+      width: 100%;
+      height: auto;
     }
 
     /* ARCHITECTURE */
 
-    .architecture {
+    .architecture-grid {
       margin-top: 28px;
       display: grid;
       grid-template-columns: repeat(4, 1fr);
@@ -264,28 +228,11 @@
       line-height: 1.55;
     }
 
-    /* IMAGE */
-
-    .visual {
-      margin-top: 28px;
-      width: 100%;
-      overflow: hidden;
-      border-radius: 18px;
-      background: #ffffff;
-      border: 1px solid #e5e7eb;
-    }
-
-    .visual img {
-      display: block;
-      width: 100%;
-      height: auto;
-    }
-
     /* TECH */
 
     .tech-box {
       margin-top: 26px;
-      max-width: 830px;
+      max-width: 840px;
       background: #eef3ef;
       border-radius: 18px;
       padding: 24px;
@@ -360,24 +307,13 @@
     /* RESPONSIVE */
 
     @media (max-width: 900px) {
-
-      .workflow-line {
-        grid-template-columns: repeat(3, 1fr);
-        gap: 12px;
-      }
-
-      .workflow-step:not(:last-child)::after {
-        display: none;
-      }
-
-      .architecture,
+      .architecture-grid,
       .results-grid {
         grid-template-columns: repeat(2, 1fr);
       }
     }
 
     @media (max-width: 700px) {
-
       .comparison {
         grid-template-columns: 1fr;
       }
@@ -388,7 +324,6 @@
     }
 
     @media (max-width: 620px) {
-
       .hero {
         padding: 42px 0 44px;
       }
@@ -397,14 +332,9 @@
         padding: 46px 0;
       }
 
-      .workflow-line,
-      .architecture,
+      .architecture-grid,
       .results-grid {
         grid-template-columns: 1fr;
-      }
-
-      .workflow {
-        padding: 18px;
       }
     }
   </style>
@@ -450,9 +380,9 @@
           </p>
 
           <p class="hero-lead">
-            J’ai conçu un outil de chiffrage qui transforme
-            une configuration client en devis automatiquement calculé,
-            contrôlé et exportable en PDF.
+            J’ai conçu un outil complet sur Google Sheets
+            qui transforme une configuration client en devis automatiquement calculé,
+            contrôlé puis exportable en PDF.
           </p>
 
         </div>
@@ -476,13 +406,13 @@
 
           <p class="section-copy">
             Une base tarifaire existait déjà,
-            mais produire un devis nécessitait encore
-            plusieurs calculs et manipulations manuelles.
+            mais produire un devis nécessitait encore plusieurs calculs
+            et manipulations manuelles.
           </p>
 
           <p class="section-copy">
-            Avec des configurations différentes selon les clients,
-            le processus devenait long et augmentait le risque d’erreur.
+            Dès qu’une configuration variait en quantité ou en options,
+            le chiffrage devenait plus long et augmentait le risque d’erreur.
           </p>
 
         </div>
@@ -537,7 +467,7 @@
               </div>
 
               <div class="comparison-item">
-                Calcul automatique
+                Calcul automatisé
               </div>
 
               <div class="comparison-item">
@@ -559,7 +489,7 @@
     </section>
 
 
-    <!-- WORKFLOW -->
+    <!-- VISUEL WORKFLOW -->
 
     <section class="section-border">
 
@@ -568,50 +498,32 @@
         <div class="content-block">
 
           <h2>
-            Transformer une configuration en devis.
+            Un classeur construit comme un workflow de chiffrage.
           </h2>
 
           <p class="section-copy">
-            L’utilisateur renseigne uniquement les informations nécessaires.
-            Le reste du processus est automatisé.
+            L’outil repose sur plusieurs feuilles interconnectées.
+            La saisie renseigne la configuration du client.
+            Une base interne fournit les données de référence.
+            La feuille de calcul croise automatiquement les quantités et les paramètres,
+            puis la feuille Devis génère la version client.
+          </p>
+
+          <p class="section-copy">
+            Cette architecture fonctionnelle permet de séparer clairement
+            la saisie utilisateur, les données internes,
+            les traitements et la sortie finale.
           </p>
 
         </div>
 
 
-        <div class="workflow">
+        <div class="visual">
 
-          <div class="workflow-line">
-
-            <div class="workflow-step">
-              Données internes
-            </div>
-
-            <div class="workflow-step">
-              Configuration client
-            </div>
-
-            <div class="workflow-step">
-              Calcul automatisé
-            </div>
-
-            <div class="workflow-step">
-              Contrôles
-            </div>
-
-            <div class="workflow-step">
-              Devis
-            </div>
-
-            <div class="workflow-step">
-              Export PDF
-            </div>
-
-          </div>
-
-          <div class="workflow-note">
-            La logique de pricing propriétaire reste volontairement non exposée.
-          </div>
+          <img
+            src="Google Sheets Quote Generation Workflow.png"
+            alt="Schéma du workflow de génération de devis sur Google Sheets"
+          />
 
         </div>
 
@@ -620,7 +532,7 @@
     </section>
 
 
-    <!-- CONCEPTION -->
+    <!-- ARCHITECTURE -->
 
     <section class="section-border">
 
@@ -634,20 +546,23 @@
 
           <p class="section-copy">
             Le CEO a défini les règles commerciales.
-            J’ai conçu entièrement l’architecture du Google Sheet,
-            la logique fonctionnelle et l’expérience utilisateur.
+            J’ai ensuite conçu entièrement le Google Sheet,
+            son architecture fonctionnelle,
+            les interactions entre les feuilles
+            et le parcours utilisateur.
           </p>
 
           <p class="section-copy">
-            L’objectif était simple :
-            limiter les saisies, automatiser les calculs
-            et sécuriser la génération du devis.
+            L’objectif était de limiter les saisies manuelles,
+            automatiser le calcul
+            et fiabiliser la génération du devis
+            sans exposer les règles de pricing internes.
           </p>
 
         </div>
 
 
-        <div class="architecture">
+        <div class="architecture-grid">
 
           <div class="architecture-card">
 
@@ -656,8 +571,24 @@
             </strong>
 
             <p>
-              Seules les informations nécessaires
-              au devis sont renseignées.
+              Le client, la configuration
+              et les quantités sont renseignés
+              dans une seule feuille.
+            </p>
+
+          </div>
+
+
+          <div class="architecture-card">
+
+            <strong>
+              Base interne
+            </strong>
+
+            <p>
+              Les données de référence
+              nécessaires au chiffrage
+              sont centralisées séparément.
             </p>
 
           </div>
@@ -670,8 +601,9 @@
             </strong>
 
             <p>
-              Les données sont traitées automatiquement
-              selon les règles internes.
+              Les formules croisent automatiquement
+              les quantités saisies
+              avec les données internes.
             </p>
 
           </div>
@@ -680,64 +612,16 @@
           <div class="architecture-card">
 
             <strong>
-              Contrôle
+              Devis
             </strong>
 
             <p>
-              Les incohérences ou informations manquantes
-              sont détectées avant l’export.
+              La sortie client est générée
+              automatiquement à partir
+              des résultats du calcul.
             </p>
 
           </div>
-
-
-          <div class="architecture-card">
-
-            <strong>
-              Sortie
-            </strong>
-
-            <p>
-              Le devis est généré
-              puis exporté directement en PDF.
-            </p>
-
-          </div>
-
-        </div>
-
-      </div>
-
-    </section>
-
-
-    <!-- PREUVE -->
-
-    <section class="section-border">
-
-      <div class="container">
-
-        <div class="content-block">
-
-          <h2>
-            Du calcul au PDF en un clic.
-          </h2>
-
-          <p class="section-copy">
-            Un menu Apps Script intégré à Google Sheets
-            permet de créer un nouveau devis
-            puis de l’exporter directement en PDF.
-          </p>
-
-        </div>
-
-
-        <div class="visual">
-
-          <img
-            src="Google Sheets Quote Export Mockup.png"
-            alt="Menu Devis UDC dans Google Sheets permettant de créer et exporter un devis en PDF"
-          />
 
         </div>
 
@@ -759,9 +643,18 @@
           </h2>
 
           <p class="section-copy">
-            L’outil repose sur Google Sheets et Apps Script.
-            La logique est construite pour rester simple côté utilisateur,
-            même si plusieurs traitements s’exécutent en arrière-plan.
+            Google Sheets assure la structure du classeur,
+            les formules et les contrôles de données.
+            Google Apps Script ajoute la couche d’automatisation
+            nécessaire pour gérer les actions utilisateur
+            et fluidifier le workflow de chiffrage.
+          </p>
+
+          <p class="section-copy">
+            Le script pilote notamment la création d’un nouveau devis,
+            la numérotation automatique,
+            les contrôles de cohérence
+            et l’export du document en PDF dans Google Drive.
           </p>
 
         </div>
@@ -775,10 +668,52 @@
 
           <p>
             J’ai défini le besoin fonctionnel,
-            l’architecture et la logique de l’outil.
-            J’ai utilisé l’IA pour accélérer l’écriture,
-            le test et l’itération du script Apps Script.
+            l’architecture de l’outil
+            et la logique attendue.
+            J’ai utilisé l’IA pour accélérer
+            l’écriture, le test et l’itération
+            du code Google Apps Script.
           </p>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- PREUVE -->
+
+    <section class="section-border">
+
+      <div class="container">
+
+        <div class="content-block">
+
+          <h2>
+            Du calcul au PDF en un clic.
+          </h2>
+
+          <p class="section-copy">
+            Un menu personnalisé intégré directement à Google Sheets
+            permet de créer un nouveau devis
+            puis de l’exporter immédiatement en PDF.
+          </p>
+
+          <p class="section-copy">
+            Le document est généré dans Google Drive
+            et peut être transmis directement au client.
+          </p>
+
+        </div>
+
+
+        <div class="visual">
+
+          <img
+            src="Google Sheets Quote Export Mockup.png"
+            alt="Menu Devis UDC permettant de créer et exporter un devis en PDF"
+          />
 
         </div>
 
@@ -812,7 +747,7 @@
 
             <p>
               pour produire un devis
-              après la saisie de la configuration.
+              une fois la configuration saisie.
             </p>
 
           </div>
@@ -821,12 +756,12 @@
           <div class="result-card">
 
             <strong>
-              Moins de manipulation
+              Moins de calcul manuel
             </strong>
 
             <p>
-              Les calculs et mises à jour
-              sont automatisés.
+              Les traitements sont réalisés
+              automatiquement dans le classeur.
             </p>
 
           </div>
@@ -839,8 +774,8 @@
             </strong>
 
             <p>
-              Des contrôles limitent
-              les erreurs avant export.
+              Des contrôles de cohérence
+              limitent les erreurs avant export.
             </p>
 
           </div>
@@ -853,8 +788,8 @@
             </strong>
 
             <p>
-              Le PDF généré peut être
-              transmis immédiatement au client.
+              Le PDF peut être envoyé
+              immédiatement au client.
             </p>
 
           </div>
@@ -865,9 +800,11 @@
         <div class="privacy-box">
 
           <p>
-            Les données commerciales, prix, marges,
-            fournisseurs et règles de pricing présentés
-            dans l’outil réel restent confidentiels
+            Les règles commerciales,
+            prix, marges, fournisseurs,
+            composants et paramètres internes
+            utilisés dans l’outil réel
+            restent confidentiels
             et ne sont pas reproduits dans ce portfolio.
           </p>
 
