@@ -3,7 +3,8 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Projet 02 — Franchise & Événementiel | Younes Rizk</title>
+
+  <title>Structuration opérationnelle — Younes Rizk</title>
 
   <style>
     * {
@@ -19,475 +20,722 @@
     body {
       font-family: Arial, Helvetica, sans-serif;
       background: #f7f7f5;
-      color: #1f2a37;
+      color: #1f2933;
       line-height: 1.65;
     }
 
-    a {
-      color: inherit;
-      text-decoration: none;
-    }
-
-    img {
-      max-width: 100%;
-      display: block;
-    }
-
     .container {
-      width: min(1120px, calc(100% - 48px));
+      width: min(1080px, 92%);
       margin: 0 auto;
     }
 
+    /* HEADER */
+
     header {
+      padding: 18px 0;
+      border-bottom: 1px solid #e5e7eb;
+      background: rgba(247, 247, 245, 0.96);
       position: sticky;
       top: 0;
-      z-index: 20;
-      background: rgba(247, 247, 245, 0.95);
-      backdrop-filter: blur(10px);
-      border-bottom: 1px solid #e5e7eb;
+      z-index: 100;
+      backdrop-filter: blur(8px);
     }
 
-    .nav {
+    nav {
       display: flex;
-      align-items: center;
       justify-content: space-between;
-      padding: 18px 0;
+      align-items: center;
       gap: 20px;
     }
 
     .brand {
-      font-size: 28px;
+      text-decoration: none;
+      color: #111827;
       font-weight: 700;
-      letter-spacing: -0.03em;
+      font-size: 18px;
     }
 
-    .nav-links {
-      display: flex;
-      align-items: center;
-      gap: 22px;
-      flex-wrap: wrap;
-      font-size: 15px;
-      color: #5b6472;
+    .nav-link {
+      text-decoration: none;
+      color: #5f6873;
+      font-size: 14px;
     }
 
-    .nav-links a:hover {
+    .nav-link:hover {
       color: #111827;
     }
 
-    main {
-      padding: 56px 0 90px;
-    }
+    /* HERO */
 
     .hero {
-      margin-bottom: 54px;
+      padding: 58px 0 52px;
     }
 
-    .hero h1 {
-      font-size: clamp(34px, 5vw, 56px);
-      line-height: 1.06;
-      letter-spacing: -0.04em;
-      margin-bottom: 20px;
-      max-width: 980px;
+    .hero-inner {
+      max-width: 850px;
     }
 
-    .hero p {
-      font-size: 21px;
-      color: #4b5563;
-      max-width: 900px;
-      margin-bottom: 16px;
+    h1 {
+      font-size: clamp(30px, 4vw, 38px);
+      line-height: 1.18;
+      letter-spacing: -0.025em;
+      margin-bottom: 18px;
+      font-weight: 700;
     }
 
-    .hero .intro {
-      font-size: 18px;
-      color: #5f6b7a;
-      max-width: 920px;
-    }
-
-    .summary-grid {
-      display: grid;
-      grid-template-columns: repeat(3, minmax(0, 1fr));
-      gap: 18px;
-      margin: 36px 0 0;
-    }
-
-    .summary-card {
-      background: #ffffff;
-      border: 1px solid #e5e7eb;
-      border-radius: 20px;
-      padding: 22px 22px 20px;
-    }
-
-    .summary-card h3 {
+    .hero-statement {
       font-size: 20px;
-      line-height: 1.2;
-      margin-bottom: 10px;
-      letter-spacing: -0.02em;
-    }
-
-    .summary-card p {
-      font-size: 15.5px;
-      color: #5b6472;
-      margin: 0;
-    }
-
-    .section {
-      margin-top: 74px;
-    }
-
-    .section h2 {
-      font-size: clamp(28px, 3.8vw, 38px);
-      line-height: 1.14;
-      letter-spacing: -0.035em;
+      line-height: 1.55;
+      color: #2f4735;
+      font-weight: 600;
+      max-width: 820px;
       margin-bottom: 14px;
     }
 
-    .section p.lead {
-      font-size: 18px;
-      color: #5b6472;
-      max-width: 920px;
-      margin-bottom: 28px;
+    .hero-lead {
+      font-size: 17px;
+      color: #5f6873;
+      line-height: 1.7;
+      max-width: 800px;
     }
 
-    .visual-card {
-      background: #ffffff;
-      border: 1px solid #e5e7eb;
-      border-radius: 24px;
-      padding: 18px;
-      overflow: hidden;
-      box-shadow: 0 8px 24px rgba(15, 23, 42, 0.04);
+    /* SECTIONS */
+
+    section {
+      padding: 54px 0;
     }
 
-    .visual-card a {
-      display: block;
+    .section-border {
+      border-top: 1px solid #e5e7eb;
     }
 
-    .visual-card img {
+    .content-block {
+      max-width: 800px;
+    }
+
+    h2 {
+      font-size: clamp(22px, 2.7vw, 26px);
+      line-height: 1.3;
+      letter-spacing: -0.015em;
+      margin-bottom: 14px;
+      font-weight: 700;
+    }
+
+    .section-copy {
+      color: #5f6873;
+      font-size: 16px;
+      line-height: 1.72;
+      max-width: 780px;
+    }
+
+    .section-copy + .section-copy {
+      margin-top: 9px;
+    }
+
+    /* IMAGES */
+
+    .visual {
+      margin-top: 28px;
       width: 100%;
+      overflow: hidden;
       border-radius: 18px;
     }
 
-    .text-block {
-      max-width: 920px;
-      margin-top: 20px;
-      color: #4b5563;
-      font-size: 17px;
-    }
-
-    .two-col {
-      display: grid;
-      grid-template-columns: 1.1fr 0.9fr;
-      gap: 26px;
-      align-items: start;
-    }
-
-    .bullet-list {
-      list-style: none;
-      display: grid;
-      gap: 14px;
-    }
-
-    .bullet-list li {
-      background: #ffffff;
-      border: 1px solid #e5e7eb;
-      border-radius: 18px;
-      padding: 18px 18px 16px;
-    }
-
-    .bullet-list strong {
+    .visual img {
       display: block;
-      font-size: 18px;
-      margin-bottom: 6px;
-      color: #111827;
-      letter-spacing: -0.02em;
+      width: 100%;
+      height: auto;
+
+      /*
+        Léger zoom pour réduire visuellement
+        les grandes marges blanches des images.
+      */
+      transform: scale(1.045);
+      transform-origin: center;
     }
 
-    .bullet-list span {
-      color: #5b6472;
-      font-size: 15.5px;
-    }
+    /* MÉTHODE */
 
-    .next-project {
-      margin-top: 74px;
-      padding: 30px;
+    .method-wrap {
+      margin-top: 28px;
+      padding: 26px;
       background: #ffffff;
-      border: 1px solid #e5e7eb;
-      border-radius: 24px;
+      border: 1px solid #e2e5e3;
+      border-radius: 20px;
     }
 
-    .next-project h2 {
-      font-size: 32px;
-      line-height: 1.15;
-      letter-spacing: -0.03em;
-      margin-bottom: 12px;
+    .method-flow {
+      display: grid;
+      grid-template-columns: repeat(6, 1fr);
+      gap: 10px;
+      align-items: center;
     }
 
-    .next-project p {
-      font-size: 17px;
-      color: #5b6472;
-      max-width: 860px;
-      margin-bottom: 18px;
-    }
+    .method-step {
+      position: relative;
+      background: #f3f7f3;
+      border: 1px solid #dce6dd;
+      border-radius: 13px;
+      min-height: 64px;
+      padding: 14px 8px;
 
-    .button-row {
       display: flex;
-      gap: 14px;
-      flex-wrap: wrap;
-    }
-
-    .button {
-      display: inline-flex;
       align-items: center;
       justify-content: center;
-      min-height: 48px;
-      padding: 0 18px;
-      border-radius: 999px;
-      font-size: 15px;
-      font-weight: 600;
-      transition: 0.2s ease;
+
+      text-align: center;
+      font-size: 14px;
+      font-weight: 700;
     }
 
-    .button-primary {
-      background: #1f2a37;
-      color: #ffffff;
+    .method-step:not(:last-child)::after {
+      content: "→";
+      position: absolute;
+      right: -18px;
+      top: 50%;
+      transform: translateY(-50%);
+      color: #7a9a80;
+      font-size: 18px;
+      z-index: 2;
     }
 
-    .button-primary:hover {
-      background: #111827;
-    }
-
-    .button-secondary {
-      background: #eef2f7;
-      color: #1f2a37;
-    }
-
-    .button-secondary:hover {
-      background: #e4e9f0;
-    }
-
-    footer {
-      padding: 46px 0 70px;
+    .method-note {
+      margin-top: 17px;
+      text-align: center;
       color: #6b7280;
       font-size: 14px;
     }
 
+    /* RÉSULTATS */
+
+    .results-grid {
+      margin-top: 28px;
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 14px;
+    }
+
+    .result-card {
+      background: #ffffff;
+      border: 1px solid #e2e5e3;
+      border-radius: 16px;
+      padding: 20px;
+    }
+
+    .result-card strong {
+      display: block;
+      font-size: 16px;
+      margin-bottom: 7px;
+      color: #2f4735;
+    }
+
+    .result-card p {
+      color: #66706a;
+      font-size: 14px;
+      line-height: 1.55;
+    }
+
+    /* AUTOMATISATION */
+
+    .decision-box {
+      margin-top: 24px;
+      max-width: 800px;
+      background: #eef3ef;
+      border-radius: 18px;
+      padding: 23px;
+    }
+
+    .decision-box strong {
+      display: block;
+      font-size: 16px;
+      color: #2f4735;
+      margin-bottom: 7px;
+    }
+
+    .decision-box p {
+      color: #56645a;
+      font-size: 15px;
+      line-height: 1.68;
+    }
+
+    /* HONDA */
+
+    .transition-box {
+      max-width: 820px;
+      background: #ffffff;
+      border: 1px solid #e2e5e3;
+      border-radius: 20px;
+      padding: 26px;
+    }
+
+    .transition-box h2 {
+      margin-bottom: 12px;
+    }
+
+    .transition-box p {
+      color: #5f6873;
+      font-size: 16px;
+      line-height: 1.7;
+      margin-bottom: 17px;
+    }
+
+    .transition-link {
+      display: inline-block;
+      color: #9ca3af;
+      font-size: 14px;
+      font-weight: 700;
+      border-bottom: 1px solid #d1d5db;
+      padding-bottom: 2px;
+    }
+
+    /* FOOTER */
+
+    footer {
+      border-top: 1px solid #e5e7eb;
+      padding: 30px 0 42px;
+      color: #6b7280;
+      font-size: 14px;
+    }
+
+    /* RESPONSIVE */
+
     @media (max-width: 900px) {
-      .summary-grid,
-      .two-col {
-        grid-template-columns: 1fr;
+
+      .method-flow {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 12px;
       }
 
-      .hero p {
-        font-size: 18px;
+      .method-step:not(:last-child)::after {
+        display: none;
       }
 
-      .hero .intro,
-      .section p.lead,
-      .text-block,
-      .next-project p {
-        font-size: 16px;
+      .results-grid {
+        grid-template-columns: repeat(2, 1fr);
       }
     }
 
-    @media (max-width: 640px) {
-      .container {
-        width: min(100% - 28px, 1120px);
+    @media (max-width: 620px) {
+
+      .hero {
+        padding: 42px 0 44px;
       }
 
-      .nav {
-        align-items: flex-start;
-        flex-direction: column;
+      section {
+        padding: 46px 0;
       }
 
-      .brand {
-        font-size: 24px;
+      .method-flow,
+      .results-grid {
+        grid-template-columns: 1fr;
       }
 
-      .nav-links {
-        gap: 14px;
-        font-size: 14px;
-      }
-
-      main {
-        padding-top: 38px;
-      }
-
-      .summary-card,
-      .bullet-list li,
-      .next-project {
+      .method-wrap {
         padding: 18px;
       }
 
-      .visual-card {
-        padding: 12px;
-        border-radius: 18px;
+      .visual img {
+        transform: scale(1.02);
       }
     }
   </style>
 </head>
+
 <body>
 
   <header>
-    <div class="container nav">
-      <a class="brand" href="index.html">Younes Rizk</a>
+    <div class="container">
 
-      <nav class="nav-links">
-        <a href="index.html#projects">Projets</a>
-        <a href="index.html#about">À propos</a>
-        <a href="index.html#contact">Contact</a>
+      <nav>
+
+        <a class="brand" href="index.html">
+          Younes Rizk
+        </a>
+
+        <a class="nav-link" href="index.html#projets">
+          ← Retour aux projets
+        </a>
+
       </nav>
+
     </div>
   </header>
 
+
   <main>
-    <div class="container">
 
-      <section class="hero">
-        <h1>Franchise & événementiel : structurer l’exécution avant la montée en charge.</h1>
+    <!-- HERO -->
 
-        <p>
-          J’ai rejoint UDC à un moment où l’activité commençait à se concrétiser, mais où les parcours opérationnels n’étaient pas encore formalisés.
-        </p>
+    <section class="hero">
 
-        <p class="intro">
-          Mon rôle a été de transformer des échanges dispersés en un cadre de travail clair, centralisé et réutilisable : gouvernance documentaire, arborescence projet, checklists de suivi, logique de contractualisation, coordination des étapes et préparation des futurs dossiers clients.
-        </p>
+      <div class="container">
 
-        <div class="summary-grid">
-          <div class="summary-card">
-            <h3>Comprendre vite</h3>
-            <p>Observer le réel, capter les besoins du dirigeant et formaliser les étapes au fur et à mesure.</p>
-          </div>
+        <div class="hero-inner">
 
-          <div class="summary-card">
-            <h3>Structurer sans freiner</h3>
-            <p>Créer une organisation utile immédiatement, sans alourdir l’exécution dans une startup en phase de structuration.</p>
-          </div>
+          <h1>
+            Projet 02 — Structuration opérationnelle
+          </h1>
 
-          <div class="summary-card">
-            <h3>Rendre réplicable</h3>
-            <p>Préparer une base réutilisable pour les prochains franchisés, événements et futurs collaborateurs.</p>
-          </div>
-        </div>
-      </section>
+          <p class="hero-statement">
+            Transformer une première exécution en méthode réutilisable.
+          </p>
 
-      <section class="section">
-        <h2>Le contexte dans lequel j’ai rejoint l’entreprise</h2>
-        <p class="lead">
-          UDC se situait dans une phase charnière : l’innovation était déjà avancée, mais l’organisation devait encore se structurer avant les premières commercialisations.
-        </p>
+          <p class="hero-lead">
+            Chez UDC, j’ai accompagné la création des premiers processus
+            Franchise & Événementiel au moment où l’entreprise entrait
+            dans ses premières phases de commercialisation.
+          </p>
 
-        <div class="visual-card">
-          <a href="ChatGPT%20Image%20Oct%208,%202026,%2010_03_18%20PM.png" target="_blank">
-            <img src="ChatGPT%20Image%20Oct%208,%202026,%2010_03_18%20PM.png" alt="Frise de maturité de la startup et positionnement de mon arrivée chez UDC">
-          </a>
         </div>
 
-        <div class="text-block">
-          Mon intervention s’inscrit dans cette phase de pré-commercialisation et de structuration opérationnelle. Le besoin n’était pas encore d’automatiser à grande échelle, mais d’abord de comprendre, stabiliser et documenter un fonctionnement encore en construction.
+      </div>
+
+    </section>
+
+
+    <!-- CONTEXTE -->
+
+    <section class="section-border">
+
+      <div class="container">
+
+        <div class="content-block">
+
+          <h2>
+            Structurer ce qui n’existait pas encore.
+          </h2>
+
+          <p class="section-copy">
+            À mon arrivée, les opérations Franchise et Événementiel
+            n’avaient encore jamais été exécutées de bout en bout.
+            Les procédures restaient donc à construire.
+          </p>
+
+          <p class="section-copy">
+            Mon objectif : comprendre chaque première étape,
+            la documenter immédiatement et préparer sa réutilisation
+            pour les prochains clients.
+          </p>
+
         </div>
-      </section>
 
-      <section class="section">
-        <h2>Passer d’une information dispersée à un espace projet centralisé</h2>
-        <p class="lead">
-          Avant, l’information circulait surtout par échanges ponctuels. L’enjeu était de centraliser les documents, clarifier les responsabilités et rendre les étapes lisibles.
-        </p>
 
-        <div class="visual-card">
-          <a href="ChatGPT%20Image%20Oct%208,%202026,%2010_03_27%20PM.png" target="_blank">
-            <img src="ChatGPT%20Image%20Oct%208,%202026,%2010_03_27%20PM.png" alt="Schéma avant après montrant le passage vers un espace projet centralisé">
-          </a>
+        <div class="visual">
+
+          <img
+            src="ChatGPT Image Oct 8, 2026, 10_03_18 PM.png"
+            alt="Positionnement de mon arrivée chez UDC dans la phase de pré-commercialisation"
+          />
+
         </div>
 
-        <div class="text-block">
-          J’ai construit une logique de centralisation autour d’une arborescence Drive dédiée, de dossiers modèles et d’une organisation documentaire pensée pour retrouver rapidement la bonne information, au bon moment, pour le bon client.
+      </div>
+
+    </section>
+
+
+    <!-- TRANSFORMATION -->
+
+    <section class="section-border">
+
+      <div class="container">
+
+        <div class="content-block">
+
+          <h2>
+            Ne plus repartir de zéro.
+          </h2>
+
+          <p class="section-copy">
+            Les premiers besoins arrivaient au fil des échanges :
+            documents administratifs, éléments juridiques,
+            informations techniques ou contraintes logistiques.
+          </p>
+
+          <p class="section-copy">
+            J’ai transformé ces premières demandes en une gouvernance documentaire
+            structurée : espaces projets, modèles, checklists,
+            règles de classement et étapes de suivi.
+          </p>
+
         </div>
-      </section>
 
-      <section class="section">
-        <h2>Créer une structure de travail claire, réutilisable et transmissible</h2>
-        <p class="lead">
-          Une fois le cadre posé, j’ai formalisé les grandes étapes à suivre après une vente, afin d’éviter les oublis et de ne pas repartir de zéro à chaque nouveau dossier.
-        </p>
 
-        <div class="two-col">
-          <div>
-            <div class="visual-card">
-              <a href="ChatGPT%20Image%20Oct%208,%202026,%2010_03_36%20PM.png" target="_blank">
-                <img src="ChatGPT%20Image%20Oct%208,%202026,%2010_03_36%20PM.png" alt="Tableau de suivi d'un processus franchise et événementiel">
-              </a>
+        <div class="visual">
+
+          <img
+            src="ChatGPT Image Oct 8, 2026, 10_03_27 PM.png"
+            alt="Transformation d'informations dispersées en espace projet centralisé"
+          />
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- MÉTHODE -->
+
+    <section class="section-border">
+
+      <div class="container">
+
+        <div class="content-block">
+
+          <h2>
+            Une méthode construite au fil du terrain.
+          </h2>
+
+          <p class="section-copy">
+            Je travaillais directement avec le CEO.
+            À chaque nouvelle étape, j’analysais le besoin,
+            proposais une méthode, la faisais valider,
+            puis l’intégrais au processus.
+          </p>
+
+        </div>
+
+
+        <div class="method-wrap">
+
+          <div class="method-flow">
+
+            <div class="method-step">
+              Observer
             </div>
+
+            <div class="method-step">
+              Comprendre
+            </div>
+
+            <div class="method-step">
+              Structurer
+            </div>
+
+            <div class="method-step">
+              Documenter
+            </div>
+
+            <div class="method-step">
+              Réutiliser
+            </div>
+
+            <div class="method-step">
+              Améliorer
+            </div>
+
           </div>
 
-          <div>
-            <ul class="bullet-list">
-              <li>
-                <strong>Gouvernance documentaire</strong>
-                <span>Classement, dossiers vierges, modèles et règles de rangement pour sécuriser la continuité des dossiers.</span>
-              </li>
-
-              <li>
-                <strong>Standardisation des étapes</strong>
-                <span>Contractualisation, préparation opérationnelle, contrôle qualité, logistique, installation, formation et suivi.</span>
-              </li>
-
-              <li>
-                <strong>Coordination transverse</strong>
-                <span>Articulation entre dirigeant, client, juridique et technique, avec une vision plus claire des responsabilités.</span>
-              </li>
-
-              <li>
-                <strong>Scalabilité opérationnelle</strong>
-                <span>Une structure pensée pour absorber de futurs projets sans dépendre uniquement des échanges mails.</span>
-              </li>
-            </ul>
+          <div class="method-note">
+            Chaque nouvelle exécution enrichit la méthode pour la suivante.
           </div>
+
         </div>
-      </section>
 
-      <section class="section">
-        <h2>Ce que ce projet a changé concrètement</h2>
-        <p class="lead">
-          Le principal résultat n’était pas un “outil” isolé, mais un fonctionnement plus lisible, plus fiable et plus facile à reproduire dans un environnement encore jeune.
-        </p>
+      </div>
 
-        <div class="summary-grid">
-          <div class="summary-card">
-            <h3>Moins d’incertitude</h3>
-            <p>Les étapes importantes ont été clarifiées. L’équipe savait mieux quoi préparer et à quel moment.</p>
-          </div>
+    </section>
 
-          <div class="summary-card">
-            <h3>Moins de dépendance aux mails</h3>
-            <p>L’information utile a été regroupée dans des espaces structurés plutôt que laissée dans des échanges dispersés.</p>
-          </div>
 
-          <div class="summary-card">
-            <h3>Une base pour la suite</h3>
-            <p>Ce raisonnement m’a servi ensuite pour préparer d’autres sujets plus opérationnels, notamment la logistique du partenariat Honda au Mondial de l’Auto 2026.</p>
-          </div>
+    <!-- STANDARDISATION -->
+
+    <section class="section-border">
+
+      <div class="container">
+
+        <div class="content-block">
+
+          <h2>
+            Rendre le processus transmissible.
+          </h2>
+
+          <p class="section-copy">
+            Pour chaque nouveau dossier, la logique devient reproductible :
+            savoir quels éléments demander, à quel moment,
+            où les retrouver et comment préparer l’étape suivante.
+          </p>
+
+          <p class="section-copy">
+            La standardisation réduit la dépendance aux échanges informels
+            et facilite la reprise du processus par un futur collaborateur.
+          </p>
+
         </div>
-      </section>
 
-      <section class="next-project">
-        <h2>Suite logique : Honda / Mondial de l’Auto 2026</h2>
-        <p>
-          Sur Honda, j’ai réutilisé le même raisonnement : structurer l’information, cadrer l’exécution et fiabiliser le suivi dans un contexte terrain plus dense et plus exposé.
-        </p>
 
-        <div class="button-row">
-          <a class="button button-primary" href="honda.html">Voir le projet Honda</a>
-          <a class="button button-secondary" href="index.html#projects">Retour aux projets</a>
+        <div class="visual">
+
+          <img
+            src="ChatGPT Image Oct 8, 2026, 10_03_36 PM.png"
+            alt="Structure opérationnelle standardisée et réutilisable"
+          />
+
         </div>
-      </section>
 
-    </div>
+      </div>
+
+    </section>
+
+
+    <!-- IMPACT -->
+
+    <section class="section-border">
+
+      <div class="container">
+
+        <div class="content-block">
+
+          <h2>
+            Ce que cette structuration a changé.
+          </h2>
+
+        </div>
+
+
+        <div class="results-grid">
+
+          <div class="result-card">
+
+            <strong>
+              Retrouver.
+            </strong>
+
+            <p>
+              L’information est centralisée
+              et accessible au bon endroit.
+            </p>
+
+          </div>
+
+
+          <div class="result-card">
+
+            <strong>
+              Répliquer.
+            </strong>
+
+            <p>
+              Les nouveaux projets ne repartent
+              plus systématiquement de zéro.
+            </p>
+
+          </div>
+
+
+          <div class="result-card">
+
+            <strong>
+              Transmettre.
+            </strong>
+
+            <p>
+              Le fonctionnement devient plus lisible
+              pour un futur collaborateur.
+            </p>
+
+          </div>
+
+
+          <div class="result-card">
+
+            <strong>
+              Monter en charge.
+            </strong>
+
+            <p>
+              L’organisation est mieux préparée
+              à gérer davantage de clients.
+            </p>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- AUTOMATISATION -->
+
+    <section class="section-border">
+
+      <div class="container">
+
+        <div class="content-block">
+
+          <h2>
+            Automatiser au bon moment.
+          </h2>
+
+          <p class="section-copy">
+            À ce stade, l’automatisation n’était pas la priorité.
+            Le volume ne la justifiait pas encore.
+          </p>
+
+        </div>
+
+
+        <div class="decision-box">
+
+          <strong>
+            D’abord stabiliser le processus.
+          </strong>
+
+          <p>
+            Il fallait comprendre les opérations avant de les automatiser.
+            Plusieurs étapes nécessitaient encore du jugement humain.
+            La priorité était donc la standardisation,
+            la documentation et la fiabilisation du fonctionnement.
+          </p>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- HONDA -->
+
+    <section class="section-border">
+
+      <div class="container">
+
+        <div class="transition-box">
+
+          <h2>
+            Application à un contexte plus complexe.
+          </h2>
+
+          <p>
+            Ce même raisonnement m’a ensuite accompagné dans la préparation
+            du Mondial de l’Auto 2026 avec Honda :
+            organiser une première exécution,
+            apprendre du terrain et améliorer la méthode
+            pour les événements suivants.
+          </p>
+
+          <span class="transition-link">
+            Honda · Mondial de l’Auto 2026 — Projet à venir
+          </span>
+
+        </div>
+
+      </div>
+
+    </section>
+
   </main>
 
+
   <footer>
+
     <div class="container">
-      Portfolio de Younes Rizk — Projet 02 : Franchise & Événementiel.
+      Younes Rizk · Portfolio professionnel
     </div>
+
   </footer>
 
 </body>
