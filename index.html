@@ -198,8 +198,8 @@
 
     .section-intro {
       color: #5f6873;
-      max-width: 720px;
-      margin-bottom: 34px;
+      max-width: 760px;
+      margin-bottom: 22px;
       font-size: 16px;
       line-height: 1.65;
     }
@@ -214,11 +214,11 @@
       background: #ffffff;
       border: 1px solid #e2e5e3;
       border-radius: 22px;
-      padding: 30px;
+      padding: 28px;
       display: flex;
       flex-direction: column;
-      gap: 16px;
-      min-height: 330px;
+      gap: 14px;
+      min-height: 300px;
     }
 
     .project-number {
@@ -230,10 +230,11 @@
     }
 
     .project-card h3 {
-      font-size: 26px;
-      line-height: 1.23;
-      letter-spacing: -0.025em;
+      font-size: 21px;
+      line-height: 1.35;
+      letter-spacing: -0.015em;
       max-width: 470px;
+      font-weight: 700;
     }
 
     .project-answer {
@@ -272,28 +273,12 @@
       cursor: default;
     }
 
-    .about-grid {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      gap: 22px;
+    .about-copy {
+      max-width: 780px;
     }
 
-    .info-card {
-      background: #ffffff;
-      border: 1px solid #e2e5e3;
-      border-radius: 22px;
-      padding: 28px;
-    }
-
-    .info-card h3 {
-      font-size: 20px;
-      margin-bottom: 10px;
-    }
-
-    .info-card p {
-      color: #5f6873;
-      font-size: 15px;
-      line-height: 1.65;
+    .about-copy p + p {
+      margin-top: 18px;
     }
 
     .contact-box {
@@ -341,8 +326,7 @@
 
     @media (max-width: 900px) {
       .hero-grid,
-      .projects-grid,
-      .about-grid {
+      .projects-grid {
         grid-template-columns: 1fr;
       }
 
@@ -616,46 +600,19 @@
           Comprendre avant de construire.
         </h2>
 
-        <p class="section-intro">
-          J’aime partir d’un problème réel, comprendre son fonctionnement
-          et ses contraintes, puis construire une réponse utile au terrain.
-        </p>
+        <div class="about-copy">
 
+          <p class="section-intro">
+            Je travaille à l’interface entre analyse, opérations et environnements techniques.
+            J’aime comprendre rapidement un sujet, clarifier ce qui bloque et transformer
+            cette compréhension en une réponse concrète.
+          </p>
 
-        <div class="about-grid">
-
-
-          <div class="info-card">
-
-            <h3>
-              Entre métier, opérations et technique
-            </h3>
-
-            <p>
-              Je travaille à l’interface entre les besoins métiers,
-              l’exécution opérationnelle et les environnements techniques.
-              Cette position me permet de traduire un problème en processus,
-              workflow ou solution concrète.
-            </p>
-
-          </div>
-
-
-          <div class="info-card">
-
-            <h3>
-              Apprendre pour résoudre
-            </h3>
-
-            <p>
-              Lorsque le besoin l’exige, je prends rapidement en main
-              de nouveaux outils ou concepts techniques. L’IA, le scripting
-              et l’automatisation sont pour moi des leviers d’exécution :
-              ils servent la solution, jamais l’inverse.
-            </p>
-
-          </div>
-
+          <p class="section-intro">
+            Je me forme vite sur les outils et technologies nécessaires au problème à résoudre.
+            L’IA, le scripting ou l’automatisation sont pour moi des leviers d’exécution,
+            pas une finalité.
+          </p>
 
         </div>
 
