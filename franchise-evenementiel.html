@@ -139,19 +139,15 @@
       width: 100%;
       overflow: hidden;
       border-radius: 18px;
+      background: #ffffff;
+      border: 1px solid #e5e7eb;
     }
 
     .visual img {
       display: block;
       width: 100%;
       height: auto;
-
-      /*
-        Léger zoom pour réduire visuellement
-        les grandes marges blanches des images.
-      */
-      transform: scale(1.045);
-      transform-origin: center;
+      transform: none;
     }
 
     /* MÉTHODE */
@@ -178,11 +174,9 @@
       border-radius: 13px;
       min-height: 64px;
       padding: 14px 8px;
-
       display: flex;
       align-items: center;
       justify-content: center;
-
       text-align: center;
       font-size: 14px;
       font-weight: 700;
@@ -300,7 +294,6 @@
     /* RESPONSIVE */
 
     @media (max-width: 900px) {
-
       .method-flow {
         grid-template-columns: repeat(3, 1fr);
         gap: 12px;
@@ -316,7 +309,6 @@
     }
 
     @media (max-width: 620px) {
-
       .hero {
         padding: 42px 0 44px;
       }
@@ -335,7 +327,7 @@
       }
 
       .visual img {
-        transform: scale(1.02);
+        transform: none;
       }
     }
   </style>
@@ -419,7 +411,6 @@
 
         </div>
 
-
         <div class="visual">
 
           <img
@@ -460,7 +451,6 @@
 
         </div>
 
-
         <div class="visual">
 
           <img
@@ -495,7 +485,6 @@
           </p>
 
         </div>
-
 
         <div class="method-wrap">
 
@@ -563,7 +552,6 @@
 
         </div>
 
-
         <div class="visual">
 
           <img
@@ -592,7 +580,6 @@
 
         </div>
 
-
         <div class="results-grid">
 
           <div class="result-card">
@@ -608,7 +595,6 @@
 
           </div>
 
-
           <div class="result-card">
 
             <strong>
@@ -622,7 +608,6 @@
 
           </div>
 
-
           <div class="result-card">
 
             <strong>
@@ -635,7 +620,6 @@
             </p>
 
           </div>
-
 
           <div class="result-card">
 
@@ -675,7 +659,6 @@
           </p>
 
         </div>
-
 
         <div class="decision-box">
 
