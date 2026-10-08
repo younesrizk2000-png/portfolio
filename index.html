@@ -3,6 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
   <title>Younes Rizk — Portfolio</title>
 
   <style>
@@ -70,7 +71,7 @@
     }
 
     .hero {
-      padding: 62px 0 66px;
+      padding: 72px 0 76px;
     }
 
     .hero-grid {
@@ -86,49 +87,24 @@
       font-size: 12px;
       color: #5f8267;
       font-weight: 700;
-      margin-bottom: 22px;
+      margin-bottom: 20px;
     }
 
     h1 {
-      font-size: clamp(44px, 5.2vw, 58px);
-      line-height: 1.08;
-      letter-spacing: -0.035em;
+      font-size: clamp(46px, 5.5vw, 62px);
+      line-height: 1.05;
+      letter-spacing: -0.04em;
       max-width: 760px;
       margin-bottom: 24px;
       font-weight: 700;
     }
 
     .lead {
-      font-size: 19px;
+      font-size: 20px;
       line-height: 1.55;
       color: #53606c;
       max-width: 720px;
-      margin-bottom: 22px;
-    }
-
-    .hero-copy {
-      font-size: 16px;
-      line-height: 1.65;
-      color: #66717b;
-      max-width: 700px;
       margin-bottom: 28px;
-    }
-
-    .hero-tags {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 10px;
-      margin-bottom: 28px;
-    }
-
-    .tag {
-      padding: 7px 12px;
-      border-radius: 999px;
-      background: #eef3ef;
-      color: #35503b;
-      font-size: 13px;
-      font-weight: 600;
-      border: 1px solid #d7e1d9;
     }
 
     .hero-actions {
@@ -197,7 +173,7 @@
     }
 
     section {
-      padding: 64px 0;
+      padding: 68px 0;
     }
 
     .section-border {
@@ -214,7 +190,7 @@
     }
 
     h2 {
-      font-size: clamp(30px, 3.6vw, 38px);
+      font-size: clamp(30px, 3.6vw, 40px);
       line-height: 1.2;
       letter-spacing: -0.025em;
       margin-bottom: 14px;
@@ -222,8 +198,8 @@
 
     .section-intro {
       color: #5f6873;
-      max-width: 760px;
-      margin-bottom: 32px;
+      max-width: 720px;
+      margin-bottom: 34px;
       font-size: 16px;
       line-height: 1.65;
     }
@@ -238,35 +214,38 @@
       background: #ffffff;
       border: 1px solid #e2e5e3;
       border-radius: 22px;
-      padding: 28px;
+      padding: 30px;
       display: flex;
       flex-direction: column;
-      gap: 15px;
+      gap: 16px;
+      min-height: 330px;
     }
 
     .project-number {
       font-size: 12px;
       font-weight: 700;
-      color: #7a858f;
-      letter-spacing: 0.08em;
+      color: #5f8267;
+      letter-spacing: 0.09em;
       text-transform: uppercase;
     }
 
     .project-card h3 {
-      font-size: 24px;
-      line-height: 1.25;
-      letter-spacing: -0.02em;
+      font-size: 26px;
+      line-height: 1.23;
+      letter-spacing: -0.025em;
+      max-width: 470px;
     }
 
-    .project-card p {
+    .project-answer {
       color: #5f6873;
       font-size: 15px;
       line-height: 1.65;
+      max-width: 470px;
     }
 
-    .project-meta {
+    .project-name {
       font-size: 13px;
-      color: #5f8267;
+      color: #7a858f;
       font-weight: 600;
     }
 
@@ -378,6 +357,10 @@
       h1 {
         max-width: 100%;
       }
+
+      .project-card {
+        min-height: auto;
+      }
     }
   </style>
 </head>
@@ -387,6 +370,7 @@
   <header>
     <div class="container">
       <nav>
+
         <a class="brand" href="index.html">Younes Rizk</a>
 
         <div class="nav-links">
@@ -394,235 +378,322 @@
           <a href="#apropos">À propos</a>
           <a href="#contact">Contact</a>
         </div>
+
       </nav>
     </div>
   </header>
 
+
   <main>
+
+    <!-- HERO -->
 
     <section class="hero">
       <div class="container">
+
         <div class="hero-grid">
 
           <div>
-            <div class="eyebrow">Analyse · Opérations · Technologie</div>
+
+            <div class="eyebrow">
+              Portfolio technique · Analyse · Opérations
+            </div>
 
             <h1>
-              À l’intersection de l’analyse, des opérations et de la technologie.
+              J’analyse. Je structure. J’automatise.
             </h1>
 
             <p class="lead">
-              Je comprends les enjeux terrain, structure les processus
-              et conçois des outils concrets pour rendre l’exécution
-              plus claire, plus fluide et plus reproductible.
+              Je transforme des besoins métiers en processus,
+              outils et solutions opérationnelles.
             </p>
-
-            <p class="hero-copy">
-              Mon approche consiste à partir d’un problème réel, comprendre son contexte,
-              organiser l’information utile, puis transformer cette compréhension
-              en système, en workflow ou en outil actionnable.
-            </p>
-
-            <div class="hero-tags">
-              <span class="tag">Pilotage opérationnel</span>
-              <span class="tag">Structuration de process</span>
-              <span class="tag">Automatisation</span>
-              <span class="tag">Google Sheets</span>
-              <span class="tag">Apps Script</span>
-              <span class="tag">Webhooks</span>
-              <span class="tag">IA</span>
-            </div>
 
             <div class="hero-actions">
-              <a class="button-primary" href="#projets">Voir mes projets</a>
-              <a class="button-secondary" href="mailto:younesrizk2000@gmail.com">Me contacter</a>
+
+              <a class="button-primary" href="#projets">
+                Voir mes projets
+              </a>
+
+              <a
+                class="button-secondary"
+                href="mailto:younesrizk2000@gmail.com"
+              >
+                Me contacter
+              </a>
+
             </div>
+
           </div>
 
+
           <div class="portrait-wrap">
+
             <div class="portrait-card">
-              <img src="image younes.jpg" alt="Portrait de Younes Rizk" />
+
+              <img
+                src="image younes.jpg"
+                alt="Portrait de Younes Rizk"
+              />
+
               <div class="portrait-caption">
                 Younes Rizk · France
               </div>
+
             </div>
+
           </div>
 
         </div>
+
       </div>
     </section>
 
+
+    <!-- PROJETS -->
+
     <section id="projets" class="section-border">
+
       <div class="container">
 
-        <div class="section-label">Projets</div>
+        <div class="section-label">
+          Projets sélectionnés
+        </div>
 
-        <h2>Études de cas sélectionnées</h2>
+        <h2>
+          Des problèmes concrets. Des solutions construites.
+        </h2>
 
         <p class="section-intro">
-          Une sélection de projets conçus pour clarifier l’exécution,
-          fluidifier la coordination et transformer des besoins opérationnels
-          en outils concrets.
+          Chaque projet part d’un besoin opérationnel réel :
+          comprendre le problème, concevoir une réponse puis mobiliser
+          les bons outils pour la mettre en œuvre.
         </p>
+
 
         <div class="projects-grid">
 
+
+          <!-- PROJET 01 -->
+
           <article class="project-card">
-            <div class="project-number">Projet 01</div>
 
-            <h3>OpsBoard</h3>
-
-            <p>
-              Un système de pilotage conçu à partir de l’observation terrain pour
-              suivre les tâches, structurer les blocages, déclencher des alertes
-              et alimenter un RETEX réutilisable.
-            </p>
-
-            <div class="project-meta">
-              Google Sheets · Apps Script · Slack · Webhooks · Automatisation
+            <div class="project-number">
+              01 · Pilotage opérationnel
             </div>
 
-            <a class="project-link" href="opsboard.html">
-              Voir le projet
+            <h3>
+              Comment anticiper les blocages et fiabiliser le suivi des projets ?
+            </h3>
+
+            <p class="project-answer">
+              J’ai conçu OpsBoard pour centraliser les tâches,
+              rendre les blocages visibles et transformer les résolutions
+              en connaissances réutilisables.
+            </p>
+
+            <div class="project-name">
+              OpsBoard
+            </div>
+
+            <a
+              class="project-link"
+              href="opsboard.html"
+            >
+              Découvrir OpsBoard →
             </a>
+
           </article>
 
+
+          <!-- PROJET 02 -->
+
           <article class="project-card">
-            <div class="project-number">Projet 02</div>
 
-            <h3>Process Franchise / Événementiel</h3>
-
-            <p>
-              Structuration de parcours opérationnels complets pour ne rien oublier,
-              clarifier les responsabilités et rendre l’exécution reproductible
-              sur de nouveaux projets.
-            </p>
-
-            <div class="project-meta">
-              Process design · Documentation · Coordination · Standardisation
+            <div class="project-number">
+              02 · Structuration opérationnelle
             </div>
 
-            <a class="project-link" href="franchise-evenementiel.html">
-  Voir le projet
-</a>
-          </article>
+            <h3>
+              Comment structurer une activité sans ralentir son exécution ?
+            </h3>
 
-          <article class="project-card">
-            <div class="project-number">Projet 03</div>
-
-            <h3>Pricing & génération de devis</h3>
-
-            <p>
-              Passage d’un fichier figé à un outil dynamique permettant de centraliser
-              les coûts, calculer les marges et générer rapidement un devis prêt à envoyer.
+            <p class="project-answer">
+              J’ai centralisé l’information, formalisé les processus
+              et standardisé l’exécution pour rendre les projets
+              plus lisibles et reproductibles.
             </p>
 
-            <div class="project-meta">
-              Pricing · Simulation de marge · Devis · Google Sheets
+            <div class="project-name">
+              Franchise & Événementiel
+            </div>
+
+            <a
+              class="project-link"
+              href="franchise-evenementiel.html"
+            >
+              Voir le projet →
+            </a>
+
+          </article>
+
+
+          <!-- PROJET 03 -->
+
+          <article class="project-card">
+
+            <div class="project-number">
+              03 · Pricing & analyse économique
+            </div>
+
+            <h3>
+              Comment produire rapidement des devis fiables et maîtriser les marges ?
+            </h3>
+
+            <p class="project-answer">
+              J’ai conçu un système de chiffrage centralisant les coûts,
+              automatisant les calculs de marge et accélérant
+              la génération des devis.
+            </p>
+
+            <div class="project-name">
+              Pricing & génération de devis
             </div>
 
             <span class="project-link disabled">
-              Page à venir
+              Projet à venir
             </span>
+
           </article>
 
+
+          <!-- PROJET 04 -->
+
           <article class="project-card">
-            <div class="project-number">Projet 04</div>
 
-            <h3>Honda — Documentation logistique</h3>
+            <div class="project-number">
+              04 · Coordination événementielle
+            </div>
 
-            <p>
-              Formalisation d’une documentation opérationnelle pour rendre un événement
-              plus lisible, capitaliser les apprentissages et mieux relier préparation
-              théorique et réalité terrain.
+            <h3>
+              Comment coordonner la logistique d’une activation événementielle complexe ?
+            </h3>
+
+            <p class="project-answer">
+              J’ai structuré la préparation opérationnelle du
+              Mondial de l’Auto 2026 dans le cadre du partenariat
+              entre UDC et Honda.
             </p>
 
-            <div class="project-meta">
-              Logistique · Documentation · Coordination · RETEX
+            <div class="project-name">
+              Honda · Mondial de l’Auto 2026
             </div>
 
             <span class="project-link disabled">
-              Page à venir
+              Projet à venir
             </span>
+
           </article>
+
 
         </div>
+
       </div>
+
     </section>
 
+
+    <!-- À PROPOS -->
+
     <section id="apropos" class="section-border">
+
       <div class="container">
 
-        <div class="section-label">À propos</div>
+        <div class="section-label">
+          À propos
+        </div>
 
-        <h2>Ma manière de travailler</h2>
+        <h2>
+          Comprendre avant de construire.
+        </h2>
 
         <p class="section-intro">
-          Je commence par comprendre. Ensuite, j’analyse, structure et traduis les besoins
-          entre les dimensions métier, opérationnelles et techniques.
+          J’aime partir d’un problème réel, comprendre son fonctionnement
+          et ses contraintes, puis construire une réponse utile au terrain.
         </p>
+
 
         <div class="about-grid">
 
-          <div class="info-card">
-            <h3>Mon positionnement</h3>
-            <p>
-              Je suis à l’aise dans les rôles à la croisée de l’analyse,
-              de la coordination et de l’exécution : chef de projet,
-              chargé de mission, chargé d’études, consultant, business analyst
-              ou encore responsable études et développement.
-            </p>
-          </div>
 
           <div class="info-card">
-            <h3>Ce que j’apporte</h3>
+
+            <h3>
+              Entre métier, opérations et technique
+            </h3>
+
             <p>
-              Une capacité à comprendre rapidement un sujet nouveau,
-              à décoder un environnement technique ou produit,
-              puis à le rendre exploitable à travers une logique claire,
-              un workflow ou un outil adapté au terrain.
+              Je travaille à l’interface entre les besoins métiers,
+              l’exécution opérationnelle et les environnements techniques.
+              Cette position me permet de traduire un problème en processus,
+              workflow ou solution concrète.
             </p>
+
           </div>
 
-          <div class="info-card">
-            <h3>Mon usage de l’IA</h3>
-            <p>
-              J’utilise l’IA comme levier de réflexion et d’exécution :
-              architecture de workflow, structuration de données,
-              documentation, génération de scripts et automatisations.
-            </p>
-          </div>
 
           <div class="info-card">
-            <h3>Ce qui m’intéresse</h3>
+
+            <h3>
+              Apprendre pour résoudre
+            </h3>
+
             <p>
-              Les contextes où il faut clarifier, organiser, piloter,
-              résoudre des frictions opérationnelles et construire des systèmes
-              simples qui améliorent concrètement le travail quotidien.
+              Lorsque le besoin l’exige, je prends rapidement en main
+              de nouveaux outils ou concepts techniques. L’IA, le scripting
+              et l’automatisation sont pour moi des leviers d’exécution :
+              ils servent la solution, jamais l’inverse.
             </p>
+
           </div>
+
 
         </div>
+
       </div>
+
     </section>
 
+
+    <!-- CONTACT -->
+
     <section id="contact" class="section-border">
+
       <div class="container">
 
-        <div class="section-label">Contact</div>
+        <div class="section-label">
+          Contact
+        </div>
 
-        <h2>Échangeons</h2>
+        <h2>
+          Échangeons.
+        </h2>
 
         <p class="section-intro">
-          Si vous souhaitez en savoir plus sur mon profil ou sur mes projets,
-          vous pouvez me contacter directement.
+          Pour échanger sur mon profil, mes réalisations
+          ou une opportunité professionnelle.
         </p>
+
 
         <div class="contact-box">
 
-          <h3>Younes Rizk</h3>
+          <h3>
+            Younes Rizk
+          </h3>
 
-          <p>France</p>
+          <p>
+            France
+          </p>
+
 
           <div class="contact-links">
 
@@ -645,15 +716,20 @@
           </div>
 
         </div>
+
       </div>
+
     </section>
 
   </main>
 
+
   <footer>
+
     <div class="container">
       Younes Rizk · France · Portfolio professionnel
     </div>
+
   </footer>
 
 </body>
