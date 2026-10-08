@@ -265,31 +265,46 @@
       cursor: default;
     }
 
+    .about-copy {
+      max-width: 800px;
+      margin-bottom: 44px;
+    }
+
+    .about-copy p {
+      color: #5f6873;
+      font-size: 16px;
+      line-height: 1.7;
+    }
+
+    .about-copy p + p {
+      margin-top: 16px;
+    }
+
     .journey {
-      max-width: 860px;
-      display: flex;
-      flex-direction: column;
-      gap: 26px;
+      max-width: 900px;
+      border-top: 1px solid #e2e5e3;
     }
 
     .journey-item {
       display: grid;
-      grid-template-columns: 92px 1fr;
-      gap: 24px;
+      grid-template-columns: 105px 1fr;
+      gap: 28px;
       align-items: center;
+      padding: 26px 0;
+      border-bottom: 1px solid #e2e5e3;
     }
 
     .journey-logo {
-      width: 92px;
-      height: 70px;
+      width: 105px;
+      height: 62px;
       display: flex;
       align-items: center;
-      justify-content: center;
+      justify-content: flex-start;
     }
 
     .journey-logo img {
-      max-width: 100%;
-      max-height: 58px;
+      max-width: 95px;
+      max-height: 54px;
       object-fit: contain;
       display: block;
     }
@@ -298,13 +313,14 @@
       font-size: 18px;
       line-height: 1.3;
       margin-bottom: 5px;
+      color: #1f2933;
     }
 
     .journey-content p {
       color: #5f6873;
       font-size: 15px;
       line-height: 1.6;
-      max-width: 650px;
+      max-width: 690px;
     }
 
     .contact-box {
@@ -376,16 +392,17 @@
 
     @media (max-width: 650px) {
       .journey-item {
-        grid-template-columns: 64px 1fr;
-        gap: 16px;
+        grid-template-columns: 70px 1fr;
+        gap: 18px;
       }
 
       .journey-logo {
-        width: 64px;
+        width: 70px;
       }
 
       .journey-logo img {
-        max-height: 48px;
+        max-width: 65px;
+        max-height: 44px;
       }
     }
   </style>
@@ -636,9 +653,23 @@
           À propos
         </h2>
 
-        <p class="section-intro">
-          Un parcours entre économie, assurance et opérations en startup technologique.
-        </p>
+        <div class="about-copy">
+
+          <p>
+            Je travaille entre analyse, opérations et environnements techniques.
+            J’aime comprendre vite.
+            Clarifier ce qui bloque.
+            Puis construire une réponse concrète.
+          </p>
+
+          <p>
+            Je me forme rapidement sur les outils utiles au problème.
+            L’IA, le scripting et l’automatisation sont des leviers.
+            Pas une finalité.
+          </p>
+
+        </div>
+
 
         <div class="journey">
 
@@ -661,7 +692,7 @@
               </h3>
 
               <p>
-                Master 2 en Économie des marchés et des entreprises.
+                Master 2 Économie des marchés et des entreprises.
                 Parcours Création d’Entreprise.
               </p>
 
@@ -688,8 +719,8 @@
               </h3>
 
               <p>
-                Près de 3 ans dans l’assurance santé.
-                Gestion de portefeuille, analyse et coordination métier.
+                Près de 3 ans sur des activités de retraite et d’investissement.
+                Gestion de portefeuille et responsabilité du produit Power Plan.
               </p>
 
             </div>
@@ -716,7 +747,7 @@
 
               <p>
                 Responsable opérationnel / Chief of Staff.
-                Structuration des processus, coordination et automatisation.
+                Structuration des processus, coordination transverse et automatisation.
               </p>
 
             </div>
