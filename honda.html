@@ -146,26 +146,24 @@
       width: min(650px, 100%);
     }
 
+    .visual-stack {
+      margin-top: 28px;
+      display: flex;
+      flex-direction: column;
+      gap: 24px;
+      align-items: center;
+    }
+
+    .visual-stack .visual {
+      margin-top: 0;
+    }
+
     .visual-budget {
       width: min(560px, 100%);
     }
 
-    .visual-pair {
-      margin: 30px auto 0;
-      max-width: 900px;
-      display: grid;
-      grid-template-columns: repeat(2, 1fr);
-      gap: 18px;
-      align-items: start;
-    }
-
-    .visual-pair img {
-      width: 100%;
-      height: auto;
-      display: block;
-      border-radius: 16px;
-      border: 1px solid #e5e7eb;
-      background: #ffffff;
+    .visual-team {
+      width: min(660px, 100%);
     }
 
     /* FLOW */
@@ -299,12 +297,6 @@
       }
 
       .pilot-grid {
-        grid-template-columns: 1fr;
-      }
-    }
-
-    @media (max-width: 700px) {
-      .visual-pair {
         grid-template-columns: 1fr;
       }
     }
@@ -583,19 +575,26 @@
         </div>
 
 
-        <div class="visual-pair">
+        <div class="visual-stack">
 
-          <div class="visual-budget">
+          <div class="visual visual-budget">
+
             <img
               src="ChatGPT Image Oct 9, 2026, 12_04_09 AM.png"
               alt="Représentation du suivi budgétaire"
             />
+
           </div>
 
-          <img
-            src="ChatGPT Image Oct 9, 2026, 12_04_19 AM.png"
-            alt="Représentation d'une feuille de route équipe"
-          />
+
+          <div class="visual visual-team">
+
+            <img
+              src="ChatGPT Image Oct 9, 2026, 12_04_19 AM.png"
+              alt="Représentation d'une feuille de route équipe"
+            />
+
+          </div>
 
         </div>
 
