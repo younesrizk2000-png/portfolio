@@ -102,7 +102,7 @@
     /* SECTIONS */
 
     section {
-      padding: 56px 0;
+      padding: 58px 0;
     }
 
     .section-border {
@@ -129,46 +129,46 @@
     }
 
     .section-copy + .section-copy {
-      margin-top: 8px;
+      margin-top: 9px;
     }
 
     /* PROBLÈME */
 
     .problem-grid {
-      margin-top: 28px;
+      margin-top: 30px;
       display: grid;
       grid-template-columns: repeat(3, 1fr);
-      gap: 14px;
+      gap: 16px;
     }
 
     .problem-card {
       background: #ffffff;
       border: 1px solid #e2e5e3;
-      border-radius: 16px;
-      padding: 20px;
+      border-radius: 17px;
+      padding: 22px;
     }
 
     .problem-card strong {
       display: block;
       color: #2f4735;
       font-size: 16px;
-      margin-bottom: 7px;
+      margin-bottom: 8px;
     }
 
     .problem-card p {
       color: #66706a;
       font-size: 14px;
-      line-height: 1.55;
+      line-height: 1.6;
     }
 
     /* WORKFLOW */
 
     .workflow {
-      margin-top: 30px;
+      margin-top: 32px;
       display: grid;
       grid-template-columns: repeat(5, 1fr);
       gap: 12px;
-      max-width: 920px;
+      max-width: 940px;
     }
 
     .workflow-step {
@@ -178,6 +178,10 @@
       padding: 18px 12px;
       text-align: center;
       position: relative;
+      min-height: 92px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
     }
 
     .workflow-step:not(:last-child)::after {
@@ -204,11 +208,11 @@
       line-height: 1.45;
     }
 
-    /* VISUEL OUTIL */
+    /* CAPTURE OUTIL */
 
     .tool-visual {
-      margin: 32px auto 0;
-      width: min(820px, 100%);
+      margin: 38px auto 0;
+      width: min(1000px, 100%);
     }
 
     .tool-visual img {
@@ -225,7 +229,7 @@
     .classification-grid {
       margin-top: 30px;
       display: grid;
-      grid-template-columns: 1fr 1fr;
+      grid-template-columns: repeat(2, 1fr);
       gap: 18px;
       max-width: 900px;
     }
@@ -247,11 +251,11 @@
     .classification-card p {
       color: #66706a;
       font-size: 14px;
-      line-height: 1.6;
+      line-height: 1.65;
     }
 
     .classification-arrow {
-      margin-top: 20px;
+      margin-top: 22px;
       max-width: 900px;
       text-align: center;
       color: #2f4735;
@@ -262,36 +266,36 @@
     /* VUES */
 
     .views-grid {
-      margin-top: 28px;
+      margin-top: 30px;
       display: grid;
       grid-template-columns: repeat(3, 1fr);
-      gap: 14px;
+      gap: 16px;
     }
 
     .view-card {
       background: #ffffff;
       border: 1px solid #e2e5e3;
       border-radius: 17px;
-      padding: 21px;
+      padding: 22px;
     }
 
     .view-card strong {
       display: block;
       color: #2f4735;
       font-size: 16px;
-      margin-bottom: 7px;
+      margin-bottom: 8px;
     }
 
     .view-card p {
       color: #66706a;
       font-size: 14px;
-      line-height: 1.55;
+      line-height: 1.6;
     }
 
     /* TECH */
 
     .tech-box {
-      margin-top: 26px;
+      margin-top: 28px;
       max-width: 850px;
       background: #eef3ef;
       border-radius: 18px;
@@ -318,7 +322,7 @@
     /* CONTRÔLES */
 
     .controls-grid {
-      margin-top: 28px;
+      margin-top: 30px;
       display: grid;
       grid-template-columns: repeat(4, 1fr);
       gap: 14px;
@@ -369,7 +373,7 @@
       line-height: 1.7;
     }
 
-    /* NEXT */
+    /* ÉVOLUTION */
 
     .next-box {
       margin-top: 28px;
@@ -392,8 +396,6 @@
       line-height: 1.7;
     }
 
-    /* CONFIDENTIALITÉ */
-
     .privacy-note {
       margin-top: 22px;
       color: #7b848c;
@@ -402,12 +404,16 @@
       max-width: 800px;
     }
 
+    /* FOOTER */
+
     footer {
       border-top: 1px solid #e5e7eb;
       padding: 30px 0 42px;
       color: #6b7280;
       font-size: 14px;
     }
+
+    /* RESPONSIVE */
 
     @media (max-width: 900px) {
       .workflow {
@@ -428,10 +434,7 @@
     }
 
     @media (max-width: 700px) {
-      .classification-grid {
-        grid-template-columns: 1fr;
-      }
-
+      .classification-grid,
       .problem-grid {
         grid-template-columns: 1fr;
       }
@@ -449,6 +452,10 @@
       .workflow,
       .controls-grid {
         grid-template-columns: 1fr;
+      }
+
+      .tool-visual {
+        margin-top: 28px;
       }
     }
   </style>
