@@ -243,8 +243,6 @@
       object-position: center;
     }
 
-    /* Honda : ne pas couper le logo */
-
     .project-visual.honda {
       background: #ffffff;
     }
@@ -391,6 +389,50 @@
       border-color: #1f2933;
     }
 
+    /* POSTES CIBLES */
+
+    .roles-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 14px;
+      max-width: 1000px;
+    }
+
+    .role-card {
+      background: #ffffff;
+      border: 1px solid #e2e5e3;
+      border-radius: 17px;
+      padding: 20px 21px;
+      min-height: 88px;
+      display: flex;
+      align-items: center;
+    }
+
+    .role-card span {
+      color: #2f4735;
+      font-size: 15px;
+      line-height: 1.45;
+      font-weight: 700;
+    }
+
+    .roles-cta {
+      margin-top: 28px;
+    }
+
+    .roles-cta a {
+      display: inline-block;
+      text-decoration: none;
+      color: #111827;
+      font-weight: 700;
+      font-size: 15px;
+      border-bottom: 1px solid #111827;
+      padding-bottom: 2px;
+    }
+
+    .roles-cta a:hover {
+      opacity: 0.75;
+    }
+
     /* CONTACT */
 
     .contact-box {
@@ -447,6 +489,10 @@
         grid-template-columns: 1fr;
       }
 
+      .roles-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+
       .hero {
         padding-top: 48px;
       }
@@ -486,6 +532,14 @@
       .project-visual {
         margin-bottom: 18px;
       }
+
+      .roles-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .role-card {
+        min-height: auto;
+      }
     }
   </style>
 </head>
@@ -505,6 +559,7 @@
         <div class="nav-links">
           <a href="#projets">Projets</a>
           <a href="#apropos">À propos</a>
+          <a href="#profils">Postes</a>
           <a href="#contact">Contact</a>
         </div>
 
@@ -608,7 +663,7 @@
         <div class="projects-grid">
 
 
-          <!-- PROJET 01 — OPSBOARD -->
+          <!-- PROJET 01 -->
 
           <article class="project-card">
 
@@ -654,7 +709,7 @@
           </article>
 
 
-          <!-- PROJET 02 — STRUCTURATION -->
+          <!-- PROJET 02 -->
 
           <article class="project-card">
 
@@ -701,7 +756,7 @@
           </article>
 
 
-          <!-- PROJET 03 — PRICING -->
+          <!-- PROJET 03 -->
 
           <article class="project-card">
 
@@ -747,7 +802,7 @@
           </article>
 
 
-          <!-- PROJET 04 — HONDA -->
+          <!-- PROJET 04 -->
 
           <article class="project-card">
 
@@ -968,6 +1023,84 @@
             L’IA, le scripting et l’automatisation sont des leviers
             pour construire des solutions plus efficaces — pas une finalité.
           </p>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- POSTES -->
+
+    <section
+      id="profils"
+      class="section-border"
+    >
+
+      <div class="container">
+
+        <h2 class="section-title">
+          Vous recherchez un profil capable d’analyser, structurer et piloter ?
+        </h2>
+
+        <p class="section-intro">
+          Mon expérience peut notamment s’inscrire dans les fonctions suivantes.
+        </p>
+
+
+        <div class="roles-grid">
+
+          <div class="role-card">
+            <span>
+              Business Analyst
+            </span>
+          </div>
+
+          <div class="role-card">
+            <span>
+              PMO / Project Coordinator
+            </span>
+          </div>
+
+          <div class="role-card">
+            <span>
+              Business Operations
+            </span>
+          </div>
+
+          <div class="role-card">
+            <span>
+              Consultant junior — Transformation & Organisation
+            </span>
+          </div>
+
+          <div class="role-card">
+            <span>
+              Business Development / Market Expansion
+            </span>
+          </div>
+
+          <div class="role-card">
+            <span>
+              Sales Operations
+            </span>
+          </div>
+
+          <div class="role-card">
+            <span>
+              Chargé d’études / Market Analyst
+            </span>
+          </div>
+
+        </div>
+
+
+        <div class="roles-cta">
+
+          <a href="#contact">
+            Parlons-nous →
+          </a>
 
         </div>
 
