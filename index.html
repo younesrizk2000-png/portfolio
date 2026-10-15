@@ -202,33 +202,37 @@
       line-height: 1.7;
     }
 
-    /* PROJETS */
+    /* PROJECTS */
 
     .projects-grid {
       display: grid;
       grid-template-columns: repeat(2, 1fr);
-      gap: 20px;
+      gap: 22px;
     }
 
     .project-card {
       background: #ffffff;
       border: 1px solid #e2e5e3;
       border-radius: 20px;
-      padding: 18px;
+      padding: 16px;
       display: flex;
       flex-direction: column;
-      gap: 16px;
       min-height: 100%;
-      overflow: hidden;
+      transition: transform 0.2s ease, box-shadow 0.2s ease;
+    }
+
+    .project-card:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 12px 30px rgba(15, 23, 42, 0.05);
     }
 
     .project-visual {
       width: 100%;
-      aspect-ratio: 16 / 9;
-      border-radius: 14px;
+      aspect-ratio: 3 / 2;
+      border-radius: 15px;
       overflow: hidden;
-      background: #f1f3f1;
-      border: 1px solid #edf0ed;
+      background: #f4f6f4;
+      margin-bottom: 20px;
     }
 
     .project-visual img {
@@ -237,18 +241,13 @@
       display: block;
       object-fit: cover;
       object-position: center;
-      transition: transform 0.3s ease;
-    }
-
-    .project-card:hover .project-visual img {
-      transform: scale(1.015);
     }
 
     .project-content {
       display: flex;
       flex-direction: column;
       flex: 1;
-      padding: 2px 6px 6px;
+      padding: 2px 7px 8px;
     }
 
     .project-card h3 {
@@ -269,7 +268,7 @@
 
     .project-footer {
       margin-top: auto;
-      padding-top: 22px;
+      padding-top: 24px;
       display: flex;
       flex-direction: column;
       align-items: flex-start;
@@ -465,11 +464,15 @@
       }
 
       .project-card {
-        padding: 14px;
+        padding: 12px;
       }
 
       .project-content {
-        padding: 2px 4px 6px;
+        padding: 2px 5px 8px;
+      }
+
+      .project-visual {
+        margin-bottom: 18px;
       }
     }
   </style>
@@ -478,6 +481,7 @@
 <body>
 
   <header>
+
     <div class="container">
 
       <nav>
@@ -495,6 +499,7 @@
       </nav>
 
     </div>
+
   </header>
 
 
@@ -503,6 +508,7 @@
     <!-- HERO -->
 
     <section class="hero">
+
       <div class="container">
 
         <div class="hero-grid">
@@ -524,7 +530,10 @@
 
             <div class="hero-actions">
 
-              <a class="button-primary" href="#projets">
+              <a
+                class="button-primary"
+                href="#projets"
+              >
                 Voir mes projets
               </a>
 
@@ -560,12 +569,16 @@
         </div>
 
       </div>
+
     </section>
 
 
     <!-- PROJETS -->
 
-    <section id="projets" class="section-border">
+    <section
+      id="projets"
+      class="section-border"
+    >
 
       <div class="container">
 
@@ -583,16 +596,19 @@
         <div class="projects-grid">
 
 
-          <!-- PROJET 01 -->
+          <!-- PROJET 01 — OPSBOARD -->
 
           <article class="project-card">
 
             <div class="project-visual">
+
               <img
-                src="Tableau de bord opérationnel français (1).png"
-                alt="Aperçu d'OpsBoard"
+                src="ChatGPT Image Oct 15, 2026, 11_10_06 AM.png"
+                alt="Illustration du pilotage de projets techniques et de la gestion des blocages"
               />
+
             </div>
+
 
             <div class="project-content">
 
@@ -604,6 +620,7 @@
                 J’ai conçu OpsBoard pour fiabiliser le suivi de projets techniques,
                 rendre les blocages visibles et capitaliser les solutions.
               </p>
+
 
               <div class="project-footer">
 
@@ -625,16 +642,19 @@
           </article>
 
 
-          <!-- PROJET 02 -->
+          <!-- PROJET 02 — STRUCTURATION -->
 
           <article class="project-card">
 
             <div class="project-visual">
+
               <img
-                src="ChatGPT Image Oct 8, 2026, 10_03_18 PM.png"
-                alt="Aperçu de la structuration des processus"
+                src="ChatGPT Image Oct 15, 2026, 11_10_30 AM.png"
+                alt="Illustration de la transformation d'informations dispersées en processus structuré"
               />
+
             </div>
+
 
             <div class="project-content">
 
@@ -647,6 +667,7 @@
                 et standardisé l’exécution pour rendre les projets
                 plus lisibles et reproductibles.
               </p>
+
 
               <div class="project-footer">
 
@@ -668,16 +689,19 @@
           </article>
 
 
-          <!-- PROJET 03 -->
+          <!-- PROJET 03 — PRICING -->
 
           <article class="project-card">
 
             <div class="project-visual">
+
               <img
-                src="Google Sheets Quote Generation Workflow.png"
-                alt="Aperçu du système de chiffrage et génération de devis"
+                src="ChatGPT Image Oct 15, 2026, 11_09_53 AM.png"
+                alt="Illustration d'un système automatisé de chiffrage et génération de devis"
               />
+
             </div>
+
 
             <div class="project-content">
 
@@ -689,6 +713,7 @@
                 J’ai conçu un système de chiffrage qui centralise les coûts,
                 calcule les marges et accélère la génération des devis.
               </p>
+
 
               <div class="project-footer">
 
@@ -710,16 +735,19 @@
           </article>
 
 
-          <!-- PROJET 04 -->
+          <!-- PROJET 04 — HONDA -->
 
           <article class="project-card">
 
             <div class="project-visual">
+
               <img
-                src="ChatGPT Image Oct 9, 2026, 12_03_52 AM.png"
-                alt="Aperçu de la préparation opérationnelle du projet Honda"
+                src="Honda Event Operations Command Center.png"
+                alt="Illustration du pilotage opérationnel de l'activation Honda au Mondial de l'Auto"
               />
+
             </div>
+
 
             <div class="project-content">
 
@@ -731,6 +759,7 @@
                 J’ai structuré la préparation du Mondial de l’Auto 2026
                 et coordonné les informations, contraintes et étapes clés du projet.
               </p>
+
 
               <div class="project-footer">
 
@@ -761,13 +790,17 @@
 
     <!-- À PROPOS -->
 
-    <section id="apropos" class="section-border">
+    <section
+      id="apropos"
+      class="section-border"
+    >
 
       <div class="container">
 
         <h2 class="section-title">
           À propos
         </h2>
+
 
         <div class="about-copy">
 
@@ -803,6 +836,7 @@
               />
 
             </div>
+
 
             <div class="journey-content">
 
@@ -842,11 +876,13 @@
 
             </div>
 
+
             <div class="journey-content">
 
               <h3>
                 Aix-Marseille Université
               </h3>
+
 
               <p class="degree-list">
 
@@ -882,6 +918,7 @@
 
             </div>
 
+
             <div class="journey-content">
 
               <h3>
@@ -904,6 +941,7 @@
             </div>
 
           </div>
+
 
         </div>
 
@@ -928,7 +966,10 @@
 
     <!-- CONTACT -->
 
-    <section id="contact" class="section-border">
+    <section
+      id="contact"
+      class="section-border"
+    >
 
       <div class="container">
 
@@ -942,6 +983,7 @@
           Ou simplement échanger sur une opportunité.
         </p>
 
+
         <div class="contact-box">
 
           <h3>
@@ -951,6 +993,7 @@
           <p>
             France
           </p>
+
 
           <div class="contact-links">
 
