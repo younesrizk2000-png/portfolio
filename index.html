@@ -208,6 +208,7 @@
       display: grid;
       grid-template-columns: repeat(2, 1fr);
       gap: 22px;
+      align-items: start;
     }
 
     .project-card {
@@ -243,15 +244,20 @@
       object-position: center;
     }
 
-    /* HONDA */
+    /* HONDA : afficher l'image entière */
 
     .project-visual.honda {
-      background: #f4f6f4;
+      aspect-ratio: auto;
+      background: transparent;
+      overflow: hidden;
     }
 
     .project-visual.honda img {
-      object-fit: cover;
-      object-position: center top;
+      width: 100%;
+      height: auto;
+      display: block;
+      object-fit: initial;
+      object-position: initial;
     }
 
     .project-content {
