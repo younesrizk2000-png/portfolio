@@ -208,7 +208,6 @@
       display: grid;
       grid-template-columns: repeat(2, 1fr);
       gap: 22px;
-      align-items: start;
     }
 
     .project-card {
@@ -234,6 +233,7 @@
       overflow: hidden;
       background: #f4f6f4;
       margin-bottom: 20px;
+      position: relative;
     }
 
     .project-visual img {
@@ -244,20 +244,34 @@
       object-position: center;
     }
 
-    /* HONDA : afficher l'image entière */
+    /* HONDA */
 
     .project-visual.honda {
-      aspect-ratio: auto;
-      background: transparent;
+      aspect-ratio: 3 / 2;
+      position: relative;
       overflow: hidden;
+      background-image: url("Honda Event Operations Command Center.png");
+      background-size: cover;
+      background-position: center;
+    }
+
+    .project-visual.honda::before {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background: rgba(255, 255, 255, 0.5);
+      backdrop-filter: blur(9px);
+      z-index: 0;
     }
 
     .project-visual.honda img {
+      position: relative;
+      z-index: 1;
       width: 100%;
-      height: auto;
+      height: 100%;
       display: block;
-      object-fit: initial;
-      object-position: initial;
+      object-fit: contain;
+      object-position: center;
     }
 
     .project-content {
