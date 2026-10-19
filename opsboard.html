@@ -123,8 +123,7 @@
     }
 
     .rules,
-    .impact-grid,
-    .tool-grid {
+    .impact-grid {
       display: grid;
       grid-template-columns: repeat(3, 1fr);
       gap: 20px;
@@ -145,22 +144,6 @@
 
     .card p {
       font-size: 15px;
-    }
-
-    .tool-card {
-      background: #ffffff;
-      border: 1px solid #e2e5e3;
-      border-radius: 18px;
-      padding: 22px;
-    }
-
-    .tool-card h3 {
-      font-size: 17px;
-      margin-bottom: 7px;
-    }
-
-    .tool-card p {
-      font-size: 14px;
     }
 
     .flow {
@@ -375,7 +358,6 @@
     @media (max-width: 800px) {
       .rules,
       .impact-grid,
-      .tool-grid,
       .reasoning-grid {
         grid-template-columns: 1fr;
       }
@@ -508,33 +490,6 @@
 
       <div class="caption">
         Flux automatisé d’OpsBoard — cliquer sur l’image pour l’ouvrir en taille réelle.
-      </div>
-
-      <div class="tool-grid">
-
-        <div class="tool-card">
-          <h3>Google Sheets</h3>
-          <p>
-            Le point central où l’équipe suit les tâches et leurs statuts.
-          </p>
-        </div>
-
-        <div class="tool-card">
-          <h3>Apps Script</h3>
-          <p>
-            Le moteur d’automatisation intégré à Google Sheets.
-            Il réagit aux changements de statut et déclenche les actions.
-          </p>
-        </div>
-
-        <div class="tool-card">
-          <h3>Webhook → Slack</h3>
-          <p>
-            Le lien automatisé qui transmet le blocage
-            au canal Slack de l’équipe ingénierie.
-          </p>
-        </div>
-
       </div>
 
     </div>
