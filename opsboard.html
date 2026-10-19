@@ -123,7 +123,8 @@
     }
 
     .rules,
-    .impact-grid {
+    .impact-grid,
+    .tool-grid {
       display: grid;
       grid-template-columns: repeat(3, 1fr);
       gap: 20px;
@@ -144,6 +145,22 @@
 
     .card p {
       font-size: 15px;
+    }
+
+    .tool-card {
+      background: #ffffff;
+      border: 1px solid #e2e5e3;
+      border-radius: 18px;
+      padding: 22px;
+    }
+
+    .tool-card h3 {
+      font-size: 17px;
+      margin-bottom: 7px;
+    }
+
+    .tool-card p {
+      font-size: 14px;
     }
 
     .flow {
@@ -209,13 +226,6 @@
       color: #7c858f;
       margin-top: 11px;
       padding: 0 4px 4px;
-    }
-
-    .stack {
-      display: grid;
-      grid-template-columns: 1fr;
-      gap: 42px;
-      margin-top: 30px;
     }
 
     .reasoning-grid {
@@ -314,52 +324,6 @@
       font-size: 14px;
     }
 
-    .tech-box {
-      margin-top: 28px;
-      padding: 30px;
-      background: #111827;
-      color: #ffffff;
-      border-radius: 20px;
-    }
-
-    .tech-line {
-      display: grid;
-      grid-template-columns: 160px 1fr;
-      gap: 18px;
-      padding: 18px 0;
-      border-bottom: 1px solid #2d3748;
-    }
-
-    .tech-line:last-of-type {
-      border-bottom: 0;
-    }
-
-    .tech-name {
-      color: #ffffff;
-      font-weight: 700;
-    }
-
-    .tech-desc {
-      color: #cbd5e1;
-      font-size: 15px;
-    }
-
-    .tags {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 9px;
-      margin-top: 24px;
-    }
-
-    .tag {
-      padding: 8px 12px;
-      background: #1f2937;
-      border: 1px solid #374151;
-      border-radius: 999px;
-      font-size: 13px;
-      color: #ffffff;
-    }
-
     .impact-card {
       background: #eef3ef;
       border-radius: 18px;
@@ -377,6 +341,26 @@
       color: #5b6a60;
     }
 
+    .key-message {
+      margin-top: 28px;
+      background: #111827;
+      color: #ffffff;
+      border-radius: 20px;
+      padding: 28px;
+      max-width: 830px;
+    }
+
+    .key-message strong {
+      display: block;
+      font-size: 20px;
+      margin-bottom: 8px;
+    }
+
+    .key-message p {
+      color: #cbd5e1;
+      font-size: 15px;
+    }
+
     footer {
       border-top: 1px solid #e5e7eb;
       padding: 32px 0 46px;
@@ -391,17 +375,13 @@
     @media (max-width: 800px) {
       .rules,
       .impact-grid,
+      .tool-grid,
       .reasoning-grid {
         grid-template-columns: 1fr;
       }
 
       .hero {
         padding-top: 62px;
-      }
-
-      .tech-line {
-        grid-template-columns: 1fr;
-        gap: 5px;
       }
 
       .resolution-header {
@@ -423,88 +403,161 @@
   </div>
 </header>
 
+
 <main>
+
+  <!-- HERO -->
 
   <section class="hero">
     <div class="container">
 
       <div class="eyebrow">
-        Projet 01 · Système opérationnel
+        Projet 01 · Pilotage opérationnel
       </div>
 
       <h1>OpsBoard</h1>
 
       <p class="lead">
-        Un système de pilotage conçu à partir de l’observation terrain pour
-        rendre les priorités visibles, structurer les blocages et transformer
-        les résolutions en connaissances réutilisables.
+        Un outil de pilotage opérationnel que j’ai mis en place pour
+        suivre l’avancement des projets, rendre les blocages visibles
+        et capitaliser les solutions.
       </p>
 
     </div>
   </section>
 
 
+  <!-- POURQUOI -->
+
   <section class="section-border">
     <div class="container">
 
       <div class="mini-label">
-        01 · Observer
+        01 · Pourquoi
       </div>
 
       <h2>
-        Poser les règles avant de construire l’outil
+        Voir les blocages. Agir plus vite.
       </h2>
 
       <p class="intro-copy">
-        Le point de départ n’était pas Excel, mais le fonctionnement de l’équipe.
-        J’ai d’abord défini quelques règles simples pour structurer la circulation
-        de l’information et éviter que les blocages ou solutions restent dans
-        des échanges isolés.
+        Le suivi des tâches était dispersé et les problèmes techniques
+        résolus n’étaient pas toujours documentés.
+        J’ai mis en place OpsBoard pour centraliser le suivi,
+        structurer les blocages et conserver les solutions utiles.
       </p>
 
       <div class="rules">
 
         <div class="card">
-          <h3>Une source commune</h3>
+          <h3>Centraliser</h3>
           <p>
-            L’équipe renseigne les informations utiles au même endroit.
+            Une même source pour suivre les tâches et les priorités.
           </p>
         </div>
 
         <div class="card">
-          <h3>Un blocage = une action</h3>
+          <h3>Alerter</h3>
           <p>
-            Le problème doit être identifié et orienté vers la bonne personne.
+            Un blocage déclenche une action vers l’équipe concernée.
           </p>
         </div>
 
         <div class="card">
-          <h3>Une résolution = du RETEX</h3>
+          <h3>Capitaliser</h3>
           <p>
-            Une solution utile doit pouvoir être retrouvée et réutilisée.
+            Une résolution devient une connaissance réutilisable.
           </p>
         </div>
 
       </div>
+
     </div>
   </section>
 
+
+  <!-- COMMENT CA FONCTIONNE -->
 
   <section class="section-border">
     <div class="container">
 
       <div class="mini-label">
-        02 · Suivre
+        02 · Automatiser
       </div>
 
       <h2>
-        Un workflow commun pour chaque tâche
+        De Google Sheets à Slack
+      </h2>
+
+      <p class="intro-copy">
+        Le suivi est centralisé dans Google Sheets.
+        Lorsqu’un statut change, Apps Script exécute automatiquement
+        les actions prévues et peut transmettre une alerte à Slack.
+      </p>
+
+      <a
+        class="visual zoom-image"
+        href="opsboard_google_sheets_appscript_webhook_slack.png"
+        target="_blank"
+      >
+        <img
+          src="opsboard_google_sheets_appscript_webhook_slack.png"
+          alt="Schéma du fonctionnement automatisé d'OpsBoard entre Google Sheets, Apps Script, webhook et Slack"
+        />
+      </a>
+
+      <div class="caption">
+        Flux automatisé d’OpsBoard — cliquer sur l’image pour l’ouvrir en taille réelle.
+      </div>
+
+      <div class="tool-grid">
+
+        <div class="tool-card">
+          <h3>Google Sheets</h3>
+          <p>
+            Le point central où l’équipe suit les tâches et leurs statuts.
+          </p>
+        </div>
+
+        <div class="tool-card">
+          <h3>Apps Script</h3>
+          <p>
+            Le moteur d’automatisation intégré à Google Sheets :
+            il réagit aux changements de statut et déclenche les actions.
+          </p>
+        </div>
+
+        <div class="tool-card">
+          <h3>Webhook → Slack</h3>
+          <p>
+            Le lien automatisé qui transmet le blocage
+            au canal Slack de l’équipe ingénierie.
+          </p>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+
+  <!-- WORKFLOW -->
+
+  <section class="section-border">
+    <div class="container">
+
+      <div class="mini-label">
+        03 · Suivre
+      </div>
+
+      <h2>
+        Un workflow simple pour chaque tâche
       </h2>
 
       <p>
-        Lorsqu’une tâche est créée, Apps Script génère automatiquement un identifiant.
-        Cet ID permet de relier la même tâche entre les vues opérationnelles,
-        le Dashboard, les alertes Slack et le Journal Technique.
+        Chaque tâche suit le même parcours.
+        Apps Script lui attribue automatiquement un identifiant
+        afin de conserver le lien entre suivi, alertes et RETEX.
       </p>
 
       <div class="flow">
@@ -552,21 +605,23 @@
   </section>
 
 
+  <!-- DIAGNOSTIC -->
+
   <section class="section-border">
     <div class="container">
 
       <div class="mini-label">
-        03 · Diagnostiquer
+        04 · Diagnostiquer
       </div>
 
       <h2>
-        Quand une tâche se bloque
+        Quand une tâche passe en « Bloqué »
       </h2>
 
-      <p>
-        Lorsqu’une tâche passe de <strong>En cours</strong> à <strong>Bloqué</strong>,
-        un <strong>pop-up apparaît automatiquement</strong> pour structurer
-        le diagnostic autour de trois questions simples.
+      <p class="intro-copy">
+        Apps Script déclenche automatiquement un pop-up.
+        L’objectif est de documenter le problème au moment où il apparaît,
+        plutôt que de perdre l’information dans des échanges isolés.
       </p>
 
       <div class="reasoning-grid">
@@ -574,113 +629,63 @@
         <div class="reasoning-card">
           <strong>Quoi ?</strong>
           <p>
-            Quelle est la nature du blocage ?
+            Quel est le problème rencontré ?
           </p>
         </div>
 
         <div class="reasoning-card">
           <strong>Qui ?</strong>
           <p>
-            Qui doit intervenir pour débloquer la situation ?
+            Qui peut intervenir pour le débloquer ?
           </p>
         </div>
 
         <div class="reasoning-card">
           <strong>Comment ?</strong>
           <p>
-            Comment le problème a-t-il été résolu ?
+            Comment le problème a-t-il finalement été résolu ?
           </p>
         </div>
 
       </div>
 
+      <a
+        class="visual zoom-image"
+        href="opsboard-popup.png"
+        target="_blank"
+      >
+        <img
+          src="opsboard-popup.png"
+          alt="Pop-up de diagnostic OpsBoard"
+        />
+      </a>
 
-      <div class="stack">
-
-        <div>
-
-          <div class="card">
-            <h3>
-              Pop-up de diagnostic
-            </h3>
-
-            <p>
-              Le pop-up collecte les informations utiles au traitement du blocage
-              puis à sa capitalisation.
-            </p>
-          </div>
-
-          <a
-            class="visual zoom-image"
-            href="opsboard-popup.png"
-            target="_blank"
-          >
-            <img
-              src="opsboard-popup.png"
-              alt="Pop-up de diagnostic OpsBoard"
-            />
-          </a>
-
-          <div class="caption">
-            Exemple anonymisé — cliquer sur l’image pour l’ouvrir en taille réelle.
-          </div>
-
-        </div>
-
-
-        <div>
-
-          <div class="card">
-            <h3>
-              Alerte automatique
-            </h3>
-
-            <p>
-              Le webhook Slack transmet l’ID de la tâche,
-              la nature du blocage et la personne ou équipe devant intervenir.
-            </p>
-          </div>
-
-          <a
-            class="visual zoom-image"
-            href="Slack UDC Engineering Alert in French.png"
-            target="_blank"
-          >
-            <img
-              src="Slack UDC Engineering Alert in French.png"
-              alt="Alerte Slack automatique OpsBoard"
-            />
-          </a>
-
-          <div class="caption">
-            Cliquer sur l’image pour l’ouvrir en taille réelle.
-          </div>
-
-        </div>
-
+      <div class="caption">
+        Exemple anonymisé du pop-up de diagnostic.
       </div>
 
     </div>
   </section>
 
 
+  <!-- RETEX -->
+
   <section class="section-border">
     <div class="container">
 
       <div class="mini-label">
-        04 · Capitaliser
+        05 · Capitaliser
       </div>
 
       <h2>
-        Transformer la résolution en RETEX
+        Pas seulement suivre : créer une mémoire vivante
       </h2>
 
-      <p>
-        Une fois le problème résolu, les informations utiles sont intégrées
-        au Journal Technique afin de conserver une trace exploitable
-        pour les situations futures.
+      <p class="intro-copy">
+        Une fois le problème résolu, les informations utiles sont conservées
+        dans le Journal Technique.
+        La résolution devient alors un RETEX réutilisable.
       </p>
-
 
       <div class="resolution-box">
 
@@ -688,11 +693,11 @@
 
           <div>
             <div class="mini-label">
-              Informations de résolution
+              Informations conservées
             </div>
 
             <h3>
-              Enrichir le Journal Technique
+              Alimenter le Journal Technique
             </h3>
           </div>
 
@@ -701,7 +706,6 @@
           </div>
 
         </div>
-
 
         <div class="questions">
 
@@ -729,32 +733,36 @@
           <div class="question">
             <div class="question-number">4</div>
             <div class="question-text">
-              Enseignement clé pour les futurs membres
+              Enseignement à conserver
             </div>
           </div>
 
           <div class="question">
             <div class="question-number">5</div>
             <div class="question-text">
-              Temps passé pour résoudre
+              Temps nécessaire à la résolution
             </div>
           </div>
 
         </div>
 
-
         <div class="resolution-note">
-          Le Journal Technique devient ainsi une mémoire consultable
+          Le Journal Technique devient une mémoire vivante
           des problèmes rencontrés et des solutions appliquées.
         </div>
 
       </div>
 
-
       <div class="flow">
 
         <div class="flow-step">
           Blocage
+        </div>
+
+        <div class="arrow">→</div>
+
+        <div class="flow-step">
+          Diagnostic
         </div>
 
         <div class="arrow">→</div>
@@ -770,7 +778,6 @@
         </div>
 
       </div>
-
 
       <a
         class="visual zoom-image"
@@ -791,21 +798,23 @@
   </section>
 
 
+  <!-- DASHBOARD -->
+
   <section class="section-border">
     <div class="container">
 
       <div class="mini-label">
-        05 · Piloter
+        06 · Piloter
       </div>
 
       <h2>
-        Une lecture synthétique de l’activité
+        Une vue synthétique de l’activité
       </h2>
 
       <p>
-        Le Dashboard consolide automatiquement les informations issues
-        des To Do Production et R&D afin de rendre visibles l’avancement,
-        les tâches actives, les priorités et les blocages.
+        Le Dashboard consolide les informations des projets
+        pour rendre visibles l’avancement, les priorités
+        et les blocages.
       </p>
 
       <a
@@ -827,123 +836,7 @@
   </section>
 
 
-  <section class="section-border">
-    <div class="container">
-
-      <div class="mini-label">
-        Architecture technique
-      </div>
-
-      <h2>
-        Sous le capot
-      </h2>
-
-      <div class="tech-box">
-
-        <div class="tech-line">
-
-          <div class="tech-name">
-            Apps Script
-          </div>
-
-          <div class="tech-desc">
-            Génération automatique des ID, logique des statuts,
-            déclenchement des pop-ups, alimentation du RETEX
-            et protection des feuilles sensibles.
-          </div>
-
-        </div>
-
-
-        <div class="tech-line">
-
-          <div class="tech-name">
-            Webhook Slack
-          </div>
-
-          <div class="tech-desc">
-            Transmission automatique des blocages vers le canal d’équipe.
-          </div>
-
-        </div>
-
-
-        <div class="tech-line">
-
-          <div class="tech-name">
-            Google Sheets
-          </div>
-
-          <div class="tech-desc">
-            Interface opérationnelle, Dashboard consolidé
-            et Journal Technique centralisé.
-          </div>
-
-        </div>
-
-
-        <div class="tech-line">
-
-          <div class="tech-name">
-            Sécurisation
-          </div>
-
-          <div class="tech-desc">
-            Dashboard et Journal Technique protégés ;
-            les équipes interviennent uniquement dans les zones prévues.
-          </div>
-
-        </div>
-
-
-        <div class="tech-line">
-
-          <div class="tech-name">
-            IA
-          </div>
-
-          <div class="tech-desc">
-            Utilisée pour réfléchir à l’architecture du workflow,
-            structurer la documentation et accélérer
-            la génération et l’adaptation des scripts.
-          </div>
-
-        </div>
-
-
-        <div class="tags">
-
-          <span class="tag">
-            Google Sheets
-          </span>
-
-          <span class="tag">
-            Apps Script
-          </span>
-
-          <span class="tag">
-            Slack
-          </span>
-
-          <span class="tag">
-            Webhooks
-          </span>
-
-          <span class="tag">
-            Automatisation
-          </span>
-
-          <span class="tag">
-            IA
-          </span>
-
-        </div>
-
-      </div>
-
-    </div>
-  </section>
-
+  <!-- IMPACT -->
 
   <section class="section-border">
     <div class="container">
@@ -956,49 +849,43 @@
         Voir. Agir. Capitaliser.
       </h2>
 
-
       <div class="impact-grid">
 
         <div class="impact-card">
-
-          <h3>
-            Voir
-          </h3>
-
+          <h3>Voir</h3>
           <p>
-            Une vue claire des tâches,
-            des priorités et des blocages.
+            Les tâches, priorités et blocages sont centralisés.
           </p>
-
         </div>
-
 
         <div class="impact-card">
-
-          <h3>
-            Agir
-          </h3>
-
+          <h3>Agir</h3>
           <p>
-            L’information utile arrive
-            à la personne qui doit intervenir.
+            Un blocage est diagnostiqué et transmis
+            à l’équipe qui doit intervenir.
           </p>
-
         </div>
-
 
         <div class="impact-card">
-
-          <h3>
-            Capitaliser
-          </h3>
-
+          <h3>Capitaliser</h3>
           <p>
-            Les résolutions deviennent
-            des connaissances réutilisables.
+            Les solutions deviennent des connaissances
+            réutilisables pour les projets suivants.
           </p>
-
         </div>
+
+      </div>
+
+      <div class="key-message">
+
+        <strong>
+          L’objectif n’était pas de créer un simple tableau de suivi.
+        </strong>
+
+        <p>
+          OpsBoard relie pilotage opérationnel, diagnostic des blocages
+          et retour d’expérience dans un même système.
+        </p>
 
       </div>
 
@@ -1009,7 +896,6 @@
 
 
 <footer>
-
   <div class="container">
 
     Younes Rizk · France ·
@@ -1019,7 +905,6 @@
     </a>
 
   </div>
-
 </footer>
 
 </body>
