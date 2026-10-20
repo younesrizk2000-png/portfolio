@@ -417,9 +417,9 @@
       </h1>
 
       <p class="lead">
-        Un outil de pilotage opérationnel que j’ai conçu
+        Un outil de pilotage opérationnel que j’ai conçu et mis en place
         pour centraliser le suivi des projets,
-        rendre les blocages plus visibles
+        rendre les blocages visibles
         et capitaliser les apprentissages.
       </p>
 
@@ -464,10 +464,11 @@
         </div>
 
         <div class="card">
-          <h3>Réagir</h3>
+          <h3>Alerter</h3>
           <p>
-            Rendre les points de blocage
-            suffisamment visibles pour faciliter l’action.
+            Lorsqu’un blocage apparaît,
+            l’information peut être transmise automatiquement
+            à l’équipe concernée.
           </p>
         </div>
 
@@ -495,20 +496,22 @@
       </div>
 
       <h2>
-        Faire circuler l’information sans multiplier les actions manuelles.
+        Faire circuler l’information au bon moment.
       </h2>
 
       <p class="intro-copy">
-        J’ai intégré des automatisations
-        afin que certaines évolutions du suivi
-        puissent déclencher les actions utiles
-        sans imposer de manipulations supplémentaires à l’utilisateur.
+        Le suivi est centralisé dans Google Sheets.
+        J’ai ajouté une couche d’automatisation
+        afin que certaines évolutions du statut d’une tâche
+        puissent déclencher automatiquement les actions prévues.
       </p>
 
       <p class="intro-copy" style="margin-top:10px;">
-        L’objectif n’était pas d’automatiser pour automatiser,
-        mais de fluidifier la circulation de l’information
-        et de réduire les tâches répétitives.
+        Parmi elles :
+        transmettre une alerte à l’équipe concernée
+        lorsqu’un blocage est identifié,
+        sans demander à l’utilisateur
+        de refaire manuellement la circulation de l’information.
       </p>
 
 
@@ -519,12 +522,12 @@
       >
         <img
           src="Google Sheet vers Slack automatisé.png"
-          alt="Illustration simplifiée d'un flux d'automatisation lié au pilotage opérationnel"
+          alt="Schéma simplifié du flux d'automatisation entre le suivi opérationnel et la notification d'équipe"
         />
       </a>
 
       <div class="caption">
-        Représentation simplifiée et anonymisée du principe d’automatisation.
+        Représentation simplifiée et anonymisée du flux d’automatisation.
       </div>
 
     </div>
@@ -545,9 +548,9 @@
       </h2>
 
       <p>
-        Le suivi repose sur un nombre limité d’états
-        afin de permettre à l’équipe
-        de comprendre rapidement où se situe chaque sujet.
+        Chaque tâche suit un parcours simple
+        afin de rendre immédiatement visible
+        son état d’avancement.
       </p>
 
 
@@ -603,45 +606,78 @@
     <div class="container">
 
       <div class="mini-label">
-        04 · Comprendre
+        04 · Diagnostiquer
       </div>
 
       <h2>
-        Transformer un blocage en information exploitable.
+        Quand une tâche passe en « Bloqué ».
       </h2>
 
       <p class="intro-copy">
-        Lorsqu’un problème apparaît,
-        l’enjeu n’est pas seulement de signaler qu’une tâche est bloquée :
-        il faut aussi comprendre suffisamment la situation
-        pour faciliter sa résolution.
+        Le changement de statut déclenche automatiquement
+        une étape de qualification du problème.
+        L’utilisateur indique ce qui bloque
+        et les personnes susceptibles d’intervenir.
+      </p>
+
+      <p class="intro-copy" style="margin-top:10px;">
+        Une notification est ensuite envoyée
+        à l’équipe concernée afin que le blocage soit visible
+        sans dépendre uniquement d’un échange manuel.
       </p>
 
 
       <div class="reasoning-grid">
 
         <div class="reasoning-card">
-          <strong>Qualifier</strong>
+          <strong>1 · Qualifier</strong>
           <p>
-            Clarifier le problème
-            et son contexte.
+            Comprendre clairement
+            ce qui bloque la tâche.
           </p>
         </div>
 
         <div class="reasoning-card">
-          <strong>Orienter</strong>
+          <strong>2 · Alerter</strong>
           <p>
-            Identifier les personnes
-            ou compétences utiles.
+            Transmettre automatiquement
+            l’information à l’équipe concernée.
           </p>
         </div>
 
         <div class="reasoning-card">
-          <strong>Résoudre</strong>
+          <strong>3 · Résoudre</strong>
           <p>
-            Conserver une trace
-            de la réponse apportée.
+            Traiter le blocage
+            puis conserver la solution apportée.
           </p>
+        </div>
+
+      </div>
+
+
+      <div class="flow">
+
+        <div class="flow-step active">
+          Statut « Bloqué »
+        </div>
+
+        <div class="arrow">→</div>
+
+        <div class="flow-step">
+          Qualification
+        </div>
+
+        <div class="arrow">→</div>
+
+        <div class="flow-step">
+          Notification
+        </div>
+
+        <div class="arrow">→</div>
+
+        <div class="flow-step">
+          Intervention
         </div>
 
       </div>
@@ -654,12 +690,12 @@
       >
         <img
           src="opsboard-popup.png"
-          alt="Illustration anonymisée d'une interface de qualification d'un blocage"
+          alt="Exemple anonymisé d'une interface de qualification d'un blocage"
         />
       </a>
 
       <div class="caption">
-        Exemple anonymisé d’une interface de qualification.
+        Exemple anonymisé de l’étape de qualification déclenchée lors d’un blocage.
       </div>
 
     </div>
@@ -680,16 +716,16 @@
       </h2>
 
       <p class="intro-copy">
-        Une fois un problème résolu,
-        certaines informations peuvent être utiles
-        bien au-delà de la tâche concernée.
+        Le workflow ne s’arrête pas
+        au moment où la tâche est débloquée.
       </p>
 
       <p class="intro-copy" style="margin-top:10px;">
-        J’ai donc intégré une logique de retour d’expérience
-        permettant de conserver les éléments essentiels
-        et de faciliter leur réutilisation lorsque
-        des situations comparables se présentent.
+        Une fois le problème résolu,
+        les informations utiles peuvent être conservées
+        sous forme de retour d’expérience
+        afin de faciliter la résolution
+        d’une situation similaire à l’avenir.
       </p>
 
 
@@ -704,7 +740,7 @@
             </div>
 
             <h3>
-              Conserver uniquement l’information utile
+              Conserver l’information utile
             </h3>
 
           </div>
@@ -728,7 +764,7 @@
           <div class="question">
             <div class="question-number">2</div>
             <div class="question-text">
-              Identifier ce qui a permis de résoudre le problème
+              Identifier la réponse qui a permis de résoudre le problème
             </div>
           </div>
 
@@ -743,8 +779,8 @@
 
 
         <div class="resolution-note">
-          L’objectif est de transformer l’expérience opérationnelle
-          en connaissance réutilisable.
+          La résolution ne disparaît pas dans les échanges :
+          elle peut devenir une connaissance réutilisable.
         </div>
 
       </div>
@@ -759,7 +795,7 @@
         <div class="arrow">→</div>
 
         <div class="flow-step">
-          Compréhension
+          Diagnostic
         </div>
 
         <div class="arrow">→</div>
@@ -812,7 +848,8 @@
       <p>
         La synthèse permet de retrouver rapidement
         les informations nécessaires au pilotage :
-        avancement, priorités et points nécessitant une attention particulière.
+        avancement, priorités
+        et points nécessitant une attention particulière.
       </p>
 
 
@@ -862,8 +899,9 @@
         <div class="impact-card">
           <h3>Agir</h3>
           <p>
-            Faciliter l’identification
-            et le traitement des points de friction.
+            Lorsqu’un blocage apparaît,
+            le qualifier et transmettre l’information
+            à l’équipe concernée.
           </p>
         </div>
 
@@ -885,22 +923,21 @@
         </strong>
 
         <p>
-          OpsBoard répond à un besoin de pilotage :
-          rendre l’information plus lisible,
-          faciliter l’action
-          et éviter de perdre les apprentissages issus du terrain.
+          OpsBoard relie suivi opérationnel,
+          gestion des blocages,
+          circulation de l’information
+          et retour d’expérience
+          dans un même outil.
         </p>
 
       </div>
 
 
       <p class="privacy-note">
-        Cette présentation décrit uniquement
-        le problème identifié, ma démarche
-        et les principes généraux de la solution.
-        Les règles internes, données réelles,
-        paramètres techniques, documents de travail
-        et informations confidentielles
+        Cette présentation décrit le principe fonctionnel
+        et mon raisonnement de conception.
+        Les données réelles, paramètres internes,
+        contenus opérationnels et informations confidentielles
         ne sont pas reproduits.
       </p>
 
