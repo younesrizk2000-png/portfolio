@@ -344,6 +344,14 @@
       font-size: 15px;
     }
 
+    .privacy-note {
+      margin-top: 24px;
+      max-width: 830px;
+      color: #7b848c;
+      font-size: 13px;
+      line-height: 1.65;
+    }
+
     footer {
       border-top: 1px solid #e5e7eb;
       padding: 32px 0 46px;
@@ -379,8 +387,15 @@
 <header>
   <div class="container">
     <nav>
-      <a class="back" href="index.html">← Retour au portfolio</a>
-      <a href="mailto:younesrizk2000@gmail.com">Contact</a>
+
+      <a class="back" href="index.html">
+        ← Retour au portfolio
+      </a>
+
+      <a href="mailto:younesrizk2000@gmail.com">
+        Contact
+      </a>
+
     </nav>
   </div>
 </header>
@@ -397,12 +412,15 @@
         Projet 01 · Pilotage opérationnel
       </div>
 
-      <h1>OpsBoard</h1>
+      <h1>
+        OpsBoard
+      </h1>
 
       <p class="lead">
-        Un outil de pilotage opérationnel que j’ai mis en place pour
-        suivre l’avancement des projets, rendre les blocages visibles
-        et capitaliser les solutions.
+        Un outil de pilotage opérationnel que j’ai conçu
+        pour centraliser le suivi des projets,
+        rendre les blocages plus visibles
+        et capitaliser les apprentissages.
       </p>
 
     </div>
@@ -423,32 +441,41 @@
       </h2>
 
       <p class="intro-copy">
-        Le suivi des tâches était dispersé et les problèmes techniques
-        résolus n’étaient pas toujours documentés.
-        J’ai mis en place OpsBoard pour centraliser le suivi,
-        structurer les blocages et conserver les solutions utiles.
+        Lorsque le suivi d’un projet repose sur plusieurs échanges
+        et supports, il devient plus difficile de conserver
+        une vision commune des priorités et des points de friction.
       </p>
+
+      <p class="intro-copy" style="margin-top:10px;">
+        J’ai conçu OpsBoard pour rendre ce suivi
+        plus lisible, plus structuré
+        et plus facilement exploitable par l’équipe.
+      </p>
+
 
       <div class="rules">
 
         <div class="card">
           <h3>Centraliser</h3>
           <p>
-            Une même source pour suivre les tâches et les priorités.
+            Regrouper l’information utile
+            dans une même vue de pilotage.
           </p>
         </div>
 
         <div class="card">
-          <h3>Alerter</h3>
+          <h3>Réagir</h3>
           <p>
-            Un blocage déclenche une action vers l’équipe concernée.
+            Rendre les points de blocage
+            suffisamment visibles pour faciliter l’action.
           </p>
         </div>
 
         <div class="card">
           <h3>Capitaliser</h3>
           <p>
-            Une résolution devient une connaissance réutilisable.
+            Conserver les enseignements utiles
+            pour éviter de repartir systématiquement de zéro.
           </p>
         </div>
 
@@ -468,14 +495,22 @@
       </div>
 
       <h2>
-        De Google Sheets à Slack
+        Faire circuler l’information sans multiplier les actions manuelles.
       </h2>
 
       <p class="intro-copy">
-        Le suivi est centralisé dans Google Sheets.
-        Lorsqu’un statut change, Apps Script exécute automatiquement
-        les actions prévues et peut transmettre une alerte à Slack.
+        J’ai intégré des automatisations
+        afin que certaines évolutions du suivi
+        puissent déclencher les actions utiles
+        sans imposer de manipulations supplémentaires à l’utilisateur.
       </p>
+
+      <p class="intro-copy" style="margin-top:10px;">
+        L’objectif n’était pas d’automatiser pour automatiser,
+        mais de fluidifier la circulation de l’information
+        et de réduire les tâches répétitives.
+      </p>
+
 
       <a
         class="visual zoom-image"
@@ -484,12 +519,12 @@
       >
         <img
           src="Google Sheet vers Slack automatisé.png"
-          alt="Schéma du fonctionnement automatisé d'OpsBoard entre Google Sheets, Apps Script, webhook et Slack"
+          alt="Illustration simplifiée d'un flux d'automatisation lié au pilotage opérationnel"
         />
       </a>
 
       <div class="caption">
-        Flux automatisé d’OpsBoard — cliquer sur l’image pour l’ouvrir en taille réelle.
+        Représentation simplifiée et anonymisée du principe d’automatisation.
       </div>
 
     </div>
@@ -506,14 +541,15 @@
       </div>
 
       <h2>
-        Un workflow simple pour chaque tâche
+        Donner à chaque tâche un état clair.
       </h2>
 
       <p>
-        Chaque tâche suit le même parcours.
-        Apps Script lui attribue automatiquement un identifiant
-        afin de conserver le lien entre suivi, alertes et RETEX.
+        Le suivi repose sur un nombre limité d’états
+        afin de permettre à l’équipe
+        de comprendre rapidement où se situe chaque sujet.
       </p>
+
 
       <div class="flow">
 
@@ -541,6 +577,7 @@
 
       </div>
 
+
       <a
         class="visual zoom-image"
         href="ChatGPT Image Oct 7, 2026, 09_47_50 PM.png"
@@ -548,12 +585,12 @@
       >
         <img
           src="ChatGPT Image Oct 7, 2026, 09_47_50 PM.png"
-          alt="Suivi des tâches dans OpsBoard"
+          alt="Illustration anonymisée d'un suivi opérationnel de tâches"
         />
       </a>
 
       <div class="caption">
-        Exemple anonymisé — cliquer sur l’image pour l’ouvrir en taille réelle.
+        Illustration anonymisée d’une vue de suivi.
       </div>
 
     </div>
@@ -566,43 +603,49 @@
     <div class="container">
 
       <div class="mini-label">
-        04 · Diagnostiquer
+        04 · Comprendre
       </div>
 
       <h2>
-        Quand une tâche passe en « Bloqué »
+        Transformer un blocage en information exploitable.
       </h2>
 
       <p class="intro-copy">
-        Apps Script déclenche automatiquement un pop-up.
-        L’objectif est de documenter le problème au moment où il apparaît,
-        plutôt que de perdre l’information dans des échanges isolés.
+        Lorsqu’un problème apparaît,
+        l’enjeu n’est pas seulement de signaler qu’une tâche est bloquée :
+        il faut aussi comprendre suffisamment la situation
+        pour faciliter sa résolution.
       </p>
+
 
       <div class="reasoning-grid">
 
         <div class="reasoning-card">
-          <strong>Quoi ?</strong>
+          <strong>Qualifier</strong>
           <p>
-            Quel est le problème rencontré ?
+            Clarifier le problème
+            et son contexte.
           </p>
         </div>
 
         <div class="reasoning-card">
-          <strong>Qui ?</strong>
+          <strong>Orienter</strong>
           <p>
-            Qui peut intervenir pour le débloquer ?
+            Identifier les personnes
+            ou compétences utiles.
           </p>
         </div>
 
         <div class="reasoning-card">
-          <strong>Comment ?</strong>
+          <strong>Résoudre</strong>
           <p>
-            Comment le problème a-t-il finalement été résolu ?
+            Conserver une trace
+            de la réponse apportée.
           </p>
         </div>
 
       </div>
+
 
       <a
         class="visual zoom-image"
@@ -611,12 +654,12 @@
       >
         <img
           src="opsboard-popup.png"
-          alt="Pop-up de diagnostic OpsBoard"
+          alt="Illustration anonymisée d'une interface de qualification d'un blocage"
         />
       </a>
 
       <div class="caption">
-        Exemple anonymisé du pop-up de diagnostic.
+        Exemple anonymisé d’une interface de qualification.
       </div>
 
     </div>
@@ -633,80 +676,79 @@
       </div>
 
       <h2>
-        Pas seulement suivre : créer une mémoire vivante
+        Transformer une résolution en apprentissage.
       </h2>
 
       <p class="intro-copy">
-        Une fois le problème résolu, les informations utiles sont conservées
-        dans le Journal Technique.
-        La résolution devient alors un RETEX réutilisable.
+        Une fois un problème résolu,
+        certaines informations peuvent être utiles
+        bien au-delà de la tâche concernée.
       </p>
+
+      <p class="intro-copy" style="margin-top:10px;">
+        J’ai donc intégré une logique de retour d’expérience
+        permettant de conserver les éléments essentiels
+        et de faciliter leur réutilisation lorsque
+        des situations comparables se présentent.
+      </p>
+
 
       <div class="resolution-box">
 
         <div class="resolution-header">
 
           <div>
+
             <div class="mini-label">
-              Informations conservées
+              Retour d’expérience
             </div>
 
             <h3>
-              Alimenter le Journal Technique
+              Conserver uniquement l’information utile
             </h3>
+
           </div>
 
           <div class="resolution-id">
-            Exemple : P-001
+            Exemple anonymisé
           </div>
 
         </div>
+
 
         <div class="questions">
 
           <div class="question">
             <div class="question-number">1</div>
             <div class="question-text">
-              Symptômes observés
+              Comprendre ce qui s’est produit
             </div>
           </div>
 
           <div class="question">
             <div class="question-number">2</div>
             <div class="question-text">
-              Cause identifiée
+              Identifier ce qui a permis de résoudre le problème
             </div>
           </div>
 
           <div class="question">
             <div class="question-number">3</div>
             <div class="question-text">
-              Solution appliquée
-            </div>
-          </div>
-
-          <div class="question">
-            <div class="question-number">4</div>
-            <div class="question-text">
-              Enseignement à conserver
-            </div>
-          </div>
-
-          <div class="question">
-            <div class="question-number">5</div>
-            <div class="question-text">
-              Temps nécessaire à la résolution
+              Conserver l’enseignement utile pour la suite
             </div>
           </div>
 
         </div>
 
+
         <div class="resolution-note">
-          Le Journal Technique devient une mémoire vivante
-          des problèmes rencontrés et des solutions appliquées.
+          L’objectif est de transformer l’expérience opérationnelle
+          en connaissance réutilisable.
         </div>
 
       </div>
+
 
       <div class="flow">
 
@@ -717,7 +759,7 @@
         <div class="arrow">→</div>
 
         <div class="flow-step">
-          Diagnostic
+          Compréhension
         </div>
 
         <div class="arrow">→</div>
@@ -729,10 +771,11 @@
         <div class="arrow">→</div>
 
         <div class="flow-step active">
-          RETEX
+          Apprentissage
         </div>
 
       </div>
+
 
       <a
         class="visual zoom-image"
@@ -741,12 +784,12 @@
       >
         <img
           src="ChatGPT Image Oct 7, 2026, 09_48_09 PM.png"
-          alt="Journal Technique RETEX OpsBoard"
+          alt="Illustration anonymisée d'un retour d'expérience opérationnel"
         />
       </a>
 
       <div class="caption">
-        Journal Technique anonymisé — cliquer sur l’image pour l’ouvrir en taille réelle.
+        Représentation anonymisée d’une logique de capitalisation.
       </div>
 
     </div>
@@ -763,14 +806,15 @@
       </div>
 
       <h2>
-        Une vue synthétique de l’activité
+        Une vue synthétique de l’activité.
       </h2>
 
       <p>
-        Le Dashboard consolide les informations des projets
-        pour rendre visibles l’avancement, les priorités
-        et les blocages.
+        La synthèse permet de retrouver rapidement
+        les informations nécessaires au pilotage :
+        avancement, priorités et points nécessitant une attention particulière.
       </p>
+
 
       <a
         class="visual zoom-image"
@@ -779,12 +823,12 @@
       >
         <img
           src="Tableau de bord opérationnel français (1).png"
-          alt="Dashboard OpsBoard"
+          alt="Illustration anonymisée d'un tableau de bord de pilotage opérationnel"
         />
       </a>
 
       <div class="caption">
-        Vue synthétique anonymisée — cliquer sur l’image pour l’ouvrir en taille réelle.
+        Vue illustrative et anonymisée du principe de pilotage.
       </div>
 
     </div>
@@ -804,32 +848,35 @@
         Voir. Agir. Capitaliser.
       </h2>
 
+
       <div class="impact-grid">
 
         <div class="impact-card">
           <h3>Voir</h3>
           <p>
-            Les tâches, priorités et blocages sont centralisés.
+            Donner une lecture commune
+            de l’avancement et des priorités.
           </p>
         </div>
 
         <div class="impact-card">
           <h3>Agir</h3>
           <p>
-            Un blocage est diagnostiqué et transmis
-            à l’équipe qui doit intervenir.
+            Faciliter l’identification
+            et le traitement des points de friction.
           </p>
         </div>
 
         <div class="impact-card">
           <h3>Capitaliser</h3>
           <p>
-            Les solutions deviennent des connaissances
-            réutilisables pour les projets suivants.
+            Transformer les solutions apportées
+            en apprentissages utiles pour la suite.
           </p>
         </div>
 
       </div>
+
 
       <div class="key-message">
 
@@ -838,11 +885,24 @@
         </strong>
 
         <p>
-          OpsBoard relie pilotage opérationnel, diagnostic des blocages
-          et retour d’expérience dans un même système.
+          OpsBoard répond à un besoin de pilotage :
+          rendre l’information plus lisible,
+          faciliter l’action
+          et éviter de perdre les apprentissages issus du terrain.
         </p>
 
       </div>
+
+
+      <p class="privacy-note">
+        Cette présentation décrit uniquement
+        le problème identifié, ma démarche
+        et les principes généraux de la solution.
+        Les règles internes, données réelles,
+        paramètres techniques, documents de travail
+        et informations confidentielles
+        ne sont pas reproduits.
+      </p>
 
     </div>
   </section>
