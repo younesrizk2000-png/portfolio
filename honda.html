@@ -86,7 +86,7 @@
       letter-spacing: -0.035em;
       margin-bottom: 18px;
       font-weight: 700;
-      max-width: 850px;
+      max-width: 880px;
     }
 
     .hero-statement {
@@ -114,7 +114,7 @@
     }
 
     .content-block {
-      max-width: 780px;
+      max-width: 790px;
     }
 
     h2 {
@@ -129,15 +129,34 @@
       color: #5f6873;
       font-size: 16px;
       line-height: 1.72;
-      max-width: 760px;
+      max-width: 770px;
     }
 
     .section-copy + .section-copy {
-      margin-top: 9px;
+      margin-top: 10px;
+    }
+
+    .visual-transition {
+      margin-top: 28px;
+      max-width: 820px;
+    }
+
+    .visual-transition strong {
+      display: block;
+      font-size: 17px;
+      color: #1f2933;
+      margin-bottom: 7px;
+    }
+
+    .visual-transition p {
+      color: #5f6873;
+      font-size: 15px;
+      line-height: 1.7;
+      max-width: 800px;
     }
 
     .visual {
-      margin: 30px auto 0;
+      margin: 28px auto 0;
       width: min(900px, 100%);
     }
 
@@ -150,16 +169,39 @@
       background: #ffffff;
     }
 
-    .visual-budget {
-      width: min(760px, 100%);
+    .visual-finance {
+      width: min(780px, 100%);
     }
 
     .visual-team {
-      width: min(760px, 100%);
+      width: min(800px, 100%);
     }
 
-    .visual-intro {
-      width: min(900px, 100%);
+    .brief-flow {
+      margin-top: 30px;
+      display: grid;
+      grid-template-columns: 1fr auto 1.25fr auto 1.35fr;
+      gap: 12px;
+      align-items: center;
+      max-width: 850px;
+    }
+
+    .brief-box {
+      background: #ffffff;
+      border: 1px solid #e2e5e3;
+      border-radius: 16px;
+      padding: 20px 14px;
+      text-align: center;
+      font-size: 14px;
+      font-weight: 700;
+      color: #374151;
+    }
+
+    .brief-arrow {
+      color: #a64a4a;
+      font-size: 20px;
+      font-weight: 700;
+      text-align: center;
     }
 
     .workflow {
@@ -167,7 +209,7 @@
       display: grid;
       grid-template-columns: repeat(4, 1fr);
       gap: 12px;
-      max-width: 820px;
+      max-width: 850px;
     }
 
     .workflow-step {
@@ -197,129 +239,26 @@
       display: block;
       color: #8f1d1d;
       margin-bottom: 4px;
-    }
-
-    .brief-flow {
-      margin-top: 30px;
-      display: grid;
-      grid-template-columns: 1fr auto 1.2fr auto 1.35fr auto 1.15fr;
-      gap: 10px;
-      align-items: center;
-      max-width: 980px;
-    }
-
-    .brief-box {
-      background: #ffffff;
-      border: 1px solid #e2e5e3;
-      border-radius: 16px;
-      padding: 20px 14px;
-      text-align: center;
-      font-size: 14px;
-      font-weight: 700;
-      color: #374151;
-    }
-
-    .brief-arrow {
-      color: #a64a4a;
-      font-size: 20px;
-      font-weight: 700;
-      text-align: center;
-    }
-
-    .visual-context {
-      margin-top: 28px;
-      max-width: 820px;
-    }
-
-    .visual-context strong {
-      display: block;
-      font-size: 17px;
-      color: #1f2933;
-      margin-bottom: 7px;
-    }
-
-    .visual-context p {
-      color: #5f6873;
-      font-size: 15px;
-      line-height: 1.7;
-      max-width: 800px;
-    }
-
-    .finance-flow {
-      margin-top: 28px;
-      display: grid;
-      grid-template-columns: repeat(4, 1fr);
-      gap: 12px;
-      max-width: 960px;
-    }
-
-    .finance-step {
-      position: relative;
-      background: #ffffff;
-      border: 1px solid #e2e5e3;
-      border-radius: 17px;
-      padding: 20px 16px;
-      min-height: 120px;
-    }
-
-    .finance-step:not(:last-child)::after {
-      content: "→";
-      position: absolute;
-      right: -16px;
-      top: 50%;
-      transform: translateY(-50%);
-      color: #a64a4a;
-      font-size: 18px;
-      font-weight: 700;
-      z-index: 2;
-    }
-
-    .finance-number {
       font-size: 12px;
-      color: #8f1d1d;
+    }
+
+    .terrain-topics {
+      margin-top: 24px;
+      font-size: 15px;
+      line-height: 1.8;
+      color: #374151;
       font-weight: 700;
-      margin-bottom: 8px;
+      max-width: 850px;
     }
 
-    .finance-step strong {
-      display: block;
-      font-size: 15px;
-      color: #1f2933;
-      margin-bottom: 7px;
+    .terrain-topics span {
+      white-space: nowrap;
     }
 
-    .finance-step p {
-      font-size: 13px;
-      line-height: 1.5;
-      color: #6b7280;
-    }
-
-    .field-grid {
-      margin-top: 28px;
-      display: grid;
-      grid-template-columns: repeat(3, 1fr);
-      gap: 14px;
-      max-width: 900px;
-    }
-
-    .field-card {
-      background: #ffffff;
-      border: 1px solid #e2e5e3;
-      border-radius: 16px;
-      padding: 20px;
-    }
-
-    .field-card strong {
-      display: block;
-      color: #8f1d1d;
-      font-size: 15px;
-      margin-bottom: 6px;
-    }
-
-    .field-card p {
-      color: #66706a;
-      font-size: 14px;
-      line-height: 1.55;
+    .terrain-topics span:not(:last-child)::after {
+      content: " · ";
+      color: #a64a4a;
+      margin: 0 8px;
     }
 
     .project-link {
@@ -338,46 +277,34 @@
       opacity: 0.75;
     }
 
-    .results-grid {
+    .impact-line {
       margin-top: 28px;
-      display: grid;
-      grid-template-columns: repeat(4, 1fr);
-      gap: 14px;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px 28px;
+      max-width: 900px;
     }
 
-    .result-card {
-      background: #ffffff;
-      border: 1px solid #e2e5e3;
-      border-radius: 16px;
-      padding: 20px;
-    }
-
-    .result-card strong {
-      display: block;
+    .impact-item {
+      font-size: 17px;
+      font-weight: 700;
       color: #8f1d1d;
-      font-size: 16px;
-      margin-bottom: 7px;
-    }
-
-    .result-card p {
-      color: #66706a;
-      font-size: 14px;
-      line-height: 1.5;
     }
 
     .closing-note {
-      margin-top: 30px;
+      margin-top: 32px;
       max-width: 850px;
       background: #1f2933;
       border-radius: 20px;
-      padding: 26px;
+      padding: 28px;
     }
 
     .closing-note strong {
       display: block;
       color: #ffffff;
       font-size: 20px;
-      margin-bottom: 8px;
+      margin-bottom: 9px;
+      line-height: 1.45;
     }
 
     .closing-note p {
@@ -402,14 +329,11 @@
     }
 
     @media (max-width: 850px) {
-      .workflow,
-      .finance-flow,
-      .results-grid {
+      .workflow {
         grid-template-columns: repeat(2, 1fr);
       }
 
-      .workflow-step::after,
-      .finance-step::after {
+      .workflow-step::after {
         display: none;
       }
 
@@ -419,10 +343,6 @@
 
       .brief-arrow {
         transform: rotate(90deg);
-      }
-
-      .field-grid {
-        grid-template-columns: repeat(2, 1fr);
       }
     }
 
@@ -435,11 +355,19 @@
         padding: 46px 0;
       }
 
-      .workflow,
-      .finance-flow,
-      .results-grid,
-      .field-grid {
+      .workflow {
         grid-template-columns: 1fr;
+      }
+
+      .terrain-topics {
+        display: flex;
+        flex-direction: column;
+        gap: 7px;
+      }
+
+      .terrain-topics span:not(:last-child)::after {
+        content: "";
+        margin: 0;
       }
     }
   </style>
@@ -474,6 +402,8 @@
 
   <main>
 
+    <!-- HERO -->
+
     <section class="hero">
 
       <div class="container">
@@ -506,6 +436,8 @@
     </section>
 
 
+    <!-- BRIEF -->
+
     <section class="section-border">
 
       <div class="container">
@@ -519,8 +451,9 @@
           <p class="section-copy">
             Le brief initial était simple :
             déplacer le matériel et organiser la présence de l’équipe.
-            Mon rôle a été d’identifier tout ce qui se cachait derrière
-            ce besoin pour construire une préparation réellement exploitable.
+            Mon rôle a été d’identifier les besoins nécessaires
+            à l’exécution puis de transformer cette demande
+            en un plan de préparation structuré.
           </p>
 
         </div>
@@ -532,45 +465,41 @@
             Brief initial
           </div>
 
-          <div class="brief-arrow">→</div>
+          <div class="brief-arrow">
+            →
+          </div>
 
           <div class="brief-box">
             Identifier les besoins
           </div>
 
-          <div class="brief-arrow">→</div>
-
-          <div class="brief-box">
-            Structurer l’espace projet
+          <div class="brief-arrow">
+            →
           </div>
 
-          <div class="brief-arrow">→</div>
-
           <div class="brief-box">
-            Piloter l’exécution
+            Construire le plan d’exécution
           </div>
 
         </div>
 
 
-        <div class="visual-context">
+        <div class="visual-transition">
 
           <strong>
-            Un espace de pilotage centralisé.
+            Centraliser la préparation dans un espace projet commun.
           </strong>
 
           <p>
-            J’ai organisé les informations du projet
-            par grands sujets : transport, logistique,
-            budget, planning et ressources.
-            Cela permettait de disposer d’une base commune
-            pour préparer et suivre l’activation.
+            Pour rendre le plan exploitable par l’équipe,
+            j’ai organisé les informations par grands sujets :
+            transport, logistique, budget, planning et ressources.
           </p>
 
         </div>
 
 
-        <div class="visual visual-intro">
+        <div class="visual">
 
           <img
             src="ChatGPT Image Oct 9, 2026, 12_03_52 AM.png"
@@ -584,6 +513,8 @@
     </section>
 
 
+    <!-- SIMULATION -->
+
     <section class="section-border">
 
       <div class="container">
@@ -595,16 +526,10 @@
           </h2>
 
           <p class="section-copy">
-            Pour dimensionner le transport du matériel,
-            j’ai relevé les dimensions des équipements
-            puis utilisé des outils de simulation assistés par IA
-            pour tester différents scénarios de chargement.
-          </p>
-
-          <p class="section-copy">
-            J’ai ensuite comparé les options
-            selon le volume utile, la praticité et le coût
-            afin de choisir le véhicule le plus adapté.
+            Pour choisir le véhicule adapté au transport du matériel,
+            j’ai commencé par relever les dimensions des équipements.
+            J’ai ensuite utilisé des outils de simulation assistés par IA
+            afin de tester plusieurs configurations de chargement.
           </p>
 
         </div>
@@ -613,24 +538,62 @@
         <div class="workflow">
 
           <div class="workflow-step">
-            <strong>01</strong>
+
+            <strong>
+              01
+            </strong>
+
             Mesurer
+
           </div>
 
+
           <div class="workflow-step">
-            <strong>02</strong>
+
+            <strong>
+              02
+            </strong>
+
             Simuler avec l’IA
+
           </div>
 
+
           <div class="workflow-step">
-            <strong>03</strong>
+
+            <strong>
+              03
+            </strong>
+
             Comparer
+
           </div>
 
+
           <div class="workflow-step">
-            <strong>04</strong>
+
+            <strong>
+              04
+            </strong>
+
             Décider
+
           </div>
+
+        </div>
+
+
+        <div class="visual-transition">
+
+          <strong>
+            Vérifier la faisabilité avant de réserver.
+          </strong>
+
+          <p>
+            La simulation m’a permis de comparer concrètement
+            la capacité de chargement, la praticité et le coût
+            avant de sélectionner la solution de transport.
+          </p>
 
         </div>
 
@@ -639,7 +602,7 @@
 
           <img
             src="ChatGPT Image Oct 9, 2026, 12_04_03 AM.png"
-            alt="Simulation 3D utilisée pour dimensionner le transport du matériel"
+            alt="Simulation utilisée pour dimensionner le transport du matériel"
           />
 
         </div>
@@ -648,6 +611,8 @@
 
     </section>
 
+
+    <!-- SUIVI FINANCIER -->
 
     <section class="section-border">
 
@@ -661,93 +626,29 @@
 
           <p class="section-copy">
             Pour centraliser le suivi financier,
-            j’ai conçu un outil web en HTML
-            dédié aux charges du projet.
-            L’objectif était de transformer les justificatifs
-            en informations directement exploitables
-            pour le suivi comptable et le pilotage du budget.
+            j’ai conçu un outil web en HTML dédié aux charges du projet.
+            Il permet d’organiser les dépenses
+            selon une lecture comptable et analytique.
           </p>
 
         </div>
 
 
-        <div class="finance-flow">
+        <div class="visual-transition">
 
-          <div class="finance-step">
+          <strong>
+            Une même interface pour suivre les dépenses du projet.
+          </strong>
 
-            <div class="finance-number">
-              01
-            </div>
-
-            <strong>
-              Facture ou justificatif
-            </strong>
-
-            <p>
-              Import d’un document
-              au format PDF ou photo.
-            </p>
-
-          </div>
-
-
-          <div class="finance-step">
-
-            <div class="finance-number">
-              02
-            </div>
-
-            <strong>
-              Analyse des informations
-            </strong>
-
-            <p>
-              Fournisseur, date,
-              description et montants.
-            </p>
-
-          </div>
-
-
-          <div class="finance-step">
-
-            <div class="finance-number">
-              03
-            </div>
-
-            <strong>
-              Double classification
-            </strong>
-
-            <p>
-              Compte comptable
-              et poste budgétaire du projet.
-            </p>
-
-          </div>
-
-
-          <div class="finance-step">
-
-            <div class="finance-number">
-              04
-            </div>
-
-            <strong>
-              Vue consolidée
-            </strong>
-
-            <p>
-              Lecture des charges
-              et export des données.
-            </p>
-
-          </div>
+          <p>
+            La vue permet de regrouper les informations financières utiles
+            et de conserver une lecture claire de la situation du projet.
+          </p>
 
         </div>
 
 
-        <div class="visual visual-budget">
+        <div class="visual visual-finance">
 
           <img
             src="ChatGPT Image Oct 9, 2026, 12_04_09 AM.png"
@@ -776,6 +677,8 @@
     </section>
 
 
+    <!-- TERRAIN -->
+
     <section class="section-border">
 
       <div class="container">
@@ -783,69 +686,43 @@
         <div class="content-block">
 
           <h2>
-            Transformer les contraintes terrain en feuille de route claire.
+            Transformer la préparation en coordination terrain.
           </h2>
 
           <p class="section-copy">
-            En complément des outils,
-            j’ai assuré une partie importante
-            de la préparation opérationnelle
-            et centralisé les informations pratiques
-            nécessaires à l’équipe.
+            Mon rôle ne s’arrêtait pas aux outils.
+            J’ai également pris en charge une partie importante
+            de l’organisation pratique nécessaire
+            au bon déroulement de l’activation.
           </p>
 
         </div>
 
 
-        <div class="field-grid">
+        <div class="terrain-topics">
 
-          <div class="field-card">
-            <strong>Transport</strong>
-            <p>
-              Organisation des déplacements
-              et des besoins logistiques.
-            </p>
-          </div>
+          <span>Déplacements</span>
+          <span>Hébergement</span>
+          <span>Accès</span>
+          <span>Planning</span>
+          <span>Présence équipe</span>
+          <span>Informations pratiques</span>
 
-          <div class="field-card">
-            <strong>Hébergement</strong>
-            <p>
-              Recherche et réservation
-              selon les contraintes du projet.
-            </p>
-          </div>
+        </div>
 
-          <div class="field-card">
-            <strong>Accès</strong>
-            <p>
-              Centralisation des informations
-              nécessaires à l’entrée et à l’installation.
-            </p>
-          </div>
 
-          <div class="field-card">
-            <strong>Planning</strong>
-            <p>
-              Organisation des temps de présence
-              et des principaux rendez vous.
-            </p>
-          </div>
+        <div class="visual-transition">
 
-          <div class="field-card">
-            <strong>Équipe</strong>
-            <p>
-              Coordination des personnes
-              impliquées dans l’activation.
-            </p>
-          </div>
+          <strong>
+            Donner à l’équipe une feuille de route commune.
+          </strong>
 
-          <div class="field-card">
-            <strong>Infos pratiques</strong>
-            <p>
-              Une source commune
-              pour préparer l’exécution sur place.
-            </p>
-          </div>
+          <p>
+            J’ai centralisé et communiqué les informations utiles
+            afin que chacun sache où être,
+            quand être présent et quelles informations utiliser
+            pendant la préparation et l’événement.
+          </p>
 
         </div>
 
@@ -859,18 +736,12 @@
 
         </div>
 
-
-        <p class="section-copy" style="margin-top: 24px;">
-          L’objectif était simple :
-          que chacun sache où être,
-          quand, avec quelles informations
-          et quelles contraintes opérationnelles.
-        </p>
-
       </div>
 
     </section>
 
+
+    <!-- CONCLUSION -->
 
     <section class="section-border">
 
@@ -883,71 +754,32 @@
           </h2>
 
           <p class="section-copy">
-            Ce projet combinait ce que j’apprécie particulièrement :
-            analyser un problème en amont,
-            construire les outils nécessaires,
-            organiser l’exécution
-            puis rester proche des besoins concrets du terrain.
+            Ce projet combinait plusieurs dimensions que j’apprécie :
+            comprendre un besoin,
+            utiliser des outils pour prendre de meilleures décisions,
+            structurer l’information
+            puis accompagner concrètement l’exécution.
           </p>
 
         </div>
 
 
-        <div class="results-grid">
+        <div class="impact-line">
 
-          <div class="result-card">
-
-            <strong>
-              Anticiper
-            </strong>
-
-            <p>
-              Identifier les contraintes
-              avant l’exécution.
-            </p>
-
+          <div class="impact-item">
+            Anticiper
           </div>
 
-
-          <div class="result-card">
-
-            <strong>
-              Décider
-            </strong>
-
-            <p>
-              Comparer les options
-              à partir de données concrètes.
-            </p>
-
+          <div class="impact-item">
+            Décider
           </div>
 
-
-          <div class="result-card">
-
-            <strong>
-              Coordonner
-            </strong>
-
-            <p>
-              Centraliser les informations
-              et aligner l’équipe.
-            </p>
-
+          <div class="impact-item">
+            Coordonner
           </div>
 
-
-          <div class="result-card">
-
-            <strong>
-              Exécuter
-            </strong>
-
-            <p>
-              Transformer la préparation
-              en actions concrètes sur le terrain.
-            </p>
-
+          <div class="impact-item">
+            Exécuter
           </div>
 
         </div>
@@ -961,9 +793,9 @@
 
           <p>
             Ce projet illustre ma capacité
-            à passer d’un besoin ouvert
-            à une organisation concrète,
-            pilotable et directement exploitable par l’équipe.
+            à transformer un besoin ouvert
+            en une organisation concrète
+            et directement exploitable par l’équipe.
           </p>
 
         </div>
