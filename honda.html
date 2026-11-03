@@ -151,7 +151,7 @@
     }
 
     .visual-budget {
-      width: min(620px, 100%);
+      width: min(760px, 100%);
     }
 
     .visual-team {
@@ -245,6 +245,55 @@
       max-width: 800px;
     }
 
+    .finance-flow {
+      margin-top: 28px;
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 12px;
+      max-width: 960px;
+    }
+
+    .finance-step {
+      position: relative;
+      background: #ffffff;
+      border: 1px solid #e2e5e3;
+      border-radius: 17px;
+      padding: 20px 16px;
+      min-height: 120px;
+    }
+
+    .finance-step:not(:last-child)::after {
+      content: "→";
+      position: absolute;
+      right: -16px;
+      top: 50%;
+      transform: translateY(-50%);
+      color: #a64a4a;
+      font-size: 18px;
+      font-weight: 700;
+      z-index: 2;
+    }
+
+    .finance-number {
+      font-size: 12px;
+      color: #8f1d1d;
+      font-weight: 700;
+      margin-bottom: 8px;
+    }
+
+    .finance-step strong {
+      display: block;
+      font-size: 15px;
+      color: #1f2933;
+      margin-bottom: 7px;
+    }
+
+    .finance-step p {
+      font-size: 13px;
+      line-height: 1.5;
+      color: #6b7280;
+    }
+
     .field-grid {
       margin-top: 28px;
       display: grid;
@@ -271,54 +320,6 @@
       color: #66706a;
       font-size: 14px;
       line-height: 1.55;
-    }
-
-    .tool-box {
-      margin-top: 28px;
-      max-width: 850px;
-      background: #ffffff;
-      border: 1px solid #e2e5e3;
-      border-radius: 20px;
-      padding: 26px;
-    }
-
-    .tool-head {
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      gap: 20px;
-      margin-bottom: 20px;
-    }
-
-    .tool-name {
-      font-size: 18px;
-      font-weight: 700;
-      color: #1f2933;
-    }
-
-    .tool-tag {
-      font-size: 12px;
-      font-weight: 700;
-      color: #8f1d1d;
-      background: #f8eded;
-      border-radius: 999px;
-      padding: 7px 11px;
-    }
-
-    .tool-flow {
-      display: grid;
-      grid-template-columns: repeat(4, 1fr);
-      gap: 10px;
-    }
-
-    .tool-step {
-      background: #f7f7f5;
-      border-radius: 13px;
-      padding: 14px 10px;
-      text-align: center;
-      font-size: 13px;
-      font-weight: 700;
-      color: #46505a;
     }
 
     .project-link {
@@ -402,11 +403,13 @@
 
     @media (max-width: 850px) {
       .workflow,
+      .finance-flow,
       .results-grid {
         grid-template-columns: repeat(2, 1fr);
       }
 
-      .workflow-step::after {
+      .workflow-step::after,
+      .finance-step::after {
         display: none;
       }
 
@@ -421,10 +424,6 @@
       .field-grid {
         grid-template-columns: repeat(2, 1fr);
       }
-
-      .tool-flow {
-        grid-template-columns: repeat(2, 1fr);
-      }
     }
 
     @media (max-width: 620px) {
@@ -437,15 +436,10 @@
       }
 
       .workflow,
+      .finance-flow,
       .results-grid,
-      .field-grid,
-      .tool-flow {
+      .field-grid {
         grid-template-columns: 1fr;
-      }
-
-      .tool-head {
-        align-items: flex-start;
-        flex-direction: column;
       }
     }
   </style>
@@ -666,48 +660,87 @@
           </h2>
 
           <p class="section-copy">
-            Pour fiabiliser le suivi financier,
-            j’ai conçu une interface web en HTML
-            permettant de centraliser les dépenses du projet
-            et de les organiser selon une double lecture :
-            comptable et analytique.
+            Pour centraliser le suivi financier,
+            j’ai conçu un outil web en HTML
+            dédié aux charges du projet.
+            L’objectif était de transformer les justificatifs
+            en informations directement exploitables
+            pour le suivi comptable et le pilotage du budget.
           </p>
 
         </div>
 
 
-        <div class="tool-box">
+        <div class="finance-flow">
 
-          <div class="tool-head">
+          <div class="finance-step">
 
-            <div class="tool-name">
-              Compte de charges projet
+            <div class="finance-number">
+              01
             </div>
 
-            <div class="tool-tag">
-              Interface web HTML
-            </div>
+            <strong>
+              Facture ou justificatif
+            </strong>
+
+            <p>
+              Import d’un document
+              au format PDF ou photo.
+            </p>
 
           </div>
 
 
-          <div class="tool-flow">
+          <div class="finance-step">
 
-            <div class="tool-step">
-              Dépense
+            <div class="finance-number">
+              02
             </div>
 
-            <div class="tool-step">
-              Classification
+            <strong>
+              Analyse des informations
+            </strong>
+
+            <p>
+              Fournisseur, date,
+              description et montants.
+            </p>
+
+          </div>
+
+
+          <div class="finance-step">
+
+            <div class="finance-number">
+              03
             </div>
 
-            <div class="tool-step">
-              Analyse
+            <strong>
+              Double classification
+            </strong>
+
+            <p>
+              Compte comptable
+              et poste budgétaire du projet.
+            </p>
+
+          </div>
+
+
+          <div class="finance-step">
+
+            <div class="finance-number">
+              04
             </div>
 
-            <div class="tool-step">
-              Vision projet
-            </div>
+            <strong>
+              Vue consolidée
+            </strong>
+
+            <p>
+              Lecture des charges
+              et export des données.
+            </p>
 
           </div>
 
