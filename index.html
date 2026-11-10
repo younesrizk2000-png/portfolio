@@ -12,7 +12,6 @@
 
   <title>Younes Rizk · Portfolio</title>
 
-
   <style>
 
     * {
@@ -21,11 +20,9 @@
       padding: 0;
     }
 
-
     html {
       scroll-behavior: smooth;
     }
-
 
     body {
       font-family: Arial, Helvetica, sans-serif;
@@ -34,12 +31,10 @@
       line-height: 1.65;
     }
 
-
     .container {
       width: min(1120px, 92%);
       margin: 0 auto;
     }
-
 
     header {
       padding: 20px 0;
@@ -51,14 +46,12 @@
       backdrop-filter: blur(8px);
     }
 
-
     nav {
       display: flex;
       justify-content: space-between;
       align-items: center;
       gap: 20px;
     }
-
 
     .brand {
       font-weight: 700;
@@ -67,7 +60,6 @@
       text-decoration: none;
     }
 
-
     .nav-links {
       display: flex;
       align-items: center;
@@ -75,23 +67,19 @@
       flex-wrap: wrap;
     }
 
-
     .nav-links a {
       text-decoration: none;
       color: #5f6873;
       font-size: 14px;
     }
 
-
     .nav-links a:hover {
       color: #111827;
     }
 
-
     .hero {
       padding: 72px 0 76px;
     }
-
 
     .hero-grid {
       display: grid;
@@ -99,7 +87,6 @@
       gap: 64px;
       align-items: center;
     }
-
 
     .eyebrow {
       text-transform: uppercase;
@@ -110,7 +97,6 @@
       margin-bottom: 20px;
     }
 
-
     h1 {
       font-size: clamp(46px, 5.5vw, 62px);
       line-height: 1.05;
@@ -120,7 +106,6 @@
       font-weight: 700;
     }
 
-
     .lead {
       font-size: 20px;
       line-height: 1.55;
@@ -129,13 +114,11 @@
       margin-bottom: 28px;
     }
 
-
     .hero-actions {
       display: flex;
       flex-wrap: wrap;
       gap: 12px;
     }
-
 
     .button-primary,
     .button-secondary {
@@ -148,18 +131,15 @@
       transition: 0.2s ease;
     }
 
-
     .button-primary {
       background: #111827;
       color: #ffffff;
       border: 1px solid #111827;
     }
 
-
     .button-primary:hover {
       background: #1f2937;
     }
-
 
     .button-secondary {
       background: #ffffff;
@@ -167,17 +147,14 @@
       border: 1px solid #d9dfdb;
     }
 
-
     .button-secondary:hover {
       background: #f3f4f6;
     }
-
 
     .portrait-wrap {
       display: flex;
       justify-content: center;
     }
-
 
     .portrait-card {
       background: #ffffff;
@@ -188,14 +165,12 @@
       box-shadow: 0 10px 25px rgba(15, 23, 42, 0.04);
     }
 
-
     .portrait-card img {
       width: 100%;
       display: block;
       border-radius: 17px;
       height: auto;
     }
-
 
     .portrait-caption {
       font-size: 13px;
@@ -204,16 +179,13 @@
       text-align: center;
     }
 
-
     section {
       padding: 68px 0;
     }
 
-
     .section-border {
       border-top: 1px solid #e7e8e5;
     }
-
 
     .section-title {
       font-size: clamp(24px, 3vw, 30px);
@@ -223,7 +195,6 @@
       font-weight: 700;
     }
 
-
     .section-intro {
       color: #5f6873;
       max-width: 760px;
@@ -232,15 +203,11 @@
       line-height: 1.7;
     }
 
-
-
     /* ASSISTANT */
-
 
     .assistant-section {
       background: #eef3ef;
     }
-
 
     .assistant-shell {
       display: grid;
@@ -249,11 +216,9 @@
       align-items: start;
     }
 
-
     .assistant-intro {
       padding-top: 8px;
     }
-
 
     .assistant-label {
       display: inline-block;
@@ -265,7 +230,6 @@
       text-transform: uppercase;
     }
 
-
     .assistant-intro h2 {
       font-size: clamp(31px, 4vw, 44px);
       line-height: 1.08;
@@ -274,14 +238,12 @@
       max-width: 500px;
     }
 
-
     .assistant-intro > p {
       color: #56645a;
       font-size: 17px;
       line-height: 1.7;
       max-width: 500px;
     }
-
 
     .assistant-intro-note {
       margin-top: 24px;
@@ -291,11 +253,9 @@
       max-width: 460px;
     }
 
-
     .assistant-intro-note strong {
       color: #2f4735;
     }
-
 
     .assistant-card {
       background: #ffffff;
@@ -305,12 +265,10 @@
       box-shadow: 0 14px 36px rgba(31, 41, 51, 0.055);
     }
 
-
     .assistant-card-header {
       padding-bottom: 18px;
       border-bottom: 1px solid #edf0ed;
     }
-
 
     .assistant-card-header strong {
       display: block;
@@ -319,7 +277,6 @@
       margin-bottom: 4px;
     }
 
-
     .assistant-card-header span {
       display: block;
       color: #6b756e;
@@ -327,14 +284,12 @@
       line-height: 1.55;
     }
 
-
     .assistant-suggestions {
       display: flex;
       flex-wrap: wrap;
       gap: 8px;
       padding: 18px 0;
     }
-
 
     .assistant-suggestion {
       appearance: none;
@@ -350,12 +305,10 @@
       transition: 0.18s ease;
     }
 
-
     .assistant-suggestion:hover {
       background: #eef3ef;
       border-color: #c8d4cb;
     }
-
 
     .assistant-conversation {
       min-height: 225px;
@@ -368,7 +321,6 @@
       margin-bottom: 16px;
     }
 
-
     .assistant-welcome {
       color: #5f6873;
       font-size: 14px;
@@ -376,16 +328,13 @@
       max-width: 600px;
     }
 
-
     .message {
       margin-bottom: 18px;
     }
 
-
     .message:last-child {
       margin-bottom: 0;
     }
-
 
     .message-label {
       display: block;
@@ -396,28 +345,23 @@
       margin-bottom: 6px;
     }
 
-
     .message-user .message-label {
       color: #777f79;
     }
 
-
     .message-assistant .message-label {
       color: #5f8267;
     }
-
 
     .message-user {
       padding-left: 18px;
       border-left: 3px solid #d7ddd8;
     }
 
-
     .message-assistant {
       padding-left: 18px;
       border-left: 3px solid #5f8267;
     }
-
 
     .message-text {
       color: #334039;
@@ -425,7 +369,6 @@
       line-height: 1.72;
       white-space: pre-line;
     }
-
 
     .evidence-badge {
       display: inline-block;
@@ -441,14 +384,12 @@
       text-transform: uppercase;
     }
 
-
     .assistant-sources {
       display: flex;
       flex-wrap: wrap;
       gap: 8px;
       margin-top: 13px;
     }
-
 
     .assistant-source {
       color: #2f4735;
@@ -459,18 +400,15 @@
       padding-bottom: 1px;
     }
 
-
     .assistant-source:hover {
       border-color: #2f4735;
     }
-
 
     .assistant-form {
       display: grid;
       grid-template-columns: 1fr auto;
       gap: 10px;
     }
-
 
     .assistant-input {
       width: 100%;
@@ -484,12 +422,10 @@
       outline: none;
     }
 
-
     .assistant-input:focus {
       border-color: #79917f;
       box-shadow: 0 0 0 3px rgba(95, 130, 103, 0.1);
     }
-
 
     .assistant-submit {
       appearance: none;
@@ -505,17 +441,14 @@
       cursor: pointer;
     }
 
-
     .assistant-submit:hover {
       background: #1f2937;
     }
-
 
     .assistant-submit:disabled {
       opacity: 0.55;
       cursor: wait;
     }
-
 
     .assistant-disclaimer {
       margin-top: 12px;
@@ -524,17 +457,13 @@
       line-height: 1.55;
     }
 
-
-
     /* PROJECTS */
-
 
     .projects-grid {
       display: grid;
       grid-template-columns: repeat(2, 1fr);
       gap: 22px;
     }
-
 
     .project-card {
       background: #ffffff;
@@ -547,12 +476,10 @@
       transition: transform 0.2s ease, box-shadow 0.2s ease;
     }
 
-
     .project-card:hover {
       transform: translateY(-2px);
       box-shadow: 0 12px 30px rgba(15, 23, 42, 0.05);
     }
-
 
     .project-visual {
       width: 100%;
@@ -563,7 +490,6 @@
       margin-bottom: 20px;
     }
 
-
     .project-visual img {
       width: 100%;
       height: 100%;
@@ -572,14 +498,12 @@
       object-position: center;
     }
 
-
     .project-content {
       display: flex;
       flex-direction: column;
       flex: 1;
       padding: 2px 7px 8px;
     }
-
 
     .project-card h3 {
       font-size: 19px;
@@ -590,14 +514,12 @@
       margin-bottom: 12px;
     }
 
-
     .project-answer {
       color: #5f6873;
       font-size: 14px;
       line-height: 1.65;
       max-width: 470px;
     }
-
 
     .project-footer {
       margin-top: auto;
@@ -608,7 +530,6 @@
       gap: 7px;
     }
 
-
     .project-category {
       font-size: 11px;
       color: #5f8267;
@@ -616,7 +537,6 @@
       letter-spacing: 0.08em;
       text-transform: uppercase;
     }
-
 
     .project-link {
       display: inline-block;
@@ -629,21 +549,16 @@
       font-size: 14px;
     }
 
-
     .project-link:hover {
       opacity: 0.75;
     }
 
-
-
     /* ABOUT */
-
 
     .about-copy {
       max-width: 800px;
       margin-bottom: 44px;
     }
-
 
     .about-copy p {
       color: #5f6873;
@@ -651,17 +566,14 @@
       line-height: 1.7;
     }
 
-
     .about-copy p + p {
       margin-top: 16px;
     }
-
 
     .journey {
       max-width: 900px;
       border-top: 1px solid #e2e5e3;
     }
-
 
     .journey-item {
       display: grid;
@@ -672,7 +584,6 @@
       border-bottom: 1px solid #e2e5e3;
     }
 
-
     .journey-logo {
       width: 105px;
       height: 62px;
@@ -681,14 +592,12 @@
       justify-content: flex-start;
     }
 
-
     .journey-logo img {
       max-width: 95px;
       max-height: 54px;
       object-fit: contain;
       display: block;
     }
-
 
     .journey-content h3 {
       font-size: 18px;
@@ -697,7 +606,6 @@
       color: #1f2933;
     }
 
-
     .journey-content p {
       color: #5f6873;
       font-size: 15px;
@@ -705,18 +613,15 @@
       max-width: 690px;
     }
 
-
     .degree-list {
       display: flex;
       flex-direction: column;
       gap: 4px;
     }
 
-
     .degree-list span {
       display: block;
     }
-
 
     .company-link {
       color: inherit;
@@ -725,15 +630,11 @@
       padding-bottom: 2px;
     }
 
-
     .company-link:hover {
       border-color: #1f2933;
     }
 
-
-
     /* ROLES */
-
 
     .roles-grid {
       display: grid;
@@ -741,7 +642,6 @@
       gap: 14px;
       max-width: 1000px;
     }
-
 
     .role-card {
       background: #ffffff;
@@ -753,7 +653,6 @@
       align-items: center;
     }
 
-
     .role-card span {
       color: #2f4735;
       font-size: 15px;
@@ -761,11 +660,9 @@
       font-weight: 700;
     }
 
-
     .roles-cta {
       margin-top: 28px;
     }
-
 
     .roles-cta a {
       display: inline-block;
@@ -777,10 +674,7 @@
       padding-bottom: 2px;
     }
 
-
-
     /* CONTACT */
-
 
     .contact-box {
       background: #eef3ef;
@@ -789,13 +683,11 @@
       max-width: 720px;
     }
 
-
     .contact-box h3 {
       font-size: 22px;
       margin-bottom: 10px;
       color: #2f4735;
     }
-
 
     .contact-box p {
       color: #56645a;
@@ -803,13 +695,11 @@
       font-size: 15px;
     }
 
-
     .contact-links {
       display: flex;
       flex-direction: column;
       gap: 9px;
     }
-
 
     .contact-links a {
       color: #2f4735;
@@ -819,11 +709,9 @@
       word-break: break-word;
     }
 
-
     .contact-links a:hover {
       text-decoration: underline;
     }
-
 
     footer {
       border-top: 1px solid #e5e7eb;
@@ -832,10 +720,7 @@
       font-size: 14px;
     }
 
-
-
     /* RESPONSIVE */
-
 
     @media (max-width: 900px) {
 
@@ -845,21 +730,17 @@
         grid-template-columns: 1fr;
       }
 
-
       .assistant-shell {
         gap: 34px;
       }
-
 
       .roles-grid {
         grid-template-columns: repeat(2, 1fr);
       }
 
-
       .hero {
         padding-top: 48px;
       }
-
 
       .portrait-card {
         max-width: 300px;
@@ -867,50 +748,41 @@
 
     }
 
-
     @media (max-width: 650px) {
 
       .nav-links {
         gap: 12px;
       }
 
-
       .journey-item {
         grid-template-columns: 70px 1fr;
         gap: 18px;
       }
 
-
       .journey-logo {
         width: 70px;
       }
-
 
       .journey-logo img {
         max-width: 65px;
         max-height: 44px;
       }
 
-
       .project-card {
         padding: 12px;
       }
-
 
       .roles-grid {
         grid-template-columns: 1fr;
       }
 
-
       .assistant-card {
         padding: 15px;
       }
 
-
       .assistant-form {
         grid-template-columns: 1fr;
       }
-
 
       .assistant-submit {
         width: 100%;
@@ -923,7 +795,6 @@
 </head>
 
 
-
 <body>
 
 
@@ -933,14 +804,12 @@
 
     <nav>
 
-
       <a
         class="brand"
         href="index.html"
       >
         Younes Rizk
       </a>
-
 
       <div class="nav-links">
 
@@ -966,14 +835,11 @@
 
       </div>
 
-
     </nav>
 
   </div>
 
 </header>
-
-
 
 
 <main>
@@ -986,31 +852,24 @@
 
     <div class="container">
 
-
       <div class="hero-grid">
 
-
         <div>
-
 
           <div class="eyebrow">
             Portfolio technique · Analyse · Opérations
           </div>
 
-
           <h1>
             J’analyse, je structure, j’automatise.
           </h1>
-
 
           <p class="lead">
             Je transforme des besoins métiers en processus,
             outils et solutions opérationnelles.
           </p>
 
-
           <div class="hero-actions">
-
 
             <a
               class="button-primary"
@@ -1019,14 +878,12 @@
               Interroger mon assistant IA
             </a>
 
-
             <a
               class="button-secondary"
               href="#projets"
             >
               Voir mes projets
             </a>
-
 
             <a
               class="button-secondary"
@@ -1035,47 +892,33 @@
               Me contacter
             </a>
 
-
           </div>
-
 
         </div>
 
 
-
-
         <div class="portrait-wrap">
 
-
           <div class="portrait-card">
-
 
             <img
               src="image younes.jpg"
               alt="Portrait de Younes Rizk"
             />
 
-
             <div class="portrait-caption">
               Younes Rizk · France
             </div>
 
-
           </div>
-
 
         </div>
 
-
       </div>
-
 
     </div>
 
   </section>
-
-
-
 
 
   <!-- ASSISTANT -->
@@ -1086,34 +929,26 @@
     class="section-border assistant-section"
   >
 
-
     <div class="container">
-
 
       <div class="assistant-shell">
 
 
-
-
         <div class="assistant-intro">
-
 
           <div class="assistant-label">
             Ask my portfolio
           </div>
 
-
           <h2>
             Posez une question à mon assistant IA.
           </h2>
-
 
           <p>
             Interrogez mon assistant sur mon expérience,
             mes compétences, ma manière de travailler
             ou mon adéquation avec votre poste.
           </p>
-
 
           <p class="assistant-intro-note">
 
@@ -1125,7 +960,6 @@
 
           </p>
 
-
           <p class="assistant-intro-note">
 
             Ses réponses s’appuient uniquement sur mon expérience,
@@ -1133,35 +967,25 @@
 
           </p>
 
-
         </div>
-
-
 
 
         <div class="assistant-card">
 
-
           <div class="assistant-card-header">
-
 
             <strong>
               Posez une question à l’assistant IA de Younes
             </strong>
 
-
             <span>
               Expérience · Méthode de travail · Personnalité professionnelle · Adéquation avec un poste
             </span>
 
-
           </div>
 
 
-
-
           <div class="assistant-suggestions">
-
 
             <button
               type="button"
@@ -1171,7 +995,6 @@
               Peut il gérer un projet de bout en bout ?
             </button>
 
-
             <button
               type="button"
               class="assistant-suggestion"
@@ -1179,7 +1002,6 @@
             >
               Comment gère t il l’ambiguïté ?
             </button>
-
 
             <button
               type="button"
@@ -1189,7 +1011,6 @@
               What is he like to work with?
             </button>
 
-
             <button
               type="button"
               class="assistant-suggestion"
@@ -1197,7 +1018,6 @@
             >
               Would he fit Business Operations?
             </button>
-
 
             <button
               type="button"
@@ -1207,10 +1027,7 @@
               Quelles sont ses limites actuelles ?
             </button>
 
-
           </div>
-
-
 
 
           <div
@@ -1218,7 +1035,6 @@
             class="assistant-conversation"
             aria-live="polite"
           >
-
 
             <p class="assistant-welcome">
 
@@ -1229,17 +1045,13 @@
 
             </p>
 
-
           </div>
-
-
 
 
           <form
             id="assistantForm"
             class="assistant-form"
           >
-
 
             <input
               id="assistantInput"
@@ -1251,7 +1063,6 @@
               aria-label="Question à propos de Younes Rizk"
             />
 
-
             <button
               id="assistantSubmit"
               class="assistant-submit"
@@ -1260,10 +1071,7 @@
               Demander
             </button>
 
-
           </form>
-
-
 
 
           <p class="assistant-disclaimer">
@@ -1273,20 +1081,13 @@
 
           </p>
 
-
         </div>
-
 
       </div>
 
-
     </div>
 
-
   </section>
-
-
-
 
 
   <!-- PROJETS -->
@@ -1297,14 +1098,11 @@
     class="section-border"
   >
 
-
     <div class="container">
-
 
       <h2 class="section-title">
         Projets sélectionnés
       </h2>
-
 
       <p class="section-intro">
 
@@ -1315,11 +1113,7 @@
       </p>
 
 
-
-
       <div class="projects-grid">
-
-
 
 
         <!-- OPSBOARD -->
@@ -1327,28 +1121,20 @@
 
         <article class="project-card">
 
-
           <div class="project-visual">
-
 
             <img
               src="PORTFOLIO_YOUNES_2_Opsboard.jpg"
               alt="Schéma visuel du fonctionnement d'OpsBoard"
             />
 
-
           </div>
 
-
-
-
           <div class="project-content">
-
 
             <h3>
               Comment anticiper les blocages et fiabiliser le suivi des projets ?
             </h3>
-
 
             <p class="project-answer">
 
@@ -1357,14 +1143,11 @@
 
             </p>
 
-
             <div class="project-footer">
-
 
               <div class="project-category">
                 Pilotage opérationnel
               </div>
-
 
               <a
                 class="project-link"
@@ -1373,17 +1156,11 @@
                 Découvrir OpsBoard →
               </a>
 
-
             </div>
-
 
           </div>
 
-
         </article>
-
-
-
 
 
         <!-- STRUCTURATION -->
@@ -1391,28 +1168,20 @@
 
         <article class="project-card">
 
-
           <div class="project-visual">
-
 
             <img
               src="YOUNES_PORTFOLIO_structuration.jpg"
               alt="Transformation d'informations dispersées en processus structuré"
             />
 
-
           </div>
 
-
-
-
           <div class="project-content">
-
 
             <h3>
               Comment structurer une activité sans ralentir son exécution ?
             </h3>
-
 
             <p class="project-answer">
 
@@ -1421,14 +1190,11 @@
 
             </p>
 
-
             <div class="project-footer">
-
 
               <div class="project-category">
                 Structuration opérationnelle
               </div>
-
 
               <a
                 class="project-link"
@@ -1437,17 +1203,11 @@
                 Voir le projet →
               </a>
 
-
             </div>
-
 
           </div>
 
-
         </article>
-
-
-
 
 
         <!-- PRICING -->
@@ -1455,28 +1215,20 @@
 
         <article class="project-card">
 
-
           <div class="project-visual">
-
 
             <img
               src="devis portfo younes.jpg"
               alt="Automatisation du calcul et de la génération de devis"
             />
 
-
           </div>
 
-
-
-
           <div class="project-content">
-
 
             <h3>
               Comment produire rapidement des devis fiables et maîtriser les marges ?
             </h3>
-
 
             <p class="project-answer">
 
@@ -1485,14 +1237,11 @@
 
             </p>
 
-
             <div class="project-footer">
-
 
               <div class="project-category">
                 Pricing & analyse économique
               </div>
-
 
               <a
                 class="project-link"
@@ -1501,17 +1250,11 @@
                 Voir le projet →
               </a>
 
-
             </div>
-
 
           </div>
 
-
         </article>
-
-
-
 
 
         <!-- HONDA -->
@@ -1519,28 +1262,20 @@
 
         <article class="project-card">
 
-
           <div class="project-visual">
-
 
             <img
               src="younes honda prtfo.jpg"
               alt="Coordination opérationnelle pour Honda au Mondial de l'Auto"
             />
 
-
           </div>
 
-
-
-
           <div class="project-content">
-
 
             <h3>
               Comment coordonner la logistique d’une activation événementielle complexe ?
             </h3>
-
 
             <p class="project-answer">
 
@@ -1550,14 +1285,11 @@
 
             </p>
 
-
             <div class="project-footer">
-
 
               <div class="project-category">
                 Coordination événementielle
               </div>
-
 
               <a
                 class="project-link"
@@ -1566,26 +1298,18 @@
                 Voir le projet →
               </a>
 
-
             </div>
 
-
           </div>
-
 
         </article>
 
 
       </div>
 
-
     </div>
 
-
   </section>
-
-
-
 
 
   <!-- À PROPOS -->
@@ -1596,19 +1320,14 @@
     class="section-border"
   >
 
-
     <div class="container">
-
 
       <h2 class="section-title">
         À propos
       </h2>
 
 
-
-
       <div class="about-copy">
-
 
         <p>
 
@@ -1619,7 +1338,6 @@
 
         </p>
 
-
         <p>
 
           Mon parcours m’a progressivement amené
@@ -1629,15 +1347,10 @@
 
         </p>
 
-
       </div>
 
 
-
-
       <div class="journey">
-
-
 
 
         <!-- UDC -->
@@ -1645,26 +1358,18 @@
 
         <div class="journey-item">
 
-
           <div class="journey-logo">
-
 
             <img
               src="UDC LOGO.jpg"
               alt="Unlimited Driving Corporation"
             />
 
-
           </div>
-
-
-
 
           <div class="journey-content">
 
-
             <h3>
-
 
               <a
                 class="company-link"
@@ -1675,9 +1380,7 @@
                 Unlimited Driving Corporation
               </a>
 
-
             </h3>
-
 
             <p>
 
@@ -1688,14 +1391,9 @@
 
             </p>
 
-
           </div>
 
-
         </div>
-
-
-
 
 
         <!-- AMU -->
@@ -1703,59 +1401,42 @@
 
         <div class="journey-item">
 
-
           <div class="journey-logo">
-
 
             <img
               src="AMU logo.png"
               alt="Aix Marseille Université"
             />
 
-
           </div>
 
-
-
-
           <div class="journey-content">
-
 
             <h3>
               Aix Marseille Université
             </h3>
 
-
             <p class="degree-list">
-
 
               <span>
                 <strong>Master 1</strong>
                 · Économie des Marchés et des Entreprises · 2024 à 2025
               </span>
 
-
               <span>
                 <strong>Master 2</strong>
                 · Spécialisation en Création d’Entreprise, en alternance · 2025 à 2026
               </span>
 
-
               <span>
                 Diplôme obtenu en octobre 2026
               </span>
 
-
             </p>
-
 
           </div>
 
-
         </div>
-
-
-
 
 
         <!-- ALLIANZ -->
@@ -1763,26 +1444,18 @@
 
         <div class="journey-item">
 
-
           <div class="journey-logo">
-
 
             <img
               src="allianz logo.png"
               alt="Allianz"
             />
 
-
           </div>
-
-
-
 
           <div class="journey-content">
 
-
             <h3>
-
 
               <a
                 class="company-link"
@@ -1791,9 +1464,7 @@
                 Allianz
               </a>
 
-
             </h3>
-
 
             <p>
 
@@ -1803,23 +1474,17 @@
 
             </p>
 
-
           </div>
-
 
         </div>
 
-
       </div>
-
-
 
 
       <div
         class="about-copy"
         style="margin-top: 34px; margin-bottom: 0;"
       >
-
 
         <p>
 
@@ -1829,17 +1494,11 @@
 
         </p>
 
-
       </div>
-
 
     </div>
 
-
   </section>
-
-
-
 
 
   <!-- POSTES -->
@@ -1850,93 +1509,69 @@
     class="section-border"
   >
 
-
     <div class="container">
-
 
       <h2 class="section-title">
         Vous recherchez un profil capable d’analyser, structurer et piloter ?
       </h2>
-
 
       <p class="section-intro">
         Mon expérience peut notamment s’inscrire dans les fonctions suivantes.
       </p>
 
 
-
-
       <div class="roles-grid">
-
 
         <div class="role-card">
           <span>Business Analyst</span>
         </div>
 
-
         <div class="role-card">
           <span>PMO / Project Coordinator</span>
         </div>
-
 
         <div class="role-card">
           <span>Business Operations</span>
         </div>
 
-
         <div class="role-card">
           <span>Strategy & Operations</span>
         </div>
-
 
         <div class="role-card">
           <span>Consultant junior · Transformation & Organisation</span>
         </div>
 
-
         <div class="role-card">
           <span>Business Development / Market Expansion</span>
         </div>
-
 
         <div class="role-card">
           <span>Sales Operations</span>
         </div>
 
-
         <div class="role-card">
           <span>Chargé d’études / Market Analyst</span>
         </div>
-
 
         <div class="role-card">
           <span>Chargé d’affaires / Chef de projet</span>
         </div>
 
-
       </div>
 
 
-
-
       <div class="roles-cta">
-
 
         <a href="#assistant">
           Interroger mon assistant IA →
         </a>
 
-
       </div>
-
 
     </div>
 
-
   </section>
-
-
-
 
 
   <!-- CONTACT -->
@@ -1947,14 +1582,11 @@
     class="section-border"
   >
 
-
     <div class="container">
-
 
       <h2 class="section-title">
         Échangeons.
       </h2>
-
 
       <p class="section-intro">
 
@@ -1965,35 +1597,26 @@
       </p>
 
 
-
-
       <div class="contact-box">
-
 
         <h3>
           Younes Rizk
         </h3>
-
 
         <p>
           France
         </p>
 
 
-
-
         <div class="contact-links">
-
 
           <a href="mailto:younesrizk2000@gmail.com">
             younesrizk2000@gmail.com
           </a>
 
-
           <a href="tel:+33763463244">
             +33 7 63 46 32 44
           </a>
-
 
           <a
             href="https://www.linkedin.com/in/younes-rizk-83779822b"
@@ -2003,15 +1626,11 @@
             Consulter mon profil LinkedIn
           </a>
 
-
         </div>
-
 
       </div>
 
-
     </div>
-
 
   </section>
 
@@ -2019,76 +1638,39 @@
 </main>
 
 
-
-
-
 <footer>
-
 
   <div class="container">
     Younes Rizk · France · Portfolio professionnel
   </div>
 
-
 </footer>
-
-
-
 
 
 <script>
 
 
-  /*
-    Pour le moment cette adresse reste vide.
-
-    Le portfolio utilise donc les réponses locales
-    définies dans ce fichier.
-
-    Plus tard, cette variable contiendra
-    l'adresse de notre backend sécurisé.
-  */
-
-  const ASSISTANT_API_URL = "";
-
+  const ASSISTANT_API_URL =
+    "https://portfolio-tau-seven-49.vercel.app/api/chat";
 
 
   const assistantForm =
     document.getElementById("assistantForm");
 
-
   const assistantInput =
     document.getElementById("assistantInput");
-
 
   const assistantSubmit =
     document.getElementById("assistantSubmit");
 
-
   const assistantConversation =
     document.getElementById("assistantConversation");
-
 
   const suggestionButtons =
     document.querySelectorAll(".assistant-suggestion");
 
 
-
-
-  /*
-    DÉTECTION DE LANGUE
-
-    On compare maintenant les signaux français
-    et anglais.
-
-    En cas de doute, le français est utilisé
-    par défaut puisque le portfolio principal
-    est en français.
-  */
-
-
   function detectLanguage(text) {
-
 
     const normalized =
       text
@@ -2099,10 +1681,8 @@
           ""
         );
 
-
     const words =
       normalized.match(/[a-zA-Z]+/g) || [];
-
 
     const frenchWords = [
 
@@ -2114,34 +1694,27 @@
       "vous",
       "ils",
       "elles",
-
       "est",
       "sont",
       "etre",
-
       "peut",
       "pourrait",
-
       "comment",
       "pourquoi",
-
       "quel",
       "quelle",
       "quels",
       "quelles",
-
       "dans",
       "avec",
       "pour",
       "sur",
       "chez",
-
       "une",
       "des",
       "les",
       "ses",
       "son",
-
       "gerer",
       "travail",
       "travailler",
@@ -2162,7 +1735,6 @@
 
     ];
 
-
     const englishWords = [
 
       "i",
@@ -2171,34 +1743,28 @@
       "she",
       "we",
       "they",
-
       "is",
       "are",
       "does",
       "do",
       "did",
-
       "can",
       "could",
       "would",
       "should",
-
       "what",
       "how",
       "why",
       "who",
       "which",
-
       "with",
       "for",
       "from",
       "about",
       "into",
-
       "the",
       "his",
       "her",
-
       "work",
       "working",
       "role",
@@ -2214,46 +1780,30 @@
 
     ];
 
-
     let frenchScore = 0;
-
     let englishScore = 0;
 
-
     words.forEach((word) => {
-
 
       if (
         frenchWords.includes(word)
       ) {
-
         frenchScore += 1;
-
       }
-
 
       if (
         englishWords.includes(word)
       ) {
-
         englishScore += 1;
-
       }
 
-
     });
-
-
 
     if (
       /[àâçéèêëîïôûùüÿœ]/i.test(text)
     ) {
-
       frenchScore += 3;
-
     }
-
-
 
     const englishExpressions = [
 
@@ -2270,7 +1820,6 @@
       "work with"
 
     ];
-
 
     const frenchExpressions = [
 
@@ -2291,23 +1840,17 @@
 
     ];
 
-
-
     englishExpressions.forEach(
       (expression) => {
 
         if (
           normalized.includes(expression)
         ) {
-
           englishScore += 3;
-
         }
 
       }
     );
-
-
 
     frenchExpressions.forEach(
       (expression) => {
@@ -2315,51 +1858,35 @@
         if (
           normalized.includes(expression)
         ) {
-
           frenchScore += 3;
-
         }
 
       }
     );
 
-
-
     if (
       englishScore > frenchScore
     ) {
-
       return "en";
-
     }
-
-
 
     return "fr";
 
   }
 
 
-
-
   function clearWelcome() {
-
 
     const welcome =
       assistantConversation.querySelector(
         ".assistant-welcome"
       );
 
-
     if (welcome) {
-
       welcome.remove();
-
     }
 
   }
-
-
 
 
   function appendMessage(
@@ -2369,13 +1896,10 @@
     sources = []
   ) {
 
-
     clearWelcome();
-
 
     const message =
       document.createElement("div");
-
 
     message.className =
       "message " +
@@ -2385,59 +1909,42 @@
           : "message-assistant"
       );
 
-
-
     const label =
       document.createElement("span");
 
-
     label.className =
       "message-label";
-
 
     label.textContent =
       role === "user"
         ? "Question"
         : "Assistant IA";
 
-
-
     const body =
       document.createElement("div");
-
 
     body.className =
       "message-text";
 
-
     body.textContent =
       text;
 
-
-
     message.appendChild(label);
-
     message.appendChild(body);
-
-
 
     if (
       role === "assistant" &&
       badge
     ) {
 
-
       const badgeElement =
         document.createElement("span");
-
 
       badgeElement.className =
         "evidence-badge";
 
-
       badgeElement.textContent =
         badge;
-
 
       message.appendChild(
         badgeElement
@@ -2445,65 +1952,46 @@
 
     }
 
-
-
-
     if (
       role === "assistant" &&
       sources.length
     ) {
 
-
       const sourceWrap =
         document.createElement("div");
-
 
       sourceWrap.className =
         "assistant-sources";
 
-
-
       sources.forEach(
         (source) => {
-
 
           const link =
             document.createElement("a");
 
-
           link.className =
             "assistant-source";
-
 
           link.href =
             source.url;
 
-
           link.textContent =
             source.label + " →";
 
-
           sourceWrap.appendChild(link);
-
 
         }
       );
-
-
 
       message.appendChild(
         sourceWrap
       );
 
-
     }
-
-
 
     assistantConversation.appendChild(
       message
     );
-
 
     assistantConversation.scrollTop =
       assistantConversation.scrollHeight;
@@ -2511,1117 +1999,10 @@
   }
 
 
-
-
-  function normalizeQuestion(question) {
-
-
-    return question
-
-      .toLowerCase()
-
-      .normalize("NFD")
-
-      .replace(
-        /[\u0300-\u036f]/g,
-        ""
-      );
-
-  }
-
-
-
-
-  function includesAny(
-    text,
-    words
-  ) {
-
-
-    return words.some(
-      (word) =>
-        text.includes(word)
-    );
-
-  }
-
-
-
-
-  function localAnswer(
-    question,
-    language
-  ) {
-
-
-    const q =
-      normalizeQuestion(question);
-
-
-    const fr =
-      language === "fr";
-
-
-
-
-    /*
-      ROLE FIT
-    */
-
-
-    if (
-
-      includesAny(q, [
-
-        "business operations",
-        "strategy",
-        "operations role",
-        "role fit",
-        "poste",
-        "business analyst",
-        "consultant",
-        "project manager",
-        "chef de projet",
-        "strategy and operations"
-
-      ])
-
-    ) {
-
-
-      return {
-
-
-        badge:
-          fr
-            ? "Adéquation professionnelle"
-            : "Role fit",
-
-
-        answer:
-          fr
-
-            ? "Son positionnement principal se situe autour de Business Operations, Strategy & Operations, gestion de projet, Business Analysis et conseil en transformation. Le fil conducteur de son expérience est sa capacité à structurer des situations ambiguës, coordonner l’exécution, améliorer les processus et utiliser l’automatisation lorsqu’elle apporte une valeur concrète. Pour un poste précis, les responsabilités demandées doivent néanmoins être comparées à son expérience démontrée."
-
-            : "His strongest positioning is around Business Operations, Strategy & Operations, Project Management, Business Analysis and transformation consulting. The recurring pattern in his experience is structuring ambiguous situations, coordinating execution, improving processes and using automation when it creates concrete business value. For a specific role, the responsibilities should still be compared with his demonstrated experience.",
-
-
-        sources: [
-
-          {
-            label:
-              fr
-                ? "Voir les postes ciblés"
-                : "View target roles",
-
-            url: "#profils"
-          },
-
-          {
-            label:
-              fr
-                ? "Voir les projets"
-                : "View projects",
-
-            url: "#projets"
-          }
-
-        ]
-
-
-      };
-
-    }
-
-
-
-
-    /*
-      AMBIGUITY
-    */
-
-
-    if (
-
-      includesAny(q, [
-
-        "ambigu",
-        "ambiguity",
-        "uncertain",
-        "startup",
-        "corporate",
-        "structure",
-        "messy"
-
-      ])
-
-    ) {
-
-
-      return {
-
-
-        badge:
-          fr
-            ? "Style de travail déclaré"
-            : "Stated working style",
-
-
-        answer:
-          fr
-
-            ? "Younes est à l’aise dans des environnements structurés comme dans des environnements plus ambigus. Son réflexe n’est toutefois pas de laisser l’ambiguïté durer. Il cherche progressivement à transformer ce qui est flou en responsabilités, processus et méthodes de travail plus clairs. Son parcours entre Allianz et UDC lui a permis d’évoluer dans les deux types d’environnement."
-
-            : "Younes is comfortable in both structured and ambiguous environments. His instinct, however, is not to let ambiguity remain permanent. He tends to turn unclear situations into clearer responsibilities, processes and ways of working. His experience across Allianz and UDC exposed him to both corporate and startup environments.",
-
-
-        sources: [
-
-          {
-            label:
-              fr
-                ? "Projet de structuration"
-                : "Structuring project",
-
-            url:
-              "franchise-evenementiel.html"
-          }
-
-        ]
-
-
-      };
-
-    }
-
-
-
-
-    /*
-      LEADERSHIP
-    */
-
-
-    if (
-
-      includesAny(q, [
-
-        "manager",
-        "management",
-        "leadership",
-        "micromanage",
-        "micromanaging",
-        "equipe",
-        "team leader"
-
-      ])
-
-    ) {
-
-
-      return {
-
-
-        badge:
-          fr
-            ? "Style de leadership déclaré"
-            : "Stated leadership style",
-
-
-        answer:
-          fr
-
-            ? "Younes privilégie un management fondé sur des attentes claires, la confiance et l’autonomie. Il ne souhaite pas imposer une méthode de travail lorsque la personne est capable de choisir la sienne. Il serait en revanche exigeant sur les engagements, les délais, la responsabilité individuelle et les valeurs de l’équipe. Il n’a pas encore démontré une expérience de management d’une grande équipe."
-
-            : "Younes describes his preferred leadership style as clear on expectations while giving people autonomy in how they work. He does not favor micromanagement. He would be more demanding around commitments, deadlines, individual accountability and team values. He has not yet demonstrated experience managing a large team.",
-
-
-        sources: []
-
-
-      };
-
-    }
-
-
-
-
-    /*
-      MISTAKES
-    */
-
-
-    if (
-
-      includesAny(q, [
-
-        "mistake",
-        "mistakes",
-        "error",
-        "erreur",
-        "faute",
-        "accountability"
-
-      ])
-
-    ) {
-
-
-      return {
-
-
-        badge:
-          fr
-            ? "Style de travail déclaré"
-            : "Stated working style",
-
-
-        answer:
-          fr
-
-            ? "Lorsqu’il commet une erreur, Younes privilégie une prise de responsabilité directe. Son approche consiste à reconnaître l’erreur, expliquer ce qu’il en a appris et identifier ce qui pourrait éviter qu’elle se reproduise. Il considère également qu’une erreur peut devenir une connaissance utile pour le reste de l’équipe lorsqu’elle est communiquée avec transparence."
-
-            : "When he makes a mistake, Younes says his instinct is to take direct responsibility. His approach is to acknowledge the mistake, explain what he learned and identify what could prevent it from happening again. He also believes that a mistake can become useful knowledge for the wider team when it is communicated transparently.",
-
-
-        sources: []
-
-
-      };
-
-    }
-
-
-
-
-    /*
-      FEEDBACK
-    */
-
-
-    if (
-
-      includesAny(q, [
-
-        "feedback",
-        "criticism",
-        "critique",
-        "coach",
-        "coachable"
-
-      ])
-
-    ) {
-
-
-      return {
-
-
-        badge:
-          fr
-            ? "Style de travail déclaré"
-            : "Stated working style",
-
-
-        answer:
-          fr
-
-            ? "Younes accorde beaucoup d’importance à la culture du feedback. Il ne juge pas son travail uniquement selon sa propre perception. Il cherche à savoir si le résultat correspondait réellement aux attentes, au bon moment et avec la bonne approche. Lorsqu’il donne lui même du feedback, il préfère commencer par ce qui fonctionne puis illustrer les points d’amélioration avec des exemples concrets et leur impact."
-
-            : "Younes places strong importance on feedback culture. He does not evaluate his work only through his own perception of whether it was good. He wants to know whether the outcome matched expectations, timing and the required approach. When giving feedback himself, he prefers to recognize what works first and then explain improvement points with concrete examples and their expected impact.",
-
-
-        sources: []
-
-
-      };
-
-    }
-
-
-
-
-    /*
-      DISAGREEMENT
-    */
-
-
-    if (
-
-      includesAny(q, [
-
-        "disagree",
-        "disagreement",
-        "desaccord",
-        "ceo",
-        "manager decision",
-        "challenge"
-
-      ])
-
-    ) {
-
-
-      return {
-
-
-        badge:
-          fr
-            ? "Style de travail déclaré"
-            : "Stated working style",
-
-
-        answer:
-          fr
-
-            ? "En cas de désaccord avec un manager ou un dirigeant, Younes préfère présenter clairement son option, son raisonnement et les éléments qui la soutiennent. Il reconnaît toutefois que le décideur peut disposer d’informations ou de contraintes qu’il ne voit pas. Une fois la décision finale prise, il s’aligne et exécute sans prolonger le débat simplement pour défendre sa propre position."
-
-            : "When he disagrees with a manager or CEO, Younes prefers to present his recommendation clearly, explain his reasoning and provide supporting evidence. He also recognizes that the final decision maker may have information or constraints he cannot see. Once the decision is made, he aligns and executes rather than continuing the debate for the sake of winning.",
-
-
-        sources: []
-
-
-      };
-
-    }
-
-
-
-
-    /*
-      SELF LEARNING
-    */
-
-
-    if (
-
-      includesAny(q, [
-
-        "learn",
-        "learning",
-        "self learning",
-        "self-learning",
-        "apprendre",
-        "autoformation",
-        "auto former",
-        "youtube",
-        "new tool",
-        "nouvel outil"
-
-      ])
-
-    ) {
-
-
-      return {
-
-
-        badge:
-          fr
-            ? "Style de travail et expérience"
-            : "Working style and experience",
-
-
-        answer:
-          fr
-
-            ? "L’autoformation est une composante importante de son profil. Lorsqu’il doit maîtriser un nouvel outil ou comprendre un nouveau sujet, il recherche lui même les ressources nécessaires, notamment des vidéos, de la documentation et des exemples pratiques. Il s’est ainsi formé de manière autonome à plusieurs outils professionnels comme Qonto, Stripe et HubSpot. Son principe est simple : s’il doit savoir faire quelque chose pour faire avancer le travail, il cherche comment l’apprendre."
-
-            : "Self learning is an important part of his profile. When he needs to master a new tool or understand a new subject, he actively finds the resources required, including videos, documentation and practical examples. He taught himself several professional tools this way, including Qonto, Stripe and HubSpot. His basic principle is that if he needs to know how to do something to move the work forward, he finds a way to learn it.",
-
-
-        sources: [
-
-          {
-            label:
-              fr
-                ? "À propos"
-                : "About",
-
-            url: "#apropos"
-          }
-
-        ]
-
-
-      };
-
-    }
-
-
-
-
-    /*
-      AUTOMATION AND AI
-    */
-
-
-    if (
-
-      includesAny(q, [
-
-        "automation",
-        "automatisation",
-        "artificial intelligence",
-        "intelligence artificielle",
-        "process improvement",
-        "ameliorer",
-        "workflow",
-        "ai tool",
-        "outil ia",
-        "scripting"
-
-      ])
-
-    ) {
-
-
-      return {
-
-
-        badge:
-          fr
-            ? "Expérience démontrée"
-            : "Demonstrated experience",
-
-
-        answer:
-          fr
-
-            ? "Oui. L’automatisation et l’amélioration des processus font partie des capacités les plus fortes de Younes. Son approche consiste d’abord à livrer ce qui est demandé puis à proposer une méthode plus rapide, plus fiable ou moins risquée lorsqu’il identifie une amélioration possible. Il utilise notamment l’IA, le scripting et des outils légers pour construire ou tester des solutions concrètes."
-
-            : "Yes. Automation and process improvement are among Younes's strongest capabilities. His approach is to deliver the requested work first and then propose a faster, more reliable or lower risk method when he identifies an improvement opportunity. He uses AI, scripting and lightweight tools to build or test practical solutions.",
-
-
-        sources: [
-
-          {
-            label:
-              "OpsBoard",
-
-            url:
-              "opsboard.html"
-          },
-
-          {
-            label:
-              fr
-                ? "Pricing et devis"
-                : "Pricing and quoting",
-
-            url:
-              "pricing.html"
-          }
-
-        ]
-
-
-      };
-
-    }
-
-
-
-
-    /*
-      FINANCE
-    */
-
-
-    if (
-
-      includesAny(q, [
-
-        "finance",
-        "financial",
-        "budget",
-        "tresorerie",
-        "charges",
-        "accounting",
-        "comptable",
-        "qonto",
-        "stripe",
-        "pricing",
-        "margin",
-        "marge"
-
-      ])
-
-    ) {
-
-
-      return {
-
-
-        badge:
-          fr
-            ? "Expérience démontrée"
-            : "Demonstrated experience",
-
-
-        answer:
-          fr
-
-            ? "Oui, sur le plan opérationnel. Chez UDC, Younes a travaillé sur le suivi financier, Qonto, Stripe, les dépenses, le suivi budgétaire, le chiffrage, les marges, la facturation et différents sujets liés au financement. Il travaillait également en lien direct avec l’expert comptable. Cela ne signifie pas qu’il se présente comme directeur financier ou expert comptable, mais il possède une exposition concrète aux enjeux financiers d’une entreprise."
-
-            : "Yes, at an operational level. At UDC, Younes worked on financial tracking, Qonto, Stripe, expenses, budgeting, pricing, margins, invoicing and several funding related matters. He also worked directly with the company's accountant. This does not mean he presents himself as a CFO or accounting specialist, but he has concrete exposure to company finance.",
-
-
-        sources: [
-
-          {
-            label:
-              fr
-                ? "Outil de suivi financier"
-                : "Financial tracking tool",
-
-            url:
-              "compte-charges-honda.html"
-          },
-
-          {
-            label:
-              fr
-                ? "Projet pricing"
-                : "Pricing project",
-
-            url:
-              "pricing.html"
-          }
-
-        ]
-
-
-      };
-
-    }
-
-
-
-
-    /*
-      LEGAL AND HR
-    */
-
-
-    if (
-
-      includesAny(q, [
-
-        "legal",
-        "juridique",
-        "law",
-        "lawyer",
-        "avocat",
-        "human resources",
-        "ressources humaines",
-        "payroll",
-        "paie",
-        "recrutement",
-        "recruitment",
-        "nda",
-        "contract",
-        "contrat"
-
-      ])
-
-    ) {
-
-
-      return {
-
-
-        badge:
-          fr
-            ? "Expérience démontrée avec limite claire"
-            : "Demonstrated experience with a clear limit",
-
-
-        answer:
-          fr
-
-            ? "Chez UDC, Younes prenait en charge au quotidien des sujets RH, administratifs, financiers et juridiques dans le cadre de son rôle de Chief of Staff. Il travaillait directement avec l’expert comptable et le cabinet juridique lorsque l’expertise spécialisée était nécessaire. Son approche consiste à comprendre suffisamment le sujet pour gérer son périmètre, poser les bonnes questions et savoir quand faire intervenir un spécialiste. Il ne se présente pas comme juriste ou expert en droit."
-
-            : "At UDC, Younes handled day to day HR, administrative, financial and legal matters as part of his Chief of Staff role. He worked directly with the company's accountant and legal advisers when specialist expertise was required. His approach is to understand enough to manage his scope, ask the right questions and know when a specialist should step in. He does not present himself as a lawyer or legal expert.",
-
-
-        sources: [
-
-          {
-            label:
-              fr
-                ? "Parcours UDC"
-                : "UDC experience",
-
-            url:
-              "#apropos"
-          }
-
-        ]
-
-
-      };
-
-    }
-
-
-
-
-    /*
-      CLIENT COMMUNICATION
-    */
-
-
-    if (
-
-      includesAny(q, [
-
-        "client",
-        "customer",
-        "stakeholder",
-        "communication",
-        "communique",
-        "communiquer",
-        "partner",
-        "partenaire"
-
-      ])
-
-    ) {
-
-
-      return {
-
-
-        badge:
-          fr
-            ? "Style de travail et expérience"
-            : "Working style and experience",
-
-
-        answer:
-          fr
-
-            ? "Younes accorde beaucoup d’importance au respect dans la communication, en particulier avec un client. Lorsqu’une information n’est pas claire, il préfère demander une clarification plutôt que faire une supposition. Si un retard de réponse bloque le projet, il communique l’urgence et relance de manière persistante afin de continuer à avancer."
-
-            : "Younes places strong importance on respectful communication, particularly with clients. When something is unclear, he prefers to ask for clarification rather than assume. If a delayed response is blocking the project, he communicates the urgency and follows up persistently so the work can continue.",
-
-
-        sources: []
-
-
-      };
-
-    }
-
-
-
-
-    /*
-      LIMITS
-    */
-
-
-    if (
-
-      includesAny(q, [
-
-        "weakness",
-        "weaknesses",
-        "faiblesse",
-        "limite",
-        "limits",
-        "gap",
-        "gaps",
-        "sql",
-        "software engineer",
-        "software engineering",
-        "coding expert",
-        "legal expert",
-        "large team"
-
-      ])
-
-    ) {
-
-
-      return {
-
-
-        badge:
-          fr
-            ? "Limites actuelles"
-            : "Current limits",
-
-
-        answer:
-          fr
-
-            ? "Younes identifie plusieurs limites qu’il ne cherche pas à masquer. Il n’a pas encore démontré de management d’une grande équipe, de SQL avancé, d’expertise juridique ni de compétences de software engineering. Il reconnaît également une tendance à vouloir parfois trop prendre en charge lorsqu’il est fortement investi dans le résultat. Il travaille justement à mieux équilibrer engagement, délégation et responsabilité partagée."
-
-            : "Younes identifies several current limits that he does not try to hide. He has not yet demonstrated experience managing a large team, advanced SQL, legal expertise or software engineering. He also recognizes a tendency toward overownership when he cares strongly about an outcome. He is actively learning to balance commitment with delegation and shared accountability.",
-
-
-        sources: []
-
-
-      };
-
-    }
-
-
-
-
-    /*
-      PERSONALITY
-    */
-
-
-    if (
-
-      includesAny(q, [
-
-        "personality",
-        "personne",
-        "what is younes like",
-        "what kind of person",
-        "quel genre",
-        "caractere",
-        "work with him",
-        "travailler avec"
-
-      ])
-
-    ) {
-
-
-      return {
-
-
-        badge:
-          fr
-            ? "Synthèse du style professionnel"
-            : "Professional working style summary",
-
-
-        answer:
-          fr
-
-            ? "Professionnellement, Younes se décrit comme curieux, responsable, orienté amélioration et fortement engagé dans les résultats. Il apprécie les attentes claires, la responsabilité individuelle et les feedbacks fréquents. Il aime comprendre comment les choses fonctionnent, transformer l’ambiguïté en structure et améliorer les processus lorsqu’il identifie une meilleure méthode. Il cherche aussi à rester direct sans personnaliser les désaccords."
-
-            : "Professionally, Younes describes himself as curious, accountable, improvement minded and strongly invested in outcomes. He values clear expectations, individual responsibility and frequent feedback. He likes understanding how things work, turning ambiguity into structure and improving processes when he identifies a better method. He also tries to be direct without making professional disagreement personal.",
-
-
-        sources: []
-
-
-      };
-
-    }
-
-
-
-
-    /*
-      PRIORITIZATION
-    */
-
-
-    if (
-
-      includesAny(q, [
-
-        "deadline",
-        "priorit",
-        "pressure",
-        "urgent",
-        "urgence",
-        "priorite",
-        "stress"
-
-      ])
-
-    ) {
-
-
-      return {
-
-
-        badge:
-          fr
-            ? "Style de travail déclaré"
-            : "Stated working style",
-
-
-        answer:
-          fr
-
-            ? "Sous contrainte de temps, Younes ne considère pas toutes les demandes comme également urgentes. Il regarde les échéances fermes, les dépendances, l’impact sur les parties prenantes et la flexibilité réelle de chaque demande. Lorsqu’un sujet peut attendre, il préfère communiquer et renégocier clairement le délai plutôt que promettre trop et manquer plusieurs engagements."
-
-            : "Under time pressure, Younes does not treat every request as equally urgent. He looks at hard deadlines, dependencies, stakeholder impact and the real flexibility of each request. When something can reasonably wait, he prefers to communicate and renegotiate timing rather than overcommit and miss several obligations.",
-
-
-        sources: []
-
-
-      };
-
-    }
-
-
-
-
-    /*
-      PROJECT MANAGEMENT
-    */
-
-
-    if (
-
-      includesAny(q, [
-
-        "project",
-        "projet",
-        "end to end",
-        "bout en bout",
-        "coordinate",
-        "coordination",
-        "mondial",
-        "honda",
-        "logistics",
-        "logistique"
-
-      ])
-
-    ) {
-
-
-      return {
-
-
-        badge:
-          fr
-            ? "Expérience démontrée"
-            : "Demonstrated experience",
-
-
-        answer:
-          fr
-
-            ? "Oui, avec une expérience particulièrement visible sur l’activation Honda au Mondial de l’Auto 2026. Younes devait gérer plusieurs dimensions en parallèle : logistique, organisation de l’équipe, déplacements, hébergement, planning, budget et dépenses. Il a progressivement transformé ce brief ouvert en une méthode de préparation structurée avec des outils, des supports et une procédure reproductible."
-
-            : "Yes, with particularly visible evidence from the Honda activation at the 2026 Mondial de l'Auto. Younes had to manage several dimensions in parallel, including logistics, team organization, travel, accommodation, scheduling, budget and expenses. He progressively transformed the open brief into a structured preparation method with tools, supporting materials and a reproducible process.",
-
-
-        sources: [
-
-          {
-            label:
-              fr
-                ? "Voir le projet Honda"
-                : "View Honda project",
-
-            url:
-              "honda.html"
-          }
-
-        ]
-
-
-      };
-
-    }
-
-
-
-
-    /*
-      CULTURE AND MOTIVATION
-    */
-
-
-    if (
-
-      includesAny(q, [
-
-        "motivat",
-        "culture",
-        "environment",
-        "environnement",
-        "company culture",
-        "entreprise ideale",
-        "ambition",
-        "career",
-        "carriere",
-        "performance"
-
-      ])
-
-    ) {
-
-
-      return {
-
-
-        badge:
-          fr
-            ? "Motivation et culture recherchée"
-            : "Motivation and preferred culture",
-
-
-        answer:
-          fr
-
-            ? "Younes est particulièrement motivé par les entreprises qui ont des objectifs ambitieux, clairs et mesurables. Il apprécie une culture exigeante mais constructive, avec de la transparence, de la responsabilité, du travail, des feedbacks fréquents et une équipe alignée autour d’un projet à impact. Il est à l’aise avec des tâches d’exécution lorsqu’il apprend, mais souhaite une perspective réelle d’évolution vers davantage de responsabilité."
-
-            : "Younes is particularly motivated by companies with ambitious, clear and measurable objectives. He values a demanding but constructive culture built around transparency, accountability, hard work, frequent feedback and a team aligned around meaningful goals. He is comfortable with execution focused work while learning, but wants a genuine path toward greater responsibility over time.",
-
-
-        sources: []
-
-
-      };
-
-    }
-
-
-
-
-    /*
-      PROUD MOMENTS
-    */
-
-
-    if (
-
-      includesAny(q, [
-
-        "proud",
-        "fier",
-        "achievement",
-        "accomplishment",
-        "governance",
-        "documentation",
-        "technical documentation"
-
-      ])
-
-    ) {
-
-
-      return {
-
-
-        badge:
-          fr
-            ? "Expérience démontrée"
-            : "Demonstrated experience",
-
-
-        answer:
-          fr
-
-            ? "Parmi les expériences dont Younes est particulièrement fier figure la structuration de la documentation interne d’UDC. Il a organisé l’information puis présenté à l’équipe pourquoi une documentation claire était importante pour la gouvernance, la continuité des processus et la capacité de l’entreprise à évoluer. Il a également contribué à structurer de la documentation technique avec des ingénieurs. Il considère aussi son utilisation de l’IA et de l’automatisation comme une réussite importante, notamment sa capacité à apprendre suffisamment de notions techniques pour construire des outils sans formation initiale en développement logiciel."
-
-            : "One experience Younes is particularly proud of is helping structure UDC's internal documentation. He organized the information and then explained to the team why clear documentation mattered for governance, process continuity and future scaling. He also helped structure technical documentation alongside engineers. He is equally proud of his use of AI and automation, particularly his ability to learn enough technical concepts to build useful tools despite not having a traditional software development background.",
-
-
-        sources: [
-
-          {
-            label:
-              fr
-                ? "Projet de structuration"
-                : "Structuring project",
-
-            url:
-              "franchise-evenementiel.html"
-          }
-
-        ]
-
-
-      };
-
-    }
-
-
-
-
-    /*
-      DEFAULT
-    */
-
-
-    return {
-
-
-      badge:
-        fr
-          ? "Réponse générale"
-          : "General answer",
-
-
-      answer:
-        fr
-
-          ? "Cette question mérite une réponse plus précise que ce que cette première version locale peut produire. Le profil de Younes couvre principalement les opérations, la structuration de situations complexes, l’automatisation, l’amélioration des processus, la communication avec les parties prenantes et la coordination de projet. La prochaine version connectée à un LLM pourra utiliser l’ensemble de sa base de connaissances professionnelle pour répondre plus précisément."
-
-          : "This question deserves a more precise answer than the current local version can provide. Younes's profile mainly covers operations, structuring complex situations, automation, process improvement, stakeholder communication and project coordination. The next version connected to an LLM will be able to use his complete professional knowledge base to answer more precisely.",
-
-
-      sources: [
-
-        {
-          label:
-            fr
-              ? "Voir les projets"
-              : "View projects",
-
-          url:
-            "#projets"
-        },
-
-        {
-          label:
-            fr
-              ? "À propos"
-              : "About",
-
-          url:
-            "#apropos"
-        }
-
-      ]
-
-
-    };
-
-
-  }
-
-
-
-
   async function queryAssistant(
     question,
     language
   ) {
-
-
-    if (!ASSISTANT_API_URL) {
-
-
-      return localAnswer(
-        question,
-        language
-      );
-
-
-    }
-
-
 
     const response =
       await fetch(
@@ -3631,10 +2012,8 @@
           method: "POST",
 
           headers: {
-
             "Content-Type":
               "application/json"
-
           },
 
           body:
@@ -3651,9 +2030,16 @@
         }
       );
 
-
-
     if (!response.ok) {
+
+      const errorText =
+        await response.text();
+
+      console.error(
+        "Assistant API error:",
+        response.status,
+        errorText
+      );
 
       throw new Error(
         "Assistant unavailable"
@@ -3661,68 +2047,46 @@
 
     }
 
-
-
     return await response.json();
 
   }
 
 
-
-
   async function handleQuestion(question) {
-
 
     const trimmed =
       question.trim();
 
-
-
     if (!trimmed) {
-
       return;
-
     }
-
-
 
     const language =
       detectLanguage(trimmed);
-
-
 
     appendMessage(
       "user",
       trimmed
     );
 
-
-
     assistantInput.value =
       "";
 
-
     assistantSubmit.disabled =
       true;
-
 
     assistantSubmit.textContent =
       language === "fr"
         ? "Réflexion..."
         : "Thinking...";
 
-
-
     try {
-
 
       const result =
         await queryAssistant(
           trimmed,
           language
         );
-
-
 
       appendMessage(
 
@@ -3738,12 +2102,9 @@
 
       );
 
-
     }
 
-
     catch (error) {
-
 
       appendMessage(
 
@@ -3765,81 +2126,60 @@
 
       );
 
-
     }
 
-
     finally {
-
 
       assistantSubmit.disabled =
         false;
 
-
       assistantSubmit.textContent =
         "Demander";
 
-
       assistantInput.focus();
-
 
     }
 
-
   }
-
-
 
 
   assistantForm.addEventListener(
     "submit",
     (event) => {
 
-
       event.preventDefault();
-
 
       handleQuestion(
         assistantInput.value
       );
 
-
     }
   );
-
-
 
 
   suggestionButtons.forEach(
     (button) => {
 
-
       button.addEventListener(
         "click",
         () => {
 
-
           const prompt =
             button.dataset.prompt || "";
-
 
           assistantInput.value =
             prompt;
 
-
           handleQuestion(prompt);
-
 
         }
       );
-
 
     }
   );
 
 
 </script>
-
 
 
 </body>
