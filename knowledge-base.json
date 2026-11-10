@@ -1,0 +1,386 @@
+{
+  "profile": {
+    "name": "Younes Rizk",
+    "positioning": [
+      "Business Operations",
+      "Strategy & Operations",
+      "Project Management",
+      "Business Analysis",
+      "Transformation Consulting"
+    ],
+    "strongest_capabilities": [
+      "Operations",
+      "Automation",
+      "Structuring messy situations",
+      "Client communication",
+      "Process improvement"
+    ]
+  },
+
+  "professional_summary": {
+    "fr": "Younes travaille à l'intersection des opérations, de l'analyse et de la structuration. Son profil se caractérise par sa capacité à transformer des situations ambiguës ou dispersées en processus, outils et méthodes de travail plus clairs.",
+    "en": "Younes works at the intersection of operations, analysis and structuring. His profile is characterized by an ability to turn ambiguous or fragmented situations into clearer processes, tools and ways of working."
+  },
+
+  "experience": {
+    "udc": {
+      "company": "Unlimited Driving Corporation",
+      "role": "Chief of Staff / Responsable opérationnel",
+      "demonstrated": [
+        "Cross functional operational coordination",
+        "HR administration",
+        "Financial operations",
+        "Administrative operations",
+        "Legal coordination",
+        "Process structuring",
+        "Automation",
+        "Project coordination",
+        "Documentation and governance",
+        "Pricing and quoting processes"
+      ],
+      "hr": [
+        "Payroll and salary related operations",
+        "Silae",
+        "Employment contracts",
+        "Leave tracking",
+        "Mutual insurance administration",
+        "Recruitment",
+        "Onboarding",
+        "Employee administration"
+      ],
+      "finance": [
+        "Qonto",
+        "Stripe",
+        "Expense tracking",
+        "Budget monitoring",
+        "Pricing",
+        "Margin analysis",
+        "Billing",
+        "Treasury related operational work",
+        "Funding related files",
+        "Banking relationships",
+        "Fundraising materials"
+      ],
+      "legal": [
+        "NDA",
+        "Contracts",
+        "Franchise documentation",
+        "DIP documentation",
+        "Contract templates",
+        "Direct coordination with legal counsel"
+      ],
+      "administration": [
+        "Company documentation",
+        "Drive organization",
+        "Information centralization",
+        "Process documentation",
+        "Operational follow up"
+      ],
+      "external_stakeholders": [
+        "CEO",
+        "Accounting firm",
+        "Legal counsel",
+        "Banks",
+        "Clients",
+        "Partners"
+      ]
+    },
+
+    "allianz": {
+      "company": "Allianz",
+      "role": "Underwriter / Portfolio management",
+      "demonstrated": [
+        "Portfolio management",
+        "Client communication",
+        "Retirement products",
+        "Investment products",
+        "Power Plan product responsibility"
+      ]
+    }
+  },
+
+  "projects": {
+    "honda": {
+      "title": "Honda activation at Mondial de l'Auto 2026",
+      "demonstrated": [
+        "Project coordination",
+        "Logistics",
+        "Team organization",
+        "Travel coordination",
+        "Accommodation coordination",
+        "Scheduling",
+        "Budget tracking",
+        "Expense tracking",
+        "Operational preparation"
+      ],
+      "approach": "Younes transformed an open brief with multiple constraints into a structured preparation method with tools, supports and a reproducible process.",
+      "portfolio_url": "honda.html"
+    },
+
+    "opsboard": {
+      "title": "OpsBoard",
+      "demonstrated": [
+        "Operational process design",
+        "Blocking issue visibility",
+        "Alert automation",
+        "Technical knowledge capitalization"
+      ],
+      "important_limit": "OpsBoard was designed and implemented but was not deployed in production.",
+      "portfolio_url": "opsboard.html"
+    },
+
+    "pricing": {
+      "title": "Pricing and quote automation",
+      "demonstrated": [
+        "Pricing structure",
+        "Google Sheets architecture",
+        "Google Apps Script assisted development",
+        "Quote generation automation",
+        "PDF generation",
+        "Process reliability"
+      ],
+      "portfolio_url": "pricing.html"
+    },
+
+    "documentation": {
+      "title": "Company documentation and governance",
+      "demonstrated": [
+        "Structuring company documentation",
+        "Presenting documentation principles to the team",
+        "Connecting documentation to governance",
+        "Connecting documentation to scalability",
+        "Structuring technical documentation with engineers"
+      ]
+    }
+  },
+
+  "working_style": {
+    "ambiguity": {
+      "type": "stated_working_style",
+      "summary": "Younes can operate in ambiguity but naturally tries to transform ambiguity into clearer responsibilities, processes and ways of working."
+    },
+
+    "learning": {
+      "type": "stated_working_style_and_demonstrated_behavior",
+      "summary": "Younes is highly self directed in learning. When he needs to understand a subject or use a new tool, he researches it through documentation, online resources, videos and practical experimentation.",
+      "examples": [
+        "Qonto",
+        "Stripe",
+        "HubSpot",
+        "AI tools",
+        "Automation tools",
+        "Basic coding concepts"
+      ],
+      "principle": "If I need to know how to do something to move the work forward, I find a way to learn it."
+    },
+
+    "initiative": {
+      "type": "stated_working_style",
+      "summary": "Younes prefers to deliver the requested task first, then propose a more efficient or reliable method when he identifies one.",
+      "principle": "Deliver first, then improve."
+    },
+
+    "disagreement": {
+      "type": "stated_working_style",
+      "summary": "When Younes disagrees with a manager, he explains his recommendation and provides evidence. He recognizes that the manager may have broader information. Once the final decision is made, he aligns and executes.",
+      "principle": "Conviction without ego."
+    },
+
+    "mistakes": {
+      "type": "stated_working_style",
+      "summary": "Younes believes in acknowledging mistakes directly, taking responsibility, communicating what was learned and identifying how to reduce the risk of recurrence."
+    },
+
+    "feedback": {
+      "type": "stated_working_style",
+      "summary": "Younes values frequent constructive feedback. He wants to know whether the work was not only technically good, but also the right work, at the right time and with the expected approach."
+    },
+
+    "prioritization": {
+      "type": "stated_working_style",
+      "summary": "Younes prioritizes based on hard deadlines, urgency, dependencies, external impact and flexibility. When appropriate, he renegotiates less urgent deadlines rather than silently missing commitments."
+    },
+
+    "team_dependencies": {
+      "type": "stated_working_style",
+      "summary": "When another person's delay affects his project, Younes prefers early cooperation and risk prevention rather than blame or policing."
+    },
+
+    "clients": {
+      "type": "stated_working_style_and_demonstrated_behavior",
+      "summary": "Younes emphasizes respectful communication with clients. He asks for clarification rather than assuming and follows up persistently when a delayed response blocks execution."
+    }
+  },
+
+  "leadership": {
+    "type": "stated_leadership_style",
+    "summary": "Younes would favor clear expectations, autonomy, trust and accountability. He does not favor micromanagement.",
+    "principle": "Flexible on method, firm on outcome.",
+    "values": [
+      "Clear expectations",
+      "Autonomy",
+      "Trust",
+      "Deadlines",
+      "Accountability",
+      "Team values"
+    ],
+    "important_limit": "Younes has not yet demonstrated experience managing a large team."
+  },
+
+  "decision_making": {
+    "incomplete_information": {
+      "type": "stated_working_style",
+      "summary": "Younes first asks whether the missing information is critical. If it is, he tries to obtain it. If a decision must still be made, he prefers the safest reversible option that keeps the project moving.",
+      "principle": "If I cannot know everything, I prefer the safest reversible decision that keeps the project moving."
+    },
+
+    "investment_and_tools": {
+      "type": "stated_business_judgment",
+      "summary": "Younes prefers testing lightweight or AI enabled solutions before committing to expensive software when appropriate.",
+      "principle": "Prove the necessity first, then invest."
+    },
+
+    "persuasion": {
+      "type": "stated_business_judgment",
+      "summary": "When proposing an idea, Younes tends to frame the value through financial return, time saved and risk reduced.",
+      "principle": "Explain what it saves, what it accelerates and what risk it removes."
+    }
+  },
+
+  "personal_principles": {
+    "framework": "The Four Agreements",
+    "principles": [
+      {
+        "name": "Be impeccable with your word",
+        "professional_interpretation": "Communicate carefully, clearly and responsibly."
+      },
+      {
+        "name": "Do not take anything personally",
+        "professional_interpretation": "Keep disagreements focused on work, decisions and facts."
+      },
+      {
+        "name": "Do not make assumptions",
+        "professional_interpretation": "Ask, clarify and verify."
+      },
+      {
+        "name": "Always do your best",
+        "professional_interpretation": "Aim for the best possible result given the context, time and available information."
+      }
+    ],
+    "important_note": "These are principles Younes tries to follow, not claims of perfect behavior."
+  },
+
+  "motivation": {
+    "energizing_work": [
+      "Work with direct visible impact",
+      "Organizing projects",
+      "Building practical solutions",
+      "Improving how work is executed",
+      "Learning new tools and subjects"
+    ],
+
+    "less_motivating_environment": {
+      "summary": "Younes can start with execution focused work, especially while learning, but is demotivated by roles with no credible path toward greater responsibility, ownership or expertise.",
+      "principle": "Not rejecting junior work, rejecting stagnation."
+    }
+  },
+
+  "preferred_company_culture": {
+    "summary": "Younes performs best in ambitious environments with clear and measurable objectives, strong accountability and a constructive performance culture.",
+    "values": [
+      "Clear objectives",
+      "Ambition",
+      "Performance",
+      "Accountability",
+      "Transparency",
+      "Honesty",
+      "Hard work",
+      "Constructive communication",
+      "Frequent feedback",
+      "Team alignment",
+      "Visible impact"
+    ]
+  },
+
+  "career_ambition": {
+    "summary": "Younes wants to grow in competence, responsibility and specialization while remaining innovative, serious about his responsibilities and easy to work with.",
+    "long_term_traits": [
+      "Innovative",
+      "Reliable",
+      "Professional",
+      "Easy to communicate with",
+      "Direct without personal judgment",
+      "Highly knowledgeable in his area"
+    ]
+  },
+
+  "current_limits": {
+    "not_yet_demonstrated": [
+      "Managing a large team",
+      "Advanced SQL",
+      "Legal expertise",
+      "Software engineering",
+      "CFO level financial expertise",
+      "Advanced corporate financial modeling"
+    ],
+
+    "important_distinctions": [
+      "Operational legal exposure does not make Younes a legal expert.",
+      "Building tools with AI and scripting does not make Younes a software engineer.",
+      "Operational finance experience does not make Younes a CFO or accountant."
+    ]
+  },
+
+  "development_area": {
+    "overownership": {
+      "summary": "Younes can sometimes feel responsible for fixing too much when he is strongly invested in the outcome. He is learning to balance commitment with trust, delegation and shared accountability.",
+      "development": "From 'I care, so I should fix it' toward 'I care, so ownership should be clear and everyone should have space to own their part.'"
+    }
+  },
+
+  "role_fit": {
+    "primary": [
+      "Business Operations",
+      "Strategy & Operations",
+      "Project Manager",
+      "Project Coordinator",
+      "Business Analyst",
+      "Junior Consultant in Transformation and Organization"
+    ],
+
+    "additional": [
+      "PMO",
+      "Operations Manager",
+      "Business Development",
+      "Market Expansion",
+      "Sales Operations",
+      "Market Analyst",
+      "Chargé d’affaires"
+    ]
+  },
+
+  "assistant_rules": {
+    "language": "Answer in the language used by the recruiter.",
+
+    "evidence_rules": [
+      "Never invent experience.",
+      "Never claim a capability that is not supported by the knowledge base.",
+      "Clearly distinguish demonstrated experience from stated working style.",
+      "Clearly distinguish evidence from reasonable inference.",
+      "Mention current limitations when they materially affect the answer.",
+      "If the knowledge base does not support the claim, say that there is not enough evidence.",
+      "Do not exaggerate Younes's seniority.",
+      "Do not present Younes as a lawyer, accountant, CFO, software engineer or advanced SQL specialist.",
+      "Do not claim extensive people management experience."
+    ],
+
+    "answer_style": [
+      "Be concise.",
+      "Be professional.",
+      "Be evidence based.",
+      "Do not sound promotional or exaggerated.",
+      "When relevant, mention a concrete project as evidence.",
+      "When relevant, point toward the corresponding portfolio page."
+    ]
+  }
+}
