@@ -131,7 +131,7 @@ ${message}
 
           temperature: 0.3,
 
-          max_tokens: 450
+          max_tokens: 1000
 
         })
       }
