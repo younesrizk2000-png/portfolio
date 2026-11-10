@@ -1,10 +1,6 @@
 import fs from "fs";
 import path from "path";
-import OpenAI from "openai";
 
-const client = new OpenAI({
-  apiKey: process.env.OPENAI_API_KEY
-});
 
 export default async function handler(req, res) {
 
@@ -58,6 +54,13 @@ export default async function handler(req, res) {
     }
 
 
+    if (!process.env.OPENROUTER_API_KEY) {
+      throw new Error(
+        "OPENROUTER_API_KEY is missing."
+      );
+    }
+
+
     const root = process.cwd();
 
 
@@ -78,7 +81,7 @@ export default async function handler(req, res) {
     );
 
 
-    const input = `
+    const recruiterPrompt = `
 PROFESSIONAL KNOWLEDGE BASE
 
 ${JSON.stringify(knowledgeBase, null, 2)}
@@ -89,27 +92,83 @@ ${message}
 `;
 
 
-    const response = await client.responses.create({
+    const openRouterResponse = await fetch(
+      "https://openrouter.ai/api/v1/chat/completions",
+      {
+        method: "POST",
 
-      model: "gpt-5.6",
+        headers: {
+          "Authorization":
+            `Bearer ${process.env.OPENROUTER_API_KEY}`,
 
-      instructions: systemPrompt,
+          "Content-Type":
+            "application/json",
 
-      input: input,
+          "HTTP-Referer":
+            "https://younesrizk2000-png.github.io/portfolio/",
 
-      max_output_tokens: 450
+          "X-Title":
+            "Younes Rizk Portfolio Assistant"
+        },
 
-    });
+        body: JSON.stringify({
+
+          model: "openrouter/free",
+
+          messages: [
+
+            {
+              role: "system",
+              content: systemPrompt
+            },
+
+            {
+              role: "user",
+              content: recruiterPrompt
+            }
+
+          ],
+
+          temperature: 0.3,
+
+          max_tokens: 450
+
+        })
+      }
+    );
+
+
+    if (!openRouterResponse.ok) {
+
+      const errorText =
+        await openRouterResponse.text();
+
+      console.error(
+        "OpenRouter error:",
+        openRouterResponse.status,
+        errorText
+      );
+
+      throw new Error(
+        "OpenRouter request failed."
+      );
+    }
+
+
+    const data =
+      await openRouterResponse.json();
 
 
     const answer =
-      response.output_text?.trim();
+      data?.choices?.[0]?.message?.content?.trim();
 
 
     if (!answer) {
+
       throw new Error(
-        "No answer returned by the model."
+        "No answer returned by OpenRouter."
       );
+
     }
 
 
