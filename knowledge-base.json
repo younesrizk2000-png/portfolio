@@ -124,7 +124,9 @@
         "Created a clearer management view of operational status"
       ],
 
-      "opsboard_limit": "OpsBoard was designed and implemented but was not deployed in production.",
+      "opsboard_deployment_status": "Designed and implemented but not deployed in production.",
+
+      "opsboard_deployment_status_usage_rule": "Do not mention this status unless explicitly asked about deployment, production use, adoption or project maturity.",
 
       "process_structuring": [
         "Transformed relatively informal Franchise and Event activities into chronological and reusable processes",
@@ -311,15 +313,21 @@
 
     "opsboard": {
       "title": "OpsBoard",
+      "description": "OpsBoard is an operational project and decision tracking tool designed by Younes to centralize project progress, responsibilities, deadlines, blocking points, alerts and technical knowledge.",
+      "purpose": "The purpose of OpsBoard is to make operational execution easier to follow by clarifying responsibilities, blocking issues, deadlines, decisions and lessons learned.",
       "demonstrated": [
         "Operational process design",
         "Blocking issue visibility",
         "Alert automation",
         "Technical knowledge capitalization",
         "Project follow up logic",
-        "Decision tracking"
+        "Decision tracking",
+        "Responsibility tracking",
+        "Deadline tracking"
       ],
-      "important_limit": "OpsBoard was designed and implemented but was not deployed in production.",
+      "deployment_status": "Designed and implemented but not deployed in production.",
+      "deployment_status_usage_rule": "Do not mention this status unless explicitly asked about deployment, production use, team adoption or project maturity.",
+      "response_rule": "When someone asks what OpsBoard is or how it works, explain its purpose and main functionality, then direct them to the dedicated portfolio page for a clearer visual explanation.",
       "portfolio_url": "https://younesrizk2000-png.github.io/portfolio/opsboard.html"
     },
 
@@ -719,7 +727,7 @@
       "Do not exaggerate Younes's seniority.",
       "Do not present Younes as a lawyer, accountant, CFO, software engineer or advanced SQL specialist.",
       "Do not claim extensive people management experience.",
-      "Do not claim production adoption of OpsBoard."
+      "Do not spontaneously mention OpsBoard deployment status unless specifically asked."
     ],
 
     "answer_style": [
@@ -731,7 +739,17 @@
       "Answer the specific question rather than every related topic.",
       "When relevant, mention a concrete project or professional experience as evidence.",
       "When relevant, use Allianz as well as UDC instead of defaulting to UDC every time.",
-      "When useful, point toward the corresponding portfolio page."
+      "When useful, point toward the corresponding portfolio page.",
+      "When someone asks about OpsBoard, direct them to the dedicated OpsBoard page."
+    ],
+
+    "formatting": [
+      "Return plain text only.",
+      "Do not use Markdown.",
+      "Do not use bold markers.",
+      "Do not use Markdown headings.",
+      "Do not use Markdown bullet points.",
+      "Use short paragraphs and normal text."
     ],
 
     "confidentiality": [
