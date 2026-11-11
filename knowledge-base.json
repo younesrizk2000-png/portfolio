@@ -1,12 +1,12 @@
 {
   "profile": {
     "name": "Younes Rizk",
-    "positioning": [
+    "professional_positioning": [
       "Business Operations",
       "Strategy & Operations",
       "Project Management",
       "Business Analysis",
-      "Transformation Consulting"
+      "Transformation and Organization Consulting"
     ],
     "strongest_capabilities": [
       "Operations",
@@ -14,92 +14,282 @@
       "Structuring messy situations",
       "Client communication",
       "Process improvement"
-    ]
+    ],
+    "professional_summary": {
+      "fr": "Younes travaille à l'intersection des opérations, de l'analyse et de la structuration. Son parcours combine près de trois années dans un environnement corporate chez Allianz avec une expérience transverse de Chief of Staff et Responsable opérationnel dans une startup deeptech. Il est particulièrement à l'aise lorsqu'il faut transformer une situation ambiguë ou dispersée en processus, outils et méthodes de travail plus clairs.",
+      "en": "Younes works at the intersection of operations, analysis and structuring. His background combines nearly three years in a corporate environment at Allianz with a cross functional Chief of Staff and Operations role in a deeptech startup. He is particularly comfortable turning ambiguous or fragmented situations into clearer processes, tools and ways of working."
+    }
   },
 
-  "professional_summary": {
-    "fr": "Younes travaille à l'intersection des opérations, de l'analyse et de la structuration. Son profil se caractérise par sa capacité à transformer des situations ambiguës ou dispersées en processus, outils et méthodes de travail plus clairs.",
-    "en": "Younes works at the intersection of operations, analysis and structuring. His profile is characterized by an ability to turn ambiguous or fragmented situations into clearer processes, tools and ways of working."
-  },
-
-  "experience": {
-    "udc": {
-      "company": "Unlimited Driving Corporation",
-      "role": "Chief of Staff / Responsable opérationnel",
-      "demonstrated": [
-        "Cross functional operational coordination",
-        "HR administration",
-        "Financial operations",
-        "Administrative operations",
-        "Legal coordination",
-        "Process structuring",
-        "Automation",
-        "Project coordination",
-        "Documentation and governance",
-        "Pricing and quoting processes"
-      ],
-      "hr": [
-        "Payroll and salary related operations",
-        "Silae",
-        "Employment contracts",
-        "Leave tracking",
-        "Mutual insurance administration",
-        "Recruitment",
-        "Onboarding",
-        "Employee administration"
-      ],
-      "finance": [
-        "Qonto",
-        "Stripe",
-        "Expense tracking",
-        "Budget monitoring",
-        "Pricing",
-        "Margin analysis",
-        "Billing",
-        "Treasury related operational work",
-        "Funding related files",
-        "Banking relationships",
-        "Fundraising materials"
-      ],
-      "legal": [
-        "NDA",
-        "Contracts",
-        "Franchise documentation",
-        "DIP documentation",
-        "Contract templates",
-        "Direct coordination with legal counsel"
-      ],
-      "administration": [
-        "Company documentation",
-        "Drive organization",
-        "Information centralization",
-        "Process documentation",
-        "Operational follow up"
-      ],
-      "external_stakeholders": [
-        "CEO",
-        "Accounting firm",
-        "Legal counsel",
-        "Banks",
-        "Clients",
-        "Partners"
-      ]
-    },
-
+  "professional_experience": {
     "allianz": {
       "company": "Allianz",
-      "role": "Underwriter / Portfolio management",
-      "demonstrated": [
-        "Portfolio management",
-        "Client communication",
-        "Retirement products",
-        "Investment products",
-        "Power Plan product responsibility"
+      "role": "Souscripteur et gestionnaire de portefeuille",
+      "employment_type": "CDI",
+      "period": "September 2021 to March 2024",
+      "department": "Santé collective Entreprises",
+      "location": "Lebanon",
+
+      "portfolio_management": [
+        "Autonomous management of a portfolio of more than 300 insurance contracts",
+        "Follow up of life insurance, savings, investment and retirement contracts",
+        "Relationship management with individuals, companies and major accounts",
+        "Verification of file compliance and operational security",
+        "Contract monitoring to ensure service continuity and quality",
+        "Analysis of client situations, needs and coverage levels",
+        "Adaptation of responses and proposed solutions according to identified client needs"
+      ],
+
+      "client_relationships_and_front_office": [
+        "Regular telephone support for B2C and B2B clients",
+        "Handling client requests in sensitive and demanding situations",
+        "Clear explanation of contracts, guarantees, products and management decisions",
+        "Development of sufficient product understanding to present and defend solutions to clients",
+        "Preservation of client trust in a particularly unstable economic environment",
+        "Maintenance of client relationships and portfolio quality through rigorous and personalized follow up",
+        "Handling dissatisfaction and identifying appropriate solutions without damaging the commercial relationship"
+      ],
+
+      "b2b_development": [
+        "Presentation of Power Plan, a collective savings and retirement solution for companies and their employees",
+        "Explanation of its operation, benefits and conditions to new members and professional stakeholders",
+        "Contribution to the development of relationships with corporate clients",
+        "Preparation of proposals adapted to requested guarantees and coverage levels"
+      ],
+
+      "financial_and_administrative_follow_up": [
+        "Coordination with finance and accounting teams regarding portfolio flows",
+        "Contribution to monthly closing operations",
+        "Verification and reliability of information required for reporting",
+        "Operational follow up in accordance with internal procedures and compliance requirements"
+      ],
+
+      "reporting_and_department_representation": [
+        "Appointed by management as a representative of the department",
+        "Representation of the team in discussions regarding operational needs",
+        "Collection of employee feedback and operational difficulties",
+        "Reporting to management on operational needs, blocking points and improvement opportunities",
+        "Contribution to stronger information flow between the team and management"
+      ],
+
+      "demonstrated_capabilities": [
+        "Insurance portfolio management",
+        "Contract analysis",
+        "B2B client relationship management",
+        "B2C client relationship management",
+        "Front office communication",
+        "Client retention",
+        "Handling sensitive client situations",
+        "Compliance",
+        "Administrative rigor",
+        "Management reporting",
+        "Coordination with finance and accounting teams",
+        "Presentation of insurance, savings and retirement products",
+        "Organization",
+        "Autonomy",
+        "Prioritization"
+      ],
+
+      "important_context": "This experience demonstrates that Younes's professional background did not begin with his startup experience. Before UDC, he had nearly three years of experience in a structured corporate environment with portfolio ownership, client facing responsibilities, B2B and B2C communication, financial and administrative coordination, compliance and management reporting."
+    },
+
+    "udc": {
+      "company": "Unlimited Driving Corporation",
+      "industry": "French deeptech startup specializing in teleoperation",
+      "project": "The Ring",
+      "role": "Chief of Staff / Responsable opérationnel",
+      "period": "January to November 2026",
+      "employment_type": "Master 2 apprenticeship",
+      "location": "Marseille, France",
+
+      "positioning": "Right hand to the CEO, working directly with the CTO, engineers, suppliers, clients and partners.",
+
+      "executive_support": [
+        "Daily support to the CEO across operational, financial, administrative, legal and HR topics",
+        "Transformation of management priorities into actions, processes and management tools",
+        "Preparation of reporting to clarify progress, blocking points and decisions",
+        "Analysis of business and financial indicators, including churn",
+        "Monitoring of operational and financial objectives",
+        "Management of multiple projects simultaneously in a growing startup environment",
+        "Work under time, budget and performance constraints",
+        "Handling confidential information related to salaries, contracts, finances and management decisions"
+      ],
+
+      "opsboard": [
+        "Designed OpsBoard as an operational project, decision and blocking issue tracking tool",
+        "Centralized progress, responsibilities, deadlines and blocking points",
+        "Designed workflows and automation to improve information circulation",
+        "Created a technical journal to retain problems, decisions and actions",
+        "Used operational tracking logic to anticipate execution risks",
+        "Created a clearer management view of operational status"
+      ],
+
+      "opsboard_limit": "OpsBoard was designed and implemented but was not deployed in production.",
+
+      "process_structuring": [
+        "Transformed relatively informal Franchise and Event activities into chronological and reusable processes",
+        "Created operational checklists spanning commercial, administrative, legal, financial, logistical and quality topics",
+        "Structured the Franchise journey from prospecting through negotiation, contracting, production, quality control, delivery, installation, training and follow up",
+        "Structured the Event journey from client brief through post activation follow up",
+        "Formalized technical quality controls in collaboration with engineers",
+        "Created methods designed to reduce omissions and capitalize on each new execution",
+        "Improved repeatability of operational execution"
+      ],
+
+      "pricing_and_margins": [
+        "Audited and improved the reliability of the Franchise kit pricing base",
+        "Integrated new supplier offers and reconciled components with the previous supplier structure",
+        "Integrated negotiated discounts into pricing work",
+        "Structured pricing using purchase costs, public prices, selling prices and UDC value contribution",
+        "Calculated margins by product and configuration",
+        "Designed a common quoting tool for mobile and fixed kits",
+        "Centralized pricing data and introduced controls and selection lists",
+        "Automated quote numbering",
+        "Automated PDF export",
+        "Reduced quote calculation and generation time by approximately 50 percent",
+        "Produced client ready quotes with an internal margin view"
+      ],
+
+      "finance_and_accounting": [
+        "Budget monitoring",
+        "Cost monitoring",
+        "Deposit monitoring",
+        "Deadline monitoring",
+        "Invoice monitoring",
+        "Direct coordination with the accountant regarding closing, balance sheet preparation and reconciliation",
+        "Designed an analytical expense account connecting accounting classification with project budget management",
+        "Classified expenses both by accounting nature and project budget destination",
+        "Centralized invoices, supporting documents and relevant financial information",
+        "Introduced human validation before final expense recording",
+        "Worked on duplicate detection",
+        "Maintained document traceability",
+        "Structured financial data to facilitate accounting processing",
+        "Improved management visibility over project expenditure and remaining budget"
+      ],
+
+      "honda_mondial_auto": [
+        "Operational coordination of UDC's participation as a Honda service provider at the 2026 Mondial de l'Auto in Paris",
+        "Turned an open brief into a complete and reusable execution plan",
+        "Structured logistics",
+        "Structured scheduling",
+        "Coordinated travel",
+        "Coordinated access",
+        "Coordinated accommodation",
+        "Organized the team",
+        "Measured equipment and simulated loading requirements to determine transportation needs",
+        "Compared options based on required volume, cost and operational constraints",
+        "Centralized budget monitoring",
+        "Tracked deviations from forecast",
+        "Created a shared roadmap for schedules, travel, access and responsibilities",
+        "Identified project dependencies in advance",
+        "Turned the first activation into a more planifiable and reproducible event method",
+        "Presented and explained the product to users and B2B stakeholders during the event"
+      ],
+
+      "crm_and_business_development": [
+        "End to end deployment and use of HubSpot CRM",
+        "Structured and qualified more than 1000 new leads",
+        "Prioritized prospects according to request and level of interest",
+        "Created response templates adapted to different types of inquiries",
+        "Automated initial prospect responses to reduce response time",
+        "Improved clarity and usability of commercial follow up",
+        "Maintained prospect and opportunity information"
+      ],
+
+      "human_resources": [
+        "End to end recruitment of three new collaborators",
+        "Definition of recruitment needs with management",
+        "Preparation of recruitment requirements",
+        "Communication of recruitment needs through appropriate channels",
+        "Candidate follow up",
+        "Interviews",
+        "Selection",
+        "Integration",
+        "Preparation and organization of onboarding",
+        "Employee administrative follow up",
+        "Leave management",
+        "Operational work related to employment and social law topics",
+        "Coordination of payroll information and social administration with the accounting firm",
+        "Structuring recruitment to support smoother operational integration"
+      ],
+
+      "legal_and_document_governance": [
+        "Work on confidentiality agreements and NDAs",
+        "Preparation and monitoring of franchise contracts",
+        "Work on pre contractual information documents known as DIP",
+        "Management of contract templates",
+        "Management of image rights documents",
+        "Coordination with legal counsel to secure and adapt documents",
+        "Creation of templates for different stakeholders and situations",
+        "Organization of the company's legal, administrative and contractual Drive",
+        "Implementation of document organization designed to reduce version errors",
+        "Applied legal monitoring related to Franchise and Event activities"
+      ],
+
+      "technical_collaboration": [
+        "Daily collaboration with the CEO, CTO and engineers",
+        "Understanding of a complex deeptech product and its technical constraints",
+        "Acquisition and use of technical vocabulary required to work with engineers and suppliers",
+        "Translation of technical constraints into operational processes, controls and accessible supports",
+        "Contribution to quality control criteria alongside technical experts",
+        "Ability to understand complex subjects and explain them to non technical clients, partners and users",
+        "Contribution to the structuring of technical documentation"
+      ],
+
+      "tools_and_automation": [
+        "Advanced Excel",
+        "Google Sheets",
+        "Macros",
+        "VBA",
+        "Google Apps Script",
+        "HubSpot CRM",
+        "Notion",
+        "Slack",
+        "Webhooks",
+        "Google Drive",
+        "PowerPoint",
+        "Microsoft Office",
+        "Claude Code",
+        "Generative AI tools",
+        "Prompting",
+        "Daily use of AI for analysis, structuring and tool creation",
+        "Use of AI as a development copilot while personally defining functional logic, business rules and user journeys"
+      ],
+
+      "demonstrated_capabilities": [
+        "Executive support",
+        "Operational management",
+        "Cross functional project management",
+        "PMO and execution tracking",
+        "Process structuring",
+        "Operational finance",
+        "Management control",
+        "Pricing",
+        "Quoting",
+        "Margin management",
+        "Reporting",
+        "Dashboards",
+        "Recruitment",
+        "HR administration",
+        "Legal coordination",
+        "Document governance",
+        "CRM",
+        "Commercial organization",
+        "Event logistics",
+        "Automation",
+        "Continuous improvement",
+        "Collaboration with engineers",
+        "Technical product understanding",
+        "Risk anticipation",
+        "Prioritization",
+        "Confidentiality",
+        "Autonomy",
+        "Rapid learning"
       ]
     }
   },
 
-  "projects": {
+  "portfolio_projects": {
     "honda": {
       "title": "Honda activation at Mondial de l'Auto 2026",
       "demonstrated": [
@@ -111,10 +301,12 @@
         "Scheduling",
         "Budget tracking",
         "Expense tracking",
-        "Operational preparation"
+        "Operational preparation",
+        "Risk anticipation",
+        "Client and B2B communication"
       ],
-      "approach": "Younes transformed an open brief with multiple constraints into a structured preparation method with tools, supports and a reproducible process.",
-      "portfolio_url": "honda.html"
+      "approach": "Younes transformed an open brief with multiple constraints into a structured preparation method with tools, supporting materials and a reproducible process.",
+      "portfolio_url": "https://younesrizk2000-png.github.io/portfolio/honda.html"
     },
 
     "opsboard": {
@@ -123,10 +315,12 @@
         "Operational process design",
         "Blocking issue visibility",
         "Alert automation",
-        "Technical knowledge capitalization"
+        "Technical knowledge capitalization",
+        "Project follow up logic",
+        "Decision tracking"
       ],
       "important_limit": "OpsBoard was designed and implemented but was not deployed in production.",
-      "portfolio_url": "opsboard.html"
+      "portfolio_url": "https://younesrizk2000-png.github.io/portfolio/opsboard.html"
     },
 
     "pricing": {
@@ -137,19 +331,41 @@
         "Google Apps Script assisted development",
         "Quote generation automation",
         "PDF generation",
-        "Process reliability"
+        "Margin visibility",
+        "Process reliability",
+        "Approximately 50 percent reduction in quote calculation and generation time"
       ],
-      "portfolio_url": "pricing.html"
+      "portfolio_url": "https://younesrizk2000-png.github.io/portfolio/pricing.html"
     },
 
-    "documentation": {
+    "franchise_and_event_processes": {
+      "title": "Franchise and Event process structuring",
+      "demonstrated": [
+        "Process mapping",
+        "Chronological process structuring",
+        "Operational checklists",
+        "Commercial process coordination",
+        "Administrative process coordination",
+        "Legal process coordination",
+        "Financial process coordination",
+        "Logistics",
+        "Quality controls",
+        "Repeatability",
+        "Operational risk reduction"
+      ],
+      "portfolio_url": "https://younesrizk2000-png.github.io/portfolio/franchise-evenementiel.html"
+    },
+
+    "documentation_and_governance": {
       "title": "Company documentation and governance",
       "demonstrated": [
         "Structuring company documentation",
         "Presenting documentation principles to the team",
         "Connecting documentation to governance",
         "Connecting documentation to scalability",
-        "Structuring technical documentation with engineers"
+        "Structuring technical documentation with engineers",
+        "Improving information accessibility",
+        "Version organization"
       ]
     }
   },
@@ -157,7 +373,8 @@
   "working_style": {
     "ambiguity": {
       "type": "stated_working_style",
-      "summary": "Younes can operate in ambiguity but naturally tries to transform ambiguity into clearer responsibilities, processes and ways of working."
+      "summary": "Younes can operate in ambiguity but naturally tries to transform ambiguity into clearer responsibilities, processes and ways of working.",
+      "principle": "Ambiguity should progressively move toward clarity."
     },
 
     "learning": {
@@ -176,7 +393,7 @@
 
     "initiative": {
       "type": "stated_working_style",
-      "summary": "Younes prefers to deliver the requested task first, then propose a more efficient or reliable method when he identifies one.",
+      "summary": "Younes prefers to deliver the requested task first, then propose a more efficient, reliable or secure method when he identifies one.",
       "principle": "Deliver first, then improve."
     },
 
@@ -208,13 +425,25 @@
 
     "clients": {
       "type": "stated_working_style_and_demonstrated_behavior",
-      "summary": "Younes emphasizes respectful communication with clients. He asks for clarification rather than assuming and follows up persistently when a delayed response blocks execution."
+      "summary": "Younes emphasizes respectful communication with clients. He asks for clarification rather than assuming and follows up persistently when a delayed response blocks execution.",
+      "evidence": [
+        "B2B and B2C client communication at Allianz",
+        "Handling sensitive situations at Allianz",
+        "Client and B2B interactions at UDC",
+        "Honda event communication"
+      ]
+    },
+
+    "new_team": {
+      "type": "stated_working_style",
+      "summary": "When joining a new environment, Younes prefers first to observe, ask questions, understand how things work, clarify his scope and then progressively improve what he is responsible for.",
+      "pattern": "Observe, understand, define scope, execute, improve."
     }
   },
 
   "leadership": {
     "type": "stated_leadership_style",
-    "summary": "Younes would favor clear expectations, autonomy, trust and accountability. He does not favor micromanagement.",
+    "summary": "Younes favors clear expectations, autonomy, trust and accountability. He does not favor micromanagement.",
     "principle": "Flexible on method, firm on outcome.",
     "values": [
       "Clear expectations",
@@ -223,6 +452,12 @@
       "Deadlines",
       "Accountability",
       "Team values"
+    ],
+    "current_evidence": [
+      "Cross functional coordination",
+      "Project coordination",
+      "Department representation at Allianz",
+      "Recruitment and onboarding at UDC"
     ],
     "important_limit": "Younes has not yet demonstrated experience managing a large team."
   },
@@ -276,7 +511,8 @@
       "Organizing projects",
       "Building practical solutions",
       "Improving how work is executed",
-      "Learning new tools and subjects"
+      "Learning new tools and subjects",
+      "Working toward clear business objectives"
     ],
 
     "less_motivating_environment": {
@@ -299,6 +535,11 @@
       "Frequent feedback",
       "Team alignment",
       "Visible impact"
+    ],
+    "examples_of_motivating_objectives": [
+      "Increasing revenue by a defined amount",
+      "Expanding into a new market",
+      "Achieving a measurable operational target"
     ]
   },
 
@@ -328,13 +569,16 @@
       "Operational legal exposure does not make Younes a legal expert.",
       "Building tools with AI and scripting does not make Younes a software engineer.",
       "Operational finance experience does not make Younes a CFO or accountant."
-    ]
+    ],
+
+    "usage_rule": "Do not volunteer these limitations unless explicitly asked, directly relevant to the task, or necessary to avoid materially misleading the recruiter."
   },
 
   "development_area": {
     "overownership": {
       "summary": "Younes can sometimes feel responsible for fixing too much when he is strongly invested in the outcome. He is learning to balance commitment with trust, delegation and shared accountability.",
-      "development": "From 'I care, so I should fix it' toward 'I care, so ownership should be clear and everyone should have space to own their part.'"
+      "development": "From 'I care, so I should fix it' toward 'I care, so ownership should be clear and everyone should have space to own their part.'",
+      "usage_rule": "Mention only when asked about weaknesses, development areas, delegation, leadership or a closely related topic."
     }
   },
 
@@ -355,7 +599,110 @@
       "Market Expansion",
       "Sales Operations",
       "Market Analyst",
-      "Chargé d’affaires"
+      "Chargé d'affaires"
+    ],
+
+    "role_fit_logic": {
+      "business_operations": [
+        "Cross functional work at UDC",
+        "Finance",
+        "HR",
+        "Legal coordination",
+        "Administration",
+        "CRM",
+        "Process improvement",
+        "Automation",
+        "Executive support"
+      ],
+
+      "strategy_and_operations": [
+        "Turning management priorities into execution",
+        "Business and financial indicators",
+        "Process structuring",
+        "Cross functional coordination",
+        "Operational decision support",
+        "Pricing",
+        "Risk anticipation"
+      ],
+
+      "project_management": [
+        "Honda activation",
+        "Franchise and Event processes",
+        "Multiple parallel projects at UDC",
+        "Logistics",
+        "Budgeting",
+        "Scheduling",
+        "Stakeholder coordination"
+      ],
+
+      "business_analysis": [
+        "Process analysis",
+        "Requirements structuring",
+        "Pricing analysis",
+        "Operational data",
+        "Workflow improvement",
+        "Tool design",
+        "Business and financial indicators"
+      ],
+
+      "consulting": [
+        "Problem framing",
+        "Process structuring",
+        "Cross functional communication",
+        "Client communication",
+        "Corporate and startup exposure",
+        "Transformation and improvement mindset"
+      ]
+    }
+  },
+
+  "experience_balance": {
+    "allianz_is_strongest_evidence_for": [
+      "Client communication",
+      "B2B relationships",
+      "B2C relationships",
+      "Portfolio ownership",
+      "Account management",
+      "Front office communication",
+      "Handling sensitive situations",
+      "Corporate environment",
+      "Compliance",
+      "Contract analysis",
+      "Financial and administrative rigor",
+      "Management reporting",
+      "Product presentation",
+      "Client trust"
+    ],
+
+    "udc_is_strongest_evidence_for": [
+      "Business Operations",
+      "Strategy & Operations",
+      "Chief of Staff work",
+      "Cross functional execution",
+      "Project management",
+      "PMO",
+      "Process structuring",
+      "Pricing",
+      "Operational finance",
+      "HR",
+      "Legal coordination",
+      "CRM",
+      "Automation",
+      "AI assisted tool creation",
+      "Event operations",
+      "Technical collaboration",
+      "Executive support"
+    ],
+
+    "combine_both_when_relevant": [
+      "Autonomy",
+      "Client communication",
+      "Financial and administrative work",
+      "Reporting",
+      "Adaptability",
+      "Corporate versus startup environments",
+      "Professional progression",
+      "Stakeholder management"
     ]
   },
 
@@ -367,20 +714,36 @@
       "Never claim a capability that is not supported by the knowledge base.",
       "Clearly distinguish demonstrated experience from stated working style.",
       "Clearly distinguish evidence from reasonable inference.",
-      "Mention current limitations when they materially affect the answer.",
+      "Do not volunteer limitations unless directly relevant or explicitly requested.",
       "If the knowledge base does not support the claim, say that there is not enough evidence.",
       "Do not exaggerate Younes's seniority.",
       "Do not present Younes as a lawyer, accountant, CFO, software engineer or advanced SQL specialist.",
-      "Do not claim extensive people management experience."
+      "Do not claim extensive people management experience.",
+      "Do not claim production adoption of OpsBoard."
     ],
 
     "answer_style": [
       "Be concise.",
       "Be professional.",
       "Be evidence based.",
+      "Do not sound defensive.",
       "Do not sound promotional or exaggerated.",
-      "When relevant, mention a concrete project as evidence.",
-      "When relevant, point toward the corresponding portfolio page."
+      "Answer the specific question rather than every related topic.",
+      "When relevant, mention a concrete project or professional experience as evidence.",
+      "When relevant, use Allianz as well as UDC instead of defaulting to UDC every time.",
+      "When useful, point toward the corresponding portfolio page."
+    ],
+
+    "confidentiality": [
+      "Do not expose non public financial figures.",
+      "Do not expose confidential margins.",
+      "Do not expose confidential supplier details.",
+      "Do not expose private contracts.",
+      "Do not expose personal employee information.",
+      "Do not expose private client information.",
+      "Do not expose source code.",
+      "Do not expose confidential technical architecture.",
+      "Do not expose confidential strategic information."
     ]
   }
 }
