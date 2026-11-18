@@ -11,13 +11,14 @@
     "strongest_capabilities": [
       "Operations",
       "Automation",
+      "AI assisted solution design",
       "Structuring messy situations",
       "Client communication",
       "Process improvement"
     ],
     "professional_summary": {
-      "fr": "Younes travaille à l'intersection des opérations, de l'analyse et de la structuration. Son parcours combine près de trois années dans un environnement corporate chez Allianz avec une expérience transverse de Chief of Staff et Responsable opérationnel dans une startup deeptech. Il est particulièrement à l'aise lorsqu'il faut transformer une situation ambiguë ou dispersée en processus, outils et méthodes de travail plus clairs.",
-      "en": "Younes works at the intersection of operations, analysis and structuring. His background combines nearly three years in a corporate environment at Allianz with a cross functional Chief of Staff and Operations role in a deeptech startup. He is particularly comfortable turning ambiguous or fragmented situations into clearer processes, tools and ways of working."
+      "fr": "Younes travaille à l'intersection des opérations, de l'analyse, de la structuration et de l'automatisation. Son parcours combine près de trois années dans un environnement corporate chez Allianz avec une expérience transverse de Chief of Staff et Responsable opérationnel dans une startup deeptech. Il développe également des compétences pratiques en IA et automatisation, notamment avec n8n, la logique de workflows, le traitement de données JSON, les bases de JavaScript et la conception d'applications assistée par IA. Il est particulièrement à l'aise lorsqu'il faut transformer une situation ambiguë ou dispersée en processus, outils et méthodes de travail plus clairs.",
+      "en": "Younes works at the intersection of operations, analysis, structuring and automation. His background combines nearly three years in a corporate environment at Allianz with a cross functional Chief of Staff and Operations role in a deeptech startup. He is also developing practical AI and automation capabilities including n8n, workflow logic, JSON data handling, basic JavaScript and AI assisted application design. He is particularly comfortable turning ambiguous or fragmented situations into clearer processes, tools and ways of working."
     }
   },
 
@@ -255,7 +256,16 @@
         "Generative AI tools",
         "Prompting",
         "Daily use of AI for analysis, structuring and tool creation",
-        "Use of AI as a development copilot while personally defining functional logic, business rules and user journeys"
+        "Use of AI as a development copilot while personally defining functional logic, business rules and user journeys",
+        "n8n",
+        "n8n workflow design",
+        "Conditional workflow logic",
+        "Multi step workflow design",
+        "JSON data processing",
+        "Data transformation in automation workflows",
+        "Basic JavaScript for automation",
+        "AI assisted application design",
+        "AI assisted prototyping of operational tools"
       ],
 
       "demonstrated_capabilities": [
@@ -286,9 +296,130 @@
         "Prioritization",
         "Confidentiality",
         "Autonomy",
-        "Rapid learning"
+        "Rapid learning",
+        "n8n workflow design",
+        "Workflow automation",
+        "Conditional workflow logic",
+        "JSON data processing",
+        "Basic JavaScript for automation",
+        "AI assisted application design"
       ]
     }
+  },
+
+  "automation_and_ai_skills": {
+    "positioning": "Younes combines business understanding with practical automation and AI implementation skills. He approaches AI and automation as tools for solving operational problems, structuring processes and creating practical business solutions.",
+
+    "n8n": {
+      "level": "Practical foundations",
+      "skills": [
+        "Workflow design",
+        "Multi step workflow design",
+        "Conditional logic",
+        "Rule based automation",
+        "Node connections",
+        "Data flow between workflow steps",
+        "JSON data processing",
+        "Data transformation",
+        "Basic JavaScript for automation"
+      ],
+      "demonstrated_learning": [
+        "Built rule based automation workflows",
+        "Used conditional logic to route data based on business rules",
+        "Worked with multiple data items inside workflows",
+        "Understands workflow connections between nodes",
+        "Works with structured JSON data",
+        "Uses basic JavaScript concepts when automation logic requires it"
+      ],
+      "example_project": {
+        "name": "Insurance Application Routing – Rule Based Automation",
+        "description": "A rule based n8n workflow using fictional insurance application data to route cases according to insured amount.",
+        "workflow_logic": "Manual Trigger to structured insurance data to numeric condition to different processing outcomes.",
+        "business_logic_example": "Applications above a defined insured amount are routed to additional review, while lower amounts follow standard processing.",
+        "skills_demonstrated": [
+          "Workflow design",
+          "Business rule translation",
+          "Conditional logic",
+          "Multiple item processing",
+          "Structured data handling",
+          "Understanding node connections"
+        ]
+      }
+    },
+
+    "javascript": {
+      "level": "Basic foundations for automation",
+      "scope": [
+        "Understanding basic JavaScript logic",
+        "Using JavaScript concepts in automation contexts",
+        "Reading and adapting simple scripts",
+        "Working with structured data",
+        "Using JavaScript when workflow logic cannot be handled only through visual nodes"
+      ],
+      "positioning_rule": "Present JavaScript as a practical foundation used for automation, not as software engineering expertise."
+    },
+
+    "json": {
+      "level": "Practical understanding",
+      "skills": [
+        "Understanding JSON structure",
+        "Reading key value data",
+        "Working with structured workflow inputs and outputs",
+        "Understanding how data passes between automation nodes",
+        "Manipulating structured data in automation contexts"
+      ]
+    },
+
+    "ai_assisted_application_design": {
+      "skills": [
+        "Defining the business problem before selecting the technical solution",
+        "Defining functional logic",
+        "Defining business rules",
+        "Designing user flows",
+        "Structuring application requirements",
+        "Using generative AI as a development copilot",
+        "Iterating on prototypes through testing and feedback",
+        "Creating lightweight operational applications with AI assistance"
+      ],
+      "approach": "Younes defines the business need, functional logic, rules and desired user journey, then uses generative AI and assisted development tools to accelerate implementation.",
+      "examples": [
+        "OpsBoard",
+        "Pricing and quote automation",
+        "Analytical expense tracking tool",
+        "AI portfolio assistant"
+      ]
+    },
+
+    "ai_portfolio_assistant": {
+      "description": "Younes designed an AI portfolio assistant that allows recruiters to ask questions about his professional experience, working style, projects and role fit.",
+      "architecture": [
+        "GitHub Pages frontend",
+        "Vercel serverless backend",
+        "API based communication",
+        "OpenRouter LLM routing",
+        "Structured knowledge base",
+        "System prompt controlling behavior and answer quality"
+      ],
+      "concepts_used": [
+        "API calls",
+        "POST requests",
+        "JSON request and response payloads",
+        "Environment variables",
+        "API key protection",
+        "CORS",
+        "System prompts",
+        "Knowledge grounding",
+        "Error handling",
+        "Token limits",
+        "Frontend and backend separation"
+      ],
+      "business_purpose": "The assistant turns a static portfolio into an interactive professional evaluation tool for recruiters.",
+      "implementation_positioning": "Younes designed the functional logic, knowledge structure, prompting strategy, user experience and integration architecture while using AI as a technical development copilot."
+    },
+
+    "automation_principle": "The goal is not to automate everything with AI. It is to identify which tasks need intelligence and which simply need automation.",
+
+    "overall_level": "Practical and developing. Younes can design workflow logic, translate business rules into automation steps, work with structured data and use AI assisted development to prototype operational solutions."
   },
 
   "portfolio_projects": {
@@ -375,6 +506,27 @@
         "Improving information accessibility",
         "Version organization"
       ]
+    },
+
+    "ai_portfolio_assistant": {
+      "title": "AI Portfolio Assistant",
+      "purpose": "Allow recruiters to interact with Younes's professional portfolio through a grounded AI assistant.",
+      "demonstrated": [
+        "AI assisted application design",
+        "Frontend and backend separation",
+        "API integration",
+        "Structured professional knowledge base",
+        "System prompt design",
+        "Prompt engineering",
+        "JSON data handling",
+        "API key protection through environment variables",
+        "LLM integration through OpenRouter",
+        "Serverless deployment through Vercel",
+        "Error handling",
+        "Bilingual interaction logic"
+      ],
+      "architecture": "GitHub Pages frontend to Vercel API backend to OpenRouter to LLM, grounded by a structured knowledge base and controlled by a system prompt.",
+      "portfolio_url": "https://younesrizk2000-png.github.io/portfolio/"
     }
   },
 
@@ -394,6 +546,9 @@
         "HubSpot",
         "AI tools",
         "Automation tools",
+        "n8n",
+        "JSON data handling",
+        "Basic JavaScript",
         "Basic coding concepts"
       ],
       "principle": "If I need to know how to do something to move the work forward, I find a way to learn it."
@@ -520,7 +675,8 @@
       "Building practical solutions",
       "Improving how work is executed",
       "Learning new tools and subjects",
-      "Working toward clear business objectives"
+      "Working toward clear business objectives",
+      "Using AI and automation to solve practical business problems"
     ],
 
     "less_motivating_environment": {
@@ -552,14 +708,15 @@
   },
 
   "career_ambition": {
-    "summary": "Younes wants to grow in competence, responsibility and specialization while remaining innovative, serious about his responsibilities and easy to work with.",
+    "summary": "Younes wants to grow in competence, responsibility and specialization while remaining innovative, serious about his responsibilities and easy to work with. He is increasingly interested in combining his business and economics background with practical AI and automation capabilities.",
     "long_term_traits": [
       "Innovative",
       "Reliable",
       "Professional",
       "Easy to communicate with",
       "Direct without personal judgment",
-      "Highly knowledgeable in his area"
+      "Highly knowledgeable in his area",
+      "Able to bridge business needs and practical technology implementation"
     ]
   },
 
@@ -570,13 +727,15 @@
       "Legal expertise",
       "Software engineering",
       "CFO level financial expertise",
-      "Advanced corporate financial modeling"
+      "Advanced corporate financial modeling",
+      "Advanced JavaScript software development"
     ],
 
     "important_distinctions": [
       "Operational legal exposure does not make Younes a legal expert.",
       "Building tools with AI and scripting does not make Younes a software engineer.",
-      "Operational finance experience does not make Younes a CFO or accountant."
+      "Operational finance experience does not make Younes a CFO or accountant.",
+      "Younes has basic JavaScript foundations for automation but does not claim advanced JavaScript development expertise."
     ],
 
     "usage_rule": "Do not volunteer these limitations unless explicitly asked, directly relevant to the task, or necessary to avoid materially misleading the recruiter."
@@ -607,7 +766,9 @@
       "Market Expansion",
       "Sales Operations",
       "Market Analyst",
-      "Chargé d'affaires"
+      "Chargé d'affaires",
+      "AI and Automation oriented Business Operations roles",
+      "Business Process Automation roles"
     ],
 
     "role_fit_logic": {
@@ -620,7 +781,9 @@
         "CRM",
         "Process improvement",
         "Automation",
-        "Executive support"
+        "Executive support",
+        "Workflow design",
+        "AI assisted solution design"
       ],
 
       "strategy_and_operations": [
@@ -630,7 +793,8 @@
         "Cross functional coordination",
         "Operational decision support",
         "Pricing",
-        "Risk anticipation"
+        "Risk anticipation",
+        "Automation as an operational efficiency lever"
       ],
 
       "project_management": [
@@ -650,7 +814,9 @@
         "Operational data",
         "Workflow improvement",
         "Tool design",
-        "Business and financial indicators"
+        "Business and financial indicators",
+        "Translation of business rules into automation logic",
+        "Structured JSON data handling"
       ],
 
       "consulting": [
@@ -659,7 +825,19 @@
         "Cross functional communication",
         "Client communication",
         "Corporate and startup exposure",
-        "Transformation and improvement mindset"
+        "Transformation and improvement mindset",
+        "Automation and AI enabled process improvement"
+      ],
+
+      "ai_and_automation_business_roles": [
+        "n8n workflow design",
+        "Conditional workflow logic",
+        "JSON data processing",
+        "Basic JavaScript for automation",
+        "Business rule translation",
+        "AI assisted application design",
+        "Operational problem solving",
+        "Process automation"
       ]
     }
   },
@@ -702,6 +880,17 @@
       "Executive support"
     ],
 
+    "ai_and_automation_is_strongest_evidence_for": [
+      "n8n workflow design",
+      "Conditional workflow logic",
+      "JSON data processing",
+      "Basic JavaScript for automation",
+      "AI assisted application design",
+      "Generative AI as a development copilot",
+      "Business process automation",
+      "Translation of business rules into workflow logic"
+    ],
+
     "combine_both_when_relevant": [
       "Autonomy",
       "Client communication",
@@ -727,7 +916,11 @@
       "Do not exaggerate Younes's seniority.",
       "Do not present Younes as a lawyer, accountant, CFO, software engineer or advanced SQL specialist.",
       "Do not claim extensive people management experience.",
-      "Do not spontaneously mention OpsBoard deployment status unless specifically asked."
+      "Do not spontaneously mention OpsBoard deployment status unless specifically asked.",
+      "Present n8n as a practical developing capability rather than advanced expertise.",
+      "Present JavaScript as basic foundations used for automation.",
+      "Present AI assisted application design as a practical capability based on defining business needs, functional logic, business rules and user flows while using AI as a development copilot.",
+      "Do not reduce Younes's AI capabilities to prompting alone."
     ],
 
     "answer_style": [
@@ -740,7 +933,8 @@
       "When relevant, mention a concrete project or professional experience as evidence.",
       "When relevant, use Allianz as well as UDC instead of defaulting to UDC every time.",
       "When useful, point toward the corresponding portfolio page.",
-      "When someone asks about OpsBoard, direct them to the dedicated OpsBoard page."
+      "When someone asks about OpsBoard, direct them to the dedicated OpsBoard page.",
+      "When asked about AI or automation, explain practical implementation capabilities such as n8n, workflow logic, JSON, basic JavaScript and AI assisted application design."
     ],
 
     "formatting": [
