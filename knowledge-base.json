@@ -1,961 +1,190 @@
 {
   "profile": {
     "name": "Younes Rizk",
-    "professional_positioning": [
-      "Business Operations",
-      "Strategy & Operations",
-      "Project Management",
-      "Business Analysis",
-      "Transformation and Organization Consulting"
-    ],
-    "strongest_capabilities": [
-      "Operations",
-      "Automation",
-      "AI assisted solution design",
-      "Structuring messy situations",
-      "Client communication",
-      "Process improvement"
-    ],
-    "professional_summary": {
-      "fr": "Younes travaille à l'intersection des opérations, de l'analyse, de la structuration et de l'automatisation. Son parcours combine près de trois années dans un environnement corporate chez Allianz avec une expérience transverse de Chief of Staff et Responsable opérationnel dans une startup deeptech. Il développe également des compétences pratiques en IA et automatisation, notamment avec n8n, la logique de workflows, le traitement de données JSON, les bases de JavaScript et la conception d'applications assistée par IA. Il est particulièrement à l'aise lorsqu'il faut transformer une situation ambiguë ou dispersée en processus, outils et méthodes de travail plus clairs.",
-      "en": "Younes works at the intersection of operations, analysis, structuring and automation. His background combines nearly three years in a corporate environment at Allianz with a cross functional Chief of Staff and Operations role in a deeptech startup. He is also developing practical AI and automation capabilities including n8n, workflow logic, JSON data handling, basic JavaScript and AI assisted application design. He is particularly comfortable turning ambiguous or fragmented situations into clearer processes, tools and ways of working."
+    "location": "Versailles (78), looking for a permanent contract (CDI) in Paris and Île-de-France",
+    "availability": "Immediate",
+    "work_authorization": "Authorized to work in France. The employer has no work permit to request.",
+    "contact": {
+      "email": "younesrizk2000@gmail.com",
+      "linkedin": "https://www.linkedin.com/in/younes-rizk-83779822b",
+      "portfolio": "https://younesrizk2000-png.github.io/portfolio/"
+    },
+    "headline": {
+      "fr": "Assurance collective & gestion de portefeuille clients | Ex-Allianz | Opérations, finance & automatisation en startup",
+      "en": "Group Insurance & Client Portfolio Management | Ex-Allianz | Startup Operations, Finance & Automation"
+    },
+    "summary": {
+      "fr": "Diplômé d'un Master (Bac+5) en Économie de l'Entreprise et des Marchés (Aix-Marseille Université). Deux ans et sept mois chez Allianz Lebanon en santé et épargne retraite collectives : gestion autonome d'un portefeuille de grands comptes (plus de 1 000 adhérents), clôtures mensuelles, participation aux bénéfices, cotations pour courtiers. Puis Responsable opérationnel en alternance chez UDC, startup deeptech : processus, pilotage, finance, paie, recrutement, juridique et automatisation.",
+      "en": "Master's degree (five-year university degree) in Business and Market Economics from Aix-Marseille University. Two years and seven months at Allianz Lebanon in group health and group retirement savings: autonomous management of a portfolio of key accounts (more than 1,000 members), monthly closing, profit sharing, quotes for brokers. Then Operations Manager (work-study) at UDC, a deeptech startup: processes, steering, finance, payroll, recruitment, legal and automation."
+    },
+    "target_roles": {
+      "track_1_priority": "Group insurance and employee benefits (group health, prévoyance, group retirement savings): account manager, chargé de clientèle, junior underwriter, B2B roles at insurers, brokers, mutuelles and insurtechs.",
+      "track_2": "Operations in startups and scale-ups: Ops Analyst, Business Operations, chargé de mission, junior PMO.",
+      "priority_zone": "Operations roles in insurance, insurtech or fintech, where both experiences meet."
     }
   },
 
-  "professional_experience": {
+  "experience": {
     "allianz": {
-      "company": "Allianz",
-      "role": "Souscripteur et gestionnaire de portefeuille",
-      "employment_type": "CDI",
-      "period": "September 2021 to March 2024",
-      "department": "Santé collective Entreprises",
-      "location": "Lebanon",
-
-      "portfolio_management": [
-        "Autonomous management of a portfolio of more than 300 insurance contracts",
-        "Follow up of life insurance, savings, investment and retirement contracts",
-        "Relationship management with individuals, companies and major accounts",
-        "Verification of file compliance and operational security",
-        "Contract monitoring to ensure service continuity and quality",
-        "Analysis of client situations, needs and coverage levels",
-        "Adaptation of responses and proposed solutions according to identified client needs"
+      "employer": "Allianz Lebanon",
+      "title": {
+        "fr": "Souscripteur et gestionnaire de portefeuille clients",
+        "en": "Underwriter and Client Portfolio Manager"
+      },
+      "dates": "September 2021 to March 2024 (2 years 7 months)",
+      "department": "Corporate Health department (group health insurance for companies)",
+      "context": "Worked through the Lebanese financial crisis.",
+      "power_plan_explained": "Power Plan is a group investment and retirement savings solution offered to the employees of client companies. Younes managed a portfolio of client groups, not the product itself.",
+      "portfolio": [
+        "Managed autonomously at least 5 key accounts of 200 to 300 members each, more than 1,000 members in total.",
+        "Handled enrolments, contributions, withdrawals, terminations, contract changes and plan adjustments.",
+        "Ran compliance checks and analysed guarantees, coverage and exclusions.",
+        "Point of contact for members, client companies, brokers, sales teams and internal teams."
       ],
-
-      "client_relationships_and_front_office": [
-        "Regular telephone support for B2C and B2B clients",
-        "Handling client requests in sensitive and demanding situations",
-        "Clear explanation of contracts, guarantees, products and management decisions",
-        "Development of sufficient product understanding to present and defend solutions to clients",
-        "Preservation of client trust in a particularly unstable economic environment",
-        "Maintenance of client relationships and portfolio quality through rigorous and personalized follow up",
-        "Handling dissatisfaction and identifying appropriate solutions without damaging the commercial relationship"
+      "finance": [
+        "Monthly closing of each client group with the finance department.",
+        "Sent every movement (new member, contribution change, termination) to accounting and resolved discrepancies.",
+        "Calculated the annual profit sharing of the department's client groups on Excel. The calculation went to his manager, then to leadership, who communicated it to the client companies.",
+        "Profit sharing explained: the share of the technical result returned to the client when the group's claims stay below forecast."
       ],
-
-      "b2b_development": [
-        "Presentation of Power Plan, a collective savings and retirement solution for companies and their employees",
-        "Explanation of its operation, benefits and conditions to new members and professional stakeholders",
-        "Contribution to the development of relationships with corporate clients",
-        "Preparation of proposals adapted to requested guarantees and coverage levels"
+      "underwriting": "During about his first six months, prepared weekly international travel insurance quotes for brokers: choice of guarantees and clauses, then pricing. Each quote was validated and countersigned by his manager before going to the broker.",
+      "client_relationship": [
+        "Supported members in their decisions during the financial crisis: enrolments, payments, strategy changes, withdrawals and terminations.",
+        "Received written thanks from clients for the quality of service.",
+        "Presented Power Plan to new groups and members, with the sales teams."
       ],
-
-      "financial_and_administrative_follow_up": [
-        "Coordination with finance and accounting teams regarding portfolio flows",
-        "Contribution to monthly closing operations",
-        "Verification and reliability of information required for reporting",
-        "Operational follow up in accordance with internal procedures and compliance requirements"
-      ],
-
-      "reporting_and_department_representation": [
-        "Appointed by management as a representative of the department",
-        "Representation of the team in discussions regarding operational needs",
-        "Collection of employee feedback and operational difficulties",
-        "Reporting to management on operational needs, blocking points and improvement opportunities",
-        "Contribution to stronger information flow between the team and management"
-      ],
-
-      "demonstrated_capabilities": [
-        "Insurance portfolio management",
-        "Contract analysis",
-        "B2B client relationship management",
-        "B2C client relationship management",
-        "Front office communication",
-        "Client retention",
-        "Handling sensitive client situations",
-        "Compliance",
-        "Administrative rigor",
-        "Management reporting",
-        "Coordination with finance and accounting teams",
-        "Presentation of insurance, savings and retirement products",
-        "Organization",
-        "Autonomy",
-        "Prioritization"
-      ],
-
-      "important_context": "This experience demonstrates that Younes's professional background did not begin with his startup experience. Before UDC, he had nearly three years of experience in a structured corporate environment with portfolio ownership, client facing responsibilities, B2B and B2C communication, financial and administrative coordination, compliance and management reporting."
+      "representation": "Chosen by management to represent the department in the team that organised internal events and reported operational needs. Consolidated the team's needs, identified recurring problems and produced reports for management."
     },
 
     "udc": {
-      "company": "Unlimited Driving Corporation",
-      "industry": "French deeptech startup specializing in teleoperation",
-      "project": "The Ring",
-      "role": "Chief of Staff / Responsable opérationnel",
-      "period": "January to November 2026",
-      "employment_type": "Master 2 apprenticeship",
-      "location": "Marseille, France",
-
-      "positioning": "Right hand to the CEO, working directly with the CTO, engineers, suppliers, clients and partners.",
-
-      "executive_support": [
-        "Daily support to the CEO across operational, financial, administrative, legal and HR topics",
-        "Transformation of management priorities into actions, processes and management tools",
-        "Preparation of reporting to clarify progress, blocking points and decisions",
-        "Analysis of business and financial indicators, including churn",
-        "Monitoring of operational and financial objectives",
-        "Management of multiple projects simultaneously in a growing startup environment",
-        "Work under time, budget and performance constraints",
-        "Handling confidential information related to salaries, contracts, finances and management decisions"
+      "employer": "UDC",
+      "company_explained": "French deeptech startup of 6 to 7 employees, specialised in teleoperation and immersive piloting (The Ring).",
+      "title": {
+        "fr": "Responsable opérationnel (alternance)",
+        "en": "Operations Manager (work-study)"
+      },
+      "dates": "January to November 2026",
+      "position": "Worked directly with the CEO, the CTO and leadership, with access to confidential information (payroll, contracts, funding).",
+      "operations": [
+        "Turned open briefs and leadership priorities into execution plans: owners, deadlines, dependencies and checkpoints.",
+        "Coordinated clients, suppliers, contractors, partners and internal teams, and flagged risks and blockers early.",
+        "Created reusable Franchise and Event processes, organised by priority, timeline, owner, documents and deadline. They were applied to the negotiations and contracts of 2 to 3 franchise projects. No franchise has opened yet."
       ],
-
-      "opsboard": [
-        "Designed OpsBoard as an operational project, decision and blocking issue tracking tool",
-        "Centralized progress, responsibilities, deadlines and blocking points",
-        "Designed workflows and automation to improve information circulation",
-        "Created a technical journal to retain problems, decisions and actions",
-        "Used operational tracking logic to anticipate execution risks",
-        "Created a clearer management view of operational status"
+      "opsboard": "Created OpsBoard, an internal steering tool that gathers priorities, progress, decisions, risks and blockers. Leadership can see where execution stands in two minutes, with a log of decisions.",
+      "mondial_auto_2026": "UDC took part in the Paris Motor Show 2026 (Mondial de l'Auto) as a service provider for Honda. Younes was the link between Honda's requests and UDC's leadership: he received the brief from both sides and ran the execution. Scope: budget, logistics, schedules, shifts, transport, accommodation and coordination of a field team of 5 to 6 people.",
+      "finance": [
+        "Audited the pricing base used for quotes and worked on prices, costs and margins.",
+        "Automated quote production: quotes are now twice as fast to produce (50% less time), with automatic numbering and PDF export.",
+        "Tracked the budget of each event: planned budget, actual spending and supporting documents.",
+        "Worked with the accounting firm on expenses, documents, the balance sheet and closing.",
+        "Helped obtain public funding, then built its closing file with leadership and the chartered accountant: expense summary, every transaction justified by invoices and bank statements, breakdown by type of expense, and the cap table.",
+        "Prepared financial elements for business angel files: forecasts, cash, revenue, burn rate, runway, MRR and cap tables. These were prepared for the files, not as recurring reporting."
       ],
-
-      "opsboard_deployment_status": "Designed and implemented but not deployed in production.",
-
-      "opsboard_deployment_status_usage_rule": "Do not mention this status unless explicitly asked about deployment, production use, adoption or project maturity.",
-
-      "process_structuring": [
-        "Transformed relatively informal Franchise and Event activities into chronological and reusable processes",
-        "Created operational checklists spanning commercial, administrative, legal, financial, logistical and quality topics",
-        "Structured the Franchise journey from prospecting through negotiation, contracting, production, quality control, delivery, installation, training and follow up",
-        "Structured the Event journey from client brief through post activation follow up",
-        "Formalized technical quality controls in collaboration with engineers",
-        "Created methods designed to reduce omissions and capitalize on each new execution",
-        "Improved repeatability of operational execution"
+      "hr_and_admin": [
+        "Prepared monthly payslips on Silae and paid salaries, with the chartered accountant.",
+        "Managed leave, health insurance enrolments and the preparation of permanent employment contracts, with the law firm.",
+        "Ran the recruitment of 3 people end to end: job posts on APEC and Indeed, screening, interviews and onboarding."
       ],
-
-      "pricing_and_margins": [
-        "Audited and improved the reliability of the Franchise kit pricing base",
-        "Integrated new supplier offers and reconciled components with the previous supplier structure",
-        "Integrated negotiated discounts into pricing work",
-        "Structured pricing using purchase costs, public prices, selling prices and UDC value contribution",
-        "Calculated margins by product and configuration",
-        "Designed a common quoting tool for mobile and fixed kits",
-        "Centralized pricing data and introduced controls and selection lists",
-        "Automated quote numbering",
-        "Automated PDF export",
-        "Reduced quote calculation and generation time by approximately 50 percent",
-        "Produced client ready quotes with an internal margin view"
-      ],
-
-      "finance_and_accounting": [
-        "Budget monitoring",
-        "Cost monitoring",
-        "Deposit monitoring",
-        "Deadline monitoring",
-        "Invoice monitoring",
-        "Direct coordination with the accountant regarding closing, balance sheet preparation and reconciliation",
-        "Designed an analytical expense account connecting accounting classification with project budget management",
-        "Classified expenses both by accounting nature and project budget destination",
-        "Centralized invoices, supporting documents and relevant financial information",
-        "Introduced human validation before final expense recording",
-        "Worked on duplicate detection",
-        "Maintained document traceability",
-        "Structured financial data to facilitate accounting processing",
-        "Improved management visibility over project expenditure and remaining budget"
-      ],
-
-      "honda_mondial_auto": [
-        "Operational coordination of UDC's participation as a Honda service provider at the 2026 Mondial de l'Auto in Paris",
-        "Turned an open brief into a complete and reusable execution plan",
-        "Structured logistics",
-        "Structured scheduling",
-        "Coordinated travel",
-        "Coordinated access",
-        "Coordinated accommodation",
-        "Organized the team",
-        "Measured equipment and simulated loading requirements to determine transportation needs",
-        "Compared options based on required volume, cost and operational constraints",
-        "Centralized budget monitoring",
-        "Tracked deviations from forecast",
-        "Created a shared roadmap for schedules, travel, access and responsibilities",
-        "Identified project dependencies in advance",
-        "Turned the first activation into a more planifiable and reproducible event method",
-        "Presented and explained the product to users and B2B stakeholders during the event"
-      ],
-
-      "crm_and_business_development": [
-        "End to end deployment and use of HubSpot CRM",
-        "Structured and qualified more than 1000 new leads",
-        "Prioritized prospects according to request and level of interest",
-        "Created response templates adapted to different types of inquiries",
-        "Automated initial prospect responses to reduce response time",
-        "Improved clarity and usability of commercial follow up",
-        "Maintained prospect and opportunity information"
-      ],
-
-      "human_resources": [
-        "End to end recruitment of three new collaborators",
-        "Definition of recruitment needs with management",
-        "Preparation of recruitment requirements",
-        "Communication of recruitment needs through appropriate channels",
-        "Candidate follow up",
-        "Interviews",
-        "Selection",
-        "Integration",
-        "Preparation and organization of onboarding",
-        "Employee administrative follow up",
-        "Leave management",
-        "Operational work related to employment and social law topics",
-        "Coordination of payroll information and social administration with the accounting firm",
-        "Structuring recruitment to support smoother operational integration"
-      ],
-
-      "legal_and_document_governance": [
-        "Work on confidentiality agreements and NDAs",
-        "Preparation and monitoring of franchise contracts",
-        "Work on pre contractual information documents known as DIP",
-        "Management of contract templates",
-        "Management of image rights documents",
-        "Coordination with legal counsel to secure and adapt documents",
-        "Creation of templates for different stakeholders and situations",
-        "Organization of the company's legal, administrative and contractual Drive",
-        "Implementation of document organization designed to reduce version errors",
-        "Applied legal monitoring related to Franchise and Event activities"
-      ],
-
-      "technical_collaboration": [
-        "Daily collaboration with the CEO, CTO and engineers",
-        "Understanding of a complex deeptech product and its technical constraints",
-        "Acquisition and use of technical vocabulary required to work with engineers and suppliers",
-        "Translation of technical constraints into operational processes, controls and accessible supports",
-        "Contribution to quality control criteria alongside technical experts",
-        "Ability to understand complex subjects and explain them to non technical clients, partners and users",
-        "Contribution to the structuring of technical documentation"
-      ],
-
-      "tools_and_automation": [
-        "Advanced Excel",
-        "Google Sheets",
-        "Macros",
-        "VBA",
-        "Google Apps Script",
-        "HubSpot CRM",
-        "Notion",
-        "Slack",
-        "Webhooks",
-        "Google Drive",
-        "PowerPoint",
-        "Microsoft Office",
-        "Claude Code",
-        "Generative AI tools",
-        "Prompting",
-        "Daily use of AI for analysis, structuring and tool creation",
-        "Use of AI as a development copilot while personally defining functional logic, business rules and user journeys",
-        "n8n",
-        "n8n workflow design",
-        "Conditional workflow logic",
-        "Multi step workflow design",
-        "JSON data processing",
-        "Data transformation in automation workflows",
-        "Basic JavaScript for automation",
-        "AI assisted application design",
-        "AI assisted prototyping of operational tools"
-      ],
-
-      "demonstrated_capabilities": [
-        "Executive support",
-        "Operational management",
-        "Cross functional project management",
-        "PMO and execution tracking",
-        "Process structuring",
-        "Operational finance",
-        "Management control",
-        "Pricing",
-        "Quoting",
-        "Margin management",
-        "Reporting",
-        "Dashboards",
-        "Recruitment",
-        "HR administration",
-        "Legal coordination",
-        "Document governance",
-        "CRM",
-        "Commercial organization",
-        "Event logistics",
-        "Automation",
-        "Continuous improvement",
-        "Collaboration with engineers",
-        "Technical product understanding",
-        "Risk anticipation",
-        "Prioritization",
-        "Confidentiality",
-        "Autonomy",
-        "Rapid learning",
-        "n8n workflow design",
-        "Workflow automation",
-        "Conditional workflow logic",
-        "JSON data processing",
-        "Basic JavaScript for automation",
-        "AI assisted application design"
+      "legal": "Worked with the law firm on NDAs, franchise contracts, franchise pre-contract disclosure documents (DIP), contract templates and image rights. He can identify the scope of a clause, the obligations of each party, the applicable version and what a lawyer must validate. He is not a lawyer.",
+      "crm": [
+        "Structured and prioritised more than 1,000 new leads in HubSpot.",
+        "Created 6 automated reply templates in French and English in HubSpot, to answer frequent prospect requests faster."
       ]
+    },
+
+    "ai_bhq": {
+      "name": "AI Business Headquarters (AI BHQ)",
+      "type": "Personal project since November 2026. Not a company, not a founder title.",
+      "explained": "A pre-accounting SaaS project run by AI agents. Younes designs and steers it; the code is written by an AI development tool (Claude Code) under his direction. It is a local MVP in progress, with no clients.",
+      "problem": "A problem he lived in a startup: missing invoices, manual bank reconciliation and reminders nobody reads.",
+      "built": "Bank import (CSV and a simulated Qonto API), automatic matching of payments and invoices, invoice collection by email with sender checks, reminders, and sending the document to the bank after human validation.",
+      "verifiable_results": [
+        "441 automated tests.",
+        "User actions cut from 33 to 5 on the demo.",
+        "A first real end-to-end test, which revealed two defects."
+      ],
+      "method": "Audit, plan, backup, minimal change, tests, report and explicit approval before each step."
     }
   },
 
-  "automation_and_ai_skills": {
-    "positioning": "Younes combines business understanding with practical automation and AI implementation skills. He approaches AI and automation as tools for solving operational problems, structuring processes and creating practical business solutions.",
+  "education": [
+    "Master's degree (Bac+5) in Économie de l'Entreprise et des Marchés (Business and Market Economics), Aix-Marseille University, 2024 to 2026, obtained in October 2026.",
+    "Bachelor's degree in Economics, Université Saint-Joseph, Beirut, 2018 to 2021.",
+    "Exchange programme in Mandarin and Chinese culture, Shenyang Normal University, China, 2019."
+  ],
 
-    "n8n": {
-      "level": "Practical foundations",
-      "skills": [
-        "Workflow design",
-        "Multi step workflow design",
-        "Conditional logic",
-        "Rule based automation",
-        "Node connections",
-        "Data flow between workflow steps",
-        "JSON data processing",
-        "Data transformation",
-        "Basic JavaScript for automation"
-      ],
-      "demonstrated_learning": [
-        "Built rule based automation workflows",
-        "Used conditional logic to route data based on business rules",
-        "Worked with multiple data items inside workflows",
-        "Understands workflow connections between nodes",
-        "Works with structured JSON data",
-        "Uses basic JavaScript concepts when automation logic requires it"
-      ],
-      "example_project": {
-        "name": "Insurance Application Routing – Rule Based Automation",
-        "description": "A rule based n8n workflow using fictional insurance application data to route cases according to insured amount.",
-        "workflow_logic": "Manual Trigger to structured insurance data to numeric condition to different processing outcomes.",
-        "business_logic_example": "Applications above a defined insured amount are routed to additional review, while lower amounts follow standard processing.",
-        "skills_demonstrated": [
-          "Workflow design",
-          "Business rule translation",
-          "Conditional logic",
-          "Multiple item processing",
-          "Structured data handling",
-          "Understanding node connections"
-        ]
-      }
-    },
-
-    "javascript": {
-      "level": "Basic foundations for automation",
-      "scope": [
-        "Understanding basic JavaScript logic",
-        "Using JavaScript concepts in automation contexts",
-        "Reading and adapting simple scripts",
-        "Working with structured data",
-        "Using JavaScript when workflow logic cannot be handled only through visual nodes"
-      ],
-      "positioning_rule": "Present JavaScript as a practical foundation used for automation, not as software engineering expertise."
-    },
-
-    "json": {
-      "level": "Practical understanding",
-      "skills": [
-        "Understanding JSON structure",
-        "Reading key value data",
-        "Working with structured workflow inputs and outputs",
-        "Understanding how data passes between automation nodes",
-        "Manipulating structured data in automation contexts"
-      ]
-    },
-
-    "ai_assisted_application_design": {
-      "skills": [
-        "Defining the business problem before selecting the technical solution",
-        "Defining functional logic",
-        "Defining business rules",
-        "Designing user flows",
-        "Structuring application requirements",
-        "Using generative AI as a development copilot",
-        "Iterating on prototypes through testing and feedback",
-        "Creating lightweight operational applications with AI assistance"
-      ],
-      "approach": "Younes defines the business need, functional logic, rules and desired user journey, then uses generative AI and assisted development tools to accelerate implementation.",
-      "examples": [
-        "OpsBoard",
-        "Pricing and quote automation",
-        "Analytical expense tracking tool",
-        "AI portfolio assistant"
-      ]
-    },
-
-    "ai_portfolio_assistant": {
-      "description": "Younes designed an AI portfolio assistant that allows recruiters to ask questions about his professional experience, working style, projects and role fit.",
-      "architecture": [
-        "GitHub Pages frontend",
-        "Vercel serverless backend",
-        "API based communication",
-        "OpenRouter LLM routing",
-        "Structured knowledge base",
-        "System prompt controlling behavior and answer quality"
-      ],
-      "concepts_used": [
-        "API calls",
-        "POST requests",
-        "JSON request and response payloads",
-        "Environment variables",
-        "API key protection",
-        "CORS",
-        "System prompts",
-        "Knowledge grounding",
-        "Error handling",
-        "Token limits",
-        "Frontend and backend separation"
-      ],
-      "business_purpose": "The assistant turns a static portfolio into an interactive professional evaluation tool for recruiters.",
-      "implementation_positioning": "Younes designed the functional logic, knowledge structure, prompting strategy, user experience and integration architecture while using AI as a technical development copilot."
-    },
-
-    "automation_principle": "The goal is not to automate everything with AI. It is to identify which tasks need intelligence and which simply need automation.",
-
-    "overall_level": "Practical and developing. Younes can design workflow logic, translate business rules into automation steps, work with structured data and use AI assisted development to prototype operational solutions."
+  "skills": {
+    "practiced": [
+      "Advanced Excel (profit sharing calculation at Allianz, financial tracking and quote tool at UDC)",
+      "VBA and macros (learned at university; today he builds them with AI help, from logic he defines)",
+      "Google Sheets and Apps Script",
+      "HubSpot",
+      "Silae (payroll)",
+      "n8n (workflows, conditional logic, webhooks, APIs)",
+      "Steering an AI development tool (Claude Code): specifications, plans, review of reports",
+      "Notion, Slack, Qonto, Stripe"
+    ],
+    "foundations": [
+      "JSON, APIs and webhooks (notions, for connecting tools)",
+      "JavaScript (basics: reading and small changes)",
+      "R and econometrics (academic)"
+    ],
+    "not_claimed": [
+      "SQL: currently learning, cannot write queries alone yet.",
+      "Power BI.",
+      "Software development: he is not a developer. His technical positioning is low-code automation and tool integration."
+    ],
+    "languages": "French, Arabic and English: bilingual. Mandarin: basic knowledge.",
+    "certifications": [
+      "Sprint for Impact, Business Models and Investor Pitching, ZEBOX Marseille, May 2025",
+      "PSC1 first aid certificate, 2025",
+      "Position Paper Award, Model European Union, Lebanese American University, 2018"
+    ]
   },
 
   "portfolio_projects": {
-    "honda": {
-      "title": "Honda activation at Mondial de l'Auto 2026",
-      "demonstrated": [
-        "Project coordination",
-        "Logistics",
-        "Team organization",
-        "Travel coordination",
-        "Accommodation coordination",
-        "Scheduling",
-        "Budget tracking",
-        "Expense tracking",
-        "Operational preparation",
-        "Risk anticipation",
-        "Client and B2B communication"
-      ],
-      "approach": "Younes transformed an open brief with multiple constraints into a structured preparation method with tools, supporting materials and a reproducible process.",
-      "portfolio_url": "https://younesrizk2000-png.github.io/portfolio/honda.html"
-    },
-
     "opsboard": {
-      "title": "OpsBoard",
-      "description": "OpsBoard is an operational project and decision tracking tool designed by Younes to centralize project progress, responsibilities, deadlines, blocking points, alerts and technical knowledge.",
-      "purpose": "The purpose of OpsBoard is to make operational execution easier to follow by clarifying responsibilities, blocking issues, deadlines, decisions and lessons learned.",
-      "demonstrated": [
-        "Operational process design",
-        "Blocking issue visibility",
-        "Alert automation",
-        "Technical knowledge capitalization",
-        "Project follow up logic",
-        "Decision tracking",
-        "Responsibility tracking",
-        "Deadline tracking"
-      ],
-      "deployment_status": "Designed and implemented but not deployed in production.",
-      "deployment_status_usage_rule": "Do not mention this status unless explicitly asked about deployment, production use, team adoption or project maturity.",
-      "response_rule": "When someone asks what OpsBoard is or how it works, explain its purpose and main functionality, then direct them to the dedicated portfolio page for a clearer visual explanation.",
-      "portfolio_url": "https://younesrizk2000-png.github.io/portfolio/opsboard.html"
+      "what": "Internal steering tool: priorities, progress, decisions, risks and blockers in one place, readable by leadership in two minutes.",
+      "status_rule": "Designed and set up, not deployed in production. Say it only if asked about deployment or adoption.",
+      "url": "https://younesrizk2000-png.github.io/portfolio/opsboard.html"
     },
-
-    "pricing": {
-      "title": "Pricing and quote automation",
-      "demonstrated": [
-        "Pricing structure",
-        "Google Sheets architecture",
-        "Google Apps Script assisted development",
-        "Quote generation automation",
-        "PDF generation",
-        "Margin visibility",
-        "Process reliability",
-        "Approximately 50 percent reduction in quote calculation and generation time"
-      ],
-      "portfolio_url": "https://younesrizk2000-png.github.io/portfolio/pricing.html"
-    },
-
     "franchise_and_event_processes": {
-      "title": "Franchise and Event process structuring",
-      "demonstrated": [
-        "Process mapping",
-        "Chronological process structuring",
-        "Operational checklists",
-        "Commercial process coordination",
-        "Administrative process coordination",
-        "Legal process coordination",
-        "Financial process coordination",
-        "Logistics",
-        "Quality controls",
-        "Repeatability",
-        "Operational risk reduction"
-      ],
-      "portfolio_url": "https://younesrizk2000-png.github.io/portfolio/franchise-evenementiel.html"
+      "what": "Reusable processes for franchise and event projects, from first contact to follow-up, with owners, documents and deadlines. Applied to 2 to 3 franchise projects in negotiation.",
+      "url": "https://younesrizk2000-png.github.io/portfolio/franchise-evenementiel.html"
     },
-
-    "documentation_and_governance": {
-      "title": "Company documentation and governance",
-      "demonstrated": [
-        "Structuring company documentation",
-        "Presenting documentation principles to the team",
-        "Connecting documentation to governance",
-        "Connecting documentation to scalability",
-        "Structuring technical documentation with engineers",
-        "Improving information accessibility",
-        "Version organization"
-      ]
+    "quote_automation": {
+      "what": "Shared quote tool with a reliable pricing base, automatic numbering and PDF export. Quotes twice as fast to produce.",
+      "url": "https://younesrizk2000-png.github.io/portfolio/pricing.html"
     },
-
-    "ai_portfolio_assistant": {
-      "title": "AI Portfolio Assistant",
-      "purpose": "Allow recruiters to interact with Younes's professional portfolio through a grounded AI assistant.",
-      "demonstrated": [
-        "AI assisted application design",
-        "Frontend and backend separation",
-        "API integration",
-        "Structured professional knowledge base",
-        "System prompt design",
-        "Prompt engineering",
-        "JSON data handling",
-        "API key protection through environment variables",
-        "LLM integration through OpenRouter",
-        "Serverless deployment through Vercel",
-        "Error handling",
-        "Bilingual interaction logic"
-      ],
-      "architecture": "GitHub Pages frontend to Vercel API backend to OpenRouter to LLM, grounded by a structured knowledge base and controlled by a system prompt.",
-      "portfolio_url": "https://younesrizk2000-png.github.io/portfolio/"
+    "mondial_auto_2026": {
+      "what": "Preparation and execution of UDC's participation as Honda's service provider at the Paris Motor Show 2026: budget, logistics, schedules and a field team of 5 to 6.",
+      "url": "https://younesrizk2000-png.github.io/portfolio/honda.html"
+    },
+    "insurance_routing_n8n": {
+      "what": "Training n8n workflow on fictional insurance applications: cases above an insured amount threshold are routed to additional review, the others follow standard processing.",
+      "url": "https://github.com/younesrizk2000-png/insurance-application-routing-n8n"
+    },
+    "portfolio_assistant": {
+      "what": "This assistant. Website on GitHub Pages, API on Vercel, a free language model through OpenRouter, grounded in this knowledge base. Built with AI help."
     }
   },
 
   "working_style": {
-    "ambiguity": {
-      "type": "stated_working_style",
-      "summary": "Younes can operate in ambiguity but naturally tries to transform ambiguity into clearer responsibilities, processes and ways of working.",
-      "principle": "Ambiguity should progressively move toward clarity."
-    },
-
-    "learning": {
-      "type": "stated_working_style_and_demonstrated_behavior",
-      "summary": "Younes is highly self directed in learning. When he needs to understand a subject or use a new tool, he researches it through documentation, online resources, videos and practical experimentation.",
-      "examples": [
-        "Qonto",
-        "Stripe",
-        "HubSpot",
-        "AI tools",
-        "Automation tools",
-        "n8n",
-        "JSON data handling",
-        "Basic JavaScript",
-        "Basic coding concepts"
-      ],
-      "principle": "If I need to know how to do something to move the work forward, I find a way to learn it."
-    },
-
-    "initiative": {
-      "type": "stated_working_style",
-      "summary": "Younes prefers to deliver the requested task first, then propose a more efficient, reliable or secure method when he identifies one.",
-      "principle": "Deliver first, then improve."
-    },
-
-    "disagreement": {
-      "type": "stated_working_style",
-      "summary": "When Younes disagrees with a manager, he explains his recommendation and provides evidence. He recognizes that the manager may have broader information. Once the final decision is made, he aligns and executes.",
-      "principle": "Conviction without ego."
-    },
-
-    "mistakes": {
-      "type": "stated_working_style",
-      "summary": "Younes believes in acknowledging mistakes directly, taking responsibility, communicating what was learned and identifying how to reduce the risk of recurrence."
-    },
-
-    "feedback": {
-      "type": "stated_working_style",
-      "summary": "Younes values frequent constructive feedback. He wants to know whether the work was not only technically good, but also the right work, at the right time and with the expected approach."
-    },
-
-    "prioritization": {
-      "type": "stated_working_style",
-      "summary": "Younes prioritizes based on hard deadlines, urgency, dependencies, external impact and flexibility. When appropriate, he renegotiates less urgent deadlines rather than silently missing commitments."
-    },
-
-    "team_dependencies": {
-      "type": "stated_working_style",
-      "summary": "When another person's delay affects his project, Younes prefers early cooperation and risk prevention rather than blame or policing."
-    },
-
-    "clients": {
-      "type": "stated_working_style_and_demonstrated_behavior",
-      "summary": "Younes emphasizes respectful communication with clients. He asks for clarification rather than assuming and follows up persistently when a delayed response blocks execution.",
-      "evidence": [
-        "B2B and B2C client communication at Allianz",
-        "Handling sensitive situations at Allianz",
-        "Client and B2B interactions at UDC",
-        "Honda event communication"
-      ]
-    },
-
-    "new_team": {
-      "type": "stated_working_style",
-      "summary": "When joining a new environment, Younes prefers first to observe, ask questions, understand how things work, clarify his scope and then progressively improve what he is responsible for.",
-      "pattern": "Observe, understand, define scope, execute, improve."
-    }
+    "ambiguity": "He can work in ambiguity but turns it into clear owners, processes and deadlines.",
+    "initiative": "Delivers the requested task first, then proposes a faster, more reliable or safer method.",
+    "learning": "Self-directed: documentation, videos and practice until the tool works (HubSpot, Qonto, Stripe, Silae, n8n, AI tools).",
+    "disagreement": "Explains his recommendation with evidence, accepts that the manager may know more, then aligns and executes. Conviction without ego.",
+    "mistakes": "Acknowledges them directly, says what he learned and how to avoid a repeat.",
+    "feedback": "Values frequent, constructive feedback, including on whether it was the right work at the right time.",
+    "decisions_with_missing_information": "Checks whether the missing information is critical. If a decision is still needed, prefers the safest reversible option that keeps the project moving.",
+    "tools_and_spending": "Tests a light or AI-based solution before paying for expensive software. Prove the need, then invest.",
+    "persuasion": "Presents an idea through time saved, money saved and risk removed.",
+    "leadership": "Clear expectations, autonomy, trust and accountability. Flexible on method, firm on outcome. He has not yet managed a large team.",
+    "development_area": "When strongly invested, he can take on too much himself. He is learning to delegate and make ownership clear. Mention only if asked about weaknesses or delegation.",
+    "motivation": "Visible impact, organising projects, building practical solutions and learning. Not rejecting junior work, rejecting stagnation.",
+    "preferred_culture": "Clear and measurable objectives, accountability, transparency, honest feedback and team alignment.",
+    "principles": "Inspired by The Four Agreements: be careful with words, do not take things personally, do not assume, always do your best. Principles he tries to follow, not claims of perfection."
   },
 
-  "leadership": {
-    "type": "stated_leadership_style",
-    "summary": "Younes favors clear expectations, autonomy, trust and accountability. He does not favor micromanagement.",
-    "principle": "Flexible on method, firm on outcome.",
-    "values": [
-      "Clear expectations",
-      "Autonomy",
-      "Trust",
-      "Deadlines",
-      "Accountability",
-      "Team values"
-    ],
-    "current_evidence": [
-      "Cross functional coordination",
-      "Project coordination",
-      "Department representation at Allianz",
-      "Recruitment and onboarding at UDC"
-    ],
-    "important_limit": "Younes has not yet demonstrated experience managing a large team."
-  },
-
-  "decision_making": {
-    "incomplete_information": {
-      "type": "stated_working_style",
-      "summary": "Younes first asks whether the missing information is critical. If it is, he tries to obtain it. If a decision must still be made, he prefers the safest reversible option that keeps the project moving.",
-      "principle": "If I cannot know everything, I prefer the safest reversible decision that keeps the project moving."
-    },
-
-    "investment_and_tools": {
-      "type": "stated_business_judgment",
-      "summary": "Younes prefers testing lightweight or AI enabled solutions before committing to expensive software when appropriate.",
-      "principle": "Prove the necessity first, then invest."
-    },
-
-    "persuasion": {
-      "type": "stated_business_judgment",
-      "summary": "When proposing an idea, Younes tends to frame the value through financial return, time saved and risk reduced.",
-      "principle": "Explain what it saves, what it accelerates and what risk it removes."
-    }
-  },
-
-  "personal_principles": {
-    "framework": "The Four Agreements",
-    "principles": [
-      {
-        "name": "Be impeccable with your word",
-        "professional_interpretation": "Communicate carefully, clearly and responsibly."
-      },
-      {
-        "name": "Do not take anything personally",
-        "professional_interpretation": "Keep disagreements focused on work, decisions and facts."
-      },
-      {
-        "name": "Do not make assumptions",
-        "professional_interpretation": "Ask, clarify and verify."
-      },
-      {
-        "name": "Always do your best",
-        "professional_interpretation": "Aim for the best possible result given the context, time and available information."
-      }
-    ],
-    "important_note": "These are principles Younes tries to follow, not claims of perfect behavior."
-  },
-
-  "motivation": {
-    "energizing_work": [
-      "Work with direct visible impact",
-      "Organizing projects",
-      "Building practical solutions",
-      "Improving how work is executed",
-      "Learning new tools and subjects",
-      "Working toward clear business objectives",
-      "Using AI and automation to solve practical business problems"
-    ],
-
-    "less_motivating_environment": {
-      "summary": "Younes can start with execution focused work, especially while learning, but is demotivated by roles with no credible path toward greater responsibility, ownership or expertise.",
-      "principle": "Not rejecting junior work, rejecting stagnation."
-    }
-  },
-
-  "preferred_company_culture": {
-    "summary": "Younes performs best in ambitious environments with clear and measurable objectives, strong accountability and a constructive performance culture.",
-    "values": [
-      "Clear objectives",
-      "Ambition",
-      "Performance",
-      "Accountability",
-      "Transparency",
-      "Honesty",
-      "Hard work",
-      "Constructive communication",
-      "Frequent feedback",
-      "Team alignment",
-      "Visible impact"
-    ],
-    "examples_of_motivating_objectives": [
-      "Increasing revenue by a defined amount",
-      "Expanding into a new market",
-      "Achieving a measurable operational target"
-    ]
-  },
-
-  "career_ambition": {
-    "summary": "Younes wants to grow in competence, responsibility and specialization while remaining innovative, serious about his responsibilities and easy to work with. He is increasingly interested in combining his business and economics background with practical AI and automation capabilities.",
-    "long_term_traits": [
-      "Innovative",
-      "Reliable",
-      "Professional",
-      "Easy to communicate with",
-      "Direct without personal judgment",
-      "Highly knowledgeable in his area",
-      "Able to bridge business needs and practical technology implementation"
-    ]
-  },
-
-  "current_limits": {
-    "not_yet_demonstrated": [
-      "Managing a large team",
-      "Advanced SQL",
-      "Legal expertise",
-      "Software engineering",
-      "CFO level financial expertise",
-      "Advanced corporate financial modeling",
-      "Advanced JavaScript software development"
-    ],
-
-    "important_distinctions": [
-      "Operational legal exposure does not make Younes a legal expert.",
-      "Building tools with AI and scripting does not make Younes a software engineer.",
-      "Operational finance experience does not make Younes a CFO or accountant.",
-      "Younes has basic JavaScript foundations for automation but does not claim advanced JavaScript development expertise."
-    ],
-
-    "usage_rule": "Do not volunteer these limitations unless explicitly asked, directly relevant to the task, or necessary to avoid materially misleading the recruiter."
-  },
-
-  "development_area": {
-    "overownership": {
-      "summary": "Younes can sometimes feel responsible for fixing too much when he is strongly invested in the outcome. He is learning to balance commitment with trust, delegation and shared accountability.",
-      "development": "From 'I care, so I should fix it' toward 'I care, so ownership should be clear and everyone should have space to own their part.'",
-      "usage_rule": "Mention only when asked about weaknesses, development areas, delegation, leadership or a closely related topic."
-    }
-  },
-
-  "role_fit": {
-    "primary": [
-      "Business Operations",
-      "Strategy & Operations",
-      "Project Manager",
-      "Project Coordinator",
-      "Business Analyst",
-      "Junior Consultant in Transformation and Organization"
-    ],
-
-    "additional": [
-      "PMO",
-      "Operations Manager",
-      "Business Development",
-      "Market Expansion",
-      "Sales Operations",
-      "Market Analyst",
-      "Chargé d'affaires",
-      "AI and Automation oriented Business Operations roles",
-      "Business Process Automation roles"
-    ],
-
-    "role_fit_logic": {
-      "business_operations": [
-        "Cross functional work at UDC",
-        "Finance",
-        "HR",
-        "Legal coordination",
-        "Administration",
-        "CRM",
-        "Process improvement",
-        "Automation",
-        "Executive support",
-        "Workflow design",
-        "AI assisted solution design"
-      ],
-
-      "strategy_and_operations": [
-        "Turning management priorities into execution",
-        "Business and financial indicators",
-        "Process structuring",
-        "Cross functional coordination",
-        "Operational decision support",
-        "Pricing",
-        "Risk anticipation",
-        "Automation as an operational efficiency lever"
-      ],
-
-      "project_management": [
-        "Honda activation",
-        "Franchise and Event processes",
-        "Multiple parallel projects at UDC",
-        "Logistics",
-        "Budgeting",
-        "Scheduling",
-        "Stakeholder coordination"
-      ],
-
-      "business_analysis": [
-        "Process analysis",
-        "Requirements structuring",
-        "Pricing analysis",
-        "Operational data",
-        "Workflow improvement",
-        "Tool design",
-        "Business and financial indicators",
-        "Translation of business rules into automation logic",
-        "Structured JSON data handling"
-      ],
-
-      "consulting": [
-        "Problem framing",
-        "Process structuring",
-        "Cross functional communication",
-        "Client communication",
-        "Corporate and startup exposure",
-        "Transformation and improvement mindset",
-        "Automation and AI enabled process improvement"
-      ],
-
-      "ai_and_automation_business_roles": [
-        "n8n workflow design",
-        "Conditional workflow logic",
-        "JSON data processing",
-        "Basic JavaScript for automation",
-        "Business rule translation",
-        "AI assisted application design",
-        "Operational problem solving",
-        "Process automation"
-      ]
-    }
-  },
-
-  "experience_balance": {
-    "allianz_is_strongest_evidence_for": [
-      "Client communication",
-      "B2B relationships",
-      "B2C relationships",
-      "Portfolio ownership",
-      "Account management",
-      "Front office communication",
-      "Handling sensitive situations",
-      "Corporate environment",
-      "Compliance",
-      "Contract analysis",
-      "Financial and administrative rigor",
-      "Management reporting",
-      "Product presentation",
-      "Client trust"
-    ],
-
-    "udc_is_strongest_evidence_for": [
-      "Business Operations",
-      "Strategy & Operations",
-      "Chief of Staff work",
-      "Cross functional execution",
-      "Project management",
-      "PMO",
-      "Process structuring",
-      "Pricing",
-      "Operational finance",
-      "HR",
-      "Legal coordination",
-      "CRM",
-      "Automation",
-      "AI assisted tool creation",
-      "Event operations",
-      "Technical collaboration",
-      "Executive support"
-    ],
-
-    "ai_and_automation_is_strongest_evidence_for": [
-      "n8n workflow design",
-      "Conditional workflow logic",
-      "JSON data processing",
-      "Basic JavaScript for automation",
-      "AI assisted application design",
-      "Generative AI as a development copilot",
-      "Business process automation",
-      "Translation of business rules into workflow logic"
-    ],
-
-    "combine_both_when_relevant": [
-      "Autonomy",
-      "Client communication",
-      "Financial and administrative work",
-      "Reporting",
-      "Adaptability",
-      "Corporate versus startup environments",
-      "Professional progression",
-      "Stakeholder management"
-    ]
-  },
-
-  "assistant_rules": {
-    "language": "Answer in the language used by the recruiter.",
-
-    "evidence_rules": [
-      "Never invent experience.",
-      "Never claim a capability that is not supported by the knowledge base.",
-      "Clearly distinguish demonstrated experience from stated working style.",
-      "Clearly distinguish evidence from reasonable inference.",
-      "Do not volunteer limitations unless directly relevant or explicitly requested.",
-      "If the knowledge base does not support the claim, say that there is not enough evidence.",
-      "Do not exaggerate Younes's seniority.",
-      "Do not present Younes as a lawyer, accountant, CFO, software engineer or advanced SQL specialist.",
-      "Do not claim extensive people management experience.",
-      "Do not spontaneously mention OpsBoard deployment status unless specifically asked.",
-      "Present n8n as a practical developing capability rather than advanced expertise.",
-      "Present JavaScript as basic foundations used for automation.",
-      "Present AI assisted application design as a practical capability based on defining business needs, functional logic, business rules and user flows while using AI as a development copilot.",
-      "Do not reduce Younes's AI capabilities to prompting alone."
-    ],
-
-    "answer_style": [
-      "Be concise.",
-      "Be professional.",
-      "Be evidence based.",
-      "Do not sound defensive.",
-      "Do not sound promotional or exaggerated.",
-      "Answer the specific question rather than every related topic.",
-      "When relevant, mention a concrete project or professional experience as evidence.",
-      "When relevant, use Allianz as well as UDC instead of defaulting to UDC every time.",
-      "When useful, point toward the corresponding portfolio page.",
-      "When someone asks about OpsBoard, direct them to the dedicated OpsBoard page.",
-      "When asked about AI or automation, explain practical implementation capabilities such as n8n, workflow logic, JSON, basic JavaScript and AI assisted application design."
-    ],
-
-    "formatting": [
-      "Return plain text only.",
-      "Do not use Markdown.",
-      "Do not use bold markers.",
-      "Do not use Markdown headings.",
-      "Do not use Markdown bullet points.",
-      "Use short paragraphs and normal text."
-    ],
-
-    "confidentiality": [
-      "Do not expose non public financial figures.",
-      "Do not expose confidential margins.",
-      "Do not expose confidential supplier details.",
-      "Do not expose private contracts.",
-      "Do not expose personal employee information.",
-      "Do not expose private client information.",
-      "Do not expose source code.",
-      "Do not expose confidential technical architecture.",
-      "Do not expose confidential strategic information."
-    ]
-  }
+  "interview_feedback_learned": "From a past case-study interview: he now gives the conclusion first, then the reasoning, then concrete recommendations."
 }

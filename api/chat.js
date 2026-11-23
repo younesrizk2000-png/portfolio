@@ -84,7 +84,7 @@ export default async function handler(req, res) {
     const recruiterPrompt = `
 PROFESSIONAL KNOWLEDGE BASE
 
-${JSON.stringify(knowledgeBase, null, 2)}
+${JSON.stringify(knowledgeBase)}
 
 RECRUITER QUESTION
 
@@ -92,89 +92,65 @@ ${message}
 `;
 
 
-    const openRouterResponse = await fetch(
-      "https://openrouter.ai/api/v1/chat/completions",
-      {
-        method: "POST",
+    // Free models through openrouter/free can be slow or fail now and then:
+    // try up to 2 times, with a time limit on each attempt.
+    const requestBody = JSON.stringify({
+      model: "openrouter/free",
+      messages: [
+        { role: "system", content: systemPrompt },
+        { role: "user", content: recruiterPrompt }
+      ],
+      temperature: 0.3,
+      max_tokens: 700
+    });
 
-        headers: {
-          "Authorization":
-            `Bearer ${process.env.OPENROUTER_API_KEY}`,
+    let answer = "";
 
-          "Content-Type":
-            "application/json",
-
-          "HTTP-Referer":
-            "https://younesrizk2000-png.github.io/portfolio/",
-
-          "X-Title":
-            "Younes Rizk Portfolio Assistant"
-        },
-
-        body: JSON.stringify({
-
-          model: "openrouter/free",
-
-          messages: [
-
-            {
-              role: "system",
-              content: systemPrompt
+    for (let attempt = 1; attempt <= 2 && !answer; attempt++) {
+      try {
+        const openRouterResponse = await fetch(
+          "https://openrouter.ai/api/v1/chat/completions",
+          {
+            method: "POST",
+            headers: {
+              "Authorization": `Bearer ${process.env.OPENROUTER_API_KEY}`,
+              "Content-Type": "application/json",
+              "HTTP-Referer": "https://younesrizk2000-png.github.io/portfolio/",
+              "X-Title": "Younes Rizk Portfolio Assistant"
             },
+            body: requestBody,
+            signal: AbortSignal.timeout(20000)
+          }
+        );
 
-            {
-              role: "user",
-              content: recruiterPrompt
-            }
+        if (!openRouterResponse.ok) {
+          console.error(
+            `OpenRouter error (attempt ${attempt}):`,
+            openRouterResponse.status,
+            await openRouterResponse.text()
+          );
+          continue;
+        }
 
-          ],
+        const data = await openRouterResponse.json();
+        answer = data?.choices?.[0]?.message?.content?.trim() || "";
 
-          temperature: 0.3,
-
-          max_tokens: 1000
-
-        })
+        if (!answer) {
+          console.error(`Empty answer (attempt ${attempt}).`);
+        }
+      } catch (attemptError) {
+        console.error(`OpenRouter attempt ${attempt} failed:`, attemptError);
       }
-    );
-
-
-    if (!openRouterResponse.ok) {
-
-      const errorText =
-        await openRouterResponse.text();
-
-      console.error(
-        "OpenRouter error:",
-        openRouterResponse.status,
-        errorText
-      );
-
-      throw new Error(
-        "OpenRouter request failed."
-      );
     }
 
-
-    const data =
-      await openRouterResponse.json();
-
-
-    const answer =
-      data?.choices?.[0]?.message?.content?.trim();
-
-
     if (!answer) {
-
-      throw new Error(
-        "No answer returned by OpenRouter."
-      );
-
+      throw new Error("No answer returned by OpenRouter after 2 attempts.");
     }
 
 
     return res.status(200).json({
 
-      answer: answer,
+      answer,
 
       badge: "Assistant IA",
 
