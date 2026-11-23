@@ -4,6 +4,10 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet" />
+
   <title>Compte de charges projet — Younes Rizk</title>
 
   <style>
@@ -18,7 +22,7 @@
     }
 
     body {
-      font-family: Arial, Helvetica, sans-serif;
+      font-family: "Inter", Arial, Helvetica, sans-serif;
       background: #f7f7f5;
       color: #1f2933;
       line-height: 1.65;
@@ -52,7 +56,7 @@
       text-decoration: none;
       color: #111827;
       font-weight: 700;
-      font-size: 18px;
+      font-size: 20px;
     }
 
     .nav-link {
@@ -76,7 +80,7 @@
     }
 
     h1 {
-      font-size: clamp(30px, 4vw, 38px);
+      font-size: clamp(40px, 5vw, 56px);
       line-height: 1.18;
       letter-spacing: -0.025em;
       margin-bottom: 18px;
@@ -93,7 +97,7 @@
     }
 
     .hero-lead {
-      font-size: 17px;
+      font-size: 16px;
       color: #5f6873;
       line-height: 1.7;
       max-width: 800px;
@@ -114,7 +118,7 @@
     }
 
     h2 {
-      font-size: clamp(22px, 2.7vw, 26px);
+      font-size: clamp(28px, 3.4vw, 36px);
       line-height: 1.3;
       letter-spacing: -0.015em;
       margin-bottom: 14px;
@@ -191,7 +195,7 @@
       top: 50%;
       transform: translateY(-50%);
       color: #7a9a80;
-      font-size: 18px;
+      font-size: 20px;
       z-index: 2;
     }
 
@@ -244,7 +248,7 @@
     .classification-card strong {
       display: block;
       color: #2f4735;
-      font-size: 17px;
+      font-size: 16px;
       margin-bottom: 8px;
     }
 
@@ -311,7 +315,7 @@
 
     .tech-box p {
       color: #56645a;
-      font-size: 15px;
+      font-size: 16px;
       line-height: 1.7;
     }
 
@@ -338,13 +342,13 @@
     .control-card strong {
       display: block;
       color: #2f4735;
-      font-size: 15px;
+      font-size: 16px;
       margin-bottom: 7px;
     }
 
     .control-card p {
       color: #66706a;
-      font-size: 13px;
+      font-size: 14px;
       line-height: 1.55;
     }
 
@@ -362,14 +366,14 @@
 
     .impact-box strong {
       display: block;
-      font-size: 18px;
+      font-size: 20px;
       color: #2f4735;
       margin-bottom: 9px;
     }
 
     .impact-box p {
       color: #5f6873;
-      font-size: 15px;
+      font-size: 16px;
       line-height: 1.7;
     }
 
@@ -392,14 +396,14 @@
 
     .next-box p {
       color: #56645a;
-      font-size: 15px;
+      font-size: 16px;
       line-height: 1.7;
     }
 
     .privacy-note {
       margin-top: 22px;
       color: #7b848c;
-      font-size: 13px;
+      font-size: 14px;
       line-height: 1.65;
       max-width: 800px;
     }
@@ -492,20 +496,16 @@
 
         <div class="hero-inner">
 
-          <h1>
-            Compte de charges du projet avec ventilation analytique
-          </h1>
+          <div style="text-transform: uppercase; letter-spacing: 0.13em; font-size: 12px; font-weight: 700; color: #5f8267; margin-bottom: 16px;">Projet 04 · Suivi budgétaire</div>
+
+          <h1>Un compte de charges, deux lectures</h1>
 
           <p class="hero-statement">
             Une dépense saisie une fois.
             Deux lectures : comptabilité et pilotage projet.
           </p>
 
-          <p class="hero-lead">
-            J’ai conçu un outil web dynamique
-            pour centraliser, analyser et classer
-            les charges du Mondial de l’Auto 2026.
-          </p>
+          <p class="hero-lead">Un outil web pour centraliser et classer les charges du Mondial de l’Auto 2026.</p>
 
         </div>
 
@@ -526,17 +526,9 @@
             Le problème.
           </h2>
 
-          <p class="section-copy">
-            Les dépenses arrivaient progressivement,
-            sous différents formats
-            et pour différents postes du projet.
-          </p>
+          <p class="section-copy">Les dépenses arrivaient au fil de l’eau, sous tous les formats.</p>
 
-          <p class="section-copy">
-            Il fallait les rendre exploitables
-            à la fois pour le pilotage financier
-            et pour la comptabilité.
-          </p>
+          <p class="section-copy">Il fallait les rendre utiles au budget et à la comptabilité.</p>
 
         </div>
 
@@ -603,13 +595,7 @@
             Transformer une facture en donnée exploitable.
           </h2>
 
-          <p class="section-copy">
-            Un membre de l’équipe dépose une facture
-            ou décrit une dépense.
-            L’outil analyse les informations,
-            propose un classement,
-            puis l’utilisateur valide avant enregistrement.
-          </p>
+          <p class="section-copy">On dépose une facture. L’outil propose un classement. L’humain valide.</p>
 
         </div>
 
@@ -686,7 +672,7 @@
         <div class="tool-visual">
 
           <img
-            src="Modern Event Expense Dashboard.png"
+            src="Modern Event Expense Dashboard.webp"
             alt="Interface anonymisée du registre de dépenses et compte de charges projet"
           />
 
@@ -720,12 +706,7 @@
               Par nature comptable
             </strong>
 
-            <p>
-              Chaque dépense est affectée
-              à un compte de charges du Plan Comptable Général,
-              afin de faciliter sa lecture
-              et sa reprise par la comptabilité.
-            </p>
+            <p>Un compte du Plan Comptable Général, pour la comptabilité.</p>
 
           </div>
 
@@ -736,12 +717,7 @@
               Par destination
             </strong>
 
-            <p>
-              La même dépense est rattachée
-              au poste du budget projet qu’elle concerne,
-              pour suivre l’utilisation des ressources
-              par activité.
-            </p>
+            <p>Un poste du budget projet, pour le pilotage.</p>
 
           </div>
 
@@ -837,11 +813,7 @@
             Une application web partagée.
           </h2>
 
-          <p class="section-copy">
-            L’outil est accessible aux membres autorisés
-            de l’organisation
-            et met à jour le registre partagé en temps réel.
-          </p>
+          <p class="section-copy">Réservé aux membres autorisés, mis à jour en temps réel.</p>
 
         </div>
 
@@ -852,18 +824,9 @@
             Claude comme copilote de développement.
           </strong>
 
-          <p>
-            J’ai défini la logique fonctionnelle,
-            les règles de gestion,
-            le double classement
-            et le parcours utilisateur.
-          </p>
+          <p>J’ai défini les règles, le double classement et le parcours.</p>
 
-          <p>
-            Claude a été utilisé comme copilote
-            pour accélérer la conception
-            et le développement de l’application web.
-          </p>
+          <p>Claude a écrit le code de l’application, sous ma direction.</p>
 
         </div>
 
@@ -972,12 +935,7 @@
             Une dépense saisie une fois devient exploitable à plusieurs niveaux.
           </strong>
 
-          <p>
-            L’équipe dispose d’un registre partagé,
-            le projet conserve une lecture budgétaire
-            et la comptabilité récupère
-            une information déjà structurée.
-          </p>
+          <p>Un registre partagé. Un budget lisible. Une comptabilité qui reçoit des données déjà classées.</p>
 
         </div>
 
@@ -1007,20 +965,12 @@
             Étape suivante.
           </strong>
 
-          <p>
-            Ajouter le chiffre d’affaires associé au projet
-            pour rapprocher revenus et charges
-            et obtenir une lecture directe de la marge.
-          </p>
+          <p>Ajouter le chiffre d’affaires du projet pour lire directement la marge.</p>
 
         </div>
 
 
-        <p class="privacy-note">
-          Les fournisseurs, factures, données personnelles
-          et documents financiers réels du projet
-          ne sont pas reproduits dans ce portfolio.
-        </p>
+        <p class="privacy-note">Fournisseurs et documents réels : confidentiels, non montrés.</p>
 
       </div>
 

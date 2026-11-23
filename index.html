@@ -10,7 +10,16 @@
     content="width=device-width, initial-scale=1.0"
   />
 
-  <title>Younes Rizk · Portfolio</title>
+   <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet" />
+
+  <title>Younes Rizk · Assurance collective & opérations</title>
+
+  <meta
+    name="description"
+    content="Younes Rizk, ex-Allianz en santé et épargne retraite collectives, responsable opérationnel en startup. Recherche un CDI à Paris en assurance collective ou en opérations."
+  />
 
   <style>
 
@@ -25,7 +34,7 @@
     }
 
     body {
-      font-family: Arial, Helvetica, sans-serif;
+      font-family: "Inter", Arial, Helvetica, sans-serif;
       background: #f7f7f5;
       color: #1f2933;
       line-height: 1.65;
@@ -55,7 +64,7 @@
 
     .brand {
       font-weight: 700;
-      font-size: 18px;
+      font-size: 20px;
       color: #111827;
       text-decoration: none;
     }
@@ -98,7 +107,7 @@
     }
 
     h1 {
-      font-size: clamp(46px, 5.5vw, 62px);
+      font-size: clamp(40px, 5vw, 56px);
       line-height: 1.05;
       letter-spacing: -0.04em;
       max-width: 760px;
@@ -173,7 +182,7 @@
     }
 
     .portrait-caption {
-      font-size: 13px;
+      font-size: 14px;
       color: #6b7280;
       margin-top: 10px;
       text-align: center;
@@ -188,7 +197,7 @@
     }
 
     .section-title {
-      font-size: clamp(24px, 3vw, 30px);
+      font-size: clamp(30px, 3.4vw, 40px);
       line-height: 1.25;
       letter-spacing: -0.02em;
       margin-bottom: 16px;
@@ -224,14 +233,14 @@
       display: inline-block;
       margin-bottom: 18px;
       color: #5f8267;
-      font-size: 11px;
+      font-size: 12px;
       font-weight: 700;
       letter-spacing: 0.11em;
       text-transform: uppercase;
     }
 
     .assistant-intro h2 {
-      font-size: clamp(31px, 4vw, 44px);
+      font-size: clamp(30px, 3.4vw, 40px);
       line-height: 1.08;
       letter-spacing: -0.035em;
       margin-bottom: 19px;
@@ -240,14 +249,14 @@
 
     .assistant-intro > p {
       color: #56645a;
-      font-size: 17px;
+      font-size: 16px;
       line-height: 1.7;
       max-width: 500px;
     }
 
     .assistant-intro-note {
       margin-top: 24px;
-      font-size: 13px !important;
+      font-size: 14px !important;
       line-height: 1.65 !important;
       color: #657269 !important;
       max-width: 460px;
@@ -272,7 +281,7 @@
 
     .assistant-card-header strong {
       display: block;
-      font-size: 17px;
+      font-size: 16px;
       color: #1f2933;
       margin-bottom: 4px;
     }
@@ -280,7 +289,7 @@
     .assistant-card-header span {
       display: block;
       color: #6b756e;
-      font-size: 13px;
+      font-size: 14px;
       line-height: 1.55;
     }
 
@@ -299,7 +308,7 @@
       border-radius: 999px;
       padding: 9px 12px;
       font-family: inherit;
-      font-size: 12px;
+      font-size: 14px;
       line-height: 1.35;
       cursor: pointer;
       transition: 0.18s ease;
@@ -311,7 +320,7 @@
     }
 
     .assistant-conversation {
-      min-height: 225px;
+      min-height: 140px;
       max-height: 500px;
       overflow-y: auto;
       background: #f8f9f7;
@@ -329,79 +338,102 @@
     }
 
     .message {
-      margin-bottom: 18px;
+      display: flex;
+      gap: 10px;
+      margin-bottom: 14px;
+      align-items: flex-end;
     }
 
     .message:last-child {
       margin-bottom: 0;
     }
 
-    .message-label {
-      display: block;
-      font-size: 10px;
-      font-weight: 700;
-      letter-spacing: 0.09em;
-      text-transform: uppercase;
-      margin-bottom: 6px;
-    }
-
-    .message-user .message-label {
-      color: #777f79;
-    }
-
-    .message-assistant .message-label {
-      color: #5f8267;
-    }
-
     .message-user {
-      padding-left: 18px;
-      border-left: 3px solid #d7ddd8;
+      justify-content: flex-end;
     }
 
-    .message-assistant {
-      padding-left: 18px;
-      border-left: 3px solid #5f8267;
-    }
-
-    .message-text {
-      color: #334039;
-      font-size: 14px;
-      line-height: 1.72;
-      white-space: pre-line;
-    }
-
-    .evidence-badge {
-      display: inline-block;
-      margin-top: 12px;
-      margin-right: 7px;
-      padding: 5px 9px;
-      border-radius: 999px;
-      background: #eef3ef;
-      color: #47624e;
-      font-size: 10px;
-      font-weight: 700;
-      letter-spacing: 0.04em;
-      text-transform: uppercase;
-    }
-
-    .assistant-sources {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 8px;
-      margin-top: 13px;
-    }
-
-    .assistant-source {
-      color: #2f4735;
-      text-decoration: none;
+    .message-avatar {
+      flex: 0 0 30px;
+      width: 30px;
+      height: 30px;
+      border-radius: 50%;
+      background: #5f8267;
+      color: #ffffff;
       font-size: 12px;
       font-weight: 700;
-      border-bottom: 1px solid #9daf9f;
-      padding-bottom: 1px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
     }
 
-    .assistant-source:hover {
-      border-color: #2f4735;
+    .message-bubble {
+      max-width: 85%;
+      padding: 12px 16px;
+      border-radius: 18px;
+      font-size: 15px;
+      line-height: 1.6;
+    }
+
+    .message-user .message-bubble {
+      background: #1f2933;
+      color: #ffffff;
+      border-bottom-right-radius: 6px;
+    }
+
+    .message-assistant .message-bubble {
+      background: #ffffff;
+      color: #1f2933;
+      border: 1px solid #e5e9e6;
+      border-bottom-left-radius: 6px;
+    }
+
+    .message-bubble p {
+      margin: 0 0 10px;
+    }
+
+    .message-bubble p:last-child,
+    .message-bubble ul:last-child {
+      margin-bottom: 0;
+    }
+
+    .message-bubble ul {
+      margin: 0 0 10px;
+      padding-left: 18px;
+    }
+
+    .message-bubble li {
+      margin-bottom: 4px;
+    }
+
+    .message-bubble strong {
+      font-weight: 600;
+    }
+
+    .message-bubble a {
+      color: #3f6b4b;
+      font-weight: 600;
+    }
+
+    .typing {
+      display: inline-flex;
+      gap: 4px;
+      padding: 4px 0;
+    }
+
+    .typing span {
+      width: 7px;
+      height: 7px;
+      border-radius: 50%;
+      background: #9aaa9e;
+      animation: typing 1.2s infinite ease-in-out;
+    }
+
+    .typing span:nth-child(2) { animation-delay: 0.15s; }
+    .typing span:nth-child(3) { animation-delay: 0.3s; }
+
+    @keyframes typing {
+      0%, 80%, 100% { opacity: 0.3; transform: translateY(0); }
+      40% { opacity: 1; transform: translateY(-3px); }
     }
 
     .assistant-form {
@@ -453,7 +485,7 @@
     .assistant-disclaimer {
       margin-top: 12px;
       color: #7a827d;
-      font-size: 11px;
+      font-size: 12px;
       line-height: 1.55;
     }
 
@@ -506,7 +538,7 @@
     }
 
     .project-card h3 {
-      font-size: 19px;
+      font-size: 20px;
       line-height: 1.4;
       letter-spacing: -0.01em;
       max-width: 470px;
@@ -531,7 +563,7 @@
     }
 
     .project-category {
-      font-size: 11px;
+      font-size: 12px;
       color: #5f8267;
       font-weight: 700;
       letter-spacing: 0.08em;
@@ -600,7 +632,7 @@
     }
 
     .journey-content h3 {
-      font-size: 18px;
+      font-size: 20px;
       line-height: 1.3;
       margin-bottom: 6px;
       color: #1f2933;
@@ -608,7 +640,7 @@
 
     .journey-content p {
       color: #5f6873;
-      font-size: 15px;
+      font-size: 16px;
       line-height: 1.6;
       max-width: 690px;
     }
@@ -655,7 +687,7 @@
 
     .role-card span {
       color: #2f4735;
-      font-size: 15px;
+      font-size: 16px;
       line-height: 1.45;
       font-weight: 700;
     }
@@ -669,7 +701,7 @@
       text-decoration: none;
       color: #111827;
       font-weight: 700;
-      font-size: 15px;
+      font-size: 16px;
       border-bottom: 1px solid #111827;
       padding-bottom: 2px;
     }
@@ -684,7 +716,7 @@
     }
 
     .contact-box h3 {
-      font-size: 22px;
+      font-size: 20px;
       margin-bottom: 10px;
       color: #2f4735;
     }
@@ -692,7 +724,7 @@
     .contact-box p {
       color: #56645a;
       margin-bottom: 14px;
-      font-size: 15px;
+      font-size: 16px;
     }
 
     .contact-links {
@@ -705,7 +737,7 @@
       color: #2f4735;
       text-decoration: none;
       font-weight: 600;
-      font-size: 15px;
+      font-size: 16px;
       word-break: break-word;
     }
 
@@ -718,6 +750,45 @@
       padding: 30px 0 44px;
       color: #6b7280;
       font-size: 14px;
+    }
+
+    .hero-meta {
+      font-size: 14px;
+      color: #5f6873;
+      margin: -12px 0 28px;
+      line-height: 1.6;
+    }
+
+    .other-projects {
+      margin-top: 34px;
+      padding-top: 26px;
+      border-top: 1px solid #e5e7eb;
+    }
+
+    .other-projects h3 {
+      font-size: 16px;
+      margin-bottom: 14px;
+    }
+
+    .other-projects ul {
+      list-style: none;
+      display: grid;
+      gap: 12px;
+    }
+
+    .other-projects li {
+      line-height: 1.6;
+      color: #53606c;
+    }
+
+    .other-projects strong {
+      color: #1f2933;
+    }
+
+    .other-projects a {
+      color: #5f8267;
+      font-weight: 700;
+      text-decoration: none;
     }
 
     /* RESPONSIVE */
@@ -750,8 +821,42 @@
 
     @media (max-width: 650px) {
 
+      header {
+        padding: 12px 0;
+      }
+
+      nav {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 8px;
+      }
+
+      .brand {
+        white-space: nowrap;
+      }
+
       .nav-links {
-        gap: 12px;
+        gap: 14px;
+      }
+
+      .nav-links a {
+        font-size: 14px;
+      }
+
+      h1 {
+        font-size: 36px;
+      }
+
+      .lead {
+        font-size: 16px;
+      }
+
+      .assistant-conversation {
+        min-height: 110px;
+      }
+
+      .portrait-card {
+        max-width: 200px;
       }
 
       .journey-item {
@@ -790,6 +895,232 @@
 
     }
 
+  
+    /* Système typographique : 12 / 14 / 16 / 20 / 40 / 56 px */
+    .section-title,
+    .assistant-intro h2 {
+      letter-spacing: -0.03em;
+      line-height: 1.1;
+    }
+
+    .hero-chips {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+      margin: -8px 0 28px;
+    }
+
+    .hero-chips span {
+      font-size: 14px;
+      color: #3f5a46;
+      background: #e8efe9;
+      border-radius: 999px;
+      padding: 6px 12px;
+    }
+
+    .project-card .project-category {
+      margin-bottom: 8px;
+    }
+
+    .other-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 16px;
+    }
+
+    .other-card {
+      background: #ffffff;
+      border: 1px solid #e5e7eb;
+      border-radius: 18px;
+      padding: 20px 22px;
+    }
+
+    .other-card h3 {
+      font-size: 16px;
+      margin-bottom: 6px;
+    }
+
+    .other-card p {
+      font-size: 14px;
+      line-height: 1.6;
+      color: #5f6873;
+    }
+
+    .other-card a {
+      display: inline-block;
+      margin-top: 10px;
+      font-size: 14px;
+      font-weight: 700;
+      color: #5f8267;
+      text-decoration: none;
+    }
+
+    @media (max-width: 650px) {
+      .other-grid {
+        grid-template-columns: 1fr;
+      }
+    }
+
+  
+    .ai-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 16px;
+      margin-top: 28px;
+    }
+
+    .ai-card {
+      background: #ffffff;
+      border: 1px solid #e5e7eb;
+      border-radius: 18px;
+      padding: 22px;
+      display: flex;
+      flex-direction: column;
+    }
+
+    .ai-tool {
+      align-self: flex-start;
+      font-size: 12px;
+      font-weight: 700;
+      color: #3f5a46;
+      background: #e8efe9;
+      border-radius: 999px;
+      padding: 5px 10px;
+      margin-bottom: 14px;
+    }
+
+    .ai-card h3 {
+      font-size: 16px;
+      line-height: 1.35;
+      margin-bottom: 8px;
+    }
+
+    .ai-card p {
+      font-size: 14px;
+      line-height: 1.6;
+      color: #5f6873;
+    }
+
+    .ai-card a {
+      margin-top: auto;
+      padding-top: 14px;
+      font-size: 14px;
+      font-weight: 700;
+      color: #5f8267;
+      text-decoration: none;
+    }
+
+    @media (max-width: 900px) {
+      .ai-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+    }
+
+    @media (max-width: 650px) {
+      .ai-grid {
+        grid-template-columns: 1fr;
+      }
+    }
+
+  
+    .toolbox {
+      margin-top: 28px;
+      padding-top: 24px;
+      border-top: 1px solid #e5e7eb;
+    }
+
+    .toolbox-label {
+      font-size: 12px;
+      font-weight: 700;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      color: #5f8267;
+      margin-bottom: 14px;
+    }
+
+    .tools {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+    }
+
+    .tool {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      background: #ffffff;
+      border: 1px solid #e5e7eb;
+      border-radius: 999px;
+      padding: 8px 14px;
+      font-size: 14px;
+      color: #1f2933;
+    }
+
+    .tool img {
+      width: 18px;
+      height: 18px;
+      opacity: 0.8;
+    }
+
+  
+    .identity {
+      padding: 0;
+      border-top: 1px solid #e5e7eb;
+      background: #ffffff;
+    }
+
+    .identity-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 32px;
+      padding-top: 32px;
+      padding-bottom: 32px;
+    }
+
+    .identity-label {
+      font-size: 12px;
+      font-weight: 700;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      color: #5f8267;
+      margin-bottom: 8px;
+    }
+
+    .identity-item p {
+      font-size: 16px;
+      line-height: 1.6;
+      color: #1f2933;
+    }
+
+    .roles-3 {
+      grid-template-columns: repeat(3, 1fr);
+    }
+
+    .role-direction {
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 6px;
+    }
+
+    .role-direction span {
+      font-size: 16px;
+    }
+
+    .role-direction small {
+      font-size: 14px;
+      color: #5f6873;
+      line-height: 1.5;
+      font-weight: 400;
+    }
+
+    @media (max-width: 900px) {
+      .identity-grid,
+      .roles-3 {
+        grid-template-columns: 1fr;
+        gap: 18px;
+      }
+    }
+
   </style>
 
 </head>
@@ -812,6 +1143,10 @@
       </a>
 
       <div class="nav-links">
+
+        <a href="#ia">
+          IA
+        </a>
 
         <a href="#assistant">
           Assistant
@@ -857,17 +1192,23 @@
         <div>
 
           <div class="eyebrow">
-            Portfolio technique · Analyse · Opérations
+            Assurance collective & gestion de portefeuille clients · Ex-Allianz
           </div>
 
           <h1>
-            J’analyse, je structure, j’automatise.
+            Des process fiables, pensés pour durer.
           </h1>
 
           <p class="lead">
-            Je transforme des besoins métiers en processus,
-            outils et solutions opérationnelles.
+            J’analyse, je structure, puis j’automatise avec l’IA,
+            en gardant la main sur chaque décision.
           </p>
+
+          <div class="hero-chips">
+            <span>CDI · Paris</span>
+            <span>Disponible immédiatement</span>
+            <span>Autorisé à travailler en France</span>
+          </div>
 
           <div class="hero-actions">
 
@@ -907,13 +1248,113 @@
             />
 
             <div class="portrait-caption">
-              Younes Rizk · France
+              Younes Rizk · Paris et Île-de-France
             </div>
 
           </div>
 
         </div>
 
+      </div>
+
+    </div>
+
+  </section>
+
+
+  <!-- EN BREF -->
+
+
+  <section class="identity">
+
+    <div class="container identity-grid">
+
+      <div class="identity-item">
+        <div class="identity-label">Qui je suis</div>
+        <p>Gestionnaire de portefeuille clients en assurance collective chez Allianz, puis responsable opérationnel en startup. Master (Bac+5).</p>
+      </div>
+
+      <div class="identity-item">
+        <div class="identity-label">Ce que je fais</div>
+        <p>Je fiabilise les opérations : contrats, clôtures, budgets, process. J’automatise les tâches répétitives avec l’IA.</p>
+      </div>
+
+      <div class="identity-item">
+        <div class="identity-label">Où je vais</div>
+        <p>Un CDI à Paris, en assurance collective ou en opérations chez un assureur, une insurtech ou une startup.</p>
+      </div>
+
+    </div>
+
+  </section>
+
+
+  <!-- IA -->
+
+
+  <section id="ia" class="section-border">
+
+    <div class="container">
+
+      <h2 class="section-title">
+        L’IA, mon levier au quotidien.
+      </h2>
+
+      <p class="section-intro">
+        L’IA prend les tâches répétitives. Je garde l’analyse et la décision.
+      </p>
+
+      <div class="ai-grid">
+
+        <div class="ai-card">
+          <div class="ai-tool">Google Sheets · Apps Script</div>
+          <h3>Devis automatisés</h3>
+          <p>Deux fois plus rapides à produire.</p>
+          <a href="pricing.html">Voir le projet →</a>
+        </div>
+
+        <div class="ai-card">
+          <div class="ai-tool">n8n</div>
+          <h3>Dossiers d’assurance triés automatiquement</h3>
+          <p>Les règles métier décident, je contrôle les exceptions.</p>
+          <a href="https://github.com/younesrizk2000-png/insurance-application-routing-n8n" target="_blank" rel="noopener noreferrer">Voir le workflow →</a>
+        </div>
+
+        <div class="ai-card">
+          <div class="ai-tool">Claude Code · Python · n8n</div>
+          <h3>Un outil de pré-comptabilité construit avec l’IA</h3>
+          <p>Je définis, l’IA code, je teste. Sur la démo : 33 actions réduites à 5.</p>
+        </div>
+
+        <div class="ai-card">
+          <div class="ai-tool">IA générative</div>
+          <h3>Cet assistant</h3>
+          <p>Il répond aux recruteurs à partir d’informations que j’ai écrites et vérifiées.</p>
+          <a href="#assistant">L’essayer →</a>
+        </div>
+
+      </div>
+
+
+
+      <div class="toolbox">
+        <div class="toolbox-label">Mes outils au quotidien</div>
+        <div class="tools">
+          <div class="tool"><img src="logos/n8n.svg" alt="" aria-hidden="true" /><span>n8n</span></div>
+          <div class="tool"><img src="logos/claude.svg" alt="" aria-hidden="true" /><span>Claude Code</span></div>
+          <div class="tool"><img src="logos/openrouter.svg" alt="" aria-hidden="true" /><span>OpenRouter</span></div>
+          <div class="tool"><img src="logos/googlesheets.svg" alt="" aria-hidden="true" /><span>Google Sheets</span></div>
+          <div class="tool"><img src="logos/googleappsscript.svg" alt="" aria-hidden="true" /><span>Apps Script</span></div>
+          <div class="tool"><img src="logos/hubspot.svg" alt="" aria-hidden="true" /><span>HubSpot</span></div>
+          <div class="tool"><img src="logos/notion.svg" alt="" aria-hidden="true" /><span>Notion</span></div>
+          <div class="tool"><img src="logos/stripe.svg" alt="" aria-hidden="true" /><span>Stripe</span></div>
+          <div class="tool"><img src="logos/github.svg" alt="" aria-hidden="true" /><span>GitHub</span></div>
+          <div class="tool"><img src="logos/vercel.svg" alt="" aria-hidden="true" /><span>Vercel</span></div>
+          <div class="tool tool-text"><span>Excel et VBA</span></div>
+          <div class="tool tool-text"><span>Slack</span></div>
+          <div class="tool tool-text"><span>Silae</span></div>
+          <div class="tool tool-text"><span>Qonto</span></div>
+        </div>
       </div>
 
     </div>
@@ -937,7 +1378,7 @@
         <div class="assistant-intro">
 
           <div class="assistant-label">
-            Ask my portfolio
+            Assistant IA
           </div>
 
           <h2>
@@ -945,26 +1386,8 @@
           </h2>
 
           <p>
-            Interrogez mon assistant sur mon expérience,
-            mes compétences, ma manière de travailler
-            ou mon adéquation avec votre poste.
-          </p>
-
-          <p class="assistant-intro-note">
-
-            <strong>
-              Posez votre question en français ou en anglais.
-            </strong>
-
-            Mon assistant vous répondra dans la langue de votre choix.
-
-          </p>
-
-          <p class="assistant-intro-note">
-
-            Ses réponses s’appuient uniquement sur mon expérience,
-            mes projets et les informations que j’ai validées.
-
+            Mon expérience, ma méthode, mon adéquation avec votre poste.
+            En français ou en anglais.
           </p>
 
         </div>
@@ -978,9 +1401,7 @@
               Posez une question à l’assistant IA de Younes
             </strong>
 
-            <span>
-              Expérience · Méthode de travail · Personnalité professionnelle · Adéquation avec un poste
-            </span>
+
 
           </div>
 
@@ -990,17 +1411,33 @@
             <button
               type="button"
               class="assistant-suggestion"
-              data-prompt="Peut il gérer un projet de bout en bout ?"
+              data-prompt="Quelle est son expérience en assurance collective ?"
             >
-              Peut il gérer un projet de bout en bout ?
+              Son expérience en assurance collective ?
             </button>
 
             <button
               type="button"
               class="assistant-suggestion"
-              data-prompt="Comment travaille Younes dans un environnement ambigu ?"
+              data-prompt="Comment a-t-il géré son portefeuille clients chez Allianz ?"
             >
-              Comment gère t il l’ambiguïté ?
+              Comment gérait-il son portefeuille clients ?
+            </button>
+
+            <button
+              type="button"
+              class="assistant-suggestion"
+              data-prompt="Would Younes fit an Account Manager role in employee benefits?"
+            >
+              Would he fit an Account Manager role?
+            </button>
+
+            <button
+              type="button"
+              class="assistant-suggestion"
+              data-prompt="Qu’a-t-il fait en opérations chez UDC ?"
+            >
+              Son rôle en opérations chez UDC ?
             </button>
 
             <button
@@ -1009,22 +1446,6 @@
               data-prompt="What is Younes like to work with?"
             >
               What is he like to work with?
-            </button>
-
-            <button
-              type="button"
-              class="assistant-suggestion"
-              data-prompt="Would Younes fit a Business Operations role?"
-            >
-              Would he fit Business Operations?
-            </button>
-
-            <button
-              type="button"
-              class="assistant-suggestion"
-              data-prompt="Quelles sont ses principales limites professionnelles aujourd’hui ?"
-            >
-              Quelles sont ses limites actuelles ?
             </button>
 
           </div>
@@ -1036,14 +1457,13 @@
             aria-live="polite"
           >
 
-            <p class="assistant-welcome">
-
-              Par exemple :
-              « Est il à l’aise avec des sujets financiers ? »
-              ou
-              « How does Younes handle disagreement with a manager? »
-
-            </p>
+            <div class="message message-assistant assistant-welcome">
+              <div class="message-avatar" aria-hidden="true">YR</div>
+              <div class="message-bubble">
+                Bonjour ! Je réponds à vos questions sur le parcours de Younes :
+                expérience, méthode, adéquation avec votre poste.
+              </div>
+            </div>
 
           </div>
 
@@ -1106,9 +1526,7 @@
 
       <p class="section-intro">
 
-        Des problèmes concrets.
-        Des réponses construites.
-        Des outils choisis pour les mettre en œuvre.
+        Un problème métier, ma réponse, le résultat.
 
       </p>
 
@@ -1124,7 +1542,7 @@
           <div class="project-visual">
 
             <img
-              src="PORTFOLIO_YOUNES_2_Opsboard.jpg"
+              src="PORTFOLIO_YOUNES_2_Opsboard.webp"
               alt="Schéma visuel du fonctionnement d'OpsBoard"
             />
 
@@ -1132,28 +1550,30 @@
 
           <div class="project-content">
 
+            <div class="project-category">
+              Pilotage opérationnel
+            </div>
+
+
             <h3>
               Comment anticiper les blocages et fiabiliser le suivi des projets ?
             </h3>
 
             <p class="project-answer">
 
-              J’ai conçu OpsBoard pour rendre les blocages visibles,
-              automatiser les alertes et capitaliser les solutions.
+              J’ai créé OpsBoard, un outil de pilotage interne.
+              La direction voit l’avancement, les risques et les blocages
+              en deux minutes.
 
             </p>
 
             <div class="project-footer">
 
-              <div class="project-category">
-                Pilotage opérationnel
-              </div>
-
               <a
                 class="project-link"
                 href="opsboard.html"
               >
-                Découvrir OpsBoard →
+                Voir le projet →
               </a>
 
             </div>
@@ -1171,7 +1591,7 @@
           <div class="project-visual">
 
             <img
-              src="YOUNES_PORTFOLIO_structuration.jpg"
+              src="YOUNES_PORTFOLIO_structuration.webp"
               alt="Transformation d'informations dispersées en processus structuré"
             />
 
@@ -1179,22 +1599,24 @@
 
           <div class="project-content">
 
+            <div class="project-category">
+              Structuration opérationnelle
+            </div>
+
+
             <h3>
               Comment structurer une activité sans ralentir son exécution ?
             </h3>
 
             <p class="project-answer">
 
-              J’ai centralisé l’information, formalisé les processus
-              et rendu l’exécution plus lisible et reproductible.
+              J’ai créé des processus Franchise et Événementiel reproductibles.
+              Ils ont été appliqués à 2 à 3 projets de franchise en négociation,
+              sans repartir de zéro.
 
             </p>
 
             <div class="project-footer">
-
-              <div class="project-category">
-                Structuration opérationnelle
-              </div>
 
               <a
                 class="project-link"
@@ -1226,22 +1648,23 @@
 
           <div class="project-content">
 
+            <div class="project-category">
+              Pricing & analyse économique
+            </div>
+
+
             <h3>
               Comment produire rapidement des devis fiables et maîtriser les marges ?
             </h3>
 
             <p class="project-answer">
 
-              J’ai conçu un système de chiffrage qui centralise les coûts,
-              applique les règles de calcul et génère les devis.
+              J’ai fiabilisé la base tarifaire et automatisé l’outil de devis.
+              Les devis sont deux fois plus rapides à produire.
 
             </p>
 
             <div class="project-footer">
-
-              <div class="project-category">
-                Pricing & analyse économique
-              </div>
 
               <a
                 class="project-link"
@@ -1266,30 +1689,31 @@
 
             <img
               src="younes honda prtfo.jpg"
-              alt="Coordination opérationnelle pour Honda au Mondial de l'Auto"
+              alt="Coordination opérationnelle d'UDC, prestataire de Honda au Mondial de l'Auto"
             />
 
           </div>
 
           <div class="project-content">
 
+            <div class="project-category">
+              Coordination événementielle
+            </div>
+
+
             <h3>
-              Comment coordonner la logistique d’une activation événementielle complexe ?
+              Comment coordonner Honda et UDC au Mondial de l’Auto 2026 ?
             </h3>
 
             <p class="project-answer">
 
-              Dans le cadre du projet Honda au Mondial de l’Auto 2026,
-              j’ai structuré la logistique, la coordination d’équipe
-              et le suivi opérationnel du projet.
+              Au Mondial de l’Auto 2026, UDC était prestataire de Honda.
+              J’ai fait le lien entre Honda et la direction d’UDC :
+              budget, logistique et plannings d’une équipe terrain de 5 à 6 personnes.
 
             </p>
 
             <div class="project-footer">
-
-              <div class="project-category">
-                Coordination événementielle
-              </div>
 
               <a
                 class="project-link"
@@ -1306,6 +1730,7 @@
 
 
       </div>
+
 
     </div>
 
@@ -1331,21 +1756,11 @@
 
         <p>
 
-          Je travaille entre analyse, opérations et environnements techniques.
-          J’aime comprendre rapidement un besoin,
-          structurer ce qui bloque
-          et construire une réponse concrète.
+          Diplômé d’un Master (Bac+5). D’abord l’assurance collective chez Allianz,
+          puis les opérations dans une startup deeptech.
 
         </p>
 
-        <p>
-
-          Mon parcours m’a progressivement amené
-          de la gestion et de l’analyse en environnement corporate
-          vers la création d’entreprise,
-          puis vers un rôle opérationnel au sein d’une startup.
-
-        </p>
 
       </div>
 
@@ -1384,10 +1799,8 @@
 
             <p>
 
-              Responsable opérationnel / Chief of Staff en alternance.
-              Prise en charge de sujets opérationnels,
-              RH, financiers, administratifs et juridiques,
-              structuration des processus et automatisation.
+              Responsable opérationnel (alternance) · 2026<br />
+              Processus, finance, paie, recrutement et automatisation, auprès du CEO.
 
             </p>
 
@@ -1420,12 +1833,12 @@
 
               <span>
                 <strong>Master 1</strong>
-                · Économie des Marchés et des Entreprises · 2024 à 2025
+                · Économie de l’Entreprise et des Marchés · 2024 à 2025
               </span>
 
               <span>
                 <strong>Master 2</strong>
-                · Spécialisation en Création d’Entreprise, en alternance · 2025 à 2026
+                · Économie de l’Entreprise et des Marchés, en alternance · 2025 à 2026
               </span>
 
               <span>
@@ -1457,20 +1870,14 @@
 
             <h3>
 
-              <a
-                class="company-link"
-                href="allianz.html"
-              >
-                Allianz
-              </a>
+              Allianz Lebanon
 
             </h3>
 
             <p>
 
-              Sept. 2021 à Fév. 2024.
-              Gestion de portefeuille, retraite et investissement.
-              Responsable du produit Power Plan.
+              Souscripteur et gestionnaire de portefeuille clients · 2021 à 2024<br />
+              Plus de 1 000 adhérents en épargne retraite collective, clôtures et participation aux bénéfices.
 
             </p>
 
@@ -1480,21 +1887,6 @@
 
       </div>
 
-
-      <div
-        class="about-copy"
-        style="margin-top: 34px; margin-bottom: 0;"
-      >
-
-        <p>
-
-          Je me forme rapidement aux outils utiles au problème.
-          L’IA, le scripting et l’automatisation sont des leviers
-          pour construire des solutions plus efficaces, pas une finalité.
-
-        </p>
-
-      </div>
 
     </div>
 
@@ -1512,50 +1904,29 @@
     <div class="container">
 
       <h2 class="section-title">
-        Vous recherchez un profil capable d’analyser, structurer et piloter ?
+        Les postes que je vise
       </h2>
 
       <p class="section-intro">
-        Mon expérience peut notamment s’inscrire dans les fonctions suivantes.
+        En CDI, à Paris et en Île-de-France.
       </p>
 
 
-      <div class="roles-grid">
+      <div class="roles-grid roles-3">
 
-        <div class="role-card">
-          <span>Business Analyst</span>
+        <div class="role-card role-direction">
+          <span>Assurance collective</span>
+          <small>Chargé de clientèle, gestionnaire de portefeuille, souscripteur junior</small>
         </div>
 
-        <div class="role-card">
-          <span>PMO / Project Coordinator</span>
+        <div class="role-card role-direction">
+          <span>Opérations en assurance</span>
+          <small>Chez un assureur, un courtier ou une insurtech</small>
         </div>
 
-        <div class="role-card">
-          <span>Business Operations</span>
-        </div>
-
-        <div class="role-card">
-          <span>Strategy & Operations</span>
-        </div>
-
-        <div class="role-card">
-          <span>Consultant junior · Transformation & Organisation</span>
-        </div>
-
-        <div class="role-card">
-          <span>Business Development / Market Expansion</span>
-        </div>
-
-        <div class="role-card">
-          <span>Sales Operations</span>
-        </div>
-
-        <div class="role-card">
-          <span>Chargé d’études / Market Analyst</span>
-        </div>
-
-        <div class="role-card">
-          <span>Chargé d’affaires / Chef de projet</span>
+        <div class="role-card role-direction">
+          <span>Opérations en startup</span>
+          <small>Ops Analyst, Business Operations, chargé de mission</small>
         </div>
 
       </div>
@@ -1590,9 +1961,7 @@
 
       <p class="section-intro">
 
-        Pour aller au delà du portfolio.
-        Pour mieux comprendre comment je peux contribuer à vos projets.
-        Ou simplement échanger sur une opportunité.
+        Une question, une opportunité : écrivez-moi.
 
       </p>
 
@@ -1604,7 +1973,7 @@
         </h3>
 
         <p>
-          France
+          Versailles · CDI à Paris et en Île-de-France
         </p>
 
 
@@ -1641,7 +2010,7 @@
 <footer>
 
   <div class="container">
-    Younes Rizk · France · Portfolio professionnel
+    Younes Rizk · Paris et Île-de-France · Portfolio professionnel
   </div>
 
 </footer>
@@ -1889,115 +2258,101 @@
   }
 
 
-  function appendMessage(
-    role,
-    text,
-    badge,
-    sources = []
-  ) {
-
-    clearWelcome();
-
-    const message =
-      document.createElement("div");
-
-    message.className =
-      "message " +
-      (
-        role === "user"
-          ? "message-user"
-          : "message-assistant"
-      );
-
-    const label =
-      document.createElement("span");
-
-    label.className =
-      "message-label";
-
-    label.textContent =
-      role === "user"
-        ? "Question"
-        : "Assistant IA";
-
-    const body =
-      document.createElement("div");
-
-    body.className =
-      "message-text";
-
-    body.textContent =
-      text;
-
-    message.appendChild(label);
-    message.appendChild(body);
-
-    if (
-      role === "assistant" &&
-      badge
-    ) {
-
-      const badgeElement =
-        document.createElement("span");
-
-      badgeElement.className =
-        "evidence-badge";
-
-      badgeElement.textContent =
-        badge;
-
-      message.appendChild(
-        badgeElement
-      );
-
-    }
-
-    if (
-      role === "assistant" &&
-      sources.length
-    ) {
-
-      const sourceWrap =
-        document.createElement("div");
-
-      sourceWrap.className =
-        "assistant-sources";
-
-      sources.forEach(
-        (source) => {
-
-          const link =
-            document.createElement("a");
-
-          link.className =
-            "assistant-source";
-
-          link.href =
-            source.url;
-
-          link.textContent =
-            source.label + " →";
-
-          sourceWrap.appendChild(link);
-
-        }
-      );
-
-      message.appendChild(
-        sourceWrap
-      );
-
-    }
-
-    assistantConversation.appendChild(
-      message
-    );
-
-    assistantConversation.scrollTop =
-      assistantConversation.scrollHeight;
-
+  function escapeHtml(text) {
+    return text
+      .replace(/&/g, "&amp;")
+      .replace(/</g, "&lt;")
+      .replace(/>/g, "&gt;");
   }
 
+  function linkLabel(url) {
+    if (url.includes("linkedin.com")) return "Profil LinkedIn →";
+    if (url.includes("github.com")) return "Voir sur GitHub →";
+    if (url.includes("github.io")) return "Voir la page →";
+    if (url.includes("mailto:")) return url.replace("mailto:", "");
+    return "Ouvrir le lien →";
+  }
+
+  function inlineFormat(text) {
+    return escapeHtml(text)
+      .replace(/\*\*(.+?)\*\*/g, "<strong>$1</strong>")
+      .replace(/(https?:\/\/[^\s)]+[^\s).,;])/g, (url) => '<a href="' + url + '" target="_blank" rel="noopener noreferrer">' + linkLabel(url) + '</a>');
+  }
+
+  function renderAnswer(text) {
+    const lines = String(text || "").replace(/\r/g, "").split("\n");
+    let html = "";
+    let inList = false;
+    let paragraph = [];
+
+    const flush = () => {
+      if (paragraph.length) {
+        html += "<p>" + inlineFormat(paragraph.join(" ")) + "</p>";
+        paragraph = [];
+      }
+    };
+
+    lines.forEach((raw) => {
+      const line = raw.trim().replace(/^#+\s*/, "");
+      const item = line.match(/^[-*•]\s+(.*)/) || line.match(/^\d+[.)]\s+(.*)/);
+      if (item) {
+        flush();
+        if (!inList) { html += "<ul>"; inList = true; }
+        html += "<li>" + inlineFormat(item[1]) + "</li>";
+      } else if (!line) {
+        flush();
+        if (inList) { html += "</ul>"; inList = false; }
+      } else {
+        if (inList) { html += "</ul>"; inList = false; }
+        paragraph.push(line);
+      }
+    });
+
+    flush();
+    if (inList) { html += "</ul>"; }
+    return html;
+  }
+
+  function appendMessage(role, text) {
+    if (role !== "typing") {
+      clearWelcome();
+    }
+
+    const message = document.createElement("div");
+    message.className = "message " + (role === "user" ? "message-user" : "message-assistant");
+
+    if (role !== "user") {
+      const avatar = document.createElement("div");
+      avatar.className = "message-avatar";
+      avatar.setAttribute("aria-hidden", "true");
+      avatar.textContent = "YR";
+      message.appendChild(avatar);
+    }
+
+    const bubble = document.createElement("div");
+    bubble.className = "message-bubble";
+
+    if (role === "typing") {
+      bubble.innerHTML = '<span class="typing" aria-label="Réponse en cours"><span></span><span></span><span></span></span>';
+      message.classList.add("message-typing");
+    } else if (role === "user") {
+      bubble.textContent = text;
+    } else {
+      bubble.innerHTML = renderAnswer(text);
+    }
+
+    message.appendChild(bubble);
+    assistantConversation.appendChild(message);
+    assistantConversation.scrollTop = assistantConversation.scrollHeight;
+    return message;
+  }
+
+  function removeTyping() {
+    const typing = assistantConversation.querySelector(".message-typing");
+    if (typing) {
+      typing.remove();
+    }
+  }
 
   async function queryAssistant(
     question,
@@ -2077,55 +2432,25 @@
 
     assistantSubmit.textContent =
       language === "fr"
-        ? "Réflexion..."
-        : "Thinking...";
+        ? "…"
+        : "…";
+
+    appendMessage("typing");
 
     try {
-
-      const result =
-        await queryAssistant(
-          trimmed,
-          language
-        );
-
-      appendMessage(
-
-        "assistant",
-
-        result.answer,
-
-        result.badge,
-
-        Array.isArray(result.sources)
-          ? result.sources
-          : []
-
-      );
-
+      const result = await queryAssistant(trimmed, language);
+      removeTyping();
+      appendMessage("assistant", result.answer);
     }
 
     catch (error) {
-
+      removeTyping();
       appendMessage(
-
         "assistant",
-
         language === "fr"
-
-          ? "L’assistant a rencontré un problème temporaire. Actualisez la page puis réessayez votre question. Si le problème persiste, vous pouvez consulter directement mes projets ou me contacter."
-
-          : "The assistant encountered a temporary issue. Refresh the page and try your question again. If the problem persists, you can explore my projects directly or contact me.",
-
-        language === "fr"
-
-          ? "Assistant indisponible"
-
-          : "Assistant unavailable",
-
-        []
-
+          ? "Je n’arrive pas à répondre pour le moment. Réessayez dans un instant, ou écrivez directement à Younes : younesrizk2000@gmail.com"
+          : "I can’t answer right now. Please try again in a moment, or email Younes directly: younesrizk2000@gmail.com"
       );
-
     }
 
     finally {

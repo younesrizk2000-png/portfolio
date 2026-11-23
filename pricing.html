@@ -4,6 +4,10 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet" />
+
   <title>Automatisation du chiffrage commercial — Younes Rizk</title>
 
   <style>
@@ -18,7 +22,7 @@
     }
 
     body {
-      font-family: Arial, Helvetica, sans-serif;
+      font-family: "Inter", Arial, Helvetica, sans-serif;
       background: #f7f7f5;
       color: #1f2933;
       line-height: 1.65;
@@ -50,7 +54,7 @@
       text-decoration: none;
       color: #111827;
       font-weight: 700;
-      font-size: 18px;
+      font-size: 20px;
     }
 
     .nav-link {
@@ -72,7 +76,7 @@
     }
 
     h1 {
-      font-size: clamp(30px, 4vw, 38px);
+      font-size: clamp(40px, 5vw, 56px);
       line-height: 1.18;
       letter-spacing: -0.025em;
       margin-bottom: 18px;
@@ -89,7 +93,7 @@
     }
 
     .hero-lead {
-      font-size: 17px;
+      font-size: 16px;
       color: #5f6873;
       line-height: 1.7;
       max-width: 800px;
@@ -108,7 +112,7 @@
     }
 
     h2 {
-      font-size: clamp(22px, 2.7vw, 26px);
+      font-size: clamp(28px, 3.4vw, 36px);
       line-height: 1.3;
       letter-spacing: -0.015em;
       margin-bottom: 14px;
@@ -212,7 +216,7 @@
     .result-card strong {
       display: block;
       color: #2f4735;
-      font-size: 17px;
+      font-size: 16px;
       margin-bottom: 7px;
     }
 
@@ -239,7 +243,7 @@
 
     .tech-box p {
       color: #56645a;
-      font-size: 15px;
+      font-size: 16px;
       line-height: 1.7;
     }
 
@@ -266,7 +270,7 @@
 
     .security-box p {
       color: #5f6873;
-      font-size: 15px;
+      font-size: 16px;
       line-height: 1.7;
     }
 
@@ -274,7 +278,7 @@
       margin-top: 22px;
       max-width: 820px;
       color: #7b848c;
-      font-size: 13px;
+      font-size: 14px;
       line-height: 1.65;
     }
 
@@ -342,24 +346,31 @@
 
         <div class="hero-inner">
 
-          <h1>
-            Projet 03 — Automatisation du chiffrage commercial
-          </h1>
+          <div style="text-transform: uppercase; letter-spacing: 0.13em; font-size: 12px; font-weight: 700; color: #5f8267; margin-bottom: 16px;">Projet 03 · Pricing et automatisation</div>
+
+          <h1>Des devis automatisés</h1>
 
           <p class="hero-statement">
             Transformer un chiffrage manuel en un processus rapide, fiable et sécurisé.
           </p>
 
-          <p class="hero-lead">
-            J’ai conçu un outil Google Sheets capable de transformer
-            une configuration client en devis automatiquement calculé,
-            contrôlé puis exportable en PDF.
-          </p>
+          <p class="hero-lead">Un outil Google Sheets qui transforme une demande client en devis calculé, contrôlé et exporté en PDF. Deux fois plus rapide.</p>
 
         </div>
 
       </div>
 
+    </section>
+
+
+    <!-- EN UN COUP D'ŒIL -->
+    <section class="section-border">
+      <div class="container">
+        <h2 style="margin-bottom: 4px;">Le projet en un coup d’œil.</h2>
+        <div class="visual" style="max-width: 900px;">
+          <img src="schemas/devis.svg" alt="Avant, les devis étaient calculés à la main. Après automatisation, chaque devis est numéroté, exporté en PDF, avec la marge visible : deux fois plus rapide à produire." />
+        </div>
+      </div>
     </section>
 
 
@@ -375,19 +386,9 @@
             Le problème.
           </h2>
 
-          <p class="section-copy">
-            Nous avons d’abord construit une base tarifaire statique,
-            à laquelle j’ai participé.
-            Elle permettait de centraliser les références
-            et les règles nécessaires au chiffrage.
-          </p>
+          <p class="section-copy">Nous avions une base tarifaire, à laquelle j’ai participé : prix et règles au même endroit.</p>
 
-          <p class="section-copy">
-            Mais cette première version restait figée.
-            Pour chaque nouvelle configuration client,
-            il fallait encore reprendre plusieurs calculs
-            et manipulations manuellement.
-          </p>
+          <p class="section-copy">Mais chaque devis demandait encore des calculs à la main.</p>
 
         </div>
 
@@ -428,11 +429,7 @@
               Limite du modèle
             </strong>
 
-            <p>
-              La base centralisait l’information,
-              mais ne permettait pas encore
-              de générer automatiquement un devis.
-            </p>
+            <p>Aucun devis ne se générait automatiquement.</p>
 
           </div>
 
@@ -455,19 +452,9 @@
             La solution que j’ai conçue.
           </h2>
 
-          <p class="section-copy">
-            À partir de cette première base tarifaire,
-            j’ai conçu un workflow de chiffrage complet
-            capable de transformer une configuration client
-            en devis automatiquement calculé,
-            contrôlé et exportable en PDF.
-          </p>
+          <p class="section-copy">J’ai construit le parcours complet : de la demande client au devis PDF.</p>
 
-          <p class="section-copy">
-            L’utilisateur renseigne uniquement les informations nécessaires.
-            Les données internes alimentent ensuite automatiquement
-            les calculs et la génération du devis.
-          </p>
+          <p class="section-copy">L’utilisateur saisit l’essentiel. Le reste se calcule seul.</p>
 
         </div>
 
@@ -475,7 +462,7 @@
         <div class="visual">
 
           <img
-            src="Google Sheets Quote Generation Workflow.png"
+            src="Google Sheets Quote Generation Workflow.webp"
             alt="Architecture du workflow de génération de devis sur Google Sheets"
           />
 
@@ -560,12 +547,7 @@
             L’impact.
           </h2>
 
-          <p class="section-copy">
-            Le chiffrage passe d’une succession de calculs
-            et de manipulations manuelles
-            à un processus automatisé,
-            directement exploitable.
-          </p>
+          <p class="section-copy">Des devis deux fois plus rapides à produire, avec moins d’erreurs.</p>
 
         </div>
 
@@ -647,18 +629,9 @@
             Comment je l’ai mis en œuvre.
           </h2>
 
-          <p class="section-copy">
-            J’ai conçu l’architecture fonctionnelle du classeur,
-            les interactions entre les différentes feuilles
-            et le parcours utilisateur.
-          </p>
+          <p class="section-copy">J’ai conçu l’architecture du classeur et le parcours utilisateur.</p>
 
-          <p class="section-copy">
-            Google Sheets gère les données,
-            les formules et les contrôles de saisie.
-            Google Apps Script apporte la couche d’automatisation
-            nécessaire au fonctionnement du workflow de chiffrage.
-          </p>
+          <p class="section-copy">Google Sheets porte les données et les contrôles. Apps Script automatise.</p>
 
         </div>
 
@@ -669,21 +642,9 @@
             Une automatisation pensée pour rester simple côté utilisateur.
           </strong>
 
-          <p>
-            Le script prend notamment en charge
-            la création d’un nouveau devis,
-            la numérotation automatique,
-            certains contrôles de cohérence
-            et l’export du document en PDF dans Google Drive.
-          </p>
+          <p>Création du devis, numérotation, contrôles, export PDF dans Google Drive.</p>
 
-          <p>
-            J’ai défini le besoin fonctionnel,
-            l’architecture et la logique attendue,
-            puis utilisé l’IA comme copilote de développement
-            pour accélérer l’écriture,
-            le test et l’itération du code Google Apps Script.
-          </p>
+          <p>J’ai défini la logique. L’IA a écrit le code Apps Script, je l’ai testé et ajusté.</p>
 
         </div>
 
@@ -694,15 +655,7 @@
             Sécuriser ce qui ne doit pas être modifié.
           </strong>
 
-          <p>
-            L’utilisateur travaille uniquement
-            dans les zones prévues pour la saisie.
-            Les données tarifaires internes,
-            les formules et les traitements sont protégés
-            afin d’éviter toute modification accidentelle
-            et de préserver l’intégrité du modèle.
-            Leur édition reste limitée aux personnes autorisées.
-          </p>
+          <p>Les prix et les formules sont protégés. L’utilisateur ne touche qu’aux zones de saisie.</p>
 
         </div>
 
@@ -723,12 +676,7 @@
             Du calcul au PDF en un clic.
           </h2>
 
-          <p class="section-copy">
-            Un menu personnalisé intégré à Google Sheets
-            permet de créer un nouveau devis,
-            de gérer sa numérotation
-            puis de l’exporter directement en PDF.
-          </p>
+          <p class="section-copy">Un menu dans Google Sheets : nouveau devis, numérotation, export PDF.</p>
 
         </div>
 
@@ -736,20 +684,14 @@
         <div class="visual">
 
           <img
-            src="French Quote Template in Google Sheets.png"
+            src="French Quote Template in Google Sheets.webp"
             alt="Modèle anonymisé de devis dans Google Sheets avec menu de création et export PDF"
           />
 
         </div>
 
 
-        <p class="privacy-note">
-          Les prix, marges, fournisseurs,
-          composants et règles commerciales
-          utilisés dans l’outil réel
-          restent strictement confidentiels
-          et ne sont pas reproduits dans ce portfolio.
-        </p>
+        <p class="privacy-note">Prix, marges et fournisseurs réels : confidentiels, non montrés.</p>
 
       </div>
 
