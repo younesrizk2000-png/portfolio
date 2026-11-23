@@ -339,6 +339,41 @@
         transform: none;
       }
     }
+  
+    /* Cartes dynamiques (problème, solution, résultat) */
+    .problem-card, .result-card, .impact-card, .impact-item, .solution-card, .reasoning-card, .view-card, .control-card, .classification-card {
+      position: relative;
+      background: #ffffff;
+      border-radius: 18px;
+      transition: transform 0.18s ease, box-shadow 0.18s ease;
+    }
+
+    .problem-card:hover, .result-card:hover, .impact-card:hover, .impact-item:hover, .solution-card:hover, .reasoning-card:hover, .view-card:hover, .control-card:hover, .classification-card:hover {
+      transform: translateY(-3px);
+      box-shadow: 0 12px 28px rgba(31, 41, 51, 0.08);
+    }
+
+    .problem-card::before, .result-card::before, .impact-card::before, .impact-item::before, .solution-card::before, .reasoning-card::before, .view-card::before, .control-card::before, .classification-card::before {
+      content: "";
+      display: block;
+      width: 34px;
+      height: 34px;
+      border-radius: 10px;
+      margin-bottom: 12px;
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: 20px 20px;
+    }
+
+    .problem-card { border-top: 4px solid #8b1e1e !important; }
+    .problem-card::before { background-color: #f6e1de; background-image: url("data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20viewBox%3D%220%200%2024%2024%22%20fill%3D%22none%22%20stroke%3D%22%238b1e1e%22%20stroke-width%3D%222%22%20stroke-linecap%3D%22round%22%3E%3Cpath%20d%3D%22M12%207v6%22/%3E%3Ccircle%20cx%3D%2212%22%20cy%3D%2217%22%20r%3D%220.6%22%20fill%3D%22%238b1e1e%22/%3E%3C/svg%3E"); }
+
+    .result-card, .impact-card, .impact-item { border-top: 4px solid #5f8267 !important; }
+    .result-card::before, .impact-card::before, .impact-item::before { background-color: #e3ece4; background-image: url("data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20viewBox%3D%220%200%2024%2024%22%20fill%3D%22none%22%20stroke%3D%22%233f5a46%22%20stroke-width%3D%222.2%22%20stroke-linecap%3D%22round%22%20stroke-linejoin%3D%22round%22%3E%3Cpath%20d%3D%22M6%2012.5l4%204%208-9%22/%3E%3C/svg%3E"); }
+
+    .solution-card, .reasoning-card, .view-card, .control-card, .classification-card { border-top: 4px solid #2f4a66 !important; }
+    .solution-card::before, .reasoning-card::before, .view-card::before, .control-card::before, .classification-card::before { background-color: #e6ecf2; background-image: url("data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20viewBox%3D%220%200%2024%2024%22%20fill%3D%22none%22%20stroke%3D%22%232f4a66%22%20stroke-width%3D%222%22%20stroke-linecap%3D%22round%22%3E%3Cpath%20d%3D%22M12%204v16M4%2012h16%22/%3E%3C/svg%3E"); }
+
   </style>
 </head>
 
