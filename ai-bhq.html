@@ -1,0 +1,543 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet" />
+
+  <title>AI Business Headquarters — Younes Rizk</title>
+
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      font-family: "Inter", Arial, Helvetica, sans-serif;
+      background: #f7f7f5;
+      color: #1f2933;
+      line-height: 1.65;
+    }
+
+    .container {
+      width: min(1080px, 92%);
+      margin: 0 auto;
+    }
+
+    header {
+      padding: 18px 0;
+      border-bottom: 1px solid #e5e7eb;
+      background: rgba(247, 247, 245, 0.96);
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      backdrop-filter: blur(8px);
+    }
+
+    nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 20px;
+    }
+
+    .brand {
+      text-decoration: none;
+      color: #111827;
+      font-weight: 700;
+      font-size: 20px;
+    }
+
+    .nav-link {
+      text-decoration: none;
+      color: #5f6873;
+      font-size: 14px;
+    }
+
+    .nav-link:hover {
+      color: #111827;
+    }
+
+    .hero {
+      padding: 58px 0 52px;
+    }
+
+    .hero-inner {
+      max-width: 860px;
+    }
+
+    h1 {
+      font-size: clamp(40px, 5vw, 56px);
+      line-height: 1.18;
+      letter-spacing: -0.025em;
+      margin-bottom: 18px;
+      font-weight: 700;
+    }
+
+    .hero-statement {
+      font-size: 20px;
+      line-height: 1.55;
+      color: #2f4735;
+      font-weight: 600;
+      max-width: 820px;
+      margin-bottom: 14px;
+    }
+
+    .hero-lead {
+      font-size: 16px;
+      color: #5f6873;
+      line-height: 1.7;
+      max-width: 800px;
+    }
+
+    section {
+      padding: 54px 0;
+    }
+
+    .section-border {
+      border-top: 1px solid #e5e7eb;
+    }
+
+    .content-block {
+      max-width: 810px;
+    }
+
+    h2 {
+      font-size: clamp(28px, 3.4vw, 36px);
+      line-height: 1.3;
+      letter-spacing: -0.015em;
+      margin-bottom: 14px;
+      font-weight: 700;
+    }
+
+    .section-copy {
+      color: #5f6873;
+      font-size: 16px;
+      line-height: 1.72;
+      max-width: 790px;
+    }
+
+    .section-copy + .section-copy {
+      margin-top: 9px;
+    }
+
+    .problem-grid {
+      margin-top: 28px;
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 14px;
+    }
+
+    .problem-card {
+      background: #ffffff;
+      border: 1px solid #e2e5e3;
+      border-radius: 16px;
+      padding: 20px;
+    }
+
+    .problem-card strong {
+      display: block;
+      font-size: 16px;
+      color: #2f4735;
+      margin-bottom: 7px;
+    }
+
+    .problem-card p {
+      color: #66706a;
+      font-size: 14px;
+      line-height: 1.55;
+    }
+
+    .visual {
+      margin-top: 28px;
+      width: 100%;
+      overflow: hidden;
+      border-radius: 18px;
+      background: #ffffff;
+      border: 1px solid #e5e7eb;
+    }
+
+    .visual img {
+      display: block;
+      width: 100%;
+      height: auto;
+    }
+
+    .solution-grid {
+      margin-top: 28px;
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 14px;
+    }
+
+    .solution-card {
+      background: #ffffff;
+      border: 1px solid #e2e5e3;
+      border-radius: 17px;
+      padding: 20px;
+    }
+
+    .solution-card strong {
+      display: block;
+      color: #2f4735;
+      font-size: 16px;
+      margin-bottom: 7px;
+    }
+
+    .solution-card p {
+      color: #66706a;
+      font-size: 14px;
+      line-height: 1.55;
+    }
+
+    .results-grid {
+      margin-top: 28px;
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 14px;
+    }
+
+    .result-card {
+      background: #ffffff;
+      border: 1px solid #e2e5e3;
+      border-radius: 16px;
+      padding: 20px;
+    }
+
+    .result-card strong {
+      display: block;
+      color: #2f4735;
+      font-size: 16px;
+      margin-bottom: 7px;
+    }
+
+    .result-card p {
+      color: #66706a;
+      font-size: 14px;
+      line-height: 1.55;
+    }
+
+    .tech-box {
+      margin-top: 26px;
+      max-width: 850px;
+      background: #eef3ef;
+      border-radius: 18px;
+      padding: 24px;
+    }
+
+    .tech-box strong {
+      display: block;
+      font-size: 16px;
+      color: #2f4735;
+      margin-bottom: 8px;
+    }
+
+    .tech-box p {
+      color: #56645a;
+      font-size: 16px;
+      line-height: 1.7;
+    }
+
+    .tech-box p + p {
+      margin-top: 10px;
+    }
+
+    .security-box {
+      margin-top: 26px;
+      max-width: 850px;
+      background: #ffffff;
+      border: 1px solid #dfe5e1;
+      border-left: 4px solid #5f8267;
+      border-radius: 16px;
+      padding: 22px;
+    }
+
+    .security-box strong {
+      display: block;
+      color: #2f4735;
+      font-size: 16px;
+      margin-bottom: 8px;
+    }
+
+    .security-box p {
+      color: #5f6873;
+      font-size: 16px;
+      line-height: 1.7;
+    }
+
+    .privacy-note {
+      margin-top: 22px;
+      max-width: 820px;
+      color: #7b848c;
+      font-size: 14px;
+      line-height: 1.65;
+    }
+
+    footer {
+      border-top: 1px solid #e5e7eb;
+      padding: 30px 0 42px;
+      color: #6b7280;
+      font-size: 14px;
+    }
+
+    @media (max-width: 900px) {
+      .problem-grid,
+      .solution-grid,
+      .results-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+    }
+
+    @media (max-width: 620px) {
+      .hero {
+        padding: 42px 0 44px;
+      }
+
+      section {
+        padding: 46px 0;
+      }
+
+      .problem-grid,
+      .solution-grid,
+      .results-grid {
+        grid-template-columns: 1fr;
+      }
+    }
+  
+    .build-grid {
+      grid-template-columns: repeat(3, 1fr);
+    }
+
+    @media (max-width: 900px) {
+      .build-grid {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <header>
+    <div class="container">
+      <nav>
+        <a class="brand" href="index.html">
+          Younes Rizk
+        </a>
+        <a class="nav-link" href="index.html#ia">
+          ← Retour au portfolio
+        </a>
+      </nav>
+    </div>
+  </header>
+
+
+  <main>
+
+    <!-- HERO -->
+    <section class="hero">
+      <div class="container">
+        <div class="hero-inner">
+
+          <div style="text-transform: uppercase; letter-spacing: 0.13em; font-size: 12px; font-weight: 700; color: #5f8267; margin-bottom: 16px;">Projet personnel · En cours de développement</div>
+
+          <h1>AI Business Headquarters</h1>
+
+          <p class="hero-statement">
+            Un agent qui récupère les factures et les rattache à chaque transaction bancaire.
+          </p>
+
+          <p class="hero-lead">Un problème que j’ai vécu, une solution que j’ai imaginée, construite avec l’IA. Démo sur données fictives, sans client.</p>
+
+        </div>
+      </div>
+    </section>
+
+
+    <!-- 1. DIAGNOSTIC -->
+    <section class="section-border">
+      <div class="container">
+
+        <div class="content-block">
+          <div style="text-transform: uppercase; letter-spacing: 0.1em; font-size: 12px; font-weight: 700; color: #5f8267; margin-bottom: 10px;">01 · Mon diagnostic</div>
+          <h2>Le rapprochement, chaque mois.</h2>
+          <p class="section-copy">En startup, j’ai vu le même problème revenir à chaque clôture et dans chaque dossier de financement public.</p>
+        </div>
+
+        <div class="problem-grid">
+          <div class="problem-card">
+            <strong>Factures dispersées</strong>
+            <p>Dans les e-mails, ou dans l’espace client de chaque fournisseur.</p>
+          </div>
+          <div class="problem-card">
+            <strong>Rattachement à la main</strong>
+            <p>Chaque transaction reliée à sa facture, une par une.</p>
+          </div>
+          <div class="problem-card">
+            <strong>Stress de fin de mois</strong>
+            <p>Les relances du cabinet comptable, juste avant la clôture et le bilan.</p>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+
+    <!-- 2. SOLUTION -->
+    <section class="section-border">
+      <div class="container">
+
+        <div class="content-block">
+          <div style="text-transform: uppercase; letter-spacing: 0.1em; font-size: 12px; font-weight: 700; color: #5f8267; margin-bottom: 10px;">02 · Ma solution</div>
+          <h2>Un agent qui fait le travail répétitif.</h2>
+          <p class="section-copy">L’agent part des transactions bancaires. Pour chacune, il va chercher la facture et la rattache.</p>
+        </div>
+
+        <div class="visual" style="max-width: 900px;">
+          <img src="schemas/ai-bhq.svg" alt="L’agent Finance part des transactions de l’application bancaire, récupère les factures dans les e-mails et sur les sites fournisseurs, les rattache, et envoie une notification pour les transactions hors de sa portée." />
+        </div>
+
+        <div class="results-grid">
+          <div class="result-card">
+            <strong>Il récupère</strong>
+            <p>Dans les e-mails, pour les abonnements, ou sur le site du fournisseur, dans l’espace client.</p>
+          </div>
+          <div class="result-card">
+            <strong>Il rattache</strong>
+            <p>Il relie chaque transaction à sa facture, même quand un paiement en couvre plusieurs.</p>
+          </div>
+          <div class="result-card">
+            <strong>Il prévient</strong>
+            <p>Une transaction hors de sa portée ? Une notification pour la rattacher.</p>
+          </div>
+        </div>
+
+        <p class="section-copy" style="margin-top: 22px;"><strong>Résultat :</strong> en fin de mois, chaque transaction a sa facture. Pas de stress avant la clôture, pas de relances du cabinet comptable.</p>
+
+      </div>
+    </section>
+
+
+    <!-- 3. CONSTRUCTION -->
+    <section class="section-border">
+      <div class="container">
+
+        <div class="content-block">
+          <div style="text-transform: uppercase; letter-spacing: 0.1em; font-size: 12px; font-weight: 700; color: #5f8267; margin-bottom: 10px;">03 · Comment je l’ai construite</div>
+          <h2>Les outils au service de l’idée.</h2>
+          <p class="section-copy">Je ne suis pas développeur. Je choisis l’outil qui répond au besoin, et je pilote l’IA qui code.</p>
+        </div>
+
+        <div class="results-grid build-grid">
+          <div class="result-card">
+            <span style="display: inline-flex; align-items: center; gap: 8px; font-size: 12px; font-weight: 700; color: #3f5a46; background: #e8efe9; border-radius: 999px; padding: 5px 10px; margin-bottom: 12px;"><img src="logos/claude.svg" alt="" aria-hidden="true" style="width: 16px; height: 16px; opacity: 0.8;" />Claude Code</span>
+            <strong>Écrit le code</strong>
+            <p>Je décris le besoin et les règles. L’IA écrit le code, je relis et je teste.</p>
+          </div>
+          <div class="result-card">
+            <span style="display: inline-flex; align-items: center; gap: 8px; font-size: 12px; font-weight: 700; color: #3f5a46; background: #e8efe9; border-radius: 999px; padding: 5px 10px; margin-bottom: 12px;"><img src="logos/python.svg" alt="" aria-hidden="true" style="width: 16px; height: 16px; opacity: 0.8;" />Python</span> <span style="display: inline-flex; align-items: center; gap: 8px; font-size: 12px; font-weight: 700; color: #3f5a46; background: #e8efe9; border-radius: 999px; padding: 5px 10px; margin-bottom: 12px;"><img src="logos/fastapi.svg" alt="" aria-hidden="true" style="width: 16px; height: 16px; opacity: 0.8;" />FastAPI</span>
+            <strong>Le moteur</strong>
+            <p>Les règles de rapprochement entre paiements et factures.</p>
+          </div>
+          <div class="result-card">
+            <span style="display: inline-flex; align-items: center; gap: 8px; font-size: 12px; font-weight: 700; color: #3f5a46; background: #e8efe9; border-radius: 999px; padding: 5px 10px; margin-bottom: 12px;"><img src="logos/sqlite.svg" alt="" aria-hidden="true" style="width: 16px; height: 16px; opacity: 0.8;" />SQLite (SQL)</span>
+            <strong>La mémoire</strong>
+            <p>Paiements, factures et décisions, stockés et retrouvables.</p>
+          </div>
+          <div class="result-card">
+            <span style="display: inline-flex; align-items: center; gap: 8px; font-size: 12px; font-weight: 700; color: #3f5a46; background: #e8efe9; border-radius: 999px; padding: 5px 10px; margin-bottom: 12px;"><img src="logos/n8n.svg" alt="" aria-hidden="true" style="width: 16px; height: 16px; opacity: 0.8;" />n8n</span>
+            <strong>Le transport</strong>
+            <p>Les factures reçues par e-mail arrivent automatiquement jusqu’à l’agent.</p>
+          </div>
+          <div class="result-card">
+            <span style="display: inline-flex; align-items: center; gap: 8px; font-size: 12px; font-weight: 700; color: #3f5a46; background: #e8efe9; border-radius: 999px; padding: 5px 10px; margin-bottom: 12px;">HTML, CSS, JavaScript</span>
+            <strong>L’écran</strong>
+            <p>Une interface simple qui montre ce qui a été fait et ce qui manque.</p>
+          </div>
+          <div class="result-card">
+            <span style="display: inline-flex; align-items: center; gap: 8px; font-size: 12px; font-weight: 700; color: #3f5a46; background: #e8efe9; border-radius: 999px; padding: 5px 10px; margin-bottom: 12px;"><img src="logos/git.svg" alt="" aria-hidden="true" style="width: 16px; height: 16px; opacity: 0.8;" />Git</span>
+            <strong>La sécurité</strong>
+            <p>Chaque étape est sauvegardée. On peut toujours revenir en arrière.</p>
+          </div>
+        </div>
+
+        <p class="section-copy" style="margin-top: 22px;"><strong>Ma règle :</strong> audit, plan, test, puis mon accord avant chaque étape. Les règles vérifient, l’humain valide l’exception.</p>
+
+      </div>
+    </section>
+
+
+    <!-- 4. OÙ J'EN SUIS -->
+    <section class="section-border">
+      <div class="container">
+
+        <div class="content-block">
+          <div style="text-transform: uppercase; letter-spacing: 0.1em; font-size: 12px; font-weight: 700; color: #5f8267; margin-bottom: 10px;">04 · Où j’en suis</div>
+          <h2>En cours de développement.</h2>
+          <p class="section-copy">Sur la démo, les actions demandées à l’utilisateur passent de 33 à 5.</p>
+        </div>
+
+        <div class="results-grid">
+          <div class="result-card">
+            <strong>En cours · Version 0.1</strong>
+            <p>Les factures du mois : récupération, rattachement et notifications, sur une démo.</p>
+          </div>
+          <div class="result-card">
+            <strong>Ensuite · Version 0.2</strong>
+            <p>Vraies connexions à l’application bancaire, et une IA locale (Ollama) pour lire les factures scannées.</p>
+          </div>
+          <div class="result-card">
+            <strong>Puis · Version 0.3</strong>
+            <p>Poser des questions à l’agent : « pourquoi me manque-t-il 3 factures ? »</p>
+          </div>
+        </div>
+
+        <p class="privacy-note">
+          Tout tourne en local, sur une entreprise fictive. Aucune donnée réelle, aucune information d’UDC.
+        </p>
+
+      </div>
+    </section>
+
+
+    <!-- 5. VISION -->
+    <section class="section-border">
+      <div class="container">
+
+        <div class="content-block">
+          <div style="text-transform: uppercase; letter-spacing: 0.1em; font-size: 12px; font-weight: 700; color: #5f8267; margin-bottom: 10px;">05 · La vision</div>
+          <h2>Une équipe d’agents.</h2>
+          <p class="section-copy">À terme : finance, RH, juridique, stratégie, opérations. Connectés aux outils de l’entreprise (banque, paiements, e-mails), sans les remplacer.</p>
+        </div>
+
+        <div class="visual" style="max-width: 900px;">
+          <img src="ai-bhq-vision.webp" alt="Maquette de la vision : un bureau en vue isométrique où cinq agents travaillent chacun dans leur espace." />
+        </div>
+
+        <p class="privacy-note">
+          Maquette de la vision. Pas encore développée : je construis d’abord le moteur.
+        </p>
+
+      </div>
+    </section>
+
+  </main>
+
+
+  <footer>
+    <div class="container">
+      Younes Rizk · Portfolio professionnel
+    </div>
+  </footer>
+
+</body>
+</html>
