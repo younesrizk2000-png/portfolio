@@ -312,6 +312,16 @@
         grid-template-columns: 1fr;
       }
     }
+  
+    .build-grid {
+      grid-template-columns: repeat(3, 1fr);
+    }
+
+    @media (max-width: 900px) {
+      .build-grid {
+        grid-template-columns: 1fr;
+      }
+    }
   </style>
 </head>
 
@@ -343,48 +353,38 @@
           <h1>AI Business Headquarters</h1>
 
           <p class="hero-statement">
-            Un agent qui va chercher vos factures tout seul, dans la banque et dans les e-mails.
+            Un agent qui va chercher les factures tout seul, dans la banque et dans les e-mails.
           </p>
 
-          <p class="hero-lead">Un SaaS pour startups et PME, que je conçois et pilote. Le code est écrit par une IA de développement, sous ma direction. Démo sur données fictives, sans client.</p>
+          <p class="hero-lead">Un problème que j’ai vécu, une solution que j’ai imaginée, construite avec l’IA. Démo sur données fictives, sans client.</p>
 
         </div>
       </div>
     </section>
 
 
-    <!-- EN UN COUP D'ŒIL -->
-    <section class="section-border">
-      <div class="container">
-        <h2 style="margin-bottom: 4px;">Le projet en un coup d’œil.</h2>
-        <div class="visual" style="max-width: 900px;">
-          <img src="schemas/ai-bhq.svg" alt="L’agent Finance se connecte à l’application bancaire et aux boîtes mail, retrouve la facture de chaque paiement, la range, et prévient s’il en manque une." />
-        </div>
-      </div>
-    </section>
-
-
-    <!-- PROBLÈME -->
+    <!-- 1. DIAGNOSTIC -->
     <section class="section-border">
       <div class="container">
 
         <div class="content-block">
-          <h2>Le problème.</h2>
-          <p class="section-copy">Un problème vécu en startup : le rapprochement comptable chaque mois, et les lourds dossiers administratifs d’un financement public.</p>
+          <div style="text-transform: uppercase; letter-spacing: 0.1em; font-size: 12px; font-weight: 700; color: #5f8267; margin-bottom: 10px;">01 · Mon diagnostic</div>
+          <h2>Le rapprochement, chaque mois.</h2>
+          <p class="section-copy">En startup, j’ai vu le même problème revenir à chaque clôture et dans chaque dossier de financement public.</p>
         </div>
 
         <div class="problem-grid">
           <div class="problem-card">
-            <strong>Factures manquantes</strong>
-            <p>Il manque toujours des justificatifs à la clôture.</p>
+            <strong>Factures introuvables</strong>
+            <p>Elles dorment dans les e-mails, ou personne ne les a téléchargées.</p>
           </div>
           <div class="problem-card">
             <strong>Rapprochement à la main</strong>
             <p>Chaque paiement est relié à sa facture, une par une.</p>
           </div>
           <div class="problem-card">
-            <strong>Relances ignorées</strong>
-            <p>Les rappels arrivent trop tard, ou personne ne les lit.</p>
+            <strong>Temps perdu</strong>
+            <p>Des heures de relances, au lieu de piloter l’activité.</p>
           </div>
         </div>
 
@@ -392,13 +392,18 @@
     </section>
 
 
-    <!-- PRINCIPE -->
+    <!-- 2. SOLUTION -->
     <section class="section-border">
       <div class="container">
 
         <div class="content-block">
-          <h2>Le principe.</h2>
-          <p class="section-copy">On connecte sa banque et ses boîtes mail une fois. Ensuite, l’agent travaille seul.</p>
+          <div style="text-transform: uppercase; letter-spacing: 0.1em; font-size: 12px; font-weight: 700; color: #5f8267; margin-bottom: 10px;">02 · Ma solution</div>
+          <h2>Un agent qui fait le travail répétitif.</h2>
+          <p class="section-copy">On connecte sa banque et ses boîtes mail une fois. Ensuite, l’agent cherche, rapproche et prévient.</p>
+        </div>
+
+        <div class="visual" style="max-width: 900px;">
+          <img src="schemas/ai-bhq.svg" alt="L’agent Finance se connecte à l’application bancaire et aux boîtes mail, retrouve la facture de chaque paiement, la range, et prévient s’il en manque une." />
         </div>
 
         <div class="results-grid">
@@ -412,7 +417,7 @@
           </div>
           <div class="result-card">
             <strong>Il prévient</strong>
-            <p>S’il manque une facture, il vous relance. Rien de sensible ne part sans votre accord.</p>
+            <p>S’il manque une facture, il relance. Rien de sensible ne part sans accord humain.</p>
           </div>
         </div>
 
@@ -420,79 +425,62 @@
     </section>
 
 
-    <!-- MÉTHODE -->
+    <!-- 3. CONSTRUCTION -->
     <section class="section-border">
       <div class="container">
 
         <div class="content-block">
-          <h2>Ma méthode avec l’IA.</h2>
-          <p class="section-copy">L’IA écrit le code. Je définis le besoin, je contrôle et je décide.</p>
+          <div style="text-transform: uppercase; letter-spacing: 0.1em; font-size: 12px; font-weight: 700; color: #5f8267; margin-bottom: 10px;">03 · Comment je l’ai construite</div>
+          <h2>Les outils au service de l’idée.</h2>
+          <p class="section-copy">Je ne suis pas développeur. Je choisis l’outil qui répond au besoin, et je pilote l’IA qui code.</p>
         </div>
 
-        <div class="results-grid">
+        <div class="results-grid build-grid">
           <div class="result-card">
-            <strong>1 · Auditer</strong>
-            <p>Comprendre l’existant avant de toucher à quoi que ce soit.</p>
+            <span style="display: inline-flex; align-items: center; gap: 8px; font-size: 12px; font-weight: 700; color: #3f5a46; background: #e8efe9; border-radius: 999px; padding: 5px 10px; margin-bottom: 12px;"><img src="logos/claude.svg" alt="" aria-hidden="true" style="width: 16px; height: 16px; opacity: 0.8;" />Claude Code</span>
+            <strong>Écrit le code</strong>
+            <p>Je décris le besoin et les règles. L’IA écrit le code, je relis et je teste.</p>
           </div>
           <div class="result-card">
-            <strong>2 · Planifier</strong>
-            <p>Un plan validé, une modification à la fois.</p>
+            <span style="display: inline-flex; align-items: center; gap: 8px; font-size: 12px; font-weight: 700; color: #3f5a46; background: #e8efe9; border-radius: 999px; padding: 5px 10px; margin-bottom: 12px;"><img src="logos/python.svg" alt="" aria-hidden="true" style="width: 16px; height: 16px; opacity: 0.8;" />Python</span> <span style="display: inline-flex; align-items: center; gap: 8px; font-size: 12px; font-weight: 700; color: #3f5a46; background: #e8efe9; border-radius: 999px; padding: 5px 10px; margin-bottom: 12px;"><img src="logos/fastapi.svg" alt="" aria-hidden="true" style="width: 16px; height: 16px; opacity: 0.8;" />FastAPI</span>
+            <strong>Le moteur</strong>
+            <p>Les règles de rapprochement entre paiements et factures.</p>
           </div>
           <div class="result-card">
-            <strong>3 · Tester</strong>
-            <p>Des tests automatiques sur données fictives, puis un essai réel.</p>
+            <span style="display: inline-flex; align-items: center; gap: 8px; font-size: 12px; font-weight: 700; color: #3f5a46; background: #e8efe9; border-radius: 999px; padding: 5px 10px; margin-bottom: 12px;"><img src="logos/sqlite.svg" alt="" aria-hidden="true" style="width: 16px; height: 16px; opacity: 0.8;" />SQLite (SQL)</span>
+            <strong>La mémoire</strong>
+            <p>Paiements, factures et décisions, stockés et retrouvables.</p>
           </div>
           <div class="result-card">
-            <strong>4 · Valider</strong>
-            <p>Un rapport, puis mon accord explicite avant d’avancer.</p>
+            <span style="display: inline-flex; align-items: center; gap: 8px; font-size: 12px; font-weight: 700; color: #3f5a46; background: #e8efe9; border-radius: 999px; padding: 5px 10px; margin-bottom: 12px;"><img src="logos/n8n.svg" alt="" aria-hidden="true" style="width: 16px; height: 16px; opacity: 0.8;" />n8n</span>
+            <strong>Le transport</strong>
+            <p>Les factures reçues par e-mail arrivent automatiquement jusqu’à l’agent.</p>
+          </div>
+          <div class="result-card">
+            <span style="display: inline-flex; align-items: center; gap: 8px; font-size: 12px; font-weight: 700; color: #3f5a46; background: #e8efe9; border-radius: 999px; padding: 5px 10px; margin-bottom: 12px;">HTML, CSS, JavaScript</span>
+            <strong>L’écran</strong>
+            <p>Une interface simple qui montre ce qui a été fait et ce qui manque.</p>
+          </div>
+          <div class="result-card">
+            <span style="display: inline-flex; align-items: center; gap: 8px; font-size: 12px; font-weight: 700; color: #3f5a46; background: #e8efe9; border-radius: 999px; padding: 5px 10px; margin-bottom: 12px;"><img src="logos/git.svg" alt="" aria-hidden="true" style="width: 16px; height: 16px; opacity: 0.8;" />Git</span>
+            <strong>La sécurité</strong>
+            <p>Chaque étape est sauvegardée. On peut toujours revenir en arrière.</p>
           </div>
         </div>
+
+        <p class="section-copy" style="margin-top: 22px;"><strong>Ma règle :</strong> audit, plan, test, puis mon accord avant chaque étape. Les règles vérifient, l’humain valide l’exception.</p>
 
       </div>
     </section>
 
 
-    <!-- OUTILS -->
+    <!-- 4. OÙ J'EN SUIS -->
     <section class="section-border">
       <div class="container">
 
         <div class="content-block">
-          <h2>Les outils.</h2>
-        </div>
-
-        <p class="section-copy" style="margin-top: 18px; font-weight: 700;">Pour construire</p>
-        <div style="display: flex; flex-wrap: wrap; gap: 10px; margin-top: 10px;">
-          <span style="display: inline-flex; align-items: center; gap: 8px; background: #ffffff; border: 1px solid #e5e7eb; border-radius: 999px; padding: 8px 14px; font-size: 14px;"><img src="logos/claude.svg" alt="" aria-hidden="true" style="width: 18px; height: 18px; opacity: 0.8;" />Claude Code</span>
-          <span style="display: inline-flex; align-items: center; gap: 8px; background: #ffffff; border: 1px solid #e5e7eb; border-radius: 999px; padding: 8px 14px; font-size: 14px;">Codex</span>
-          <span style="display: inline-flex; align-items: center; gap: 8px; background: #ffffff; border: 1px solid #e5e7eb; border-radius: 999px; padding: 8px 14px; font-size: 14px;"><img src="logos/git.svg" alt="" aria-hidden="true" style="width: 18px; height: 18px; opacity: 0.8;" />Git</span>
-        </div>
-
-        <p class="section-copy" style="margin-top: 22px; font-weight: 700;">Dans le produit</p>
-        <div style="display: flex; flex-wrap: wrap; gap: 10px; margin-top: 10px;">
-          <span style="display: inline-flex; align-items: center; gap: 8px; background: #ffffff; border: 1px solid #e5e7eb; border-radius: 999px; padding: 8px 14px; font-size: 14px;"><img src="logos/python.svg" alt="" aria-hidden="true" style="width: 18px; height: 18px; opacity: 0.8;" />Python</span>
-          <span style="display: inline-flex; align-items: center; gap: 8px; background: #ffffff; border: 1px solid #e5e7eb; border-radius: 999px; padding: 8px 14px; font-size: 14px;"><img src="logos/fastapi.svg" alt="" aria-hidden="true" style="width: 18px; height: 18px; opacity: 0.8;" />FastAPI</span>
-          <span style="display: inline-flex; align-items: center; gap: 8px; background: #ffffff; border: 1px solid #e5e7eb; border-radius: 999px; padding: 8px 14px; font-size: 14px;"><img src="logos/sqlite.svg" alt="" aria-hidden="true" style="width: 18px; height: 18px; opacity: 0.8;" />SQLite</span>
-          <span style="display: inline-flex; align-items: center; gap: 8px; background: #ffffff; border: 1px solid #e5e7eb; border-radius: 999px; padding: 8px 14px; font-size: 14px;"><img src="logos/n8n.svg" alt="" aria-hidden="true" style="width: 18px; height: 18px; opacity: 0.8;" />n8n</span>
-          <span style="display: inline-flex; align-items: center; gap: 8px; background: #ffffff; border: 1px solid #e5e7eb; border-radius: 999px; padding: 8px 14px; font-size: 14px;">HTML, CSS, JavaScript</span>
-        </div>
-
-        <p class="section-copy" style="margin-top: 22px; font-weight: 700;">Prévu ensuite</p>
-        <div style="display: flex; flex-wrap: wrap; gap: 10px; margin-top: 10px;">
-          <span style="display: inline-flex; align-items: center; gap: 8px; background: #ffffff; border: 1px solid #e5e7eb; border-radius: 999px; padding: 8px 14px; font-size: 14px;"><img src="logos/ollama.svg" alt="" aria-hidden="true" style="width: 18px; height: 18px; opacity: 0.8;" />Ollama (IA locale)</span>
-          <span style="display: inline-flex; align-items: center; gap: 8px; background: #ffffff; border: 1px solid #e5e7eb; border-radius: 999px; padding: 8px 14px; font-size: 14px;">PostgreSQL</span>
-          <span style="display: inline-flex; align-items: center; gap: 8px; background: #ffffff; border: 1px solid #e5e7eb; border-radius: 999px; padding: 8px 14px; font-size: 14px;">API bancaires et de paiement</span>
-        </div>
-
-      </div>
-    </section>
-
-
-    <!-- OÙ EN EST LE PROJET -->
-    <section class="section-border">
-      <div class="container">
-
-        <div class="content-block">
-          <h2>Où en est le projet.</h2>
+          <div style="text-transform: uppercase; letter-spacing: 0.1em; font-size: 12px; font-weight: 700; color: #5f8267; margin-bottom: 10px;">04 · Où j’en suis</div>
+          <h2>En cours de développement.</h2>
           <p class="section-copy">Sur la démo, les actions demandées à l’utilisateur passent de 33 à 5.</p>
         </div>
 
@@ -503,7 +491,7 @@
           </div>
           <div class="result-card">
             <strong>Ensuite · Version 0.2</strong>
-            <p>Vraies connexions à l’application bancaire, et une IA locale pour lire les factures scannées.</p>
+            <p>Vraies connexions à l’application bancaire, et une IA locale (Ollama) pour lire les factures scannées.</p>
           </div>
           <div class="result-card">
             <strong>Puis · Version 0.3</strong>
@@ -519,14 +507,14 @@
     </section>
 
 
-    <!-- VISION -->
+    <!-- 5. VISION -->
     <section class="section-border">
       <div class="container">
 
         <div class="content-block">
-          <h2>La vision.</h2>
-          <p class="section-copy">À terme, des mini-agents spécialisés : finance, RH, juridique, stratégie, opérations.</p>
-          <p class="section-copy">Ils se connectent aux outils de l’entreprise (banque, paiements, e-mails) sans les remplacer.</p>
+          <div style="text-transform: uppercase; letter-spacing: 0.1em; font-size: 12px; font-weight: 700; color: #5f8267; margin-bottom: 10px;">05 · La vision</div>
+          <h2>Une équipe d’agents.</h2>
+          <p class="section-copy">À terme : finance, RH, juridique, stratégie, opérations. Connectés aux outils de l’entreprise (banque, paiements, e-mails), sans les remplacer.</p>
         </div>
 
         <div class="visual" style="max-width: 900px;">
