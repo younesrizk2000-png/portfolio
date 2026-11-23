@@ -2484,7 +2484,9 @@
       );
 
       throw new Error(
-        "Assistant unavailable"
+        errorText.includes("rate_limited")
+          ? "rate_limited"
+          : "Assistant unavailable"
       );
 
     }
@@ -2529,6 +2531,10 @@
       try {
         result = await queryAssistant(trimmed, language);
       } catch (firstError) {
+        // No second try when the free quota is reached: it would fail again.
+        if (String(firstError && firstError.message).includes("rate_limited")) {
+          throw firstError;
+        }
         result = await queryAssistant(trimmed, language);
       }
       removeTyping();
