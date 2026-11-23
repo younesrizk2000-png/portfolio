@@ -2525,7 +2525,12 @@
     appendMessage("typing");
 
     try {
-      const result = await queryAssistant(trimmed, language);
+      let result;
+      try {
+        result = await queryAssistant(trimmed, language);
+      } catch (firstError) {
+        result = await queryAssistant(trimmed, language);
+      }
       removeTyping();
       appendMessage("assistant", result.answer);
     }
@@ -2535,8 +2540,8 @@
       appendMessage(
         "assistant",
         language === "fr"
-          ? "Je n’arrive pas à répondre pour le moment. Réessayez dans un instant, ou écrivez directement à Younes : younesrizk2000@gmail.com"
-          : "I can’t answer right now. Please try again in a moment, or email Younes directly: younesrizk2000@gmail.com"
+          ? "Je n’arrive pas à répondre pour le moment. Actualisez la page puis reposez votre question. Si le problème continue, écrivez directement à Younes : younesrizk2000@gmail.com"
+          : "I can’t answer right now. Please refresh the page and ask your question again. If the problem continues, email Younes directly: younesrizk2000@gmail.com"
       );
     }
 
