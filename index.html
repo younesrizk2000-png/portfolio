@@ -934,6 +934,67 @@
       }
     }
 
+  
+    .ai-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 16px;
+      margin-top: 28px;
+    }
+
+    .ai-card {
+      background: #ffffff;
+      border: 1px solid #e5e7eb;
+      border-radius: 18px;
+      padding: 22px;
+      display: flex;
+      flex-direction: column;
+    }
+
+    .ai-tool {
+      align-self: flex-start;
+      font-size: 12px;
+      font-weight: 700;
+      color: #3f5a46;
+      background: #e8efe9;
+      border-radius: 999px;
+      padding: 5px 10px;
+      margin-bottom: 14px;
+    }
+
+    .ai-card h3 {
+      font-size: 16px;
+      line-height: 1.35;
+      margin-bottom: 8px;
+    }
+
+    .ai-card p {
+      font-size: 14px;
+      line-height: 1.6;
+      color: #5f6873;
+    }
+
+    .ai-card a {
+      margin-top: auto;
+      padding-top: 14px;
+      font-size: 14px;
+      font-weight: 700;
+      color: #5f8267;
+      text-decoration: none;
+    }
+
+    @media (max-width: 900px) {
+      .ai-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+    }
+
+    @media (max-width: 650px) {
+      .ai-grid {
+        grid-template-columns: 1fr;
+      }
+    }
+
   </style>
 
 </head>
@@ -956,6 +1017,10 @@
       </a>
 
       <div class="nav-links">
+
+        <a href="#ia">
+          IA
+        </a>
 
         <a href="#assistant">
           Assistant
@@ -1001,7 +1066,7 @@
         <div>
 
           <div class="eyebrow">
-            Assurance collective · Opérations · Automatisation
+            Ex-Allianz · Assurance collective · Opérations · IA
           </div>
 
           <h1>
@@ -1009,13 +1074,14 @@
           </h1>
 
           <p class="lead">
-            J’analyse, je structure, puis j’automatise.
-            Ex-Allianz en assurance collective, responsable opérationnel en startup.
+            J’analyse, je structure, puis j’automatise avec l’IA,
+            en gardant la main sur chaque décision.
           </p>
 
           <div class="hero-chips">
-            <span>CDI · Paris et Île-de-France</span>
-            <span>Disponible immédiatement</span>
+            <span>Ex-Allianz</span>
+            <span>CDI · Paris</span>
+            <span>Disponible</span>
             <span>Autorisé à travailler en France</span>
           </div>
 
@@ -1062,6 +1128,57 @@
 
           </div>
 
+        </div>
+
+      </div>
+
+    </div>
+
+  </section>
+
+
+  <!-- IA -->
+
+
+  <section id="ia" class="section-border">
+
+    <div class="container">
+
+      <h2 class="section-title">
+        L’IA, mon levier au quotidien.
+      </h2>
+
+      <p class="section-intro">
+        L’IA prend les tâches répétitives. Je garde l’analyse et la décision.
+      </p>
+
+      <div class="ai-grid">
+
+        <div class="ai-card">
+          <div class="ai-tool">Google Sheets · Apps Script</div>
+          <h3>Devis automatisés</h3>
+          <p>Deux fois plus rapides à produire.</p>
+          <a href="pricing.html">Voir le projet →</a>
+        </div>
+
+        <div class="ai-card">
+          <div class="ai-tool">n8n</div>
+          <h3>Dossiers d’assurance triés automatiquement</h3>
+          <p>Les règles métier décident, je contrôle les exceptions.</p>
+          <a href="https://github.com/younesrizk2000-png/insurance-application-routing-n8n" target="_blank" rel="noopener noreferrer">Voir le workflow →</a>
+        </div>
+
+        <div class="ai-card">
+          <div class="ai-tool">Claude Code · agents IA</div>
+          <h3>Un outil de pré-comptabilité piloté par l’IA</h3>
+          <p>Je définis, l’IA code, je teste : 441 tests, 33 actions réduites à 5.</p>
+        </div>
+
+        <div class="ai-card">
+          <div class="ai-tool">IA générative</div>
+          <h3>Cet assistant</h3>
+          <p>Il répond aux recruteurs à partir d’informations que j’ai écrites et vérifiées.</p>
+          <a href="#assistant">L’essayer →</a>
         </div>
 
       </div>
@@ -1441,28 +1558,6 @@
 
       </div>
 
-      <div class="other-projects">
-
-        <h3>
-          Autres projets
-        </h3>
-
-        <div class="other-grid">
-
-          <div class="other-card">
-            <h3>Routage de dossiers d’assurance</h3>
-            <p>Workflow n8n sur données fictives : au-delà d’un montant assuré, le dossier part en vérification.</p>
-            <a href="https://github.com/younesrizk2000-png/insurance-application-routing-n8n" target="_blank" rel="noopener noreferrer">Voir le workflow →</a>
-          </div>
-
-          <div class="other-card">
-            <h3>AI Business Headquarters</h3>
-            <p>Projet personnel de pré-comptabilité, codé par une IA sous ma direction. 441 tests, actions de l’utilisateur réduites de 33 à 5.</p>
-          </div>
-
-        </div>
-
-      </div>
 
     </div>
 
