@@ -34,7 +34,10 @@ export default async function handler(req, res) {
 
   try {
 
-    const { message } = req.body || {};
+    const { message, language } = req.body || {};
+
+    const answerLanguage =
+      language === "en" ? "English" : language === "fr" ? "French" : "the same language as the question";
 
 
     if (
@@ -89,6 +92,8 @@ ${JSON.stringify(knowledgeBase)}
 RECRUITER QUESTION
 
 ${message}
+
+ANSWER LANGUAGE: ${answerLanguage}. Write the whole answer in this language.
 `;
 
 
