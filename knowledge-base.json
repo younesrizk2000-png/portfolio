@@ -117,7 +117,7 @@
       "Google Sheets and Apps Script",
       "HubSpot",
       "Silae (payroll)",
-      "n8n (workflows, conditional logic, webhooks, APIs)",
+      "n8n (workflows with conditional \"if… then…\" logic to sort, route and follow up items according to business rules, webhooks, APIs)",
       "Steering an AI development tool (Claude Code): specifications, plans, review of reports",
       "Notion, Slack, Qonto, Stripe"
     ],
