@@ -93,8 +93,8 @@
       "name": "AI Business Headquarters (AI BHQ)",
       "type": "Personal project since November 2026. Not a company, not a founder title.",
       "explained": "A pre-accounting SaaS project for French startups and SMEs. Younes designs and steers it; the code is written by AI development tools (Claude Code, Codex) under his direction. It is a local MVP in progress, on fictional data, with no clients.",
-      "problem": "A problem he lived in a startup: missing invoices, manual bank reconciliation and reminders nobody reads.",
-      "built": "Bank import (CSV and a simulated Qonto API), automatic matching of payments and invoices, invoice collection by email with sender checks, reminders, and sending the document to the bank after human validation.",
+      "problem": "A problem he lived in a startup: invoices scattered across e-mails and supplier websites, transactions matched to invoices by hand, and month-end stress with the accounting firm chasing missing documents before closing.",
+      "built": "A finance agent that starts from the bank transactions. For each one, it retrieves the invoice (subscription invoices sent by e-mail, or invoices in the supplier's customer area) and attaches it. For transactions out of its reach, it sends a notification asking the user to attach the invoice. Goal: every transaction has its invoice at month-end, before closing.",
       "verifiable_results": [
         "441 automated tests.",
         "User actions cut from 33 to 5 on the demo.",
