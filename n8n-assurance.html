@@ -1,0 +1,485 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet" />
+
+  <title>Dossiers d’assurance triés automatiquement — Younes Rizk</title>
+
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      font-family: "Inter", Arial, Helvetica, sans-serif;
+      background: #f7f7f5;
+      color: #1f2933;
+      line-height: 1.65;
+    }
+
+    .container {
+      width: min(1080px, 92%);
+      margin: 0 auto;
+    }
+
+    header {
+      padding: 18px 0;
+      border-bottom: 1px solid #e5e7eb;
+      background: rgba(247, 247, 245, 0.96);
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      backdrop-filter: blur(8px);
+    }
+
+    nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 20px;
+    }
+
+    .brand {
+      text-decoration: none;
+      color: #111827;
+      font-weight: 700;
+      font-size: 20px;
+    }
+
+    .nav-link {
+      text-decoration: none;
+      color: #5f6873;
+      font-size: 14px;
+    }
+
+    .nav-link:hover {
+      color: #111827;
+    }
+
+    .hero {
+      padding: 58px 0 52px;
+    }
+
+    .hero-inner {
+      max-width: 860px;
+    }
+
+    h1 {
+      font-size: clamp(40px, 5vw, 56px);
+      line-height: 1.18;
+      letter-spacing: -0.025em;
+      margin-bottom: 18px;
+      font-weight: 700;
+    }
+
+    .hero-statement {
+      font-size: 20px;
+      line-height: 1.55;
+      color: #2f4735;
+      font-weight: 600;
+      max-width: 820px;
+      margin-bottom: 14px;
+    }
+
+    .hero-lead {
+      font-size: 16px;
+      color: #5f6873;
+      line-height: 1.7;
+      max-width: 800px;
+    }
+
+    section {
+      padding: 54px 0;
+    }
+
+    .section-border {
+      border-top: 1px solid #e5e7eb;
+    }
+
+    .content-block {
+      max-width: 810px;
+    }
+
+    h2 {
+      font-size: clamp(28px, 3.4vw, 36px);
+      line-height: 1.3;
+      letter-spacing: -0.015em;
+      margin-bottom: 14px;
+      font-weight: 700;
+    }
+
+    .section-copy {
+      color: #5f6873;
+      font-size: 16px;
+      line-height: 1.72;
+      max-width: 790px;
+    }
+
+    .section-copy + .section-copy {
+      margin-top: 9px;
+    }
+
+    .problem-grid {
+      margin-top: 28px;
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 14px;
+    }
+
+    .problem-card {
+      background: #ffffff;
+      border: 1px solid #e2e5e3;
+      border-radius: 16px;
+      padding: 20px;
+    }
+
+    .problem-card strong {
+      display: block;
+      font-size: 16px;
+      color: #2f4735;
+      margin-bottom: 7px;
+    }
+
+    .problem-card p {
+      color: #66706a;
+      font-size: 14px;
+      line-height: 1.55;
+    }
+
+    .visual {
+      margin-top: 28px;
+      width: 100%;
+      overflow: hidden;
+      border-radius: 18px;
+      background: #ffffff;
+      border: 1px solid #e5e7eb;
+    }
+
+    .visual img {
+      display: block;
+      width: 100%;
+      height: auto;
+    }
+
+    .solution-grid {
+      margin-top: 28px;
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 14px;
+    }
+
+    .solution-card {
+      background: #ffffff;
+      border: 1px solid #e2e5e3;
+      border-radius: 17px;
+      padding: 20px;
+    }
+
+    .solution-card strong {
+      display: block;
+      color: #2f4735;
+      font-size: 16px;
+      margin-bottom: 7px;
+    }
+
+    .solution-card p {
+      color: #66706a;
+      font-size: 14px;
+      line-height: 1.55;
+    }
+
+    .results-grid {
+      margin-top: 28px;
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 14px;
+    }
+
+    .result-card {
+      background: #ffffff;
+      border: 1px solid #e2e5e3;
+      border-radius: 16px;
+      padding: 20px;
+    }
+
+    .result-card strong {
+      display: block;
+      color: #2f4735;
+      font-size: 16px;
+      margin-bottom: 7px;
+    }
+
+    .result-card p {
+      color: #66706a;
+      font-size: 14px;
+      line-height: 1.55;
+    }
+
+    .tech-box {
+      margin-top: 26px;
+      max-width: 850px;
+      background: #eef3ef;
+      border-radius: 18px;
+      padding: 24px;
+    }
+
+    .tech-box strong {
+      display: block;
+      font-size: 16px;
+      color: #2f4735;
+      margin-bottom: 8px;
+    }
+
+    .tech-box p {
+      color: #56645a;
+      font-size: 16px;
+      line-height: 1.7;
+    }
+
+    .tech-box p + p {
+      margin-top: 10px;
+    }
+
+    .security-box {
+      margin-top: 26px;
+      max-width: 850px;
+      background: #ffffff;
+      border: 1px solid #dfe5e1;
+      border-left: 4px solid #5f8267;
+      border-radius: 16px;
+      padding: 22px;
+    }
+
+    .security-box strong {
+      display: block;
+      color: #2f4735;
+      font-size: 16px;
+      margin-bottom: 8px;
+    }
+
+    .security-box p {
+      color: #5f6873;
+      font-size: 16px;
+      line-height: 1.7;
+    }
+
+    .privacy-note {
+      margin-top: 22px;
+      max-width: 820px;
+      color: #7b848c;
+      font-size: 14px;
+      line-height: 1.65;
+    }
+
+    footer {
+      border-top: 1px solid #e5e7eb;
+      padding: 30px 0 42px;
+      color: #6b7280;
+      font-size: 14px;
+    }
+
+    @media (max-width: 900px) {
+      .problem-grid,
+      .solution-grid,
+      .results-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+    }
+
+    @media (max-width: 620px) {
+      .hero {
+        padding: 42px 0 44px;
+      }
+
+      section {
+        padding: 46px 0;
+      }
+
+      .problem-grid,
+      .solution-grid,
+      .results-grid {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <header>
+    <div class="container">
+      <nav>
+        <a class="brand" href="index.html">
+          Younes Rizk
+        </a>
+        <a class="nav-link" href="index.html#ia">
+          ← Retour au portfolio
+        </a>
+      </nav>
+    </div>
+  </header>
+
+
+  <main>
+
+    <!-- HERO -->
+    <section class="hero">
+      <div class="container">
+        <div class="hero-inner">
+
+          <div style="text-transform: uppercase; letter-spacing: 0.13em; font-size: 12px; font-weight: 700; color: #5f8267; margin-bottom: 16px;">Projet personnel · Automatisation en assurance</div>
+
+          <h1>Dossiers d’assurance triés automatiquement</h1>
+
+          <p class="hero-statement">
+            La règle trie. L’humain se concentre sur les cas sensibles.
+          </p>
+
+          <p class="hero-lead">Un workflow n8n qui lit un dossier d’assurance fictif et lui donne un statut, selon une règle métier. Prototype testé en local.</p>
+
+        </div>
+      </div>
+    </section>
+
+
+    <!-- EN UN COUP D'ŒIL -->
+    <section class="section-border">
+      <div class="container">
+        <h2 style="margin-bottom: 4px;">Le projet en un coup d’œil.</h2>
+        <div class="visual" style="max-width: 900px;">
+          <img src="schemas/n8n-assurance.svg" alt="Un dossier fictif entre dans n8n. Si le montant assuré dépasse 40 000 €, le dossier part en vérification supplémentaire. Sinon, il suit le traitement standard." />
+        </div>
+      </div>
+    </section>
+
+
+    <!-- PROBLÈME -->
+    <section class="section-border">
+      <div class="container">
+
+        <div class="content-block">
+          <h2>Le problème.</h2>
+          <p class="section-copy">En assurance, orienter les dossiers est souvent répétitif.</p>
+          <p class="section-copy">Fait à la main, c’est long, et une erreur passe vite.</p>
+        </div>
+
+        <div class="problem-grid">
+          <div class="problem-card">
+            <strong>Répétitif</strong>
+            <p>La même vérification, dossier après dossier.</p>
+          </div>
+          <div class="problem-card">
+            <strong>Risque d’erreur</strong>
+            <p>Un dossier sensible peut passer sans contrôle.</p>
+          </div>
+          <div class="problem-card">
+            <strong>Temps perdu</strong>
+            <p>Moins de temps pour les cas qui demandent une analyse.</p>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+
+    <!-- LA RÈGLE -->
+    <section class="section-border">
+      <div class="container">
+
+        <div class="content-block">
+          <h2>La règle.</h2>
+          <p class="section-copy">Une règle de gestion simple, appliquée sans intervention manuelle.</p>
+        </div>
+
+        <div class="results-grid">
+          <div class="result-card">
+            <strong>Plus de 40 000 €</strong>
+            <p>Statut « Vérification supplémentaire requise ».</p>
+          </div>
+          <div class="result-card">
+            <strong>40 000 € ou moins</strong>
+            <p>Statut « Traitement standard ».</p>
+          </div>
+          <div class="result-card">
+            <strong>Rien ne se perd</strong>
+            <p>Les informations du dossier sont conservées, le statut est ajouté.</p>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+
+    <!-- OUTILS -->
+    <section class="section-border">
+      <div class="container">
+
+        <div class="content-block">
+          <h2>Les outils.</h2>
+        </div>
+
+        <div style="display: flex; flex-wrap: wrap; gap: 10px; margin-top: 20px;">
+          <span style="display: inline-flex; align-items: center; gap: 8px; background: #ffffff; border: 1px solid #e5e7eb; border-radius: 999px; padding: 8px 14px; font-size: 14px;"><img src="logos/n8n.svg" alt="" aria-hidden="true" style="width: 18px; height: 18px; opacity: 0.8;" />n8n</span>
+          <span style="display: inline-flex; align-items: center; background: #ffffff; border: 1px solid #e5e7eb; border-radius: 999px; padding: 8px 14px; font-size: 14px;">JSON</span>
+          <span style="display: inline-flex; align-items: center; background: #ffffff; border: 1px solid #e5e7eb; border-radius: 999px; padding: 8px 14px; font-size: 14px;">Logique conditionnelle</span>
+        </div>
+
+      </div>
+    </section>
+
+
+    <!-- RÉSULTAT ET SUITE -->
+    <section class="section-border">
+      <div class="container">
+
+        <div class="content-block">
+          <h2>Où en est le projet.</h2>
+          <p class="section-copy">Les deux cas ont été testés avec succès, sur des données fictives.</p>
+          <p class="section-copy">C’est un prototype par règles, sans IA pour l’instant.</p>
+        </div>
+
+        <div class="results-grid">
+          <div class="result-card">
+            <strong>Ensuite</strong>
+            <p>Traiter plusieurs dossiers à la fois.</p>
+          </div>
+          <div class="result-card">
+            <strong>Puis</strong>
+            <p>Ajouter une analyse assistée par IA.</p>
+          </div>
+          <div class="result-card">
+            <strong>Toujours</strong>
+            <p>Garder une validation humaine sur les exceptions.</p>
+          </div>
+        </div>
+
+        <p class="privacy-note">
+          Données 100 % fictives. Le détail du workflow reste privé.
+          <a href="https://github.com/younesrizk2000-png/insurance-application-routing-n8n" target="_blank" rel="noopener noreferrer" style="color: #5f8267; font-weight: 700;">Voir la présentation sur GitHub →</a>
+        </p>
+
+      </div>
+    </section>
+
+  </main>
+
+
+  <footer>
+    <div class="container">
+      Younes Rizk · Portfolio professionnel
+    </div>
+  </footer>
+
+</body>
+</html>
