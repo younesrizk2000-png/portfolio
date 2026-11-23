@@ -308,7 +308,7 @@
       border-radius: 999px;
       padding: 9px 12px;
       font-family: inherit;
-      font-size: 12px;
+      font-size: 14px;
       line-height: 1.35;
       cursor: pointer;
       transition: 0.18s ease;
@@ -320,7 +320,7 @@
     }
 
     .assistant-conversation {
-      min-height: 225px;
+      min-height: 140px;
       max-height: 500px;
       overflow-y: auto;
       background: #f8f9f7;
@@ -338,79 +338,102 @@
     }
 
     .message {
-      margin-bottom: 18px;
+      display: flex;
+      gap: 10px;
+      margin-bottom: 14px;
+      align-items: flex-end;
     }
 
     .message:last-child {
       margin-bottom: 0;
     }
 
-    .message-label {
-      display: block;
-      font-size: 12px;
-      font-weight: 700;
-      letter-spacing: 0.09em;
-      text-transform: uppercase;
-      margin-bottom: 6px;
-    }
-
-    .message-user .message-label {
-      color: #777f79;
-    }
-
-    .message-assistant .message-label {
-      color: #5f8267;
-    }
-
     .message-user {
-      padding-left: 18px;
-      border-left: 3px solid #d7ddd8;
+      justify-content: flex-end;
     }
 
-    .message-assistant {
-      padding-left: 18px;
-      border-left: 3px solid #5f8267;
-    }
-
-    .message-text {
-      color: #334039;
-      font-size: 14px;
-      line-height: 1.72;
-      white-space: pre-line;
-    }
-
-    .evidence-badge {
-      display: inline-block;
-      margin-top: 12px;
-      margin-right: 7px;
-      padding: 5px 9px;
-      border-radius: 999px;
-      background: #eef3ef;
-      color: #47624e;
+    .message-avatar {
+      flex: 0 0 30px;
+      width: 30px;
+      height: 30px;
+      border-radius: 50%;
+      background: #5f8267;
+      color: #ffffff;
       font-size: 12px;
       font-weight: 700;
-      letter-spacing: 0.04em;
-      text-transform: uppercase;
-    }
-
-    .assistant-sources {
       display: flex;
-      flex-wrap: wrap;
-      gap: 8px;
-      margin-top: 13px;
+      align-items: center;
+      justify-content: center;
     }
 
-    .assistant-source {
-      color: #2f4735;
-      text-decoration: none;
-      font-size: 12px;
-      font-weight: 700;
-      border-bottom: 1px solid #9daf9f;
-      padding-bottom: 1px;
+    .message-bubble {
+      max-width: 85%;
+      padding: 12px 16px;
+      border-radius: 18px;
+      font-size: 15px;
+      line-height: 1.6;
     }
 
-    .assistant-source:hover {
-      border-color: #2f4735;
+    .message-user .message-bubble {
+      background: #1f2933;
+      color: #ffffff;
+      border-bottom-right-radius: 6px;
+    }
+
+    .message-assistant .message-bubble {
+      background: #ffffff;
+      color: #1f2933;
+      border: 1px solid #e5e9e6;
+      border-bottom-left-radius: 6px;
+    }
+
+    .message-bubble p {
+      margin: 0 0 10px;
+    }
+
+    .message-bubble p:last-child,
+    .message-bubble ul:last-child {
+      margin-bottom: 0;
+    }
+
+    .message-bubble ul {
+      margin: 0 0 10px;
+      padding-left: 18px;
+    }
+
+    .message-bubble li {
+      margin-bottom: 4px;
+    }
+
+    .message-bubble strong {
+      font-weight: 600;
+    }
+
+    .message-bubble a {
+      color: #3f6b4b;
+      font-weight: 600;
+    }
+
+    .typing {
+      display: inline-flex;
+      gap: 4px;
+      padding: 4px 0;
+    }
+
+    .typing span {
+      width: 7px;
+      height: 7px;
+      border-radius: 50%;
+      background: #9aaa9e;
+      animation: typing 1.2s infinite ease-in-out;
+    }
+
+    .typing span:nth-child(2) { animation-delay: 0.15s; }
+    .typing span:nth-child(3) { animation-delay: 0.3s; }
+
+    @keyframes typing {
+      0%, 80%, 100% { opacity: 0.3; transform: translateY(0); }
+      40% { opacity: 1; transform: translateY(-3px); }
     }
 
     .assistant-form {
@@ -832,6 +855,10 @@
         min-height: 110px;
       }
 
+      .portrait-card {
+        max-width: 200px;
+      }
+
       .journey-item {
         grid-template-columns: 70px 1fr;
         gap: 18px;
@@ -993,6 +1020,46 @@
       .ai-grid {
         grid-template-columns: 1fr;
       }
+    }
+
+  
+    .toolbox {
+      margin-top: 28px;
+      padding-top: 24px;
+      border-top: 1px solid #e5e7eb;
+    }
+
+    .toolbox-label {
+      font-size: 12px;
+      font-weight: 700;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      color: #5f8267;
+      margin-bottom: 14px;
+    }
+
+    .tools {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+    }
+
+    .tool {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      background: #ffffff;
+      border: 1px solid #e5e7eb;
+      border-radius: 999px;
+      padding: 8px 14px;
+      font-size: 14px;
+      color: #1f2933;
+    }
+
+    .tool img {
+      width: 18px;
+      height: 18px;
+      opacity: 0.8;
     }
 
   </style>
@@ -1183,6 +1250,28 @@
 
       </div>
 
+
+
+      <div class="toolbox">
+        <div class="toolbox-label">Mes outils au quotidien</div>
+        <div class="tools">
+          <div class="tool"><img src="logos/n8n.svg" alt="" aria-hidden="true" /><span>n8n</span></div>
+          <div class="tool"><img src="logos/claude.svg" alt="" aria-hidden="true" /><span>Claude Code</span></div>
+          <div class="tool"><img src="logos/openrouter.svg" alt="" aria-hidden="true" /><span>OpenRouter</span></div>
+          <div class="tool"><img src="logos/googlesheets.svg" alt="" aria-hidden="true" /><span>Google Sheets</span></div>
+          <div class="tool"><img src="logos/googleappsscript.svg" alt="" aria-hidden="true" /><span>Apps Script</span></div>
+          <div class="tool"><img src="logos/hubspot.svg" alt="" aria-hidden="true" /><span>HubSpot</span></div>
+          <div class="tool"><img src="logos/notion.svg" alt="" aria-hidden="true" /><span>Notion</span></div>
+          <div class="tool"><img src="logos/stripe.svg" alt="" aria-hidden="true" /><span>Stripe</span></div>
+          <div class="tool"><img src="logos/github.svg" alt="" aria-hidden="true" /><span>GitHub</span></div>
+          <div class="tool"><img src="logos/vercel.svg" alt="" aria-hidden="true" /><span>Vercel</span></div>
+          <div class="tool tool-text"><span>Excel et VBA</span></div>
+          <div class="tool tool-text"><span>Slack</span></div>
+          <div class="tool tool-text"><span>Silae</span></div>
+          <div class="tool tool-text"><span>Qonto</span></div>
+        </div>
+      </div>
+
     </div>
 
   </section>
@@ -1283,14 +1372,13 @@
             aria-live="polite"
           >
 
-            <p class="assistant-welcome">
-
-              Par exemple :
-              « Est il à l’aise avec des sujets financiers ? »
-              ou
-              « How does Younes handle disagreement with a manager? »
-
-            </p>
+            <div class="message message-assistant assistant-welcome">
+              <div class="message-avatar" aria-hidden="true">YR</div>
+              <div class="message-bubble">
+                Bonjour ! Je réponds à vos questions sur le parcours de Younes :
+                expérience, méthode, adéquation avec votre poste.
+              </div>
+            </div>
 
           </div>
 
@@ -2094,115 +2182,101 @@
   }
 
 
-  function appendMessage(
-    role,
-    text,
-    badge,
-    sources = []
-  ) {
-
-    clearWelcome();
-
-    const message =
-      document.createElement("div");
-
-    message.className =
-      "message " +
-      (
-        role === "user"
-          ? "message-user"
-          : "message-assistant"
-      );
-
-    const label =
-      document.createElement("span");
-
-    label.className =
-      "message-label";
-
-    label.textContent =
-      role === "user"
-        ? "Question"
-        : "Assistant IA";
-
-    const body =
-      document.createElement("div");
-
-    body.className =
-      "message-text";
-
-    body.textContent =
-      text;
-
-    message.appendChild(label);
-    message.appendChild(body);
-
-    if (
-      role === "assistant" &&
-      badge
-    ) {
-
-      const badgeElement =
-        document.createElement("span");
-
-      badgeElement.className =
-        "evidence-badge";
-
-      badgeElement.textContent =
-        badge;
-
-      message.appendChild(
-        badgeElement
-      );
-
-    }
-
-    if (
-      role === "assistant" &&
-      sources.length
-    ) {
-
-      const sourceWrap =
-        document.createElement("div");
-
-      sourceWrap.className =
-        "assistant-sources";
-
-      sources.forEach(
-        (source) => {
-
-          const link =
-            document.createElement("a");
-
-          link.className =
-            "assistant-source";
-
-          link.href =
-            source.url;
-
-          link.textContent =
-            source.label + " →";
-
-          sourceWrap.appendChild(link);
-
-        }
-      );
-
-      message.appendChild(
-        sourceWrap
-      );
-
-    }
-
-    assistantConversation.appendChild(
-      message
-    );
-
-    assistantConversation.scrollTop =
-      assistantConversation.scrollHeight;
-
+  function escapeHtml(text) {
+    return text
+      .replace(/&/g, "&amp;")
+      .replace(/</g, "&lt;")
+      .replace(/>/g, "&gt;");
   }
 
+  function linkLabel(url) {
+    if (url.includes("linkedin.com")) return "Profil LinkedIn →";
+    if (url.includes("github.com")) return "Voir sur GitHub →";
+    if (url.includes("github.io")) return "Voir la page →";
+    if (url.includes("mailto:")) return url.replace("mailto:", "");
+    return "Ouvrir le lien →";
+  }
+
+  function inlineFormat(text) {
+    return escapeHtml(text)
+      .replace(/\*\*(.+?)\*\*/g, "<strong>$1</strong>")
+      .replace(/(https?:\/\/[^\s)]+[^\s).,;])/g, (url) => '<a href="' + url + '" target="_blank" rel="noopener noreferrer">' + linkLabel(url) + '</a>');
+  }
+
+  function renderAnswer(text) {
+    const lines = String(text || "").replace(/\r/g, "").split("\n");
+    let html = "";
+    let inList = false;
+    let paragraph = [];
+
+    const flush = () => {
+      if (paragraph.length) {
+        html += "<p>" + inlineFormat(paragraph.join(" ")) + "</p>";
+        paragraph = [];
+      }
+    };
+
+    lines.forEach((raw) => {
+      const line = raw.trim().replace(/^#+\s*/, "");
+      const item = line.match(/^[-*•]\s+(.*)/) || line.match(/^\d+[.)]\s+(.*)/);
+      if (item) {
+        flush();
+        if (!inList) { html += "<ul>"; inList = true; }
+        html += "<li>" + inlineFormat(item[1]) + "</li>";
+      } else if (!line) {
+        flush();
+        if (inList) { html += "</ul>"; inList = false; }
+      } else {
+        if (inList) { html += "</ul>"; inList = false; }
+        paragraph.push(line);
+      }
+    });
+
+    flush();
+    if (inList) { html += "</ul>"; }
+    return html;
+  }
+
+  function appendMessage(role, text) {
+    if (role !== "typing") {
+      clearWelcome();
+    }
+
+    const message = document.createElement("div");
+    message.className = "message " + (role === "user" ? "message-user" : "message-assistant");
+
+    if (role !== "user") {
+      const avatar = document.createElement("div");
+      avatar.className = "message-avatar";
+      avatar.setAttribute("aria-hidden", "true");
+      avatar.textContent = "YR";
+      message.appendChild(avatar);
+    }
+
+    const bubble = document.createElement("div");
+    bubble.className = "message-bubble";
+
+    if (role === "typing") {
+      bubble.innerHTML = '<span class="typing" aria-label="Réponse en cours"><span></span><span></span><span></span></span>';
+      message.classList.add("message-typing");
+    } else if (role === "user") {
+      bubble.textContent = text;
+    } else {
+      bubble.innerHTML = renderAnswer(text);
+    }
+
+    message.appendChild(bubble);
+    assistantConversation.appendChild(message);
+    assistantConversation.scrollTop = assistantConversation.scrollHeight;
+    return message;
+  }
+
+  function removeTyping() {
+    const typing = assistantConversation.querySelector(".message-typing");
+    if (typing) {
+      typing.remove();
+    }
+  }
 
   async function queryAssistant(
     question,
@@ -2282,55 +2356,25 @@
 
     assistantSubmit.textContent =
       language === "fr"
-        ? "Réflexion..."
-        : "Thinking...";
+        ? "…"
+        : "…";
+
+    appendMessage("typing");
 
     try {
-
-      const result =
-        await queryAssistant(
-          trimmed,
-          language
-        );
-
-      appendMessage(
-
-        "assistant",
-
-        result.answer,
-
-        result.badge,
-
-        Array.isArray(result.sources)
-          ? result.sources
-          : []
-
-      );
-
+      const result = await queryAssistant(trimmed, language);
+      removeTyping();
+      appendMessage("assistant", result.answer);
     }
 
     catch (error) {
-
+      removeTyping();
       appendMessage(
-
         "assistant",
-
         language === "fr"
-
-          ? "L’assistant a rencontré un problème temporaire. Actualisez la page puis réessayez votre question. Si le problème persiste, vous pouvez consulter directement mes projets ou me contacter."
-
-          : "The assistant encountered a temporary issue. Refresh the page and try your question again. If the problem persists, you can explore my projects directly or contact me.",
-
-        language === "fr"
-
-          ? "Assistant indisponible"
-
-          : "Assistant unavailable",
-
-        []
-
+          ? "Je n’arrive pas à répondre pour le moment. Réessayez dans un instant, ou écrivez directement à Younes : younesrizk2000@gmail.com"
+          : "I can’t answer right now. Please try again in a moment, or email Younes directly: younesrizk2000@gmail.com"
       );
-
     }
 
     finally {
