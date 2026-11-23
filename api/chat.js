@@ -118,6 +118,7 @@ ANSWER LANGUAGE: ${answerLanguage}. Write the whole answer in this language.
     const wait = (ms) => new Promise((resolve) => setTimeout(resolve, ms));
 
     let answer = "";
+    let rateLimited = false;
 
     for (let attempt = 1; attempt <= 3 && !answer; attempt++) {
       const remaining = timeBudgetMs - (Date.now() - startedAt);
@@ -142,12 +143,21 @@ ANSWER LANGUAGE: ${answerLanguage}. Write the whole answer in this language.
         );
 
         if (!openRouterResponse.ok) {
+          const errorText = (await openRouterResponse.text()).slice(0, 500);
           console.error(
             `OpenRouter error (attempt ${attempt}):`,
             openRouterResponse.status,
-            (await openRouterResponse.text()).slice(0, 500)
+            errorText
           );
-          await wait(openRouterResponse.status === 429 ? 2000 : 800);
+
+          // 429 = free quota reached (50 requests per day, 20 per minute).
+          // Retrying would only burn more of the quota: stop here.
+          if (openRouterResponse.status === 429) {
+            rateLimited = true;
+            break;
+          }
+
+          await wait(800);
           continue;
         }
 
@@ -169,6 +179,10 @@ ANSWER LANGUAGE: ${answerLanguage}. Write the whole answer in this language.
       } catch (attemptError) {
         console.error(`OpenRouter attempt ${attempt} failed:`, attemptError?.name || attemptError);
       }
+    }
+
+    if (!answer && rateLimited) {
+      return res.status(503).json({ error: "rate_limited" });
     }
 
     if (!answer) {
