@@ -14,8 +14,8 @@
       "en": "Group Insurance & Client Portfolio Management | Ex-Allianz | Startup Operations, Finance & Automation"
     },
     "summary": {
-      "fr": "Diplômé d'un Master (Bac+5) en Économie de l'Entreprise et des Marchés (Aix-Marseille Université). Deux ans et sept mois chez Allianz Lebanon en santé et épargne retraite collectives : gestion autonome d'un portefeuille de grands comptes (plus de 1 000 adhérents), clôtures mensuelles, participation aux bénéfices, cotations pour courtiers. Puis Responsable opérationnel en alternance chez UDC, startup deeptech : processus, pilotage, finance, paie, recrutement, juridique et automatisation.",
-      "en": "Master's degree (five-year university degree) in Business and Market Economics from Aix-Marseille University. Two years and seven months at Allianz Lebanon in group health and group retirement savings: autonomous management of a portfolio of key accounts (more than 1,000 members), monthly closing, profit sharing, quotes for brokers. Then Operations Manager (work-study) at UDC, a deeptech startup: processes, steering, finance, payroll, recruitment, legal and automation."
+      "fr": "Diplômé d'un Master 2 (Bac+5) en Économie de l'Entreprise et des Marchés (Aix-Marseille Université). Deux ans et sept mois chez Allianz Lebanon en santé et épargne retraite collectives : gestion autonome d'un portefeuille de grands comptes (plus de 1 000 adhérents), clôtures mensuelles, participation aux bénéfices, cotations pour courtiers. Puis Responsable opérationnel en alternance chez UDC, une startup deeptech française spécialisée dans la téléopération : processus, pilotage, finance, paie, recrutement, juridique et automatisation.",
+      "en": "Master 2 (Bac+5) in Business and Market Economics (Économie de l'Entreprise et des Marchés) from Aix-Marseille University. Two years and seven months at Allianz Lebanon in group health and group retirement savings: autonomous management of a portfolio of key accounts (more than 1,000 members), monthly closing, profit sharing, quotes for brokers. Then Operations Manager (work-study) at UDC, a French deeptech startup specializing in teleoperation: processes, steering, finance, payroll, recruitment, legal and automation."
     },
     "target_roles": {
       "track_1_priority": "Group insurance and employee benefits (group health, prévoyance, group retirement savings): account manager, chargé de clientèle, junior underwriter, B2B roles at insurers, brokers, mutuelles and insurtechs.",
@@ -63,7 +63,7 @@
     },
     "udc": {
       "employer": "UDC",
-      "company_explained": "French deeptech startup of 6 to 7 employees, specialised in teleoperation and immersive piloting (The Ring).",
+      "company_explained": "A French deeptech startup specializing in teleoperation (6 to 7 employees). Always describe it this way: 'une startup deeptech française spécialisée dans la téléopération' / 'a French deeptech startup specializing in teleoperation'. Never 'Marseille startup'.",
       "title": {
         "fr": "Responsable opérationnel (alternance)",
         "en": "Operations Manager (work-study)"
@@ -113,7 +113,7 @@
     }
   },
   "education": [
-    "Master's degree (Bac+5) in Économie de l'Entreprise et des Marchés (Business and Market Economics), Aix-Marseille University, 2024 to 2026, obtained in October 2026.",
+    "Master 2 (Bac+5) in Économie de l'Entreprise et des Marchés (Business and Market Economics), Aix-Marseille University, 2024 to 2026, obtained in October 2026.",
     "Bachelor's degree in Economics, Université Saint-Joseph, Beirut, 2018 to 2021.",
     "Exchange programme in Mandarin and Chinese culture, Shenyang Normal University, China, 2019."
   ],

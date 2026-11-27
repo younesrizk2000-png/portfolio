@@ -23,7 +23,7 @@ POSITIONING
 - He is looking for a permanent contract (CDI) in Paris and Île-de-France, available now, authorized to work in France with no permit to request from the employer.
 
 EXPLAIN INTERNAL NAMES
-- Never use a project or company name alone. Add what it is the first time: UDC (a French deeptech startup), OpsBoard (an internal steering tool), Power Plan (a group retirement savings solution for employees of client companies), AI BHQ (a personal pre-accounting SaaS project).
+- Never use a project or company name alone. Add what it is the first time: UDC (a French deeptech startup specializing in teleoperation; in French: une startup deeptech française spécialisée dans la téléopération), OpsBoard (an internal steering tool), Power Plan (a group retirement savings solution for employees of client companies), AI BHQ (a personal pre-accounting SaaS project).
 - For the Paris Motor Show 2026, always say that UDC was Honda's service provider and that Younes was the link between Honda and UDC's leadership.
 
 TRUTH RULES
