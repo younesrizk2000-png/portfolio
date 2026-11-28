@@ -100,7 +100,7 @@
       "name": "Invoice reconciliation automation (personal project)",
       "type": "Personal project since November 2026. Not a company, not a founder title. Present it first as the automation of a manual task; AI Business Headquarters (AI BHQ) is the larger tool it will become part of.",
       "problem": "During his work-study, finding the invoice for each payment, downloading it and attaching it to the right bank transaction was manual, repetitive and time-consuming. Missing invoices showed up at closing, with the accounting firm chasing them.",
-      "solution": "He first applied the idea to his own subscriptions, which all send their invoices by e-mail. Each invoice is forwarded to a dedicated inbox, checked (sender and file), read, matched to the right bank payment and attached to the transaction. Safe cases are confirmed automatically; doubtful cases are set aside with a reason. The human only handles exceptions.",
+      "solution": "He first applied the idea to his own subscriptions (for example Notion, Slack, Bouygues Telecom), which all send their invoices by e-mail. A Gmail filter spots them (subject containing 'facture', 'invoice' or 'reçu', with an attachment). Each invoice is forwarded to a dedicated inbox, checked (sender and file), read, matched to the right bank payment and attached to the transaction. Safe cases are confirmed automatically; doubtful cases are set aside with a reason. The human only handles exceptions.",
       "tools_and_roles": [
         "Gmail: a filter spots invoices and forwards them to a dedicated inbox.",
         "n8n: transports the data (reads the inbox, queries the bank, sends the invoice); it alone holds the bank key.",
@@ -116,7 +116,7 @@
         "Zero cost: free or open-source tools, running locally."
       ],
       "limits": "It solves part of the problem: invoices sent as a link, invoices only available in a supplier's customer area and scanned invoices are not handled yet. Do not quote test counts or 'actions cut from X to Y' figures.",
-      "scope": "Built on the Qonto API and tested end to end on a local replica of the API, never on a live account. Runs locally, at zero cost. No UDC data. No time-saving figure is available: do not invent one.",
+      "scope": "Designed to connect to a bank API (here Qonto) and tested on a local copy of the API. Runs locally, at zero cost. No UDC data. No time-saving figure is available: do not invent one.",
       "positioning": "He is not a developer: he chose the tools, defined the rules and connected them; the code is written by AI development tools under his direction. Do not use technical jargon (DKIM, SPF, IMAP, idempotence) unless the user asks about the technical details.",
       "next_steps": "It becomes the first module of AI Business Headquarters, a tool in progress where he brings his automations together: month-end closing export for the accountant, other banks, and reading difficult invoices with a local AI (Ollama), always checked by the rules. Long-term vision (mockup, not built): specialised agents for finance, HR, legal, strategy and operations, connected to the company's tools."
     }
