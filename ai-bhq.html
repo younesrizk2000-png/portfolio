@@ -8,13 +8,13 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet" />
 
-  <meta name="description" content="Un agent qui récupère les factures et les rattache à chaque transaction bancaire. Projet personnel en cours, construit avec l’IA." />
+  <meta name="description" content="Une tâche manuelle rencontrée en alternance, automatisée : chaque facture reçue par e-mail est vérifiée, rapprochée de son paiement et jointe à la transaction bancaire." />
   <link rel="icon" type="image/svg+xml" href="favicon.svg" />
   <link rel="apple-touch-icon" href="apple-touch-icon.png" />
   <meta property="og:type" content="website" />
   <meta property="og:site_name" content="Younes Rizk" />
-  <meta property="og:title" content="AI Business Headquarters — Younes Rizk" />
-  <meta property="og:description" content="Un agent qui récupère les factures et les rattache à chaque transaction bancaire. Projet personnel en cours, construit avec l’IA." />
+  <meta property="og:title" content="Automatisation du rapprochement des factures — Younes Rizk" />
+  <meta property="og:description" content="Une tâche manuelle rencontrée en alternance, automatisée : chaque facture reçue par e-mail est vérifiée, rapprochée de son paiement et jointe à la transaction bancaire." />
   <meta property="og:url" content="https://younesrizk2000-png.github.io/portfolio/ai-bhq.html" />
   <meta property="og:image" content="https://younesrizk2000-png.github.io/portfolio/og-image.jpg" />
   <meta property="og:image:width" content="1200" />
@@ -22,7 +22,7 @@
   <meta property="og:locale" content="fr_FR" />
   <meta name="twitter:card" content="summary_large_image" />
 
-  <title>AI Business Headquarters — Younes Rizk</title>
+  <title>Automatisation du rapprochement des factures — Younes Rizk</title>
 
   <style>
     * {
@@ -336,6 +336,71 @@
         grid-template-columns: 1fr;
       }
     }
+
+    .ba-table {
+      margin-top: 28px;
+      background: #ffffff;
+      border: 1px solid #e2e5e3;
+      border-radius: 16px;
+      overflow: hidden;
+    }
+
+    .ba-row {
+      display: grid;
+      grid-template-columns: 140px 1fr 1fr;
+      gap: 16px;
+      padding: 14px 20px;
+      font-size: 14px;
+      line-height: 1.55;
+      border-top: 1px solid #eef0ee;
+    }
+
+    .ba-row:first-child {
+      border-top: none;
+    }
+
+    .ba-head {
+      background: #eef3ef;
+      font-size: 12px;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      color: #5f8267;
+    }
+
+    .ba-row strong {
+      color: #2f4735;
+      font-size: 14px;
+    }
+
+    .ba-before {
+      color: #8a8f8c;
+    }
+
+    .ba-after {
+      color: #2f4735;
+      font-weight: 600;
+    }
+
+    @media (max-width: 620px) {
+      .ba-row {
+        grid-template-columns: 1fr;
+        gap: 4px;
+      }
+
+      .ba-head {
+        display: none;
+      }
+
+      .ba-before::before {
+        content: "Avant : ";
+        font-weight: 700;
+      }
+
+      .ba-after::before {
+        content: "Après : ";
+      }
+    }
   </style>
 </head>
 
@@ -362,43 +427,43 @@
       <div class="container">
         <div class="hero-inner">
 
-          <div style="text-transform: uppercase; letter-spacing: 0.13em; font-size: 12px; font-weight: 700; color: #5f8267; margin-bottom: 16px;">Projet personnel · En cours de développement</div>
+          <div style="text-transform: uppercase; letter-spacing: 0.13em; font-size: 12px; font-weight: 700; color: #5f8267; margin-bottom: 16px;">Projet personnel · Automatisation</div>
 
-          <h1>AI Business Headquarters</h1>
+          <h1>Automatiser le rapprochement des factures</h1>
 
           <p class="hero-statement">
-            Un agent qui récupère les factures et les rattache à chaque transaction bancaire.
+            Une tâche manuelle rencontrée en alternance, que j’ai automatisée.
           </p>
 
-          <p class="hero-lead">Un problème que j’ai vécu, une solution que j’ai imaginée, construite avec l’IA. Démo sur données fictives, sans client.</p>
+          <p class="hero-lead">Chaque facture reçue par e-mail est vérifiée, rapprochée de son paiement et jointe à la transaction bancaire. Testé avec mes propres factures.</p>
 
         </div>
       </div>
     </section>
 
 
-    <!-- 1. DIAGNOSTIC -->
+    <!-- 1. LE PROBLÈME -->
     <section class="section-border">
       <div class="container">
 
         <div class="content-block">
-          <div style="text-transform: uppercase; letter-spacing: 0.1em; font-size: 12px; font-weight: 700; color: #5f8267; margin-bottom: 10px;">01 · Mon diagnostic</div>
-          <h2>Le rapprochement, chaque mois.</h2>
-          <p class="section-copy">En startup, j’ai vu le même problème revenir à chaque clôture et dans chaque dossier de financement public.</p>
+          <div style="text-transform: uppercase; letter-spacing: 0.1em; font-size: 12px; font-weight: 700; color: #5f8267; margin-bottom: 10px;">01 · Le problème</div>
+          <h2>Une facture par paiement, à la main.</h2>
+          <p class="section-copy">En alternance, il fallait retrouver la facture de chaque paiement, la télécharger et la joindre à la bonne transaction bancaire.</p>
         </div>
 
         <div class="problem-grid">
           <div class="problem-card">
             <strong>Factures dispersées</strong>
-            <p>Dans les e-mails, ou dans l’espace client de chaque fournisseur.</p>
+            <p>Dans plusieurs boîtes mail et dans l’espace client de chaque fournisseur.</p>
           </div>
           <div class="problem-card">
             <strong>Rattachement à la main</strong>
-            <p>Chaque transaction reliée à sa facture, une par une.</p>
+            <p>Montant, date, fournisseur : chaque transaction comparée, une par une.</p>
           </div>
           <div class="problem-card">
-            <strong>Stress de fin de mois</strong>
-            <p>Les relances du cabinet comptable, juste avant la clôture et le bilan.</p>
+            <strong>Manques découverts tard</strong>
+            <p>Au moment de la clôture, avec les relances du cabinet comptable.</p>
           </div>
         </div>
 
@@ -406,139 +471,154 @@
     </section>
 
 
-    <!-- 2. SOLUTION -->
+    <!-- 2. LA SOLUTION -->
     <section class="section-border">
       <div class="container">
 
         <div class="content-block">
           <div style="text-transform: uppercase; letter-spacing: 0.1em; font-size: 12px; font-weight: 700; color: #5f8267; margin-bottom: 10px;">02 · Ma solution</div>
-          <h2>Un agent qui fait le travail répétitif.</h2>
-          <p class="section-copy">L’agent part des transactions bancaires. Pour chacune, il va chercher la facture et la rattache.</p>
+          <h2>Avant, à la main. Après, automatique.</h2>
+          <p class="section-copy">J’ai d’abord appliqué l’idée à mes propres abonnements (Notion, Slack, Bouygues Telecom…), qui m’envoient tous leurs factures par e-mail.</p>
         </div>
 
-        <div class="visual" style="max-width: 900px;">
-          <img src="schemas/ai-bhq.svg" alt="L’agent Finance part des transactions de l’application bancaire, récupère les factures dans les e-mails et sur les sites fournisseurs, les rattache, et envoie une notification pour les transactions hors de sa portée." />
+        <div class="ba-table">
+          <div class="ba-row ba-head"><span></span><span>Avant, à la main</span><span>Après, automatisé</span></div>
+          <div class="ba-row"><strong>Récupérer</strong><span class="ba-before">Chercher chaque facture dans ses e-mails.</span><span class="ba-after">Un filtre Gmail repère chaque facture et la transfère automatiquement dans une boîte dédiée.</span></div>
+          <div class="ba-row"><strong>Vérifier</strong><span class="ba-before">À l’œil, quand on y pense.</span><span class="ba-after">L’expéditeur et le fichier sont contrôlés automatiquement.</span></div>
+          <div class="ba-row"><strong>Rapprocher</strong><span class="ba-before">Comparer à la main montant, date et fournisseur.</span><span class="ba-after">Rapprochement automatique. Les cas sûrs sont confirmés seuls.</span></div>
+          <div class="ba-row"><strong>Joindre</strong><span class="ba-before">Téléverser chaque PDF sur la bonne transaction.</span><span class="ba-after">La facture est jointe à la transaction bancaire.</span></div>
+          <div class="ba-row"><strong>Suivre</strong><span class="ba-before">Les manques apparaissent à la clôture.</span><span class="ba-after">La liste des factures manquantes est à jour. Les cas douteux sont mis de côté, avec leur motif.</span></div>
         </div>
 
-        <div class="results-grid">
-          <div class="result-card">
-            <strong>Il récupère</strong>
-            <p>Dans les e-mails, pour les abonnements, ou sur le site du fournisseur, dans l’espace client.</p>
-          </div>
-          <div class="result-card">
-            <strong>Il rattache</strong>
-            <p>Il relie chaque transaction à sa facture, même quand un paiement en couvre plusieurs.</p>
-          </div>
-          <div class="result-card">
-            <strong>Il prévient</strong>
-            <p>Une transaction hors de sa portée ? Une notification pour la rattacher.</p>
-          </div>
-        </div>
-
-        <p class="section-copy" style="margin-top: 22px;"><strong>Résultat :</strong> en fin de mois, chaque transaction a sa facture. Pas de stress avant la clôture, pas de relances du cabinet comptable.</p>
+        <p class="section-copy" style="margin-top: 22px;"><strong>Résultat :</strong> l’humain n’intervient plus que sur les exceptions.</p>
 
       </div>
     </section>
 
 
-    <!-- 3. CONSTRUCTION -->
+    <!-- 3. OUTILS UTILISÉS -->
     <section class="section-border">
       <div class="container">
 
         <div class="content-block">
-          <div style="text-transform: uppercase; letter-spacing: 0.1em; font-size: 12px; font-weight: 700; color: #5f8267; margin-bottom: 10px;">03 · Comment je l’ai construite</div>
-          <h2>Les outils au service de l’idée.</h2>
-          <p class="section-copy">Je ne suis pas développeur. Je choisis l’outil qui répond au besoin, et je pilote l’IA qui code.</p>
+          <div style="text-transform: uppercase; letter-spacing: 0.1em; font-size: 12px; font-weight: 700; color: #5f8267; margin-bottom: 10px;">03 · Outils utilisés</div>
+          <h2>Chaque outil a un rôle précis.</h2>
+          <p class="section-copy">Je ne suis pas développeur. J’ai défini le besoin et les règles, choisi les outils avec l’IA, puis testé le résultat. Le code a été écrit par l’IA.</p>
+        </div>
+
+        <div class="visual" style="max-width: 900px;">
+          <img src="schemas/factures-circuit.svg" alt="Le circuit d’une facture : les abonnements envoient la facture par e-mail, Gmail la transfère à une boîte dédiée, n8n la transporte, Python la vérifie et la rapproche, puis n8n l’envoie à l’API bancaire (Qonto), qui la joint à la transaction. Les cas douteux sont mis de côté avec leur motif. SQLite garde l’historique ; Claude Code a écrit le code." />
         </div>
 
         <div class="results-grid build-grid">
           <div class="result-card">
-            <span style="display: inline-flex; align-items: center; gap: 8px; font-size: 12px; font-weight: 700; color: #3f5a46; background: #e8efe9; border-radius: 999px; padding: 5px 10px; margin-bottom: 12px;"><img src="logos/claude.svg" alt="" aria-hidden="true" style="width: 16px; height: 16px; opacity: 0.8;" />Claude Code</span>
-            <strong>Écrit le code</strong>
-            <p>Je décris le besoin et les règles. L’IA écrit le code, je relis et je teste.</p>
-          </div>
-          <div class="result-card">
-            <span style="display: inline-flex; align-items: center; gap: 8px; font-size: 12px; font-weight: 700; color: #3f5a46; background: #e8efe9; border-radius: 999px; padding: 5px 10px; margin-bottom: 12px;"><img src="logos/python.svg" alt="" aria-hidden="true" style="width: 16px; height: 16px; opacity: 0.8;" />Python</span> <span style="display: inline-flex; align-items: center; gap: 8px; font-size: 12px; font-weight: 700; color: #3f5a46; background: #e8efe9; border-radius: 999px; padding: 5px 10px; margin-bottom: 12px;"><img src="logos/fastapi.svg" alt="" aria-hidden="true" style="width: 16px; height: 16px; opacity: 0.8;" />FastAPI</span>
-            <strong>Le moteur</strong>
-            <p>Les règles de rapprochement entre paiements et factures.</p>
-          </div>
-          <div class="result-card">
-            <span style="display: inline-flex; align-items: center; gap: 8px; font-size: 12px; font-weight: 700; color: #3f5a46; background: #e8efe9; border-radius: 999px; padding: 5px 10px; margin-bottom: 12px;"><img src="logos/sqlite.svg" alt="" aria-hidden="true" style="width: 16px; height: 16px; opacity: 0.8;" />SQLite (SQL)</span>
-            <strong>La mémoire</strong>
-            <p>Paiements, factures et décisions, stockés et retrouvables.</p>
+            <span style="display: inline-flex; align-items: center; gap: 8px; font-size: 12px; font-weight: 700; color: #3f5a46; background: #e8efe9; border-radius: 999px; padding: 5px 10px; margin-bottom: 12px;"><img src="logos/gmail.svg" alt="" aria-hidden="true" style="width: 16px; height: 16px; opacity: 0.8;" />Gmail</span>
+            <strong>Le tri</strong>
+            <p>Un filtre repère les e-mails dont l’objet contient « facture », « invoice » ou « reçu », avec une pièce jointe, et les transfère vers une boîte dédiée.</p>
           </div>
           <div class="result-card">
             <span style="display: inline-flex; align-items: center; gap: 8px; font-size: 12px; font-weight: 700; color: #3f5a46; background: #e8efe9; border-radius: 999px; padding: 5px 10px; margin-bottom: 12px;"><img src="logos/n8n.svg" alt="" aria-hidden="true" style="width: 16px; height: 16px; opacity: 0.8;" />n8n</span>
             <strong>Le transport</strong>
-            <p>Les factures reçues par e-mail arrivent automatiquement jusqu’à l’agent.</p>
+            <p>Relève la boîte de collecte, récupère les paiements de la banque et lui envoie la facture.</p>
           </div>
           <div class="result-card">
-            <span style="display: inline-flex; align-items: center; gap: 8px; font-size: 12px; font-weight: 700; color: #3f5a46; background: #e8efe9; border-radius: 999px; padding: 5px 10px; margin-bottom: 12px;">HTML, CSS, JavaScript</span>
-            <strong>L’écran</strong>
-            <p>Une interface simple qui montre ce qui a été fait et ce qui manque.</p>
+            <span style="display: inline-flex; align-items: center; gap: 8px; font-size: 12px; font-weight: 700; color: #3f5a46; background: #e8efe9; border-radius: 999px; padding: 5px 10px; margin-bottom: 12px;"><img src="logos/python.svg" alt="" aria-hidden="true" style="width: 16px; height: 16px; opacity: 0.8;" />Python</span> <span style="display: inline-flex; align-items: center; gap: 8px; font-size: 12px; font-weight: 700; color: #3f5a46; background: #e8efe9; border-radius: 999px; padding: 5px 10px; margin-bottom: 12px;"><img src="logos/fastapi.svg" alt="" aria-hidden="true" style="width: 16px; height: 16px; opacity: 0.8;" />FastAPI</span>
+            <strong>Les décisions</strong>
+            <p>Vérifie l’expéditeur, lit la facture, la rapproche du bon paiement.</p>
           </div>
           <div class="result-card">
-            <span style="display: inline-flex; align-items: center; gap: 8px; font-size: 12px; font-weight: 700; color: #3f5a46; background: #e8efe9; border-radius: 999px; padding: 5px 10px; margin-bottom: 12px;"><img src="logos/git.svg" alt="" aria-hidden="true" style="width: 16px; height: 16px; opacity: 0.8;" />Git</span>
-            <strong>La sécurité</strong>
-            <p>Chaque étape est sauvegardée. On peut toujours revenir en arrière.</p>
+            <span style="display: inline-flex; align-items: center; gap: 8px; font-size: 12px; font-weight: 700; color: #3f5a46; background: #e8efe9; border-radius: 999px; padding: 5px 10px; margin-bottom: 12px;"><img src="logos/sqlite.svg" alt="" aria-hidden="true" style="width: 16px; height: 16px; opacity: 0.8;" />SQLite</span>
+            <strong>La mémoire</strong>
+            <p>Factures, paiements et journal de chaque action, retrouvables.</p>
+          </div>
+          <div class="result-card">
+            <span style="display: inline-flex; align-items: center; gap: 8px; font-size: 12px; font-weight: 700; color: #3f5a46; background: #e8efe9; border-radius: 999px; padding: 5px 10px; margin-bottom: 12px;">API bancaire (Qonto)</span>
+            <strong>La banque</strong>
+            <p>Reçoit la facture, jointe directement à sa transaction.</p>
+          </div>
+          <div class="result-card">
+            <span style="display: inline-flex; align-items: center; gap: 8px; font-size: 12px; font-weight: 700; color: #3f5a46; background: #e8efe9; border-radius: 999px; padding: 5px 10px; margin-bottom: 12px;"><img src="logos/claude.svg" alt="" aria-hidden="true" style="width: 16px; height: 16px; opacity: 0.8;" />Claude Code</span> <span style="display: inline-flex; align-items: center; gap: 8px; font-size: 12px; font-weight: 700; color: #3f5a46; background: #e8efe9; border-radius: 999px; padding: 5px 10px; margin-bottom: 12px;"><img src="logos/git.svg" alt="" aria-hidden="true" style="width: 16px; height: 16px; opacity: 0.8;" />Git</span>
+            <strong>La construction</strong>
+            <p>L’IA écrit le code à partir de mes consignes. Git sauvegarde chaque version.</p>
           </div>
         </div>
 
-        <p class="section-copy" style="margin-top: 22px;"><strong>Ma règle :</strong> audit, plan, test, puis mon accord avant chaque étape. Les règles vérifient, l’humain valide l’exception.</p>
+        <p class="section-copy" style="margin-top: 22px;"><strong>Ma règle :</strong> n8n transporte, Python décide. Je valide chaque étape avant de passer à la suivante.</p>
 
       </div>
     </section>
 
 
-    <!-- 4. OÙ J'EN SUIS -->
+    <!-- 4. RÉSULTATS -->
     <section class="section-border">
       <div class="container">
 
         <div class="content-block">
-          <div style="text-transform: uppercase; letter-spacing: 0.1em; font-size: 12px; font-weight: 700; color: #5f8267; margin-bottom: 10px;">04 · Où j’en suis</div>
-          <h2>En cours de développement.</h2>
-          <p class="section-copy">Sur la démo, les actions demandées à l’utilisateur passent de 33 à 5.</p>
+          <div style="text-transform: uppercase; letter-spacing: 0.1em; font-size: 12px; font-weight: 700; color: #5f8267; margin-bottom: 10px;">04 · Résultats</div>
+          <h2>Une solution qui marche, sur une partie du problème.</h2>
+          <p class="section-copy">Testé en conditions réelles, de l’e-mail jusqu’au rapprochement.</p>
         </div>
 
-        <div class="results-grid">
+        <div class="results-grid build-grid">
           <div class="result-card">
-            <strong>En cours · Version 0.1</strong>
-            <p>Les factures du mois : récupération, rattachement et notifications, sur une démo.</p>
+            
+            <strong>Essai réel réussi</strong>
+            <p>Avec mes propres factures, de l’e-mail reçu jusqu’au rapprochement avec le paiement.</p>
           </div>
           <div class="result-card">
-            <strong>Ensuite · Version 0.2</strong>
-            <p>Vraies connexions à l’application bancaire, et une IA locale (Ollama) pour lire les factures scannées.</p>
+            
+            <strong>Aucun geste pour les cas sûrs</strong>
+            <p>Seuls les cas douteux me reviennent, avec le motif.</p>
           </div>
           <div class="result-card">
-            <strong>Puis · Version 0.3</strong>
-            <p>Poser des questions à l’agent : « pourquoi me manque-t-il 3 factures ? »</p>
+            
+            <strong>0 €, tout en local</strong>
+            <p>Des outils gratuits ou open source, sur mon ordinateur.</p>
           </div>
         </div>
 
         <p class="privacy-note">
-          Tout tourne en local, sur une entreprise fictive. Aucune donnée réelle, aucune information d’UDC.
+          <strong>Pas encore géré :</strong> les factures envoyées sous forme de lien, celles d’un espace client et les factures scannées.<br />Côté banque : conçu pour se connecter à une API bancaire (ici Qonto), testé sur une copie locale de l’API. Aucune donnée d’UDC.
         </p>
 
       </div>
     </section>
 
 
-    <!-- 5. VISION -->
+    <!-- 5. LA SUITE -->
     <section class="section-border">
       <div class="container">
 
         <div class="content-block">
-          <div style="text-transform: uppercase; letter-spacing: 0.1em; font-size: 12px; font-weight: 700; color: #5f8267; margin-bottom: 10px;">05 · La vision</div>
-          <h2>Une équipe d’agents.</h2>
-          <p class="section-copy">À terme : finance, RH, juridique, stratégie, opérations. Connectés aux outils de l’entreprise (banque, paiements, e-mails), sans les remplacer.</p>
+          <div style="text-transform: uppercase; letter-spacing: 0.1em; font-size: 12px; font-weight: 700; color: #5f8267; margin-bottom: 10px;">05 · La suite</div>
+          <h2>Le premier module d’un outil plus large.</h2>
+          <p class="section-copy">Cette automatisation devient le premier module d’AI Business Headquarters, un outil en construction où je réunis mes automatisations.</p>
         </div>
 
-        <div class="visual" style="max-width: 900px;">
+        <div class="results-grid build-grid">
+          <div class="result-card">
+            
+            <strong>Clôture du mois</strong>
+            <p>Un export prêt pour l’expert-comptable.</p>
+          </div>
+          <div class="result-card">
+            
+            <strong>Autres banques</strong>
+            <p>Import des relevés, quelle que soit la banque.</p>
+          </div>
+          <div class="result-card">
+            <span style="display: inline-flex; align-items: center; gap: 8px; font-size: 12px; font-weight: 700; color: #3f5a46; background: #e8efe9; border-radius: 999px; padding: 5px 10px; margin-bottom: 12px;"><img src="logos/ollama.svg" alt="" aria-hidden="true" style="width: 16px; height: 16px; opacity: 0.8;" />Ollama</span>
+            <strong>Lecture par une IA locale</strong>
+            <p>Pour les factures scannées, toujours contrôlée par les règles.</p>
+          </div>
+        </div>
+
+        <div class="visual" style="margin-top: 28px;">
           <img src="ai-bhq-vision.webp" alt="Maquette de la vision : un bureau en vue isométrique où cinq agents travaillent chacun dans leur espace." />
         </div>
 
         <p class="privacy-note">
-          Maquette de la vision. Pas encore développée : je construis d’abord le moteur.
+          Maquette de la vision : des agents finance, RH, juridique, stratégie et opérations, connectés aux outils de l’entreprise. Pas encore développée.
         </p>
 
       </div>
