@@ -111,10 +111,11 @@
       ],
       "principle": "n8n transports, Python decides.",
       "verifiable_results": [
-        "Real test passed with his own invoices, from the e-mail to the matching.",
-        "User actions cut from 33 to 5 on the demo dataset.",
-        "443 automated tests."
+        "Real test passed with his own invoices, from the e-mail received to the matching with the payment.",
+        "No manual step for safe cases; only doubtful cases come back to him, with the reason.",
+        "Zero cost: free or open-source tools, running locally."
       ],
+      "limits": "It solves part of the problem: invoices sent as a link, invoices only available in a supplier's customer area and scanned invoices are not handled yet. Do not quote test counts or 'actions cut from X to Y' figures.",
       "scope": "Built on the Qonto API and tested end to end on a local replica of the API, never on a live account. Runs locally, at zero cost. No UDC data. No time-saving figure is available: do not invent one.",
       "positioning": "He is not a developer: he chose the tools, defined the rules and connected them; the code is written by AI development tools under his direction. Do not use technical jargon (DKIM, SPF, IMAP, idempotence) unless the user asks about the technical details.",
       "next_steps": "It becomes the first module of AI Business Headquarters, a tool in progress where he brings his automations together: month-end closing export for the accountant, other banks, and reading difficult invoices with a local AI (Ollama), always checked by the rules. Long-term vision (mockup, not built): specialised agents for finance, HR, legal, strategy and operations, connected to the company's tools."

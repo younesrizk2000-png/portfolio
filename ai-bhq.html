@@ -483,11 +483,11 @@
 
         <div class="ba-table">
           <div class="ba-row ba-head"><span></span><span>Avant, à la main</span><span>Après, automatisé</span></div>
-          <div class="ba-row"><strong>Récupérer</strong><span class="ba-before">Chercher dans plusieurs boîtes mail et espaces client.</span><span class="ba-after">Chaque facture arrive seule dans une boîte dédiée.</span></div>
+          <div class="ba-row"><strong>Récupérer</strong><span class="ba-before">Chercher chaque facture dans ses e-mails.</span><span class="ba-after">Chaque facture reçue par e-mail arrive automatiquement dans une boîte dédiée.</span></div>
           <div class="ba-row"><strong>Vérifier</strong><span class="ba-before">À l’œil, quand on y pense.</span><span class="ba-after">L’expéditeur et le fichier sont contrôlés automatiquement.</span></div>
           <div class="ba-row"><strong>Rapprocher</strong><span class="ba-before">Comparer à la main montant, date et fournisseur.</span><span class="ba-after">Rapprochement automatique. Les cas sûrs sont confirmés seuls.</span></div>
           <div class="ba-row"><strong>Joindre</strong><span class="ba-before">Téléverser chaque PDF sur la bonne transaction.</span><span class="ba-after">La facture est jointe à la transaction bancaire.</span></div>
-          <div class="ba-row"><strong>Suivre</strong><span class="ba-before">Les manques apparaissent à la clôture.</span><span class="ba-after">Les cas douteux sont mis de côté, avec leur motif.</span></div>
+          <div class="ba-row"><strong>Suivre</strong><span class="ba-before">Les manques apparaissent à la clôture.</span><span class="ba-after">La liste des factures manquantes est à jour. Les cas douteux sont mis de côté, avec leur motif.</span></div>
         </div>
 
         <p class="section-copy" style="margin-top: 22px;"><strong>Résultat :</strong> l’humain n’intervient plus que sur les exceptions.</p>
@@ -503,7 +503,7 @@
         <div class="content-block">
           <div style="text-transform: uppercase; letter-spacing: 0.1em; font-size: 12px; font-weight: 700; color: #5f8267; margin-bottom: 10px;">03 · Outils utilisés</div>
           <h2>Chaque outil a un rôle précis.</h2>
-          <p class="section-copy">Je ne suis pas développeur. J’ai choisi les outils, défini les règles et les ai connectés ; l’IA a écrit le code, que j’ai relu et testé.</p>
+          <p class="section-copy">Je ne suis pas développeur. J’ai défini le besoin et les règles, choisi les outils avec l’IA, puis testé le résultat. Le code a été écrit par l’IA.</p>
         </div>
 
         <div class="visual" style="max-width: 900px;">
@@ -519,7 +519,7 @@
           <div class="result-card">
             <span style="display: inline-flex; align-items: center; gap: 8px; font-size: 12px; font-weight: 700; color: #3f5a46; background: #e8efe9; border-radius: 999px; padding: 5px 10px; margin-bottom: 12px;"><img src="logos/n8n.svg" alt="" aria-hidden="true" style="width: 16px; height: 16px; opacity: 0.8;" />n8n</span>
             <strong>Le transport</strong>
-            <p>Relève la boîte, interroge la banque, envoie la facture. Seul à détenir la clé bancaire.</p>
+            <p>Relève la boîte de collecte, récupère les paiements de la banque et lui envoie la facture.</p>
           </div>
           <div class="result-card">
             <span style="display: inline-flex; align-items: center; gap: 8px; font-size: 12px; font-weight: 700; color: #3f5a46; background: #e8efe9; border-radius: 999px; padding: 5px 10px; margin-bottom: 12px;"><img src="logos/python.svg" alt="" aria-hidden="true" style="width: 16px; height: 16px; opacity: 0.8;" />Python</span> <span style="display: inline-flex; align-items: center; gap: 8px; font-size: 12px; font-weight: 700; color: #3f5a46; background: #e8efe9; border-radius: 999px; padding: 5px 10px; margin-bottom: 12px;"><img src="logos/fastapi.svg" alt="" aria-hidden="true" style="width: 16px; height: 16px; opacity: 0.8;" />FastAPI</span>
@@ -539,11 +539,11 @@
           <div class="result-card">
             <span style="display: inline-flex; align-items: center; gap: 8px; font-size: 12px; font-weight: 700; color: #3f5a46; background: #e8efe9; border-radius: 999px; padding: 5px 10px; margin-bottom: 12px;"><img src="logos/claude.svg" alt="" aria-hidden="true" style="width: 16px; height: 16px; opacity: 0.8;" />Claude Code</span> <span style="display: inline-flex; align-items: center; gap: 8px; font-size: 12px; font-weight: 700; color: #3f5a46; background: #e8efe9; border-radius: 999px; padding: 5px 10px; margin-bottom: 12px;"><img src="logos/git.svg" alt="" aria-hidden="true" style="width: 16px; height: 16px; opacity: 0.8;" />Git</span>
             <strong>La construction</strong>
-            <p>L’IA écrit le code que je spécifie. Git sauvegarde chaque étape.</p>
+            <p>L’IA écrit le code à partir de mes consignes. Git sauvegarde chaque version.</p>
           </div>
         </div>
 
-        <p class="section-copy" style="margin-top: 22px;"><strong>Ma règle :</strong> n8n transporte, Python décide. Audit, plan, tests, puis mon accord avant chaque étape.</p>
+        <p class="section-copy" style="margin-top: 22px;"><strong>Ma règle :</strong> n8n transporte, Python décide. Je valide chaque étape avant de passer à la suivante.</p>
 
       </div>
     </section>
@@ -555,30 +555,30 @@
 
         <div class="content-block">
           <div style="text-transform: uppercase; letter-spacing: 0.1em; font-size: 12px; font-weight: 700; color: #5f8267; margin-bottom: 10px;">04 · Résultats</div>
-          <h2>Ça fonctionne.</h2>
-          <p class="section-copy">Testé de bout en bout, de l’e-mail jusqu’au rapprochement.</p>
+          <h2>Une solution qui marche, sur une partie du problème.</h2>
+          <p class="section-copy">Testé en conditions réelles, de l’e-mail jusqu’au rapprochement.</p>
         </div>
 
         <div class="results-grid build-grid">
           <div class="result-card">
             
             <strong>Essai réel réussi</strong>
-            <p>Avec mes propres factures : de l’e-mail reçu jusqu’au rapprochement.</p>
+            <p>Avec mes propres factures, de l’e-mail reçu jusqu’au rapprochement avec le paiement.</p>
           </div>
           <div class="result-card">
             
-            <strong>33 → 5 actions</strong>
-            <p>Sur la démo, les actions manuelles passent de 33 à 5.</p>
+            <strong>Aucun geste pour les cas sûrs</strong>
+            <p>Seuls les cas douteux me reviennent, avec le motif.</p>
           </div>
           <div class="result-card">
             
-            <strong>443 tests automatisés</strong>
-            <p>Chaque règle est vérifiée avant chaque changement.</p>
+            <strong>0 €, tout en local</strong>
+            <p>Des outils gratuits ou open source, sur mon ordinateur.</p>
           </div>
         </div>
 
         <p class="privacy-note">
-          Côté banque : construit sur l’API Qonto, testé sur une réplique locale de l’API. Tout tourne en local, à coût nul. Aucune donnée d’UDC.
+          <strong>Pas encore géré :</strong> les factures envoyées sous forme de lien, celles d’un espace client et les factures scannées.<br />Côté banque : construit sur l’API Qonto, testé sur une copie locale de l’API, jamais sur un vrai compte. Aucune donnée d’UDC.
         </p>
 
       </div>
@@ -609,7 +609,7 @@
           <div class="result-card">
             <span style="display: inline-flex; align-items: center; gap: 8px; font-size: 12px; font-weight: 700; color: #3f5a46; background: #e8efe9; border-radius: 999px; padding: 5px 10px; margin-bottom: 12px;"><img src="logos/ollama.svg" alt="" aria-hidden="true" style="width: 16px; height: 16px; opacity: 0.8;" />Ollama</span>
             <strong>Lecture par une IA locale</strong>
-            <p>Pour les factures difficiles, toujours contrôlée par les règles.</p>
+            <p>Pour les factures scannées, toujours contrôlée par les règles.</p>
           </div>
         </div>
 
